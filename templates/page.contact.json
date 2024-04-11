@@ -1,0 +1,33 @@
+{
+  "sections": {
+    "main": {
+      "type": "page",
+      "settings": {
+        "show-title": true,
+        "background-color": "none",
+        "light-text": false,
+        "container-width": 1,
+        "spacing-above": true,
+        "spacing-below": false
+      }
+    },
+    "cb867687-a1f2-4895-b939-4bf8b1e44672": {
+      "type": "contact",
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "container-width": 2,
+        "spacing-above": true,
+        "spacing-below": true,
+        "heading": "",
+        "store-address": "",
+        "store-hours": "",
+        "show-social-sharing": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "cb867687-a1f2-4895-b939-4bf8b1e44672"
+  ]
+}

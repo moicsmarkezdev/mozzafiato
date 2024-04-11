@@ -1,0 +1,60 @@
+{
+  "sections": {
+    "collection-header": {
+      "type": "collection--header",
+      "settings": {
+        "show-title": true,
+        "title-alignment": "center",
+        "show-description": true,
+        "description-alignment": "centered-outside",
+        "show-image": false,
+        "use-image-fallback": true,
+        "image-aspect-ratio": 56,
+        "mobile-image-aspect-ratio": 134,
+        "alt-color": true,
+        "apply-overlay": false,
+        "parallax-enabled": false
+      }
+    },
+    "navigation": {
+      "type": "collection--navigation",
+      "settings": {
+        "show-browse-button": true,
+        "show-sort-button": true,
+        "show-refine-button": true,
+        "show-layout-buttons": true,
+        "show-collections-list": true,
+        "custom-list-collections": "",
+        "show-sort-list": true,
+        "show-refine-list": true,
+        "swatches-enabled": false,
+        "show-search-link": true
+      }
+    },
+    "main": {
+      "type": "collection--body",
+      "settings": {
+        "products-per-row--desktop": 4,
+        "products-per-row--mobile": "2",
+        "number-of-rows": 4
+      }
+    },
+    "recent-products": {
+      "type": "recent-products",
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "heading": "Compleméntalo con",
+        "title-alignment": "left",
+        "spacing-above": false,
+        "spacing-below": true
+      }
+    }
+  },
+  "order": [
+    "collection-header",
+    "navigation",
+    "main",
+    "recent-products"
+  ]
+}

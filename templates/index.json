@@ -1,0 +1,638 @@
+{
+  "sections": {
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "4caf9002-011c-4ae6-88ef-0b25f3654fbc": {
+          "type": "image",
+          "settings": {
+            "text-position": "bottom-left",
+            "text-width": "medium",
+            "image": "shopify://shop_images/Artboard_1.jpg",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "https://mozzafiato.pe/products/mozzafiato-bag",
+            "link-text": "",
+            "mobile-image": "shopify://shop_images/Artboard_2.jpg"
+          }
+        },
+        "a5482328-e971-4c6e-b38b-4e3380fe7526": {
+          "type": "image",
+          "settings": {
+            "text-position": "bottom-left",
+            "text-width": "medium",
+            "image": "shopify://shop_images/Imagen_de_WhatsApp_2024-03-24_a_las_21.41.01_7fa4ded1.jpg",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "https://mozzafiato.pe/collections/best-sellers",
+            "link-text": "",
+            "mobile-image": "shopify://shop_images/Imagen_de_WhatsApp_2024-03-24_a_las_21.41.02_0c2a7362.jpg"
+          }
+        },
+        "4993a4c6-5948-4c34-853f-dc9d8e106671": {
+          "type": "image",
+          "settings": {
+            "text-position": "bottom-left",
+            "text-width": "medium",
+            "image": "shopify://shop_images/Visor_Caps_-_Banner.png",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "shopify://collections/mozzi-caps",
+            "link-text": "",
+            "mobile-image": "shopify://shop_images/Visor_Caps_-_Movil_banner.png"
+          }
+        }
+      },
+      "block_order": [
+        "4caf9002-011c-4ae6-88ef-0b25f3654fbc",
+        "a5482328-e971-4c6e-b38b-4e3380fe7526",
+        "4993a4c6-5948-4c34-853f-dc9d8e106671"
+      ],
+      "settings": {
+        "text-color": "auto",
+        "background-color": "accent-2",
+        "spacing-above": false,
+        "spacing-below": false,
+        "spacing-around-blocks": false,
+        "image-aspect-ratio": 56,
+        "darken-image": false,
+        "blocks_per_slide": 1,
+        "box-around-text": true,
+        "auto-rotate": false,
+        "rotate-frequency": 4,
+        "transition_type": "slide",
+        "mobile-image-aspect-ratio": 134,
+        "blocks_per_slide_mobile": "1",
+        "mobile-overlay": true
+      }
+    },
+    "5ba33054-4d1e-44a1-a62b-81a200f21bc2": {
+      "type": "featured-collection",
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "featured-collection--image--show": false,
+        "featured-collection--description--show": false,
+        "display-type": "slideshow",
+        "products-per-row--desktop": "3",
+        "products-per-row--mobile": "2",
+        "collection": "best-sellers",
+        "max-products": 12,
+        "heading": "¡OUR BEST SELLERS!"
+      }
+    },
+    "39b7e8a7-1bbc-491e-8390-2751caf3e237": {
+      "type": "featured-product",
+      "blocks": {
+        "template--15445438103688__39b7e8a7-1bbc-491e-8390-2751caf3e237-overline-1": {
+          "type": "overline",
+          "settings": {
+            "text": ""
+          }
+        },
+        "template--15445438103688__39b7e8a7-1bbc-491e-8390-2751caf3e237-heading-1": {
+          "type": "heading",
+          "settings": {
+          }
+        },
+        "template--15445438103688__39b7e8a7-1bbc-491e-8390-2751caf3e237-vendor-1": {
+          "type": "vendor",
+          "settings": {
+          }
+        },
+        "rating_n3JijB": {
+          "type": "rating",
+          "settings": {
+          }
+        },
+        "template--15445438103688__39b7e8a7-1bbc-491e-8390-2751caf3e237-price-1": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "3c8d0925-22f4-4bfa-ac21-fb30ff9ff0cc": {
+          "type": "buy-buttons",
+          "settings": {
+            "smart-payment-enabled": false
+          }
+        },
+        "46f930c4-0729-4703-8060-7e3750d86c1d": {
+          "type": "low-stock",
+          "settings": {
+            "threshold": 10
+          }
+        },
+        "template--15445438103688__39b7e8a7-1bbc-491e-8390-2751caf3e237-options-1": {
+          "type": "options",
+          "settings": {
+            "variant-style": "buttons",
+            "swatches-enabled": true,
+            "size-chart-enabled": true,
+            "size-chart-option": "size",
+            "size-chart-content": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15445438103688__39b7e8a7-1bbc-491e-8390-2751caf3e237-overline-1",
+        "template--15445438103688__39b7e8a7-1bbc-491e-8390-2751caf3e237-heading-1",
+        "template--15445438103688__39b7e8a7-1bbc-491e-8390-2751caf3e237-vendor-1",
+        "rating_n3JijB",
+        "template--15445438103688__39b7e8a7-1bbc-491e-8390-2751caf3e237-price-1",
+        "3c8d0925-22f4-4bfa-ac21-fb30ff9ff0cc",
+        "46f930c4-0729-4703-8060-7e3750d86c1d",
+        "template--15445438103688__39b7e8a7-1bbc-491e-8390-2751caf3e237-options-1"
+      ],
+      "settings": {
+        "background-color": "none",
+        "container-width": 4,
+        "spacing-above": false,
+        "spacing-below": true,
+        "text-column-width": 30,
+        "text-alignment": "left",
+        "thumbnail-width": 80,
+        "media-gap": 8,
+        "featured_product": "toalla-de-microfibra-fruitopia",
+        "loop-enabled": false
+      }
+    },
+    "53875c54-020d-4d79-8ff9-85371bcd2995": {
+      "type": "scrolling-content",
+      "blocks": {
+        "template--15496343486600__53875c54-020d-4d79-8ff9-85371bcd2995-image-1": {
+          "type": "image",
+          "settings": {
+            "image-height": 100,
+            "link": "",
+            "hide-on-desktop": false,
+            "mobile-image-height": 70,
+            "hide-on-mobile": false
+          }
+        },
+        "template--15496343486600__53875c54-020d-4d79-8ff9-85371bcd2995-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "Your scrolling text here",
+            "link": "",
+            "hide-on-mobile": false,
+            "hide-on-desktop": false
+          }
+        },
+        "template--15496343486600__53875c54-020d-4d79-8ff9-85371bcd2995-image-2": {
+          "type": "image",
+          "settings": {
+            "image-height": 100,
+            "link": "",
+            "hide-on-desktop": false,
+            "mobile-image-height": 70,
+            "hide-on-mobile": false
+          }
+        },
+        "template--15496343486600__53875c54-020d-4d79-8ff9-85371bcd2995-text-2": {
+          "type": "text",
+          "settings": {
+            "text": "Your scrolling text here",
+            "link": "",
+            "hide-on-mobile": false,
+            "hide-on-desktop": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15496343486600__53875c54-020d-4d79-8ff9-85371bcd2995-image-1",
+        "template--15496343486600__53875c54-020d-4d79-8ff9-85371bcd2995-text-1",
+        "template--15496343486600__53875c54-020d-4d79-8ff9-85371bcd2995-image-2",
+        "template--15496343486600__53875c54-020d-4d79-8ff9-85371bcd2995-text-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "top-border": false,
+        "background-color": "none",
+        "parallax-enabled": false,
+        "apply-overlay": false,
+        "light-text": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "text-size": "section-heading",
+        "animation-direction": "left",
+        "animation-speed": 6,
+        "pause-on-hover": false
+      }
+    },
+    "9547d1fa-e436-446d-a9b9-77f7a3bd07b9": {
+      "type": "shop-the-look",
+      "blocks": {
+        "template--15496343486600__9547d1fa-e436-446d-a9b9-77f7a3bd07b9-hotspot-2": {
+          "type": "hotspot",
+          "settings": {
+            "product": "mozzi-cap-rosada",
+            "horizontal": 27,
+            "vertical": 25,
+            "mobile-horizontal": 29,
+            "mobile-vertical": 23
+          }
+        },
+        "template--15496343486600__9547d1fa-e436-446d-a9b9-77f7a3bd07b9-hotspot-3": {
+          "type": "hotspot",
+          "settings": {
+            "product": "comprar-online-toalla-de-microfibra-palms-mozzafiato",
+            "horizontal": 41,
+            "vertical": 87,
+            "mobile-horizontal": 17,
+            "mobile-vertical": 80
+          }
+        },
+        "2c038f58-1c0e-42b6-a43c-11332b30f9c7": {
+          "type": "hotspot",
+          "settings": {
+            "product": "comprar-online-tote-bag-paint-brushes-mozzafiato",
+            "horizontal": 9,
+            "vertical": 91,
+            "mobile-horizontal": 7,
+            "mobile-vertical": 96
+          }
+        }
+      },
+      "block_order": [
+        "template--15496343486600__9547d1fa-e436-446d-a9b9-77f7a3bd07b9-hotspot-2",
+        "template--15496343486600__9547d1fa-e436-446d-a9b9-77f7a3bd07b9-hotspot-3",
+        "2c038f58-1c0e-42b6-a43c-11332b30f9c7"
+      ],
+      "disabled": true,
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "container-width": 4,
+        "spacing-above": false,
+        "spacing-below": true,
+        "hotspot-color": "white",
+        "heading": "",
+        "image": "shopify://shop_images/Captura_de_pantalla_2024-01-05_172915.png",
+        "mobile-image": "shopify://shop_images/Captura_de_pantalla_2024-01-05_173116.png"
+      }
+    },
+    "82eacfab-15c2-4296-8479-1a3242836d3d": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "featured-collection--image--show": false,
+        "featured-collection--description--show": false,
+        "display-type": "slideshow",
+        "products-per-row--desktop": "3",
+        "products-per-row--mobile": "2",
+        "collection": "panuelos",
+        "max-products": 8,
+        "heading": "PAÑUELOS"
+      }
+    },
+    "7d31c367-4e4d-4655-8fd5-1346f2d33664": {
+      "type": "featured-collection",
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "spacing-above": true,
+        "spacing-below": false,
+        "featured-collection--image--show": false,
+        "featured-collection--description--show": false,
+        "display-type": "slideshow",
+        "products-per-row--desktop": "4",
+        "products-per-row--mobile": "2",
+        "collection": "sun-bum",
+        "max-products": 9,
+        "heading": "Sun Bum"
+      }
+    },
+    "e1bcfcee-d979-4e6c-b6ec-30817d050e0c": {
+      "type": "testimonials",
+      "blocks": {
+        "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-0": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "10",
+            "author-role": "",
+            "author-name": "",
+            "description": "<p>Me encanta mi toalla , visera y mi neceser que lo uso todos los días, tienen cosas lindas 😍<br/><br/>- <strong>Chio</strong></p>"
+          }
+        },
+        "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-1": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "10",
+            "author-role": "",
+            "author-name": "",
+            "description": "<p>Utilice mi toalla en mis vacaciones y me encantó tanto el diseño y el estuche para guardarla. Súper práctica, ocupa poco espacio y los colores muy lindos. </p><p>- <strong>Alessia</strong></p>"
+          }
+        },
+        "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-2": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "10",
+            "author-role": "",
+            "author-name": "",
+            "description": "<p>La calidad y material de la toalla es increíble 😊 Y los pañuelos tiene un color hermoso tal cual las fotos!</p><p>- <strong>Carolina</strong></p>"
+          }
+        },
+        "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-3": {
+          "type": "testimonial",
+          "disabled": true,
+          "settings": {
+            "icon": "quote",
+            "author-role": "",
+            "author-name": "",
+            "description": "<p>Here you can include a short description about the author or their testimonial.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-0",
+        "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-1",
+        "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-2",
+        "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-3"
+      ],
+      "settings": {
+        "image-shape": "circle",
+        "background-color": "accent-2",
+        "light-text": false,
+        "container-width": 4,
+        "spacing-above": true,
+        "spacing-below": true,
+        "mobile-width": "1",
+        "overline": "",
+        "heading": "Lo que dicen nuestras mozzi girls!"
+      }
+    },
+    "featured-collection-grid": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "featured-collection--image--show": false,
+        "featured-collection--description--show": true,
+        "display-type": "slideshow",
+        "products-per-row--desktop": "3",
+        "products-per-row--mobile": "1",
+        "collection": "pack-trendy-duo",
+        "max-products": 4,
+        "heading": "Pack trendy duo"
+      }
+    },
+    "d0015569-f761-4fa1-acee-083365c10db2": {
+      "type": "slideshow",
+      "settings": {
+        "text-color": "auto",
+        "background-color": "none",
+        "spacing-above": false,
+        "spacing-below": false,
+        "spacing-around-blocks": false,
+        "image-aspect-ratio": 56,
+        "darken-image": true,
+        "blocks_per_slide": 2,
+        "box-around-text": false,
+        "auto-rotate": false,
+        "rotate-frequency": 7,
+        "transition_type": "slide",
+        "mobile-image-aspect-ratio": 134,
+        "blocks_per_slide_mobile": "1",
+        "mobile-overlay": true
+      }
+    },
+    "featured-blog": {
+      "type": "featured-blog",
+      "disabled": true,
+      "settings": {
+        "aspect-ratio": "landscape",
+        "background-color": "light",
+        "light-text": false,
+        "container-width": 4,
+        "spacing-above": true,
+        "spacing-below": true,
+        "tag-select": "pinned",
+        "show-date": true,
+        "show-excerpt": true,
+        "blog": "news",
+        "blog-heading": "Blog posts",
+        "view-more-text": "View more"
+      }
+    },
+    "27dbe306-2dce-4680-a21e-aa3d276acd48": {
+      "type": "featured-product",
+      "blocks": {
+        "template--15496343486600__27dbe306-2dce-4680-a21e-aa3d276acd48-overline-1": {
+          "type": "overline",
+          "settings": {
+            "text": ""
+          }
+        },
+        "template--15496343486600__27dbe306-2dce-4680-a21e-aa3d276acd48-heading-1": {
+          "type": "heading",
+          "settings": {
+          }
+        },
+        "template--15496343486600__27dbe306-2dce-4680-a21e-aa3d276acd48-vendor-1": {
+          "type": "vendor",
+          "settings": {
+          }
+        },
+        "low_stock_44MnjD": {
+          "type": "low-stock",
+          "settings": {
+            "threshold": 5
+          }
+        },
+        "template--15496343486600__27dbe306-2dce-4680-a21e-aa3d276acd48-price-1": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "template--15496343486600__27dbe306-2dce-4680-a21e-aa3d276acd48-options-1": {
+          "type": "options",
+          "settings": {
+            "variant-style": "dropdowns",
+            "swatches-enabled": true,
+            "size-chart-enabled": true,
+            "size-chart-option": "size",
+            "size-chart-content": ""
+          }
+        },
+        "template--15496343486600__27dbe306-2dce-4680-a21e-aa3d276acd48-buy-buttons-1": {
+          "type": "buy-buttons",
+          "settings": {
+            "smart-payment-enabled": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15496343486600__27dbe306-2dce-4680-a21e-aa3d276acd48-overline-1",
+        "template--15496343486600__27dbe306-2dce-4680-a21e-aa3d276acd48-heading-1",
+        "template--15496343486600__27dbe306-2dce-4680-a21e-aa3d276acd48-vendor-1",
+        "low_stock_44MnjD",
+        "template--15496343486600__27dbe306-2dce-4680-a21e-aa3d276acd48-price-1",
+        "template--15496343486600__27dbe306-2dce-4680-a21e-aa3d276acd48-options-1",
+        "template--15496343486600__27dbe306-2dce-4680-a21e-aa3d276acd48-buy-buttons-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "background-color": "none",
+        "container-width": 4,
+        "spacing-above": true,
+        "spacing-below": true,
+        "text-column-width": 30,
+        "text-alignment": "left",
+        "thumbnail-width": 80,
+        "media-gap": 8,
+        "featured_product": "mozzi-cap-orange",
+        "loop-enabled": false
+      }
+    },
+    "grid-with-overlay": {
+      "type": "grid-with-overlay",
+      "blocks": {
+        "overlay-block-1": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/posts_rebranding.png",
+            "mobile-image": "shopify://shop_images/posts_rebranding.png",
+            "wide": false,
+            "tall": false,
+            "retain-ratio": false,
+            "title": "MOZZI CAPS",
+            "link-url": "shopify://collections/mozzi-caps",
+            "link-text": "Ver más"
+          }
+        },
+        "overlay-block-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/14_eda42ebc-9dfe-409f-bdd6-07971cdc4428.png",
+            "mobile-image": "shopify://shop_images/14_eda42ebc-9dfe-409f-bdd6-07971cdc4428.png",
+            "wide": false,
+            "tall": false,
+            "retain-ratio": false,
+            "title": "PAÑUELOS",
+            "link-url": "shopify://collections/panuelos",
+            "link-text": "Ver más"
+          }
+        },
+        "overlay-block-2": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/13_63eeee35-0d39-48d4-84c7-ec9418da49ba.png",
+            "mobile-image": "shopify://shop_images/13_63eeee35-0d39-48d4-84c7-ec9418da49ba.png",
+            "wide": false,
+            "tall": false,
+            "retain-ratio": false,
+            "title": "TOALLAS DE MICROFIBRA",
+            "link-url": "shopify://collections/toallas-de-microfibra",
+            "link-text": "Ver más"
+          }
+        }
+      },
+      "block_order": [
+        "overlay-block-1",
+        "overlay-block-3",
+        "overlay-block-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "text-style": "hover",
+        "background-color": "none",
+        "light-text": false,
+        "mobile-overlay": true,
+        "container-width": 3,
+        "spacing": true,
+        "spacing-above": true,
+        "spacing-below": true,
+        "width": 3,
+        "mobile-width": "2",
+        "heading": "¡DESCUBRE NUESTRAS CATEGORÍAS!",
+        "subtitle": "",
+        "link-url": "",
+        "link-text": ""
+      }
+    },
+    "0b1cd38c-2dd8-4607-abdb-1424619e78d5": {
+      "type": "collapsible-rows",
+      "blocks": {
+        "fdaf5d1e-40db-4967-a627-bf24c15e4ac6": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "¿Cómo realizo un pedido?",
+            "description": "<p>Puedes realizar tu pedido a través de nuestra web, Instagram o a través de nuestro WhatsApp (+51 922 328 133).</p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "6f19a306-90f3-48b2-98b7-486b1319ed64": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "¿Qué métodos de pago ofrecen?",
+            "description": "<p>Puedes pagar con tarjeta de crédito o débito, yape o transferencia bancaria e interbancaria (BCP). Todos estos métodos de pago están disponibles por compras en Instagram, WhatsApp y nuestra página web.</p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "template--15445438103688__0b1cd38c-2dd8-4607-abdb-1424619e78d5-1686715723a2463093-0": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "¿En cuantos días recibo mi pedido?",
+            "description": "<ul><li><strong>Envíos dentro de Lima Metropolitana</strong></li></ul><p>Nuestros envíos son realizados por servicios de courier tercerizados responsables de la seguridad y entrega del producto. El plazo de entrega a cualquier distrito dentro de Lima Metropolitana es de 2 a 3 días hábiles a partir del día de despacho del pedido.</p><ul><li><strong>Envío a Provincia </strong></li></ul><p>Nuestros envíos son realizados por servicios de courier tercerizados responsables de la seguridad y entrega del producto. El plazo de entrega a cualquier distrito de provincia es de 2 a 10 días hábiles a partir del día de despacho del producto.</p><p>¿Te gustaría recogerlo sin costo adicional?<strong> ¡Elige nuestra opción de recojo en tienda!</strong></p>",
+            "page-content": "",
+            "default-open": false
+          }
+        },
+        "template--15445438103688__0b1cd38c-2dd8-4607-abdb-1424619e78d5-1686715723a2463093-2": {
+          "type": "collapsible-row",
+          "settings": {
+            "heading": "¿Cómo puedo hacerle seguimiento a mi pedido?",
+            "description": "<p>Cuando enviemos tu pedido, te enviaremos un código de seguimiento y el link a la página del courier utilizado para que de esta forma puedas ver cuál es el estado de tu pedido.</p>",
+            "page-content": "",
+            "default-open": false
+          }
+        }
+      },
+      "block_order": [
+        "fdaf5d1e-40db-4967-a627-bf24c15e4ac6",
+        "6f19a306-90f3-48b2-98b7-486b1319ed64",
+        "template--15445438103688__0b1cd38c-2dd8-4607-abdb-1424619e78d5-1686715723a2463093-0",
+        "template--15445438103688__0b1cd38c-2dd8-4607-abdb-1424619e78d5-1686715723a2463093-2"
+      ],
+      "settings": {
+        "background-color": "none",
+        "light-text": true,
+        "container-width": 4,
+        "spacing-above": true,
+        "spacing-below": true,
+        "heading": "PREGUNTAS FRECUENTES",
+        "title-alignment": "center"
+      }
+    }
+  },
+  "order": [
+    "slideshow",
+    "5ba33054-4d1e-44a1-a62b-81a200f21bc2",
+    "39b7e8a7-1bbc-491e-8390-2751caf3e237",
+    "53875c54-020d-4d79-8ff9-85371bcd2995",
+    "9547d1fa-e436-446d-a9b9-77f7a3bd07b9",
+    "82eacfab-15c2-4296-8479-1a3242836d3d",
+    "7d31c367-4e4d-4655-8fd5-1346f2d33664",
+    "e1bcfcee-d979-4e6c-b6ec-30817d050e0c",
+    "featured-collection-grid",
+    "d0015569-f761-4fa1-acee-083365c10db2",
+    "featured-blog",
+    "27dbe306-2dce-4680-a21e-aa3d276acd48",
+    "grid-with-overlay",
+    "0b1cd38c-2dd8-4607-abdb-1424619e78d5"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "sections": {
+    "main": {
+      "type": "list-collections",
+      "settings": {
+        "view": "collection-thumbnails",
+        "spacing-above": true,
+        "spacing-below": true,
+        "collection-list": [
+
+        ],
+        "heading": "Colecciones",
+        "aspect-ratio": "square",
+        "image-type": "collection",
+        "text-style": "hover",
+        "spacing": true,
+        "mobile-overlay": true,
+        "container-width": 5,
+        "width": 4,
+        "mobile-width": "2"
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

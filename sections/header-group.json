@@ -1,0 +1,38 @@
+{
+  "type": "header",
+  "name": "Header Group",
+  "sections": {
+    "announcement": {
+      "type": "announcement",
+      "settings": {
+        "home-page-only": true,
+        "background-color": "dark",
+        "light-text": true,
+        "text": "HACEMOS ENVÍOS A TODO EL PERÚ",
+        "link": "shopify://collections/sale"
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "transparent-menu": false,
+        "background-color": "accent-1",
+        "light-text": false,
+        "header-account-show": true,
+        "cart--icon": "bag",
+        "header-menu-center": true,
+        "menu": "main-menu",
+        "show-region-selector": false,
+        "show-locale-selector": false,
+        "header-logo-center": true,
+        "logo": "shopify://shop_images/Diseno_sin_titulo_5.png",
+        "logo-height": 35,
+        "mobile-logo-height": 30
+      }
+    }
+  },
+  "order": [
+    "announcement",
+    "header"
+  ]
+}
