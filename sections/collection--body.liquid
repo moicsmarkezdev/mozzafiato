@@ -161,6 +161,10 @@
           assign current_block_num = 1
 
           for product in collection.products
+            if product.metafields.custom.product_bundle_item == true 
+              continue 
+            endif
+            
             assign current_row = current_block_num | divided_by: products_per_row_desktop
             assign current_column = current_block_num | modulo: products_per_row_desktop
 

@@ -109,7 +109,14 @@
         </header>
 
         <main class="layout--template" id="main-content">
-          {{ content_for_layout }}
+          {%- unless product.metafields.custom.product_bundle_item == true -%}
+            {{ content_for_layout }}
+          {%- endunless -%}
+          {%- if product.metafields.custom.product_bundle_item == true -%}
+            <script>
+              window.location.href = '/shop';
+            </script>
+          {%- endif -%}
         </main>
 
         <footer class="layout--footer-group">

@@ -84,7 +84,8 @@
 
         {%- if property_size > 0 -%}
           {%- for property in item.properties -%}
-            {%- unless property.last == blank -%}
+            {%- assign property_first_char = property.first | slice: 0 -%}
+            {%- unless property.last == blank or property_first_char == '_' -%}
               <br>
               {{ property.first }}:
               {% comment %} Check if there was an uploaded file associated {% endcomment %}
@@ -141,7 +142,8 @@
           render 'quantity-selector',
           id: id,
           type: 'cart',
-          value: item.quantity
+          value: item.quantity,
+          item: item
         -%}
       </div>
 
@@ -213,7 +215,8 @@
         {%- if property_size > 0 -%}
           <div class="cart--item-properties">
           {%- for property in item.properties -%}
-            {%- unless property.last == blank -%}
+            {%- assign property_first_char = property.first | slice: 0 -%}
+            {%- unless property.last == blank or property_first_char == '_' -%}
               <br>
               {{ property.first }}:
               {% comment %} Check if there was an uploaded file associated {% endcomment %}
@@ -265,7 +268,8 @@
             render 'quantity-selector',
             id: id,
             type: 'cart',
-            value: item.quantity
+            value: item.quantity,
+            item: item
           -%}
         </div>
       </div>
