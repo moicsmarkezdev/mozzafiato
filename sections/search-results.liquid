@@ -68,10 +68,13 @@
         data-mobile-columns="{{ products_per_row_mobile }}"
       >
         {%- if search.results.size > 0 -%}
-          {%
-            render 'product--item' for search.results as product,
-            section_id: section.id
-          %}
+          {%- if product.metafields.custom.product_bundle_item != true  -%}
+            {%
+              render 'product--item' for search.results as product,
+              section_id: section.id
+            %}
+          {%- endif -%}
+
 
         {%- else -%}
           <div class="search-results--filter-feedback" data-container="block">

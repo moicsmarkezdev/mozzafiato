@@ -235,14 +235,16 @@
                     <div class="bundle__container">
                       <span class="bundle_container__title">{{ item_bundle.title }}:</span>
                       {%- for product_bundle in item_bundle.products.value -%}
-                        <div class="bundle_item__wrapper {% if forloop.first %}active{% endif %}" data-vaiantId="{{ product_bundle.first_available_variant.id }}" data-variantPrice="{{ product_bundle.first_available_variant.price | money_without_currency }}">
-                          <div class="item__img">
-                            <img src="{{ product_bundle.featured_image | image_url: width: 150 }}" loading="lazy" width="100px" height="auto" >
+                        {%- if product_bundle.first_available_variant.id != blank -%}
+                          <div class="bundle_item__wrapper {% if forloop.first %}active{% endif %}" data-vaiantId="{{ product_bundle.first_available_variant.id }}" data-variantPrice="{{ product_bundle.first_available_variant.price | money_without_currency }}">
+                            <div class="item__img">
+                              <img src="{{ product_bundle.featured_image | image_url: width: 150 }}" loading="lazy" width="100px" height="auto" >
+                            </div>
+                            <div class="bundle__title">
+                              {{ product_bundle.title }}
+                            </div>
                           </div>
-                          <div class="bundle__title">
-                            {{ product_bundle.title }}
-                          </div>
-                        </div>
+                        {%- endif -%}
                       {%- endfor -%}
                     </div>
                   {%- endfor -%}
