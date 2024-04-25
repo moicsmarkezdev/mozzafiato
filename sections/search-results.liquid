@@ -68,7 +68,8 @@
         data-mobile-columns="{{ products_per_row_mobile }}"
       >
         {%- if search.results.size > 0 -%}
-          {%- if search.results.metafields.custom.product_bundle_item != true  -%}
+          {%- assign _product = search.results -%}
+          {%- if _product.metafields.custom.product_bundle_item != true  -%}
             {%
               render 'product--item' for search.results as product,
               section_id: section.id
