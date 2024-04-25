@@ -36,13 +36,13 @@
           "settings": {
             "text-position": "bottom-left",
             "text-width": "medium",
-            "image": "shopify:\/\/shop_images\/Visor_Caps_-_Banner.png",
+            "image": "shopify:\/\/shop_images\/Beauty_Pack_-_Banner_1.jpg",
             "overline": "",
             "title": "",
             "description": "",
-            "link-url": "shopify:\/\/collections\/mozzi-caps",
+            "link-url": "shopify:\/\/products\/beauty-pack",
             "link-text": "",
-            "mobile-image": "shopify:\/\/shop_images\/Visor_Caps_-_Movil_banner.png"
+            "mobile-image": "shopify:\/\/shop_images\/Beauty_Pack_-_Banner.jpg"
           }
         }
       },
