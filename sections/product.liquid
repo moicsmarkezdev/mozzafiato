@@ -235,8 +235,8 @@
                     <div class="bundle__container">
                       <span class="bundle_container__title">{{ item_bundle.title }}:</span>
                       {%- for product_bundle in item_bundle.products.value -%}
-                        {%- if product_bundle.first_available_variant.id != blank -%}
-                          <div class="bundle_item__wrapper {% if forloop.first %}active{% endif %}" data-vaiantId="{{ product_bundle.first_available_variant.id }}" data-variantPrice="{{ product_bundle.first_available_variant.price | money_without_currency }}">
+                        
+                          <div class="bundle_item__wrapper {% if forloop.first and product_bundle.first_available_variant.id != blank %}active{% endif %}" {% if product_bundle.first_available_variant.id != blank %} data-vaiantId="{{ product_bundle.first_available_variant.id }}" data-variantPrice="{{ product_bundle.first_available_variant.price | money_without_currency }}" {% else %} disable="disable" {% endif %} >
                             <div class="item__img">
                               <img src="{{ product_bundle.featured_image | image_url: width: 150 }}" loading="lazy" width="100px" height="auto" >
                             </div>
@@ -244,7 +244,7 @@
                               {{ product_bundle.title }}
                             </div>
                           </div>
-                        {%- endif -%}
+                        
                       {%- endfor -%}
                     </div>
                   {%- endfor -%}
@@ -310,6 +310,27 @@
                   border: 2px solid var(--bg-color--button);
                   color: var(--bg-color--button);
                  }
+                 
+                 .bundle_item__wrapper[disable] {
+                    border: 2px solid #c4cdd5;
+                    color: #c4cdd5;
+                    user-select: none;
+                    pointer-events: none;
+                    position: relative;
+                    overflow: hidden;
+                  }
+                 
+                  .bundle_item__wrapper[disable] {
+                    content: "";
+                    width: 230px;
+                    height: 2px;
+                    border: 1px solid;
+                    transform: rotate(37deg);
+                    top: 70px;
+                    left: -25px;
+
+                  }
+                 
 
                  /* .bundle_item__wrapper.active .bundle__title {
                     display: flex;
@@ -380,7 +401,10 @@
                       this.bundleVariants.forEach(elm => {
                         if(!elm.classList.contains('active')) return;  
 
-                        combineIds += `_${elm.getAttribute('data-vaiantId')}`;
+                        const idtoCombine = elm.getAttribute('data-vaiantId');
+                        if(idtoCombine != null || idtoCombine != ''){
+                          combineIds += `_${elm.getAttribute('data-vaiantId')}`;
+                        }
                       })
 
                       console.log('combineIds', combineIds);
