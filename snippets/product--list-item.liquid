@@ -22,7 +22,7 @@
 
       {%- render 'product--item-price', product: product -%}
     </div>
-    {% unless product..metafields.custom.product_bundle_item == true %}
+    {% unless product..metafields.custom.product_bundle == true %}
       {%- render 'product--quick-add', product: product -%}
     {% endunless %}
   </div>

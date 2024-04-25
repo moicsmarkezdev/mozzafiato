@@ -1,4 +1,4 @@
-{%- if settings.product--quick-add-enabled and product.available and product.metafields.custom.product_bundle_item != true -%}
+{%- if settings.product--quick-add-enabled and product.available and product.metafields.custom.product_bundle != true -%}
   {%- assign current_variant = product.selected_or_first_available_variant -%}
 
   <product-quick-add
