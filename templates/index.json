@@ -8,13 +8,13 @@
           "settings": {
             "text-position": "bottom-left",
             "text-width": "medium",
-            "image": "shopify://shop_images/Artboard_1.jpg",
+            "image": "shopify:\/\/shop_images\/Necceser_Lili_Pink_-_Banner_1.jpg",
             "overline": "",
             "title": "",
             "description": "",
-            "link-url": "https://mozzafiato.pe/products/mozzafiato-bag",
+            "link-url": "shopify:\/\/collections\/neceseres",
             "link-text": "",
-            "mobile-image": "shopify://shop_images/Artboard_2.jpg"
+            "mobile-image": "shopify:\/\/shop_images\/Necceser_Lili_Pink_-_Banner.jpg"
           }
         },
         "a5482328-e971-4c6e-b38b-4e3380fe7526": {
@@ -22,13 +22,13 @@
           "settings": {
             "text-position": "bottom-left",
             "text-width": "medium",
-            "image": "shopify://shop_images/Imagen_de_WhatsApp_2024-03-24_a_las_21.41.01_7fa4ded1.jpg",
+            "image": "shopify:\/\/shop_images\/Imagen_de_WhatsApp_2024-03-24_a_las_21.41.01_7fa4ded1.jpg",
             "overline": "",
             "title": "",
             "description": "",
-            "link-url": "https://mozzafiato.pe/collections/best-sellers",
+            "link-url": "https:\/\/mozzafiato.pe\/collections\/best-sellers",
             "link-text": "",
-            "mobile-image": "shopify://shop_images/Imagen_de_WhatsApp_2024-03-24_a_las_21.41.02_0c2a7362.jpg"
+            "mobile-image": "shopify:\/\/shop_images\/Imagen_de_WhatsApp_2024-03-24_a_las_21.41.02_0c2a7362.jpg"
           }
         },
         "4993a4c6-5948-4c34-853f-dc9d8e106671": {
@@ -36,13 +36,13 @@
           "settings": {
             "text-position": "bottom-left",
             "text-width": "medium",
-            "image": "shopify://shop_images/Visor_Caps_-_Banner.png",
+            "image": "shopify:\/\/shop_images\/Visor_Caps_-_Banner.png",
             "overline": "",
             "title": "",
             "description": "",
-            "link-url": "shopify://collections/mozzi-caps",
+            "link-url": "shopify:\/\/collections\/mozzi-caps",
             "link-text": "",
-            "mobile-image": "shopify://shop_images/Visor_Caps_-_Movil_banner.png"
+            "mobile-image": "shopify:\/\/shop_images\/Visor_Caps_-_Movil_banner.png"
           }
         }
       },
@@ -272,8 +272,8 @@
         "spacing-below": true,
         "hotspot-color": "white",
         "heading": "",
-        "image": "shopify://shop_images/Captura_de_pantalla_2024-01-05_172915.png",
-        "mobile-image": "shopify://shop_images/Captura_de_pantalla_2024-01-05_173116.png"
+        "image": "shopify:\/\/shop_images\/Captura_de_pantalla_2024-01-05_172915.png",
+        "mobile-image": "shopify:\/\/shop_images\/Captura_de_pantalla_2024-01-05_173116.png"
       }
     },
     "82eacfab-15c2-4296-8479-1a3242836d3d": {
@@ -320,7 +320,7 @@
             "icon": "10",
             "author-role": "",
             "author-name": "",
-            "description": "<p>Me encanta mi toalla , visera y mi neceser que lo uso todos los días, tienen cosas lindas 😍<br/><br/>- <strong>Chio</strong></p>"
+            "description": "<p>Me encanta mi toalla , visera y mi neceser que lo uso todos los días, tienen cosas lindas 😍<br\/><br\/>- <strong>Chio<\/strong><\/p>"
           }
         },
         "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-1": {
@@ -329,7 +329,7 @@
             "icon": "10",
             "author-role": "",
             "author-name": "",
-            "description": "<p>Utilice mi toalla en mis vacaciones y me encantó tanto el diseño y el estuche para guardarla. Súper práctica, ocupa poco espacio y los colores muy lindos. </p><p>- <strong>Alessia</strong></p>"
+            "description": "<p>Utilice mi toalla en mis vacaciones y me encantó tanto el diseño y el estuche para guardarla. Súper práctica, ocupa poco espacio y los colores muy lindos. <\/p><p>- <strong>Alessia<\/strong><\/p>"
           }
         },
         "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-2": {
@@ -338,7 +338,7 @@
             "icon": "10",
             "author-role": "",
             "author-name": "",
-            "description": "<p>La calidad y material de la toalla es increíble 😊 Y los pañuelos tiene un color hermoso tal cual las fotos!</p><p>- <strong>Carolina</strong></p>"
+            "description": "<p>La calidad y material de la toalla es increíble 😊 Y los pañuelos tiene un color hermoso tal cual las fotos!<\/p><p>- <strong>Carolina<\/strong><\/p>"
           }
         },
         "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-3": {
@@ -348,7 +348,7 @@
             "icon": "quote",
             "author-role": "",
             "author-name": "",
-            "description": "<p>Here you can include a short description about the author or their testimonial.</p>"
+            "description": "<p>Here you can include a short description about the author or their testimonial.<\/p>"
           }
         }
       },
@@ -502,39 +502,39 @@
         "overlay-block-1": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/posts_rebranding.png",
-            "mobile-image": "shopify://shop_images/posts_rebranding.png",
+            "image": "shopify:\/\/shop_images\/posts_rebranding.png",
+            "mobile-image": "shopify:\/\/shop_images\/posts_rebranding.png",
             "wide": false,
             "tall": false,
             "retain-ratio": false,
             "title": "MOZZI CAPS",
-            "link-url": "shopify://collections/mozzi-caps",
+            "link-url": "shopify:\/\/collections\/mozzi-caps",
             "link-text": "Ver más"
           }
         },
         "overlay-block-3": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/14_eda42ebc-9dfe-409f-bdd6-07971cdc4428.png",
-            "mobile-image": "shopify://shop_images/14_eda42ebc-9dfe-409f-bdd6-07971cdc4428.png",
+            "image": "shopify:\/\/shop_images\/14_eda42ebc-9dfe-409f-bdd6-07971cdc4428.png",
+            "mobile-image": "shopify:\/\/shop_images\/14_eda42ebc-9dfe-409f-bdd6-07971cdc4428.png",
             "wide": false,
             "tall": false,
             "retain-ratio": false,
             "title": "PAÑUELOS",
-            "link-url": "shopify://collections/panuelos",
+            "link-url": "shopify:\/\/collections\/panuelos",
             "link-text": "Ver más"
           }
         },
         "overlay-block-2": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/13_63eeee35-0d39-48d4-84c7-ec9418da49ba.png",
-            "mobile-image": "shopify://shop_images/13_63eeee35-0d39-48d4-84c7-ec9418da49ba.png",
+            "image": "shopify:\/\/shop_images\/13_63eeee35-0d39-48d4-84c7-ec9418da49ba.png",
+            "mobile-image": "shopify:\/\/shop_images\/13_63eeee35-0d39-48d4-84c7-ec9418da49ba.png",
             "wide": false,
             "tall": false,
             "retain-ratio": false,
             "title": "TOALLAS DE MICROFIBRA",
-            "link-url": "shopify://collections/toallas-de-microfibra",
+            "link-url": "shopify:\/\/collections\/toallas-de-microfibra",
             "link-text": "Ver más"
           }
         }
@@ -569,7 +569,7 @@
           "type": "collapsible-row",
           "settings": {
             "heading": "¿Cómo realizo un pedido?",
-            "description": "<p>Puedes realizar tu pedido a través de nuestra web, Instagram o a través de nuestro WhatsApp (+51 922 328 133).</p>",
+            "description": "<p>Puedes realizar tu pedido a través de nuestra web, Instagram o a través de nuestro WhatsApp (+51 922 328 133).<\/p>",
             "page-content": "",
             "default-open": false
           }
@@ -578,7 +578,7 @@
           "type": "collapsible-row",
           "settings": {
             "heading": "¿Qué métodos de pago ofrecen?",
-            "description": "<p>Puedes pagar con tarjeta de crédito o débito, yape o transferencia bancaria e interbancaria (BCP). Todos estos métodos de pago están disponibles por compras en Instagram, WhatsApp y nuestra página web.</p>",
+            "description": "<p>Puedes pagar con tarjeta de crédito o débito, yape o transferencia bancaria e interbancaria (BCP). Todos estos métodos de pago están disponibles por compras en Instagram, WhatsApp y nuestra página web.<\/p>",
             "page-content": "",
             "default-open": false
           }
@@ -587,7 +587,7 @@
           "type": "collapsible-row",
           "settings": {
             "heading": "¿En cuantos días recibo mi pedido?",
-            "description": "<ul><li><strong>Envíos dentro de Lima Metropolitana</strong></li></ul><p>Nuestros envíos son realizados por servicios de courier tercerizados responsables de la seguridad y entrega del producto. El plazo de entrega a cualquier distrito dentro de Lima Metropolitana es de 2 a 3 días hábiles a partir del día de despacho del pedido.</p><ul><li><strong>Envío a Provincia </strong></li></ul><p>Nuestros envíos son realizados por servicios de courier tercerizados responsables de la seguridad y entrega del producto. El plazo de entrega a cualquier distrito de provincia es de 2 a 10 días hábiles a partir del día de despacho del producto.</p><p>¿Te gustaría recogerlo sin costo adicional?<strong> ¡Elige nuestra opción de recojo en tienda!</strong></p>",
+            "description": "<ul><li><strong>Envíos dentro de Lima Metropolitana<\/strong><\/li><\/ul><p>Nuestros envíos son realizados por servicios de courier tercerizados responsables de la seguridad y entrega del producto. El plazo de entrega a cualquier distrito dentro de Lima Metropolitana es de 2 a 3 días hábiles a partir del día de despacho del pedido.<\/p><ul><li><strong>Envío a Provincia <\/strong><\/li><\/ul><p>Nuestros envíos son realizados por servicios de courier tercerizados responsables de la seguridad y entrega del producto. El plazo de entrega a cualquier distrito de provincia es de 2 a 10 días hábiles a partir del día de despacho del producto.<\/p><p>¿Te gustaría recogerlo sin costo adicional?<strong> ¡Elige nuestra opción de recojo en tienda!<\/strong><\/p>",
             "page-content": "",
             "default-open": false
           }
@@ -596,7 +596,7 @@
           "type": "collapsible-row",
           "settings": {
             "heading": "¿Cómo puedo hacerle seguimiento a mi pedido?",
-            "description": "<p>Cuando enviemos tu pedido, te enviaremos un código de seguimiento y el link a la página del courier utilizado para que de esta forma puedas ver cuál es el estado de tu pedido.</p>",
+            "description": "<p>Cuando enviemos tu pedido, te enviaremos un código de seguimiento y el link a la página del courier utilizado para que de esta forma puedas ver cuál es el estado de tu pedido.<\/p>",
             "page-content": "",
             "default-open": false
           }
