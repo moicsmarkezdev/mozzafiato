@@ -3,18 +3,32 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
+        "4993a4c6-5948-4c34-853f-dc9d8e106671": {
+          "type": "image",
+          "settings": {
+            "text-position": "bottom-left",
+            "text-width": "medium",
+            "image": "shopify:\/\/shop_images\/Beauty_Pack_-_Banner_1.jpg",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "shopify:\/\/products\/beauty-pack",
+            "link-text": "",
+            "mobile-image": "shopify:\/\/shop_images\/Beauty_Pack_-_Banner.jpg"
+          }
+        },
         "4caf9002-011c-4ae6-88ef-0b25f3654fbc": {
           "type": "image",
           "settings": {
             "text-position": "bottom-left",
             "text-width": "medium",
-            "image": "shopify:\/\/shop_images\/Necceser_Lili_Pink_-_Banner_1.jpg",
+            "image": "shopify:\/\/shop_images\/Tocuyo_Bag_-_Banner_1.jpg",
             "overline": "",
             "title": "",
             "description": "",
-            "link-url": "shopify:\/\/collections\/neceseres",
+            "link-url": "shopify:\/\/products\/mozzafiato-bag",
             "link-text": "",
-            "mobile-image": "shopify:\/\/shop_images\/Necceser_Lili_Pink_-_Banner.jpg"
+            "mobile-image": "shopify:\/\/shop_images\/Tocuyo_Bag_-_Banner.jpg"
           }
         },
         "a5482328-e971-4c6e-b38b-4e3380fe7526": {
@@ -30,26 +44,12 @@
             "link-text": "",
             "mobile-image": "shopify:\/\/shop_images\/Imagen_de_WhatsApp_2024-03-24_a_las_21.41.02_0c2a7362.jpg"
           }
-        },
-        "4993a4c6-5948-4c34-853f-dc9d8e106671": {
-          "type": "image",
-          "settings": {
-            "text-position": "bottom-left",
-            "text-width": "medium",
-            "image": "shopify:\/\/shop_images\/Beauty_Pack_-_Banner_1.jpg",
-            "overline": "",
-            "title": "",
-            "description": "",
-            "link-url": "shopify:\/\/products\/beauty-pack",
-            "link-text": "",
-            "mobile-image": "shopify:\/\/shop_images\/Beauty_Pack_-_Banner.jpg"
-          }
         }
       },
       "block_order": [
+        "4993a4c6-5948-4c34-853f-dc9d8e106671",
         "4caf9002-011c-4ae6-88ef-0b25f3654fbc",
-        "a5482328-e971-4c6e-b38b-4e3380fe7526",
-        "4993a4c6-5948-4c34-853f-dc9d8e106671"
+        "a5482328-e971-4c6e-b38b-4e3380fe7526"
       ],
       "settings": {
         "text-color": "auto",
