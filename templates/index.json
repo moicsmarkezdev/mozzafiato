@@ -356,23 +356,12 @@
             "author-name": "",
             "description": "<p>La calidad y material de la toalla es increíble 😊 Y los pañuelos tiene un color hermoso tal cual las fotos!<\/p><p>- <strong>Carolina<\/strong><\/p>"
           }
-        },
-        "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-3": {
-          "type": "testimonial",
-          "disabled": true,
-          "settings": {
-            "icon": "quote",
-            "author-role": "",
-            "author-name": "",
-            "description": "<p>Here you can include a short description about the author or their testimonial.<\/p>"
-          }
         }
       },
       "block_order": [
         "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-0",
         "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-1",
-        "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-2",
-        "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-3"
+        "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-2"
       ],
       "settings": {
         "image-shape": "circle",
@@ -384,132 +373,6 @@
         "mobile-width": "1",
         "overline": "",
         "heading": "Lo que dicen nuestras mozzi girls!"
-      }
-    },
-    "featured-collection-grid": {
-      "type": "featured-collection",
-      "disabled": true,
-      "settings": {
-        "background-color": "none",
-        "light-text": false,
-        "spacing-above": true,
-        "spacing-below": true,
-        "featured-collection--image--show": false,
-        "featured-collection--description--show": true,
-        "display-type": "slideshow",
-        "products-per-row--desktop": "3",
-        "products-per-row--mobile": "1",
-        "collection": "pack-trendy-duo",
-        "max-products": 4,
-        "heading": "Pack trendy duo"
-      }
-    },
-    "d0015569-f761-4fa1-acee-083365c10db2": {
-      "type": "slideshow",
-      "settings": {
-        "text-color": "auto",
-        "background-color": "none",
-        "spacing-above": false,
-        "spacing-below": false,
-        "spacing-around-blocks": false,
-        "image-aspect-ratio": 56,
-        "darken-image": true,
-        "blocks_per_slide": 2,
-        "box-around-text": false,
-        "auto-rotate": false,
-        "rotate-frequency": 7,
-        "transition_type": "slide",
-        "mobile-image-aspect-ratio": 134,
-        "blocks_per_slide_mobile": "1",
-        "mobile-overlay": true
-      }
-    },
-    "featured-blog": {
-      "type": "featured-blog",
-      "disabled": true,
-      "settings": {
-        "aspect-ratio": "landscape",
-        "background-color": "light",
-        "light-text": false,
-        "container-width": 4,
-        "spacing-above": true,
-        "spacing-below": true,
-        "tag-select": "pinned",
-        "show-date": true,
-        "show-excerpt": true,
-        "blog": "news",
-        "blog-heading": "Blog posts",
-        "view-more-text": "View more"
-      }
-    },
-    "27dbe306-2dce-4680-a21e-aa3d276acd48": {
-      "type": "featured-product",
-      "blocks": {
-        "template--15496343486600__27dbe306-2dce-4680-a21e-aa3d276acd48-overline-1": {
-          "type": "overline",
-          "settings": {
-            "text": ""
-          }
-        },
-        "template--15496343486600__27dbe306-2dce-4680-a21e-aa3d276acd48-heading-1": {
-          "type": "heading",
-          "settings": {
-          }
-        },
-        "template--15496343486600__27dbe306-2dce-4680-a21e-aa3d276acd48-vendor-1": {
-          "type": "vendor",
-          "settings": {
-          }
-        },
-        "low_stock_44MnjD": {
-          "type": "low-stock",
-          "settings": {
-            "threshold": 5
-          }
-        },
-        "template--15496343486600__27dbe306-2dce-4680-a21e-aa3d276acd48-price-1": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "template--15496343486600__27dbe306-2dce-4680-a21e-aa3d276acd48-options-1": {
-          "type": "options",
-          "settings": {
-            "variant-style": "dropdowns",
-            "swatches-enabled": true,
-            "size-chart-enabled": true,
-            "size-chart-option": "size",
-            "size-chart-content": ""
-          }
-        },
-        "template--15496343486600__27dbe306-2dce-4680-a21e-aa3d276acd48-buy-buttons-1": {
-          "type": "buy-buttons",
-          "settings": {
-            "smart-payment-enabled": false
-          }
-        }
-      },
-      "block_order": [
-        "template--15496343486600__27dbe306-2dce-4680-a21e-aa3d276acd48-overline-1",
-        "template--15496343486600__27dbe306-2dce-4680-a21e-aa3d276acd48-heading-1",
-        "template--15496343486600__27dbe306-2dce-4680-a21e-aa3d276acd48-vendor-1",
-        "low_stock_44MnjD",
-        "template--15496343486600__27dbe306-2dce-4680-a21e-aa3d276acd48-price-1",
-        "template--15496343486600__27dbe306-2dce-4680-a21e-aa3d276acd48-options-1",
-        "template--15496343486600__27dbe306-2dce-4680-a21e-aa3d276acd48-buy-buttons-1"
-      ],
-      "disabled": true,
-      "settings": {
-        "background-color": "none",
-        "container-width": 4,
-        "spacing-above": true,
-        "spacing-below": true,
-        "text-column-width": 30,
-        "text-alignment": "left",
-        "thumbnail-width": 80,
-        "media-gap": 8,
-        "featured_product": "mozzi-cap-orange",
-        "loop-enabled": false
       }
     },
     "grid-with-overlay": {
@@ -728,10 +591,6 @@
     "82eacfab-15c2-4296-8479-1a3242836d3d",
     "7d31c367-4e4d-4655-8fd5-1346f2d33664",
     "e1bcfcee-d979-4e6c-b6ec-30817d050e0c",
-    "featured-collection-grid",
-    "d0015569-f761-4fa1-acee-083365c10db2",
-    "featured-blog",
-    "27dbe306-2dce-4680-a21e-aa3d276acd48",
     "grid-with-overlay",
     "0b1cd38c-2dd8-4607-abdb-1424619e78d5",
     "grid_with_overlay_4rPb6r"
