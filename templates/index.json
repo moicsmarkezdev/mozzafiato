@@ -81,9 +81,9 @@
         "display-type": "slideshow",
         "products-per-row--desktop": "3",
         "products-per-row--mobile": "2",
-        "collection": "best-sellers",
-        "max-products": 12,
-        "heading": "¡OUR BEST SELLERS!"
+        "collection": "mozzi-caps",
+        "max-products": 4,
+        "heading": "¡NEW IN! VISOR CAPS"
       }
     },
     "39b7e8a7-1bbc-491e-8390-2751caf3e237": {
