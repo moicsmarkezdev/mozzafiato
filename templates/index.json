@@ -316,7 +316,7 @@
         "background-color": "none",
         "light-text": false,
         "spacing-above": true,
-        "spacing-below": false,
+        "spacing-below": true,
         "featured-collection--image--show": false,
         "featured-collection--description--show": false,
         "display-type": "slideshow",
