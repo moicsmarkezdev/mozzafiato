@@ -31,23 +31,8 @@
             "mobile-image": "shopify:\/\/shop_images\/Tocuyo_Bag_-_Banner.jpg"
           }
         },
-        "image_Hmdzyy": {
-          "type": "image",
-          "settings": {
-            "text-position": "bottom-left",
-            "text-width": "medium",
-            "image": "shopify:\/\/shop_images\/Imagen_de_WhatsApp_2024-03-24_a_las_21.41.01_7fa4ded1.jpg",
-            "overline": "",
-            "title": "",
-            "description": "",
-            "link-url": "shopify:\/\/collections\/best-sellers",
-            "link-text": "",
-            "mobile-image": "shopify:\/\/shop_images\/Imagen_de_WhatsApp_2024-03-24_a_las_21.41.02_0c2a7362.jpg"
-          }
-        },
         "a5482328-e971-4c6e-b38b-4e3380fe7526": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "text-position": "bottom-left",
             "text-width": "medium",
@@ -59,13 +44,28 @@
             "link-text": "",
             "mobile-image": "shopify:\/\/shop_images\/Visor_Caps_-_Movil_banner.png"
           }
+        },
+        "image_Hmdzyy": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "text-position": "bottom-left",
+            "text-width": "medium",
+            "image": "shopify:\/\/shop_images\/Imagen_de_WhatsApp_2024-03-24_a_las_21.41.01_7fa4ded1.jpg",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "shopify:\/\/collections\/best-sellers",
+            "link-text": "",
+            "mobile-image": "shopify:\/\/shop_images\/Imagen_de_WhatsApp_2024-03-24_a_las_21.41.02_0c2a7362.jpg"
+          }
         }
       },
       "block_order": [
         "4993a4c6-5948-4c34-853f-dc9d8e106671",
         "4caf9002-011c-4ae6-88ef-0b25f3654fbc",
-        "image_Hmdzyy",
-        "a5482328-e971-4c6e-b38b-4e3380fe7526"
+        "a5482328-e971-4c6e-b38b-4e3380fe7526",
+        "image_Hmdzyy"
       ],
       "settings": {
         "text-color": "auto",
@@ -97,9 +97,9 @@
         "display-type": "slideshow",
         "products-per-row--desktop": "3",
         "products-per-row--mobile": "2",
-        "collection": "mozzi-caps",
+        "collection": "toallas-de-microfibra",
         "max-products": 4,
-        "heading": "¡NEW IN! VISOR CAPS"
+        "heading": "TOALLAS DE MICROFIBRA"
       }
     },
     "39b7e8a7-1bbc-491e-8390-2751caf3e237": {
@@ -173,7 +173,7 @@
         "text-alignment": "left",
         "thumbnail-width": 80,
         "media-gap": 8,
-        "featured_product": "toalla-de-microfibra-fruitopia",
+        "featured_product": "panuelo-sienna-negro",
         "loop-enabled": false
       }
     },
