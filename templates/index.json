@@ -617,6 +617,90 @@
         "heading": "PREGUNTAS FRECUENTES",
         "title-alignment": "center"
       }
+    },
+    "grid_with_overlay_4rPb6r": {
+      "type": "grid-with-overlay",
+      "blocks": {
+        "image_MtLUiH": {
+          "type": "image",
+          "settings": {
+            "wide": false,
+            "tall": false,
+            "retain-ratio": false,
+            "title": "Grid image",
+            "link-url": "",
+            "link-text": "View more"
+          }
+        },
+        "image_QJ7LLX": {
+          "type": "image",
+          "settings": {
+            "wide": true,
+            "tall": false,
+            "retain-ratio": false,
+            "title": "Grid image",
+            "link-url": "",
+            "link-text": "View more"
+          }
+        },
+        "image_dNyLVX": {
+          "type": "image",
+          "settings": {
+            "wide": false,
+            "tall": false,
+            "retain-ratio": false,
+            "title": "Grid image",
+            "link-url": "",
+            "link-text": "View more"
+          }
+        },
+        "image_rggAYe": {
+          "type": "image",
+          "settings": {
+            "wide": false,
+            "tall": false,
+            "retain-ratio": false,
+            "title": "Grid image",
+            "link-url": "",
+            "link-text": "View more"
+          }
+        },
+        "image_ftcBPy": {
+          "type": "image",
+          "settings": {
+            "wide": true,
+            "tall": false,
+            "retain-ratio": false,
+            "title": "Grid image",
+            "link-url": "",
+            "link-text": "View more"
+          }
+        }
+      },
+      "block_order": [
+        "image_MtLUiH",
+        "image_QJ7LLX",
+        "image_dNyLVX",
+        "image_rggAYe",
+        "image_ftcBPy"
+      ],
+      "disabled": true,
+      "settings": {
+        "text-style": "light-with-overlay",
+        "background-color": "none",
+        "light-text": false,
+        "mobile-overlay": true,
+        "container-width": 4,
+        "spacing": true,
+        "spacing-above": true,
+        "spacing-below": true,
+        "width": 3,
+        "mobile-width": "2",
+        "heading": "COLLECTIONS",
+        "subtitle": "",
+        "link-url": "",
+        "link-text": ""
+      }
     }
   },
   "order": [
@@ -633,6 +717,7 @@
     "featured-blog",
     "27dbe306-2dce-4680-a21e-aa3d276acd48",
     "grid-with-overlay",
-    "0b1cd38c-2dd8-4607-abdb-1424619e78d5"
+    "0b1cd38c-2dd8-4607-abdb-1424619e78d5",
+    "grid_with_overlay_4rPb6r"
   ]
 }
