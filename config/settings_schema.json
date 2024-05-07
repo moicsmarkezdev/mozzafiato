@@ -527,6 +527,66 @@
         "id": "cart--show-note",
         "label": "Enable order notes",
         "default": true
+      },
+      {
+        "type": "number",
+        "id": "free_shipping_threshold_1",
+        "label": "Free shipping threshold 1",
+        "default": 200
+      },
+      {
+          "type": "number",
+          "id": "free_shipping_threshold_2",
+          "label": "Free shipping threshold 2",
+          "default": 700
+      },
+      {
+          "type": "number",
+          "id": "free_shipping_threshold_3",
+          "label": "Free shipping threshold 3",
+          "default": 900
+      },
+      {
+          "type": "text",
+          "id": "free_shipping_success_1",
+          "label": "Free shipping success message 1",
+          "default": "Congrats! You get free standard shipping."
+      },
+      {
+          "type": "text",
+          "id": "free_shipping_success_2",
+          "label": "Free shipping success message 2",
+          "default": "Congrats! You get free standard shipping."
+      },
+      {
+          "type": "text",
+          "id": "free_shipping_success_3",
+          "label": "Free shipping success message 3",
+          "default": "Congrats! You get free standard shipping."
+      },
+      {
+          "type": "text",
+          "id": "free_shipping_fail_before",
+          "label": "Free shipping fail message (before amount)",
+          "default": "Spend "
+      },
+      {
+          "type": "text",
+          "id": "free_shipping_fail_after",
+          "label": "Free shipping fail message (after amount)",
+          "default": " more to get free shipping."
+      },
+      {
+          "type": "text",
+          "id": "free_shipping_fail_after_2",
+          "label": "Free shipping fail message (after amount) 2",
+          "default": " more to get free shipping."
+      },
+      {
+          "type": "text",
+          "id": "free_shipping_fail_after_3",
+          "label": "Free shipping fail message (after amount) 3",
+          "default": " more to get free shipping."
       }
     ]
   },

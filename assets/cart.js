@@ -90,12 +90,13 @@ class Cart extends HTMLElement {
     }
     async updateHtml(t) {
       var e, a, r = await fetch(theme.urls.cart + "?view=ajax-" + this.dataset.view);
-      if (r.ok) return e = await r.text(), a = theme.utils.parseHtml(e, ".cart--form"), this.swapInNewContent(a), this.toggleLoadingDisplay(!0), theme.transitions.reload("cart-" + this.dataset.view), t && theme.transitions.reset("cart-" + this.dataset.view), window.trigger("theme:cart:updated", this), !0;
+      if (r.ok) return e = await r.text(), a = theme.utils.parseHtml(e, '.cart--root'), this.swapInNewContent(a), this.toggleLoadingDisplay(!0), theme.transitions.reload("cart-" + this.dataset.view), t && theme.transitions.reset("cart-" + this.dataset.view), window.trigger("theme:cart:updated", this), !0;
       throw new Error(r.statusText);
     }
     swapInNewContent(t) {
-      var e = this.querySelector(".cart--body"), a = t.querySelector(".cart--body"), a = this.swapInImages(e, a), r = (e && a && e.replaceWith(a), this.querySelector(".cart--total--price")), o = t.querySelector(".cart--total--price");
+      var e = this.querySelector(".cart--body"), a = t.querySelector(".cart--body"), a = this.swapInImages(e, a), r = (e && a && e.replaceWith(a), this.querySelector(".cart--total--price")), o = t.querySelector(".cart--total--price"), zz = this.querySelector('.cart-popup-message-bar'), yy = t.querySelector('.cart-popup-message-bar');
       r && o && r.replaceWith(o);
+      zz && yy && zz.replaceWith(yy);
     }
     swapInImages(r, t) {
       var e = t.querySelectorAll(".cart--item");

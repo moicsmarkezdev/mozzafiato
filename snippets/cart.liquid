@@ -23,6 +23,8 @@
   endif
 -%}
 
+{{ 'cart-barprogess.css' | asset_url | stylesheet_tag }}
+
 {%- for item in cart.items -%}
   {%- liquid
     assign id = view | append: '-updates-' | append: item.key
@@ -288,6 +290,65 @@
   data-transition-cascade="vertical"
   data-transition-cascade-interval="250"
 >
+  
+  {%- assign top_price_1 = settings.free_shipping_threshold_1 | times: 100 -%}
+  {%- assign top_price_2 = settings.free_shipping_threshold_2 | times: 100 -%}
+  {%- assign top_price_3 = settings.free_shipping_threshold_3 | times: 100 -%}
+
+  {%- if top_price_1 > 0 or top_price_2 > 0 or top_price_3 > 0 -%}
+    <div class="cart-popup-message-bar {% if cart.item_count < 1 %} hide {% endif %}">
+      <div class="title" >
+        <img draggable="false" role="img" class="emoji" alt="✨" src="https://s.w.org/images/core/emoji/14.0.0/svg/2728.svg" width="auto" height="auto">
+          {%- if cart.original_total_price >= top_price_3 and top_price_3 > 0 -%}
+              {%- assign realTotal = top_price_3 | minus: cart.original_total_price -%}    
+          
+              {{ settings.free_shipping_success_3 }}
+              <img draggable="false" role="img" class="emoji" alt="✨" src="https://s.w.org/images/core/emoji/14.0.0/svg/2728.svg" width="auto" height="auto" >
+          {%- elsif cart.original_total_price >= top_price_2 and top_price_2 > 0 -%}
+              {%- assign realTotal = top_price_3 | minus: cart.original_total_price -%}    
+              
+              {{ settings.free_shipping_success_2 }}
+              <img draggable="false" role="img" class="emoji" alt="✨" src="https://s.w.org/images/core/emoji/14.0.0/svg/2728.svg" width="auto" height="auto" >
+              {%- if top_price_3 > 0 -%}
+                  {{ settings.free_shipping_fail_before }} <span>{{ realTotal | money }}</span> {{ settings.free_shipping_fail_after_3 }}
+              {%- endif -%}
+          {%- elsif cart.original_total_price >= top_price_1 and top_price_1 > 0  -%}
+              {%- assign realTotal = top_price_2 | minus: cart.original_total_price -%}    
+              
+              {{ settings.free_shipping_success_1 }}
+              <img draggable="false" role="img" class="emoji" alt="✨" src="https://s.w.org/images/core/emoji/14.0.0/svg/2728.svg" width="auto" height="auto" >
+              {%- if top_price_2 > 0 -%}
+                  {{ settings.free_shipping_fail_before }} <span>{{ realTotal | money }}</span> {{ settings.free_shipping_fail_after_2 }}
+              {%- endif -%}
+          {%- else -%}
+              {%- assign realTotal = top_price_1 | minus: cart.original_total_price -%}    
+                  
+              {{ settings.free_shipping_fail_before }} <span>{{ realTotal | money }}</span> {{ settings.free_shipping_fail_after }}
+              <img draggable="false" role="img" class="emoji" alt="✨" src="https://s.w.org/images/core/emoji/14.0.0/svg/2728.svg" width="auto" height="auto" >
+              
+          {%- endif -%}
+      </div>
+      <div class="bar-wrapper" >
+          {%- liquid 
+              assign realTotal =  cart.original_total_price | times: 100 
+              if top_price_3 > 0
+                assign realTotal =  realTotal | divided_by: top_price_3
+              elsif top_price_2 > 0
+                assign realTotal =  realTotal | divided_by: top_price_2
+              elsif top_price_1 > 0
+                assign realTotal =  realTotal | divided_by: top_price_1
+              endif
+          %}
+          <span class="bar" style="width:{{ realTotal }}%;"></span>
+      </div>
+      {%- if settings.extra__msg != blank and extra_msg_on -%}
+          <div class="message__extra">
+              {{ settings.extra__msg }}
+          </div>
+      {%- endif -%}
+    </div>
+  {%- endif -%}
+
   <div class="cart--header">
     <h2 class="cart--title" data-item="section-heading">
       {{- your_cart_t -}}
