@@ -3,7 +3,7 @@
     "collection-header": {
       "type": "collection--header",
       "settings": {
-        "show-title": true,
+        "show-title": false,
         "title-alignment": "center",
         "show-description": true,
         "description-alignment": "centered-outside",
