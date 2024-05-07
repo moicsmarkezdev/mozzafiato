@@ -39,7 +39,7 @@
     "hide-tags": "featured, pinned",
     "cart--type": "drawer",
     "cart--show-note": true,
-    "free_shipping_threshold_1": 80,
+    "free_shipping_threshold_1": 0,
     "free_shipping_threshold_2": 0,
     "free_shipping_threshold_3": 0,
     "free_shipping_success_1": "¡Felicitaciones, obtuviste envío gratuito!",
