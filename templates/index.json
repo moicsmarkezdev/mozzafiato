@@ -96,7 +96,7 @@
         "display-type": "slideshow",
         "products-per-row--desktop": "3",
         "products-per-row--mobile": "2",
-        "collection": "toallas-de-microfibra",
+        "collection": "mozzafiato-x-frmiar",
         "max-products": 4,
         "heading": "TOALLAS DE MICROFIBRA"
       }
@@ -172,7 +172,7 @@
         "text-alignment": "left",
         "thumbnail-width": 80,
         "media-gap": 8,
-        "featured_product": "panuelo-sienna-negro",
+        "featured_product": "toalla-de-microfibra-fruitopia",
         "loop-enabled": false
       }
     },
