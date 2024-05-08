@@ -302,12 +302,12 @@
           {%- if cart.original_total_price >= top_price_3 and top_price_3 > 0 -%}
               {%- assign realTotal = top_price_3 | minus: cart.original_total_price -%}    
           
-              {{ settings.free_shipping_success_3 }} 🚚
+              <p>{{ settings.free_shipping_success_3 }} 🚚</p>
               <img draggable="false" role="img" class="emoji" alt="✨" src="https://s.w.org/images/core/emoji/14.0.0/svg/2728.svg" width="auto" height="auto" >
           {%- elsif cart.original_total_price >= top_price_2 and top_price_2 > 0 -%}
               {%- assign realTotal = top_price_3 | minus: cart.original_total_price -%}    
               
-              {{ settings.free_shipping_success_2 }} 🚚
+              <p>{{ settings.free_shipping_success_2 }} 🚚</p>
               <img draggable="false" role="img" class="emoji" alt="✨" src="https://s.w.org/images/core/emoji/14.0.0/svg/2728.svg" width="auto" height="auto" >
               {%- if top_price_3 > 0 -%}
                   {{ settings.free_shipping_fail_before }} <span>{{ realTotal | money }}</span> {{ settings.free_shipping_fail_after_3 }}
@@ -315,7 +315,7 @@
           {%- elsif cart.original_total_price >= top_price_1 and top_price_1 > 0  -%}
               {%- assign realTotal = top_price_2 | minus: cart.original_total_price -%}    
               
-              {{ settings.free_shipping_success_1 }} 🚚
+              <p>{{ settings.free_shipping_success_1 }} 🚚</p>
               <img draggable="false" role="img" class="emoji" alt="✨" src="https://s.w.org/images/core/emoji/14.0.0/svg/2728.svg" width="auto" height="auto" >
               {%- if top_price_2 > 0 -%}
                   {{ settings.free_shipping_fail_before }} <span>{{ realTotal | money }}</span> {{ settings.free_shipping_fail_after_2 }}
@@ -323,7 +323,7 @@
           {%- else -%}
               {%- assign realTotal = top_price_1 | minus: cart.original_total_price -%}    
                   
-              {{ settings.free_shipping_fail_before }} <span>{{ realTotal | money }}</span> {{ settings.free_shipping_fail_after }} 🚚
+              <p>{{ settings.free_shipping_fail_before }} <span>{{ realTotal | money }}</span> {{ settings.free_shipping_fail_after }} 🚚</p>
               <img draggable="false" role="img" class="emoji" alt="✨" src="https://s.w.org/images/core/emoji/14.0.0/svg/2728.svg" width="auto" height="auto" >
               
           {%- endif -%}
