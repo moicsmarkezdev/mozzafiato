@@ -172,8 +172,29 @@
         "text-alignment": "left",
         "thumbnail-width": 80,
         "media-gap": 8,
-        "featured_product": "toalla-de-microfibra-fruitopia",
+        "featured_product": "comprar-online-tote-bag-paint-brushes-mozzafiato",
         "loop-enabled": false
+      }
+    },
+    "featured_products_PVYXMN": {
+      "type": "featured-products",
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "display-type": "slideshow",
+        "products-per-row--desktop": "3",
+        "products-per-row--mobile": "2",
+        "product-list": [
+          "toalla-de-microfibra-fruitopia",
+          "panuelo-sienna-negro",
+          "panuelo-sienna-naranja",
+          "panuelo-sienna"
+        ],
+        "heading": "¡LAST CALL!",
+        "link-url": "",
+        "link-text": ""
       }
     },
     "53875c54-020d-4d79-8ff9-85371bcd2995": {
@@ -307,23 +328,6 @@
         "collection": "panuelos",
         "max-products": 8,
         "heading": "PAÑUELOS"
-      }
-    },
-    "7d31c367-4e4d-4655-8fd5-1346f2d33664": {
-      "type": "featured-collection",
-      "settings": {
-        "background-color": "none",
-        "light-text": false,
-        "spacing-above": true,
-        "spacing-below": true,
-        "featured-collection--image--show": false,
-        "featured-collection--description--show": false,
-        "display-type": "slideshow",
-        "products-per-row--desktop": "4",
-        "products-per-row--mobile": "2",
-        "collection": "tote-bags",
-        "max-products": 4,
-        "heading": "¡LAST UNITS!"
       }
     },
     "e1bcfcee-d979-4e6c-b6ec-30817d050e0c": {
@@ -585,10 +589,10 @@
     "slideshow",
     "5ba33054-4d1e-44a1-a62b-81a200f21bc2",
     "39b7e8a7-1bbc-491e-8390-2751caf3e237",
+    "featured_products_PVYXMN",
     "53875c54-020d-4d79-8ff9-85371bcd2995",
     "9547d1fa-e436-446d-a9b9-77f7a3bd07b9",
     "82eacfab-15c2-4296-8479-1a3242836d3d",
-    "7d31c367-4e4d-4655-8fd5-1346f2d33664",
     "e1bcfcee-d979-4e6c-b6ec-30817d050e0c",
     "grid-with-overlay",
     "0b1cd38c-2dd8-4607-abdb-1424619e78d5",
