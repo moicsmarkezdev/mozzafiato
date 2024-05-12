@@ -8,8 +8,8 @@
         "home-page-only": true,
         "background-color": "dark",
         "light-text": true,
-        "text": "HACEMOS ENVÍOS A TODO EL PERÚ",
-        "link": "shopify://collections/sale"
+        "text": "ENVIO A TODO EL PERÚ | ENVÍO GRATIS POR COMPRAS MAYORES A S\/. 270",
+        "link": "shopify:\/\/collections\/best-sellers"
       }
     },
     "header": {
@@ -25,7 +25,7 @@
         "show-region-selector": false,
         "show-locale-selector": false,
         "header-logo-center": true,
-        "logo": "shopify://shop_images/Diseno_sin_titulo_5.png",
+        "logo": "shopify:\/\/shop_images\/Diseno_sin_titulo_5.png",
         "logo-height": 35,
         "mobile-logo-height": 30
       }
