@@ -77,7 +77,7 @@
         "blocks_per_slide": 1,
         "box-around-text": true,
         "auto-rotate": true,
-        "rotate-frequency": 3,
+        "rotate-frequency": 4,
         "transition_type": "slide",
         "mobile-image-aspect-ratio": 134,
         "blocks_per_slide_mobile": "1",
