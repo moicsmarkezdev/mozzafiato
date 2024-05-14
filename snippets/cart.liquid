@@ -303,12 +303,12 @@
               {%- assign realTotal = top_price_3 | minus: cart.original_total_price -%}    
           
               <p>{{ settings.free_shipping_success_3 }}</p>
-              <div style="display: flex;"> 🚚 <img draggable="false" role="img" class="emoji" alt="✨" src="https://s.w.org/images/core/emoji/14.0.0/svg/2728.svg" width="auto" height="auto" ></div>
+              <div style="display: flex;"> <img draggable="false" role="img" class="emoji" alt="✨" src="https://s.w.org/images/core/emoji/14.0.0/svg/2728.svg" width="auto" height="auto" ></div>
           {%- elsif cart.original_total_price >= top_price_2 and top_price_2 > 0 -%}
               {%- assign realTotal = top_price_3 | minus: cart.original_total_price -%}    
               
               <p>{{ settings.free_shipping_success_2 }}</p>
-              <div style="display: flex;"> 🚚 <img draggable="false" role="img" class="emoji" alt="✨" src="https://s.w.org/images/core/emoji/14.0.0/svg/2728.svg" width="auto" height="auto" ></div>
+              <div style="display: flex;"> <img draggable="false" role="img" class="emoji" alt="✨" src="https://s.w.org/images/core/emoji/14.0.0/svg/2728.svg" width="auto" height="auto" ></div>
               {%- if top_price_3 > 0 -%}
                   {{ settings.free_shipping_fail_before }} <span>{{ realTotal | money }}</span> {{ settings.free_shipping_fail_after_3 }}
               {%- endif -%}
@@ -316,7 +316,7 @@
               {%- assign realTotal = top_price_2 | minus: cart.original_total_price -%}    
               
               <p>{{ settings.free_shipping_success_1 }} </p>
-              <div style="display: flex;"> 🚚 <img draggable="false" role="img" class="emoji" alt="✨" src="https://s.w.org/images/core/emoji/14.0.0/svg/2728.svg" width="auto" height="auto" ></div>
+              <div style="display: flex;"> <img draggable="false" role="img" class="emoji" alt="✨" src="https://s.w.org/images/core/emoji/14.0.0/svg/2728.svg" width="auto" height="auto" ></div>
               {%- if top_price_2 > 0 -%}
                   {{ settings.free_shipping_fail_before }} <span>{{ realTotal | money }}</span> {{ settings.free_shipping_fail_after_2 }}
               {%- endif -%}
@@ -324,7 +324,7 @@
               {%- assign realTotal = top_price_1 | minus: cart.original_total_price -%}    
                   
               <p>{{ settings.free_shipping_fail_before }} <span>{{ realTotal | money }}</span> {{ settings.free_shipping_fail_after }} </p>
-              <div style="display: flex;"> 🚚 <img draggable="false" role="img" class="emoji" alt="✨" src="https://s.w.org/images/core/emoji/14.0.0/svg/2728.svg" width="auto" height="auto" ></div>
+              <div style="display: flex;"> <img draggable="false" role="img" class="emoji" alt="✨" src="https://s.w.org/images/core/emoji/14.0.0/svg/2728.svg" width="auto" height="auto" ></div>
               
           {%- endif -%}
       </div>
