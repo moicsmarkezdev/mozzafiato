@@ -3,20 +3,6 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
-        "a5482328-e971-4c6e-b38b-4e3380fe7526": {
-          "type": "image",
-          "settings": {
-            "text-position": "bottom-left",
-            "text-width": "medium",
-            "image": "shopify:\/\/shop_images\/Sienna_Style_-_Banner.jpg",
-            "overline": "",
-            "title": "",
-            "description": "",
-            "link-url": "shopify:\/\/collections\/panuelos",
-            "link-text": "",
-            "mobile-image": "shopify:\/\/shop_images\/Sienna_Style_-_Banner_1.jpg"
-          }
-        },
         "image_Hmdzyy": {
           "type": "image",
           "settings": {
@@ -29,6 +15,20 @@
             "link-url": "shopify:\/\/collections\/mozzafiato-x-frmiar",
             "link-text": "",
             "mobile-image": "shopify:\/\/shop_images\/Mozzafiatoxfrmiar-Banner_1.jpg"
+          }
+        },
+        "a5482328-e971-4c6e-b38b-4e3380fe7526": {
+          "type": "image",
+          "settings": {
+            "text-position": "bottom-left",
+            "text-width": "medium",
+            "image": "shopify:\/\/shop_images\/Sienna_Style_-_Banner.jpg",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "shopify:\/\/collections\/panuelos",
+            "link-text": "",
+            "mobile-image": "shopify:\/\/shop_images\/Sienna_Style_-_Banner_1.jpg"
           }
         },
         "4993a4c6-5948-4c34-853f-dc9d8e106671": {
@@ -61,8 +61,8 @@
         }
       },
       "block_order": [
-        "a5482328-e971-4c6e-b38b-4e3380fe7526",
         "image_Hmdzyy",
+        "a5482328-e971-4c6e-b38b-4e3380fe7526",
         "4993a4c6-5948-4c34-853f-dc9d8e106671",
         "4caf9002-011c-4ae6-88ef-0b25f3654fbc"
       ],
