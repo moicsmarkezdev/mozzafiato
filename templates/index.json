@@ -76,9 +76,9 @@
         "darken-image": false,
         "blocks_per_slide": 1,
         "box-around-text": true,
-        "auto-rotate": false,
+        "auto-rotate": true,
         "rotate-frequency": 3,
-        "transition_type": "fade",
+        "transition_type": "slide",
         "mobile-image-aspect-ratio": 134,
         "blocks_per_slide_mobile": "1",
         "mobile-overlay": true
