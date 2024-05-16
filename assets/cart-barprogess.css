@@ -16,7 +16,7 @@
     font-family: var(--font--heading--family);
     text-align: center;
     padding: 0;
-    display: flex;
+    display: block;
 }
 
 #cart > div > div.cart-popup-message-bar > div.message__extra {
