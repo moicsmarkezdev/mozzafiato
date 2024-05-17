@@ -16,7 +16,7 @@
     font-family: var(--font--heading--family);
     text-align: center;
     padding: 0;
-    display: block;
+    display: flex;
 }
 
 #cart > div > div.cart-popup-message-bar > div.message__extra {
@@ -42,7 +42,7 @@
     height: 1em !important;
     width: 1em !important;
     margin: 0 0.07em !important;
-    vertical-align: top !important;
+    vertical-align: -0.1em !important;
     background: none !important;
     padding: 0 !important;
 }
