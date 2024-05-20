@@ -11,11 +11,11 @@
   >
 {%- endunless -%}
 
-{%- unless type == 'style' -%}
+{% comment %} {%- unless type == 'style' -%}
   <script type="module">
     import '{{ js_url }}';
   </script>
-{%- endunless -%}
+{%- endunless -%} {% endcomment %}
 
 {% comment %} this helps initialize sections in the theme editor {% endcomment %}
 {%- if request.design_mode -%}

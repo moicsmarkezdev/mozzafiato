@@ -441,16 +441,16 @@
         "label": "Page content"
       },
       {
-        "type": "checkbox",
-        "id": "popup--newsletter--enabled",
-        "label": "Show newsletter form",
-        "default": true
-      },
-      {
         "type": "text",
         "id": "popup--newsletter--heading",
         "label": "Heading",
-        "default": "Get the scoop on new arrivals, special promos and sales."
+        "default": "¡Sé parte de las Mozzi girls!"
+      },
+      {
+        "type": "text",
+        "id": "popup--sub-heading",
+        "label": "Sub Heading",
+        "default": "Suscribete para recibir ofertas exclusivas, contenido unico y 10% OFF en tu primera compra."
       },
       {
         "type": "checkbox",
