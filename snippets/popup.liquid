@@ -58,6 +58,10 @@
                 <div class="datepicker-container">
                   <input type="text" id="datepicker-input" placeholder="Select date">
                   <div class="datepicker" id="datepicker">
+                      <div class="datepicker-header">
+                          <select id="month-select" class="datepicker-select"></select>
+                          <select id="year-select" class="datepicker-select"></select>
+                      </div>
                       <table id="datepicker-table">
                           <!-- Calendar will be dynamically generated here -->
                       </table>
@@ -123,6 +127,28 @@ v>
     const datepickerInput = document.getElementById('datepicker-input');
     const datepicker = document.getElementById('datepicker');
     const datepickerTable = document.getElementById('datepicker-table');
+    const monthSelect = document.getElementById('month-select');
+    const yearSelect = document.getElementById('year-select');
+
+    const months = [
+        'January', 'February', 'March', 'April', 'May', 'June',
+        'July', 'August', 'September', 'October', 'November', 'December'
+    ];
+
+    for (let i = 0; i < months.length; i++) {
+        const option = document.createElement('option');
+        option.value = i;
+        option.text = months[i];
+        monthSelect.appendChild(option);
+    }
+
+    const currentYear = new Date().getFullYear();
+    for (let i = currentYear - 100; i <= currentYear; i++) {
+        const option = document.createElement('option');
+        option.value = i;
+        option.text = i;
+        yearSelect.appendChild(option);
+    }
 
     datepickerInput.addEventListener('focus', function () {
         datepicker.style.display = 'block';
@@ -135,11 +161,22 @@ v>
         }, 200); // Delay to allow click events to be registered
     });
 
+    monthSelect.addEventListener('change', function () {
+        renderCalendar(new Date(yearSelect.value, monthSelect.value));
+    });
+
+    yearSelect.addEventListener('change', function () {
+        renderCalendar(new Date(yearSelect.value, monthSelect.value));
+    });
+
     function renderCalendar(date) {
         const month = date.getMonth();
         const year = date.getFullYear();
         const firstDay = new Date(year, month, 1).getDay();
         const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+        monthSelect.value = month;
+        yearSelect.value = year;
 
         datepickerTable.innerHTML = '';
 
@@ -164,7 +201,7 @@ v>
             const cell = document.createElement('td');
             cell.textContent = day;
             cell.addEventListener('click', function () {
-                datepickerInput.value = `${year}-${month + 1}-${day}`;
+                datepickerInput.value = `${year}-${String(month + 1).padStart(2, '0')}-${String(day).padStart(2, '0')}`;
                 datepicker.style.display = 'none';
             });
             row.appendChild(cell);
@@ -172,6 +209,6 @@ v>
 
         datepickerTable.appendChild(row);
     }
-});
+  });
 </script>
 
