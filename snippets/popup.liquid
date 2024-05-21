@@ -52,40 +52,18 @@
             </div>
             <div style="margin-bottom:1rem;">
               <label for="telefono" style="margin-bottom:0.5rem;display:block;font-size:0.875rem;line-height:1.25rem;font-weight:700;color:rgb(55,65,81);">
-              Número de teléfono
+              Fecha de nacimiento:
               </label>
               <div style="display:flex;">
                 <span style="display:inline-block;border-top-left-radius:0.25rem;border-bottom-left-radius:0.25rem;background-color:rgb(229,231,235);padding-left:0.75rem;padding-right:0.75rem;padding-top:0.5rem;padding-bottom:0.5rem;color:rgb(75,85,99);max-height: 46px;">
-                  <select name="countryCode" id="countryCode" style="all: unset;\text-align: center;font-size: 14px;line-height: 1;">
-                    <option value="+54">Argentina (+54)</option>
-                    <option value="+297">Aruba (+297)</option>
-                    <option value="+591">Bolivia (+591)</option>
-                    <option value="+55">Brazil (+55)</option>
-                    <option value="+1">Canada (+1)</option>
-                    <option value="+56">Chile (+56)</option>
-                    <option value="+57">Colombia (+57)</option>
-                    <option value="+506">Costa Rica (+506)</option>
-                    <option value="+53">Cuba (+53)</option>
-                    <option value="+1">Dominican Republic (+1)</option>
-                    <option value="+593">Ecuador (+593)</option>
-                    <option value="+503">El Salvador (+503)</option>
-                    <option value="+500">Falkland Islands (+500)</option>
-                    <option value="+594">French Guiana (+594)</option>
-                    <option value="+502">Guatemala (+502)</option>
-                    <option value="+592">Guyana (+592)</option>
-                    <option value="+504">Honduras (+504)</option>
-                    <option value="+52">Mexico (+52)</option>
-                    <option value="+505">Nicaragua (+505)</option>
-                    <option value="+507">Panama (+507)</option>
-                    <option value="+595">Paraguay (+595)</option>
-                    <option value="+51">Peru (+51)</option>
-                    <option value="+1">Puerto Rico (+1)</option>
-                    <option value="+597">Suriname (+597)</option>
-                    <option value="+1">United States (+1)</option>
-                    <option value="+598">Uruguay (+598)</option>
-                    <option value="+58">Venezuela (+58)</option>
-                  </select>
-  
+                  <div class="datepicker-container">
+                    <input type="text" id="datepicker-input" placeholder="Select date">
+                    <div class="datepicker" id="datepicker">
+                        <table id="datepicker-table">
+                            <!-- Calendar will be dynamically generated here -->
+                        </table>
+                    </div>
+                  </div>
                 </span>
               <input id="telefono" name="telefono" type="tel" style="width:100%;appearance:none;border-top-right-radius:0.25rem;border-bottom-right-radius:0.25rem;border-width:1px;padding-left:0.75rem;padding-right:0.75rem;padding-top:0.5rem;padding-bottom:0.5rem;line-height:1.25;color:rgb(55,65,81);box-shadow:0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgb(0,0,0,0.1), 0 1px 2px -1px rgb(0,0,0,0.1);outline:2px solid transparent;outline-offset:2px;">
               </div>
@@ -93,7 +71,9 @@
             <div style="margin-bottom:1.5rem;">
               <input id="acepto" name="acepto" type="checkbox" style="display: inline;margin-right:0.5rem;line-height:1.25;width: 8%;vertical-align: middle;">
               <label for="acepto" style="width: 90%;font-size:0.875rem;line-height:1.25rem;display: inline;vertical-align: middle;">
-                Acepto recibir comunicaciones *
+                Acepto recibir comunicaciones de Maaji. *
+              </label>
+            </                Acepto recibir comunicaciones *
               </label>
             </div>
             <p style="margin-bottom:1.5rem;font-size:0.875rem;line-height:1.25rem;">
@@ -105,13 +85,7 @@
             </p>
             <button type="submit" style="line-height: 0;border-radius:0.25rem;background-color:#f8c8da;padding-left:1rem;padding-right:1rem;padding-top:0.5rem;padding-bottom:0.5rem;font-weight:700;color:rgb(255,255,255);outline:2px solid transparent;outline-offset:2px;">
               ¡OBTÉN 10% OFF YA!
-            </button>
-            </form>
-          </div>
-        </div>
-      </popup-root>
-    </div>
-  </div>
+v>
 </dialog>
 <div class="popup-modal-close hide" aria-label="{{ 'general.a11y.close' | t }}" tabindex="0">
   {%- render 'icons', icon: 'cross' -%}
@@ -147,5 +121,60 @@
       
       // document.querySelector('.get-button--section').classList.remove('hide');
   })
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const datepickerInput = document.getElementById('datepicker-input');
+    const datepicker = document.getElementById('datepicker');
+    const datepickerTable = document.getElementById('datepicker-table');
+
+    datepickerInput.addEventListener('focus', function () {
+        datepicker.style.display = 'block';
+        renderCalendar(new Date());
+    });
+
+    datepickerInput.addEventListener('blur', function () {
+        setTimeout(() => {
+            datepicker.style.display = 'none';
+        }, 200); // Delay to allow click events to be registered
+    });
+
+    function renderCalendar(date) {
+        const month = date.getMonth();
+        const year = date.getFullYear();
+        const firstDay = new Date(year, month, 1).getDay();
+        const daysInMonth = new Date(year, month + 1, 0).getDate();
+
+        datepickerTable.innerHTML = '';
+
+        const header = document.createElement('tr');
+        header.innerHTML = `
+            <th>Su</th><th>Mo</th><th>Tu</th><th>We</th><th>Th</th><th>Fr</th><th>Sa
+        `;
+        datepickerTable.appendChild(header);
+
+        let row = document.createElement('tr');
+        for (let i = 0; i < firstDay; i++) {
+            const cell = document.createElement('td');
+            row.appendChild(cell);
+        }
+
+        for (let day = 1; day <= daysInMonth; day++) {
+            if ((row.children.length) % 7 === 0) {
+                datepickerTable.appendChild(row);
+                row = document.createElement('tr');
+            }
+
+            const cell = document.createElement('td');
+            cell.textContent = day;
+            cell.addEventListener('click', function () {
+                datepickerInput.value = `${year}-${month + 1}-${day}`;
+                datepicker.style.display = 'none';
+            });
+            row.appendChild(cell);
+        }
+
+        datepickerTable.appendChild(row);
+    }
+});
 </script>
 
