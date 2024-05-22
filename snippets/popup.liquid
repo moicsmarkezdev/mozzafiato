@@ -41,22 +41,22 @@
       padding: 3rem;
   }
 
-  .form-heading {
+  .form-heading-pp {
       margin-bottom: 1rem;
       font-size: 1.875rem;
       line-height: 2.25rem;
       font-weight: 700;
   }
 
-  .form-subheading {
+  .form-subheading-pp {
       margin-bottom: 1.5rem;
   }
 
-  .form-group {
+  .form-group-pp {
       margin-bottom: 1rem;
   }
 
-  .form-label {
+  .form-label-pp {
       margin-bottom: 0.5rem;
       display: block;
       font-size: 0.875rem;
@@ -65,7 +65,7 @@
       color: rgb(55, 65, 81);
   }
 
-  .form-input {
+  .form-input-pp {
       width: 100%;
       appearance: none;
       border-radius: 0.25rem;
@@ -81,13 +81,13 @@
       outline-offset: 2px;
   }
 
-  .form-group-checkbox {
+  .form-group-pp-checkbox {
       display: flex;
       align-items: center;
       margin-bottom: 1.5rem;
   }
 
-  .form-checkbox {
+  .form-checkbox-pp {
       display: inline;
       margin-right: 0.5rem;
       line-height: 1.25;
@@ -95,7 +95,7 @@
       vertical-align: middle;
   }
 
-  .form-checkbox-label {
+  .form-checkbox-pp-label {
       width: 90%;
       font-size: 0.875rem;
       line-height: 1.25rem;
@@ -103,7 +103,7 @@
       vertical-align: middle;
   }
 
-  .form-terms {
+  .form-terms-pp {
       margin-bottom: 1.5rem;
       font-size: 0.875rem;
       line-height: 1.25rem;
@@ -113,7 +113,7 @@
       color: rgb(59, 130, 246);
   }
 
-  .form-button {
+  .form-button-pp {
       line-height: 0;
       border-radius: 0.25rem;
       background-color: #f8c8da;
@@ -140,37 +140,37 @@
             </div>
             <!-- Right side with form -->
             <div class="popup-form">
-                <h2 class="form-heading">{{ settings.popup--newsletter--heading }}</h2>
-                <p class="form-subheading">{{ settings.popup--sub-heading }}</p>
+                <h2 class="form-heading-pp">{{ settings.popup--newsletter--heading }}</h2>
+                <p class="form-subheading-pp">{{ settings.popup--sub-heading }}</p>
                 <form>
-                    <div class="form-group">
-                        <label for="nombre" class="form-label">Nombre *</label>
-                        <input id="nombre" name="nombre" required="" type="text" class="form-input">
+                    <div class="form-group-pp">
+                        <label for="nombre" class="form-label-pp">Nombre *</label>
+                        <input id="nombre" name="nombre" required="" type="text" class="form-input-pp">
                     </div>
-                    <div class="form-group">
-                        <label for="apellido" class="form-label">Apellido *</label>
-                        <input id="apellido" name="apellido" required="" type="text" class="form-input">
+                    <div class="form-group-pp">
+                        <label for="apellido" class="form-label-pp">Apellido *</label>
+                        <input id="apellido" name="apellido" required="" type="text" class="form-input-pp">
                     </div>
-                    <div class="form-group">
-                        <label for="correo" class="form-label">Correo *</label>
-                        <input id="correo" name="correo" required="" type="email" class="form-input">
+                    <div class="form-group-pp">
+                        <label for="correo" class="form-label-pp">Correo *</label>
+                        <input id="correo" name="correo" required="" type="email" class="form-input-pp">
                     </div>
-                    <div class="form-group">
-                        <label for="datepicker-input" class="form-label">Fecha de nacimiento:</label>
+                    <div class="form-group-pp">
+                        <label for="datepicker-input" class="form-label-pp">Fecha de nacimiento:</label>
                         <div class="datepicker-container">
-                            <input type="text" id="datepicker-input" placeholder="Select date" class="form-input">
+                            <input type="text" id="datepicker-input" placeholder="Select date" class="form-input-pp">
                         </div>
                     </div>
-                    <div class="form-group form-group-checkbox">
-                        <input id="acepto" name="acepto" type="checkbox" class="form-checkbox">
-                        <label for="acepto" class="form-checkbox-label">Acepto recibir comunicaciones. *</label>
+                    <div class="form-group-pp form-group-pp-checkbox">
+                        <input id="acepto" name="acepto" type="checkbox" class="form-checkbox-pp">
+                        <label for="acepto" class="form-checkbox-pp-label">Acepto recibir comunicaciones. *</label>
                     </div>
-                    <p class="form-terms">
+                    <p class="form-terms-pp">
                         *Al hacer clic y proporcionarnos tus datos, aceptas nuestros
                         <a href="https://mozzafiato.pe/pages/terminos-y-condiciones" class="form-link">Términos y Condiciones</a>.
                         El consentimiento no es una condición para la compra. Puede darse de baja en cualquier momento.
                     </p>
-                    <button type="submit" class="form-button">¡OBTÉN 10% OFF YA!</button>
+                    <button type="submit" class="form-button-pp">¡OBTÉN 10% OFF YA!</button>
                 </form>
             </div>
           </div>
