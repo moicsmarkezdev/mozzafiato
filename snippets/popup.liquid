@@ -7,6 +7,7 @@
 -%}
 
 {{ 'flatpickr.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'flatpickr.js' | asset_url }}" ></script>
 
 <style>
   .popup-modal-close {
@@ -92,7 +93,6 @@
 <div class="popup-modal-close hide" aria-label="{{ 'general.a11y.close' | t }}" tabindex="0">
   {%- render 'icons', icon: 'cross' -%}
 </div>
-<script src="{{ 'flatpickr.js' | asset_url }}" ></script>
 <script>
   const itemStr = localStorage.getItem('popup_showin');
   if(!itemStr){
