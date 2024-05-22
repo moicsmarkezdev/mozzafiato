@@ -3,6 +3,34 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
+        "image_Hmdzyy": {
+          "type": "image",
+          "settings": {
+            "text-position": "bottom-left",
+            "text-width": "medium",
+            "image": "shopify:\/\/shop_images\/Mozzafiatoxfrmiar-Banner.jpg",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "shopify:\/\/collections\/mozzafiato-x-frmiar",
+            "link-text": "",
+            "mobile-image": "shopify:\/\/shop_images\/Mozzafiatoxfrmiar-Banner_1.jpg"
+          }
+        },
+        "a5482328-e971-4c6e-b38b-4e3380fe7526": {
+          "type": "image",
+          "settings": {
+            "text-position": "bottom-left",
+            "text-width": "medium",
+            "image": "shopify:\/\/shop_images\/Sienna_Style_-_Banner.jpg",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "shopify:\/\/collections\/panuelos",
+            "link-text": "",
+            "mobile-image": "shopify:\/\/shop_images\/Sienna_Style_-_Banner_1.jpg"
+          }
+        },
         "4993a4c6-5948-4c34-853f-dc9d8e106671": {
           "type": "image",
           "settings": {
@@ -30,45 +58,16 @@
             "link-text": "",
             "mobile-image": "shopify:\/\/shop_images\/Tocuyo_Bag_-_Banner.jpg"
           }
-        },
-        "a5482328-e971-4c6e-b38b-4e3380fe7526": {
-          "type": "image",
-          "settings": {
-            "text-position": "bottom-left",
-            "text-width": "medium",
-            "image": "shopify:\/\/shop_images\/Visor_Caps_-_Banner.png",
-            "overline": "",
-            "title": "",
-            "description": "",
-            "link-url": "shopify:\/\/collections\/mozzi-caps",
-            "link-text": "",
-            "mobile-image": "shopify:\/\/shop_images\/Visor_Caps_-_Movil_banner.png"
-          }
-        },
-        "image_Hmdzyy": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "text-position": "bottom-left",
-            "text-width": "medium",
-            "image": "shopify:\/\/shop_images\/Imagen_de_WhatsApp_2024-03-24_a_las_21.41.01_7fa4ded1.jpg",
-            "overline": "",
-            "title": "",
-            "description": "",
-            "link-url": "shopify:\/\/collections\/best-sellers",
-            "link-text": "",
-            "mobile-image": "shopify:\/\/shop_images\/Imagen_de_WhatsApp_2024-03-24_a_las_21.41.02_0c2a7362.jpg"
-          }
         }
       },
       "block_order": [
-        "4993a4c6-5948-4c34-853f-dc9d8e106671",
-        "4caf9002-011c-4ae6-88ef-0b25f3654fbc",
+        "image_Hmdzyy",
         "a5482328-e971-4c6e-b38b-4e3380fe7526",
-        "image_Hmdzyy"
+        "4993a4c6-5948-4c34-853f-dc9d8e106671",
+        "4caf9002-011c-4ae6-88ef-0b25f3654fbc"
       ],
       "settings": {
-        "text-color": "auto",
+        "text-color": "dark",
         "background-color": "accent-2",
         "spacing-above": false,
         "spacing-below": false,
@@ -77,7 +76,7 @@
         "darken-image": false,
         "blocks_per_slide": 1,
         "box-around-text": true,
-        "auto-rotate": false,
+        "auto-rotate": true,
         "rotate-frequency": 4,
         "transition_type": "slide",
         "mobile-image-aspect-ratio": 134,
@@ -97,9 +96,9 @@
         "display-type": "slideshow",
         "products-per-row--desktop": "3",
         "products-per-row--mobile": "2",
-        "collection": "toallas-de-microfibra",
+        "collection": "mozzafiato-x-frmiar",
         "max-products": 4,
-        "heading": "TOALLAS DE MICROFIBRA"
+        "heading": "NEW COLLAB! MOZZAFIATO x FRMIAR"
       }
     },
     "39b7e8a7-1bbc-491e-8390-2751caf3e237": {
@@ -173,8 +172,29 @@
         "text-alignment": "left",
         "thumbnail-width": 80,
         "media-gap": 8,
-        "featured_product": "panuelo-sienna-negro",
+        "featured_product": "comprar-online-tote-bag-paint-brushes-mozzafiato",
         "loop-enabled": false
+      }
+    },
+    "featured_products_PVYXMN": {
+      "type": "featured-products",
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "display-type": "slideshow",
+        "products-per-row--desktop": "3",
+        "products-per-row--mobile": "2",
+        "product-list": [
+          "toalla-de-microfibra-fruitopia",
+          "panuelo-sienna-negro",
+          "panuelo-sienna-naranja",
+          "panuelo-sienna"
+        ],
+        "heading": "¡LAST CALL!",
+        "link-url": "",
+        "link-text": ""
       }
     },
     "53875c54-020d-4d79-8ff9-85371bcd2995": {
@@ -308,23 +328,6 @@
         "collection": "panuelos",
         "max-products": 8,
         "heading": "PAÑUELOS"
-      }
-    },
-    "7d31c367-4e4d-4655-8fd5-1346f2d33664": {
-      "type": "featured-collection",
-      "settings": {
-        "background-color": "none",
-        "light-text": false,
-        "spacing-above": true,
-        "spacing-below": true,
-        "featured-collection--image--show": false,
-        "featured-collection--description--show": false,
-        "display-type": "slideshow",
-        "products-per-row--desktop": "4",
-        "products-per-row--mobile": "2",
-        "collection": "tote-bags",
-        "max-products": 4,
-        "heading": "¡LAST UNITS!"
       }
     },
     "e1bcfcee-d979-4e6c-b6ec-30817d050e0c": {
@@ -586,10 +589,10 @@
     "slideshow",
     "5ba33054-4d1e-44a1-a62b-81a200f21bc2",
     "39b7e8a7-1bbc-491e-8390-2751caf3e237",
+    "featured_products_PVYXMN",
     "53875c54-020d-4d79-8ff9-85371bcd2995",
     "9547d1fa-e436-446d-a9b9-77f7a3bd07b9",
     "82eacfab-15c2-4296-8479-1a3242836d3d",
-    "7d31c367-4e4d-4655-8fd5-1346f2d33664",
     "e1bcfcee-d979-4e6c-b6ec-30817d050e0c",
     "grid-with-overlay",
     "0b1cd38c-2dd8-4607-abdb-1424619e78d5",
