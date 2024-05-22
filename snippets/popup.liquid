@@ -66,15 +66,7 @@
               <div style="display:flex;">
                 <div class="datepicker-container">
                   <input type="text" id="datepicker-input" placeholder="Select date" style="margin-bottom: 0px">
-                  <div class="datepicker" id="datepicker">
-                      <div class="datepicker-header">
-                          <select id="month-select" class="datepicker-select"></select>
-                          <select id="year-select" class="datepicker-select"></select>
-                      </div>
-                      <table id="datepicker-table">
-                          <!-- Calendar will be dynamically generated here -->
-                      </table>
-                  </div>
+                  
                 </div>
               </div>
             </div>
@@ -133,5 +125,8 @@
       // document.querySelector('.get-button--section').classList.remove('hide');
   })
 
+  const flatpickrelement = document.querySelector('#datepicker-input');
+  const flatpickr = require("flatpickr");
+  flatpickr(flatpickrelement, {});
 </script>
 
