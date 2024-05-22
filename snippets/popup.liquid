@@ -5,14 +5,7 @@
 
   render 'section-assets', name: 'popup', type: 'script'
 -%}
-
-{{ 'flatpickr.css' | asset_url | stylesheet_tag }}
-<script src="{{ 'flatpickr.js' | asset_url }}" async ></script>
-
 <style>
-  .flatpickr-current-month .numInputWrapper {
-    display: none !important;
-  }
   .popup-modal-close {
     position: fixed;
     width: 100%;
@@ -25,197 +18,101 @@
   .hide {
     display: none !important;
   }
-
-  .popup-root {
-    /* Styles for the root element */
-  }
-
-  .popup-container {
-      display: flex;
-  }
-
-  .popup-image {
-      width: 50%;
-      background-size: cover;
-  }
-
-  .popup-form {
-      width: 50%;
-      padding: 3rem;
-  }
-
-  .form-heading-pp {
-      margin-bottom: 1rem;
-      font-size: 1.875rem;
-      line-height: 2.25rem;
-      font-weight: 700;
-  }
-
-  .form-subheading-pp {
-      margin-bottom: 1.5rem;
-  }
-
-  .form-group-pp {
-      margin-bottom: 1rem;
-  }
-
-  .form-label-pp {
-      margin-bottom: 0.5rem !important;
-      display: block;
-      font-size: 0.875rem !important;
-      line-height: 1.25rem;
-      font-weight: 700 !important;
-      color: rgb(55, 65, 81);
-  }
-
-  .form-input-pp {
-      width: 100%;
-      appearance: none;
-      border-radius: 0.25rem;
-      border-width: 1px;
-      padding-left: 0.75rem;
-      padding-right: 0.75rem;
-      padding-top: 0.5rem;
-      padding-bottom: 0.5rem;
-      line-height: 1.25;
-      color: rgb(55, 65, 81);
-      box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgb(0, 0, 0, 0.1), 0 1px 2px -1px rgb(0, 0, 0, 0.1);
-      outline: 2px solid transparent;
-      outline-offset: 2px;
-      margin-bottom: 0px;
-  }
-
-  .form-group-pp-checkbox {
-      margin-bottom: 1.5rem;
-  }
-
-  .form-checkbox-pp {
-      display: inline;
-      margin-right: 0.5rem;
-      line-height: 1.25;
-      vertical-align: middle;
-  }
-
-  .form-checkbox-pp-label {
-      width: 100%;
-      font-size: 0.875rem !important;
-      line-height: 1.25rem;
-      display: inline;
-      vertical-align: middle;
-      padding: 0px;
-      margin-top: 2.53px;
-  }
-
-  .form-terms-pp {
-      margin-bottom: 1.5rem;
-      font-size: 0.875rem;
-      line-height: 1.25rem;
-  }
-
-  .form-link-pp {
-      color: rgb(59, 130, 246);
-  }
-
-  .form-button-pp {
-      line-height: 0;
-      border-radius: 0.25rem;
-      background-color: #f8c8da;
-      padding-left: 1rem;
-      padding-right: 1rem;
-      padding-top: 0.5rem;
-      padding-bottom: 0.5rem;
-      font-weight: 700;
-      color: rgb(255, 255, 255);
-      outline: 2px solid transparent;
-      outline-offset: 2px;
-  }
-
-
-  @media (max-width: 901px) {
-    .popup-image {
-      display: none;
-    }
-
-    .popup-form {
-      width: 100%;
-      padding: 1.4rem;
-    }
-
-    .form-group-pp-checkbox {
-      margin-bottom: 0.5rem;
-      font-size: 0.775rem !important;
-    }
-    .form-terms-pp {
-      margin-bottom: 0.7rem;
-      font-size: 0.675rem;
-      line-height: 0.75rem;
-    }
-  }
 </style>
 
 <dialog class="popup popup-modal has-image has-no-page-content has-newsletter has-social-icons completed hide">
   <div class="inner">
     <div id="subscribe_module">
-      <popup-root class="popup-root">
-        <div class="popup-container">
-            <!-- Left side with image -->
-            <div class="popup-image" style="background-image:url({{ settings.popup--image | image_url: width: 1200 }});">
-                &nbsp;
-            </div>
-            <!-- Right side with form -->
-            <div class="popup-form">
-                <h2 class="form-heading-pp">{{ settings.popup--newsletter--heading }}</h2>
-                <p class="form-subheading-pp">{{ settings.popup--sub-heading }}</p>
-                <div id="mc_embed_signup" >
-                  <form action="https://mozzafiato.us18.list-manage.com/subscribe/post?u=03463ad5181c8d7668383cd88&amp;id=63b6090f97&amp;f_id=00f62ce2f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" >
-                      <div class="form-group-pp">
-                        <label for="mce-FNAME" class="form-label-pp" >Nombre </label>
-                        <input type="text" name="FNAME" class="form-input-pp text" id="mce-FNAME" value="" required="true" >
-                      </div>
-                      <div class="form-group-pp">
-                        <label for="mce-LNAME" class="form-label-pp" >Apellidos </label>
-                        <input type="text" name="LNAME" class="form-input-pp text" id="mce-LNAME" value="" required="true" >
-                      </div>
-                      <div class="form-group-pp">
-                        <label for="mce-EMAIL" class="form-label-pp" >Dirección de correo electrónico <span class="asterisk">*</span></label>
-                        <input type="email" name="EMAIL" class="form-input-pp required email" id="mce-EMAIL" value="" required="">
-                      </div>
-                      <div class="form-group-pp">
-                        <label for="datepicker-input" class="form-label-pp">Fecha de nacimiento:</label>
-                        <div class="datepicker-container">
-                            <input type="text" id="datepicker-input" placeholder="Select date" class="form-input-pp">
-                            <div class="datefield hide">
-                              <span class="subfield monthfield">
-                                <input class="birthday REQ_CSS" type="text" pattern="[0-9]*" placeholder="MM" size="2" maxlength="2" name="BIRTHDAY[month]" id="mce-BIRTHDAY-month" value="">
-                              </span> /<span class="subfield dayfield">
-                                <input class="birthday REQ_CSS" type="text" pattern="[0-9]*" placeholder="DD" size="2" maxlength="2" name="BIRTHDAY[day]" id="mce-BIRTHDAY-day" value="">
-                              </span>
-                              <span class="small-meta nowrap">( mm / dd )</span>
-                            </div>
-                        </div>
-                      </div>
-                      <div class="form-group-pp form-group-pp-checkbox">
-                        <input id="acepto" name="acepto" type="checkbox" class="form-checkbox-pp" required="true" >
-                        <label for="acepto" class="form-checkbox-pp-label">Acepto recibir comunicaciones de MOZZIGIRLS. *</label>
-                      </div>
-                      <p class="form-terms-pp">
-                        *Al hacer clic y proporcionarnos tus datos, aceptas nuestros
-                        <a href="https://mozzafiato.pe/pages/terminos-y-condiciones" class="form-link-pp">Términos y Condiciones</a>.
-                        El consentimiento no es una condición para la compra. Puede darse de baja en cualquier momento.
-                      </p>
-                      <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="form-button-pp" value="¡OBTÉN 10% OFF YA!" />
-                      <div id="mce-responses" class="clear">
-                        <div class="response" id="mce-error-response" style="display: none;"></div>
-                        <div class="response" id="mce-success-response" style="display: none;"></div>
-                      </div>
-                      <div aria-hidden="true" style="position: absolute; left: -5000px;" class="hide">
-                        <input type="text" name="b_03463ad5181c8d7668383cd88_63b6090f97" tabindex="-1" value="">
-                      </div>
-                  </form>
-                </div>
-                <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[5]='BIRTHDAY';ftypes[5]='birthday';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-            </div>
+      <popup-root class="popup--root">
+        <div style="display:flex;">
+          <!-- Left side with image -->
+          <div style="width:50%;background-image:url({{ settings.popup--image | image_url: width: 1200 }}); background-size: cover;" >
+            &nbsp;
           </div>
+          <!-- Right side with form -->
+          <div style="width:50%;padding:3rem;">
+            <h2 style="margin-bottom:1rem;font-size:1.875rem;line-height:2.25rem;font-weight:700;">
+             {{ settings.popup--newsletter--heading }}
+            </h2>
+            <p style="margin-bottom:1.5rem;">
+              {{ settings.popup--sub-heading }}
+            </p>
+            <form>
+            <div style="margin-bottom:1rem;">
+              <label for="nombre" style="margin-bottom:0.5rem;display:block;font-size:0.875rem;line-height:1.25rem;font-weight:700;color:rgb(55,65,81);">
+              Nombre *
+              </label>
+              <input id="nombre" name="nombre" required="" type="text" style="width:100%;appearance:none;border-radius:0.25rem;border-width:1px;padding-left:0.75rem;padding-right:0.75rem;padding-top:0.5rem;padding-bottom:0.5rem;line-height:1.25;color:rgb(55,65,81);box-shadow:0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgb(0,0,0,0.1), 0 1px 2px -1px rgb(0,0,0,0.1);outline:2px solid transparent;outline-offset:2px;">
+            </div>
+            <div style="margin-bottom:1rem;">
+              <label for="correo" style="margin-bottom:0.5rem;display:block;font-size:0.875rem;line-height:1.25rem;font-weight:700;color:rgb(55,65,81);">
+              Correo *
+              </label>
+              <input id="correo" name="correo" required="" type="email" style="width:100%;appearance:none;border-radius:0.25rem;border-width:1px;padding-left:0.75rem;padding-right:0.75rem;padding-top:0.5rem;padding-bottom:0.5rem;line-height:1.25;color:rgb(55,65,81);box-shadow:0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgb(0,0,0,0.1), 0 1px 2px -1px rgb(0,0,0,0.1);outline:2px solid transparent;outline-offset:2px;">
+            </div>
+            <div style="margin-bottom:1rem;">
+              <label for="telefono" style="margin-bottom:0.5rem;display:block;font-size:0.875rem;line-height:1.25rem;font-weight:700;color:rgb(55,65,81);">
+              Número de teléfono
+              </label>
+              <div style="display:flex;">
+                <span style="display:inline-block;border-top-left-radius:0.25rem;border-bottom-left-radius:0.25rem;background-color:rgb(229,231,235);padding-left:0.75rem;padding-right:0.75rem;padding-top:0.5rem;padding-bottom:0.5rem;color:rgb(75,85,99);max-height: 46px;">
+                  <select name="countryCode" id="countryCode" style="all: unset;\text-align: center;font-size: 14px;line-height: 1;">
+                    <option value="+54">Argentina (+54)</option>
+                    <option value="+297">Aruba (+297)</option>
+                    <option value="+591">Bolivia (+591)</option>
+                    <option value="+55">Brazil (+55)</option>
+                    <option value="+1">Canada (+1)</option>
+                    <option value="+56">Chile (+56)</option>
+                    <option value="+57">Colombia (+57)</option>
+                    <option value="+506">Costa Rica (+506)</option>
+                    <option value="+53">Cuba (+53)</option>
+                    <option value="+1">Dominican Republic (+1)</option>
+                    <option value="+593">Ecuador (+593)</option>
+                    <option value="+503">El Salvador (+503)</option>
+                    <option value="+500">Falkland Islands (+500)</option>
+                    <option value="+594">French Guiana (+594)</option>
+                    <option value="+502">Guatemala (+502)</option>
+                    <option value="+592">Guyana (+592)</option>
+                    <option value="+504">Honduras (+504)</option>
+                    <option value="+52">Mexico (+52)</option>
+                    <option value="+505">Nicaragua (+505)</option>
+                    <option value="+507">Panama (+507)</option>
+                    <option value="+595">Paraguay (+595)</option>
+                    <option value="+51">Peru (+51)</option>
+                    <option value="+1">Puerto Rico (+1)</option>
+                    <option value="+597">Suriname (+597)</option>
+                    <option value="+1">United States (+1)</option>
+                    <option value="+598">Uruguay (+598)</option>
+                    <option value="+58">Venezuela (+58)</option>
+                  </select>
+  
+                </span>
+              <input id="telefono" name="telefono" type="tel" style="width:100%;appearance:none;border-top-right-radius:0.25rem;border-bottom-right-radius:0.25rem;border-width:1px;padding-left:0.75rem;padding-right:0.75rem;padding-top:0.5rem;padding-bottom:0.5rem;line-height:1.25;color:rgb(55,65,81);box-shadow:0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgb(0,0,0,0.1), 0 1px 2px -1px rgb(0,0,0,0.1);outline:2px solid transparent;outline-offset:2px;">
+              </div>
+            </div>
+            <div style="margin-bottom:1.5rem;">
+              <input id="acepto" name="acepto" type="checkbox" style="display: inline;margin-right:0.5rem;line-height:1.25;width: 8%;vertical-align: middle;">
+              <label for="acepto" style="width: 90%;font-size:0.875rem;line-height:1.25rem;display: inline;vertical-align: middle;">
+                Acepto recibir comunicaciones de Maaji. *
+              </label>
+            </div>
+            <p style="margin-bottom:1.5rem;font-size:0.875rem;line-height:1.25rem;">
+              *Al hacer clic y proporcionarnos tus datos, aceptas los términos de nuestra
+              <a style="color:rgb(59,130,246);">
+              Política de Privacidad
+              </a>
+              y
+              <a style="color:rgb(59,130,246);">
+              Términos y Condiciones
+              </a>
+              . El consentimiento no es una condición para la compra. Puede darse de baja en cualquier momento.
+            </p>
+            <button type="submit" style="line-height: 0;border-radius:0.25rem;background-color:#f8c8da;padding-left:1rem;padding-right:1rem;padding-top:0.5rem;padding-bottom:0.5rem;font-weight:700;color:rgb(255,255,255);outline:2px solid transparent;outline-offset:2px;">
+              ¡OBTÉN 15% OFF YA!
+            </button>
+            </form>
+          </div>
+        </div>
       </popup-root>
     </div>
   </div>
@@ -254,17 +151,5 @@
       
       // document.querySelector('.get-button--section').classList.remove('hide');
   })
-
-  const flatpickrelement = document.querySelector('#datepicker-input');
-  flatpickr(flatpickrelement, {
-    dateFormat: "m/d",
-    onChange: function(selectedDates, dateStr, instance) {
-        const date = new Date(dateStr);
-        const day = date.getDate();
-        const month = date.getMonth() + 1; // Months are 0-based
-
-        document.getElementById('mce-BIRTHDAY-day').value = day;
-        document.getElementById('mce-BIRTHDAY-month').value = month;
-    }
-  });
 </script>
+
