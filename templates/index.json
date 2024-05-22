@@ -67,7 +67,7 @@
         "4caf9002-011c-4ae6-88ef-0b25f3654fbc"
       ],
       "settings": {
-        "text-color": "dark",
+        "text-color": "auto",
         "background-color": "accent-2",
         "spacing-above": false,
         "spacing-below": false,
