@@ -44,7 +44,7 @@
     "all_items_added": "Todos los artículos se han agregado a su carrito.",
     "checkout": "Finalizar compra",
     "continue": "Seguir comprando",
-    "empty_html": "<span data-item='rte-content'>Su carrito está vacío.<br\/> <a href='{{ collections_url }}'>Haga clic aquí para seguir comprando<\/a>.<\/span>",
+    "empty_html": "<span data-item='rte-content'>Su carrito está vacío.<br/> <a href='{{ collections_url }}'>Haga clic aquí para seguir comprando</a>.</span>",
     "minus": "Menos",
     "order_notes": "Deje una nota con su pedido",
     "plus": "Más",
@@ -286,7 +286,7 @@
     },
     "image_modal": "Ampliar la imagen del producto",
     "n_items_left": "Solo quedan [num_items] artículos por añadir al carrito",
-    "new": "New in",
+    "new": "Novedades",
     "no_items_left": "Ya se ha añadido el número máximo de elementos",
     "off": "Desactivar",
     "one_item_left": "Solo queda un artículo por añadir al carrito",
@@ -295,13 +295,13 @@
       "other_pickup_locations": "Ver ubicaciones de recogida",
       "map": "mapa",
       "available": "Recogida disponible",
-      "available_at_html": "Recogida disponible en <strong>{{ location_name }}<\/strong>",
+      "available_at_html": "Recogida disponible en <strong>{{ location_name }}</strong>",
       "unavailable": "Recogida actualmente no disponible",
-      "unavailable_at_html": "Recogida actualmente no disponible en <strong>{{ location_name }}<\/strong>",
+      "unavailable_at_html": "Recogida actualmente no disponible en <strong>{{ location_name }}</strong>",
       "return": "Volver al producto",
       "view_store_info": "Ver información de la tienda"
     },
-    "sale": "Sale",
+    "sale": "Rebajas",
     "select_options": "seleccionar opciones",
     "size_chart": "Tabla de tallas",
     "size_chart_path": "Página del producto > Selector de variantes",
@@ -374,7 +374,7 @@
   "shopify": {
     "checkout": {
       "contact": {
-        "company_label": "DNI \/ RUC"
+        "company_label": "DNI / RUC"
       },
       "order_summary": {
         "apply_discount_button_label": "Aplicar"
