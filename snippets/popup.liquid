@@ -7,7 +7,7 @@
 -%}
 
 {{ 'flatpickr.css' | asset_url | stylesheet_tag }}
-<script src="{{ 'flatpickr.js' | asset_url }}" ></script>
+<script src="{{ 'flatpickr.js' | asset_url }}" async ></script>
 
 <style>
   .popup-modal-close {
@@ -163,36 +163,54 @@
             <div class="popup-form">
                 <h2 class="form-heading-pp">{{ settings.popup--newsletter--heading }}</h2>
                 <p class="form-subheading-pp">{{ settings.popup--sub-heading }}</p>
-                <form>
-                    <div class="form-group-pp">
-                        <label for="nombre" class="form-label-pp">Nombre *</label>
-                        <input id="nombre" name="nombre" required="" type="text" class="form-input-pp">
-                    </div>
-                    <div class="form-group-pp">
-                        <label for="apellido" class="form-label-pp">Apellido *</label>
-                        <input id="apellido" name="apellido" required="" type="text" class="form-input-pp">
-                    </div>
-                    <div class="form-group-pp">
-                        <label for="correo" class="form-label-pp">Correo *</label>
-                        <input id="correo" name="correo" required="" type="email" class="form-input-pp">
-                    </div>
-                    <div class="form-group-pp">
+                <div id="mc_embed_signup" >
+                  <form action="https://mozzafiato.us18.list-manage.com/subscribe/post?u=03463ad5181c8d7668383cd88&amp;id=63b6090f97&amp;f_id=00f62ce2f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" >
+                      <div class="form-group-pp">
+                        <label for="mce-FNAME" class="form-label-pp" >Nombre </label>
+                        <input type="text" name="FNAME" class="form-input-pp text" id="mce-FNAME" value="">
+                      </div>
+                      <div class="form-group-pp">
+                        <label for="mce-LNAME" class="form-label-pp" >Apellidos </label>
+                        <input type="text" name="LNAME" class="form-input-pp text" id="mce-LNAME" value="">
+                      </div>
+                      <div class="form-group-pp">
+                        <label for="mce-EMAIL" class="form-label-pp" >Dirección de correo electrónico <span class="asterisk">*</span></label>
+                        <input type="email" name="EMAIL" class="form-input-pp required email" id="mce-EMAIL" value="" required="">
+                      </div>
+                      <div class="form-group-pp">
                         <label for="datepicker-input" class="form-label-pp">Fecha de nacimiento:</label>
                         <div class="datepicker-container">
                             <input type="text" id="datepicker-input" placeholder="Select date" class="form-input-pp">
+                            <div class="datefield hide">
+                              <span class="subfield monthfield">
+                                <input class="birthday REQ_CSS" type="text" pattern="[0-9]*" placeholder="MM" size="2" maxlength="2" name="BIRTHDAY[month]" id="mce-BIRTHDAY-month" value="">
+                              </span> /<span class="subfield dayfield">
+                                <input class="birthday REQ_CSS" type="text" pattern="[0-9]*" placeholder="DD" size="2" maxlength="2" name="BIRTHDAY[day]" id="mce-BIRTHDAY-day" value="">
+                              </span>
+                              <span class="small-meta nowrap">( mm / dd )</span>
+                            </div>
                         </div>
-                    </div>
-                    <div class="form-group-pp form-group-pp-checkbox">
+                      </div>
+                      <div class="form-group-pp form-group-pp-checkbox">
                         <input id="acepto" name="acepto" type="checkbox" class="form-checkbox-pp">
                         <label for="acepto" class="form-checkbox-pp-label">Acepto recibir comunicaciones de MOZZIGIRLS. *</label>
-                    </div>
-                    <p class="form-terms-pp">
+                      </div>
+                      <p class="form-terms-pp">
                         *Al hacer clic y proporcionarnos tus datos, aceptas nuestros
                         <a href="https://mozzafiato.pe/pages/terminos-y-condiciones" class="form-link-pp">Términos y Condiciones</a>.
                         El consentimiento no es una condición para la compra. Puede darse de baja en cualquier momento.
-                    </p>
-                    <button type="submit" class="form-button-pp">¡OBTÉN 10% OFF YA!</button>
-                </form>
+                      </p>
+                      <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="form-button-pp" value="¡OBTÉN 10% OFF YA!" />
+                      <div id="mce-responses" class="clear">
+                        <div class="response" id="mce-error-response" style="display: none;"></div>
+                        <div class="response" id="mce-success-response" style="display: none;"></div>
+                      </div>
+                      <div aria-hidden="true" style="position: absolute; left: -5000px;" class="hide">
+                        <input type="text" name="b_03463ad5181c8d7668383cd88_63b6090f97" tabindex="-1" value="">
+                      </div>
+                  </form>
+                </div>
+                <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[5]='BIRTHDAY';ftypes[5]='birthday';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
             </div>
           </div>
       </popup-root>
@@ -237,6 +255,13 @@
   const flatpickrelement = document.querySelector('#datepicker-input');
   flatpickr(flatpickrelement, {
     dateFormat: "mm/dd",
+    onChange: function(selectedDates, dateStr, instance) {
+        const date = new Date(dateStr);
+        const day = date.getDate();
+        const month = date.getMonth() + 1; // Months are 0-based
+
+        document.getElementById('mce-BIRTHDAY-day').value = day;
+        document.getElementById('mce-BIRTHDAY-month').value = month;
+    }
   });
 </script>
-
