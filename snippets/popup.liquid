@@ -190,7 +190,7 @@
                               </span> /<span class="subfield dayfield">
                                 <input class="birthday REQ_CSS" type="text" pattern="[0-9]*" placeholder="DD" size="2" maxlength="2" name="BIRTHDAY[day]" id="mce-BIRTHDAY-day" value="">
                               </span>
-                              <span class="small-meta nowrap">( mm / dd )</span>
+                              <span class="small-meta nowrap">( dd / mm )</span>
                             </div>
                         </div>
                       </div>
@@ -257,7 +257,7 @@
 
   const flatpickrelement = document.querySelector('#datepicker-input');
   flatpickr(flatpickrelement, {
-    dateFormat: "m/d",
+    dateFormat: "d/m",
     onChange: function(selectedDates, dateStr, instance) {
         const date = new Date(dateStr);
         const day = date.getDate();
