@@ -302,29 +302,29 @@
           {%- if cart.original_total_price >= top_price_3 and top_price_3 > 0 -%}
               {%- assign realTotal = top_price_3 | minus: cart.original_total_price -%}    
           
-              <p style="width: 100%;display: inline-block;" >{{ settings.free_shipping_success_3 }}</p>
-              <div style="display: inline;"> <img draggable="false" role="img" class="emoji" alt="✨" src="https://s.w.org/images/core/emoji/14.0.0/svg/2728.svg" width="auto" height="auto" ></div>
+              {{ settings.free_shipping_success_3 }}
+              <img draggable="false" role="img" class="emoji" alt="✨" src="https://s.w.org/images/core/emoji/14.0.0/svg/2728.svg" width="auto" height="auto" >
           {%- elsif cart.original_total_price >= top_price_2 and top_price_2 > 0 -%}
               {%- assign realTotal = top_price_3 | minus: cart.original_total_price -%}    
               
-              <p style="width: 100%;display: inline-block;" >{{ settings.free_shipping_success_2 }}</p>
-              <div style="display: inline;"> <img draggable="false" role="img" class="emoji" alt="✨" src="https://s.w.org/images/core/emoji/14.0.0/svg/2728.svg" width="auto" height="auto" ></div>
+              {{ settings.free_shipping_success_2 }}
+              <img draggable="false" role="img" class="emoji" alt="✨" src="https://s.w.org/images/core/emoji/14.0.0/svg/2728.svg" width="auto" height="auto" >
               {%- if top_price_3 > 0 -%}
                   {{ settings.free_shipping_fail_before }} <span>{{ realTotal | money }}</span> {{ settings.free_shipping_fail_after_3 }}
               {%- endif -%}
           {%- elsif cart.original_total_price >= top_price_1 and top_price_1 > 0  -%}
               {%- assign realTotal = top_price_2 | minus: cart.original_total_price -%}    
               
-              <p style="width: 100%;display: inline-block;" >{{ settings.free_shipping_success_1 }} </p>
-              <div style="display: inline;"> <img draggable="false" role="img" class="emoji" alt="✨" src="https://s.w.org/images/core/emoji/14.0.0/svg/2728.svg" width="auto" height="auto" ></div>
+              {{ settings.free_shipping_success_1 }}
+              <img draggable="false" role="img" class="emoji" alt="✨" src="https://s.w.org/images/core/emoji/14.0.0/svg/2728.svg" width="auto" height="auto" >
               {%- if top_price_2 > 0 -%}
                   {{ settings.free_shipping_fail_before }} <span>{{ realTotal | money }}</span> {{ settings.free_shipping_fail_after_2 }}
               {%- endif -%}
           {%- else -%}
               {%- assign realTotal = top_price_1 | minus: cart.original_total_price -%}    
                   
-              <p style="width: 100%;display: inline-block;" >{{ settings.free_shipping_fail_before }} <span>{{ realTotal | money }}</span> {{ settings.free_shipping_fail_after }} </p>
-              <div style="display: inline;"> <img draggable="false" role="img" class="emoji" alt="✨" src="https://s.w.org/images/core/emoji/14.0.0/svg/2728.svg" width="auto" height="auto" ></div>
+              {{ settings.free_shipping_fail_before }} <span>{{ realTotal | money }}</span> {{ settings.free_shipping_fail_after }}
+              <img draggable="false" role="img" class="emoji" alt="✨" src="https://s.w.org/images/core/emoji/14.0.0/svg/2728.svg" width="auto" height="auto" >
               
           {%- endif -%}
       </div>

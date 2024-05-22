@@ -5,151 +5,49 @@
 
   render 'section-assets', name: 'popup', type: 'script'
 -%}
-<style>
-  .popup-modal-close {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: #0000004a !important;
-    display: block;
-    z-index: 3;
-  }
 
-  .hide {
-    display: none !important;
-  }
-</style>
-
-<dialog class="popup popup-modal has-image has-no-page-content has-newsletter has-social-icons completed hide">
-  <div class="inner">
-    <div id="subscribe_module">
-      <popup-root class="popup--root">
-        <div style="display:flex;">
-          <!-- Left side with image -->
-          <div style="width:50%;background-image:url({{ settings.popup--image | image_url: width: 1200 }}); background-size: cover;" >
-            &nbsp;
-          </div>
-          <!-- Right side with form -->
-          <div style="width:50%;padding:3rem;">
-            <h2 style="margin-bottom:1rem;font-size:1.875rem;line-height:2.25rem;font-weight:700;">
-             {{ settings.popup--newsletter--heading }}
-            </h2>
-            <p style="margin-bottom:1.5rem;">
-              {{ settings.popup--sub-heading }}
-            </p>
-            <form>
-            <div style="margin-bottom:1rem;">
-              <label for="nombre" style="margin-bottom:0.5rem;display:block;font-size:0.875rem;line-height:1.25rem;font-weight:700;color:rgb(55,65,81);">
-              Nombre *
-              </label>
-              <input id="nombre" name="nombre" required="" type="text" style="width:100%;appearance:none;border-radius:0.25rem;border-width:1px;padding-left:0.75rem;padding-right:0.75rem;padding-top:0.5rem;padding-bottom:0.5rem;line-height:1.25;color:rgb(55,65,81);box-shadow:0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgb(0,0,0,0.1), 0 1px 2px -1px rgb(0,0,0,0.1);outline:2px solid transparent;outline-offset:2px;">
-            </div>
-            <div style="margin-bottom:1rem;">
-              <label for="correo" style="margin-bottom:0.5rem;display:block;font-size:0.875rem;line-height:1.25rem;font-weight:700;color:rgb(55,65,81);">
-              Correo *
-              </label>
-              <input id="correo" name="correo" required="" type="email" style="width:100%;appearance:none;border-radius:0.25rem;border-width:1px;padding-left:0.75rem;padding-right:0.75rem;padding-top:0.5rem;padding-bottom:0.5rem;line-height:1.25;color:rgb(55,65,81);box-shadow:0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgb(0,0,0,0.1), 0 1px 2px -1px rgb(0,0,0,0.1);outline:2px solid transparent;outline-offset:2px;">
-            </div>
-            <div style="margin-bottom:1rem;">
-              <label for="telefono" style="margin-bottom:0.5rem;display:block;font-size:0.875rem;line-height:1.25rem;font-weight:700;color:rgb(55,65,81);">
-              Número de teléfono
-              </label>
-              <div style="display:flex;">
-                <span style="display:inline-block;border-top-left-radius:0.25rem;border-bottom-left-radius:0.25rem;background-color:rgb(229,231,235);padding-left:0.75rem;padding-right:0.75rem;padding-top:0.5rem;padding-bottom:0.5rem;color:rgb(75,85,99);max-height: 46px;">
-                  <select name="countryCode" id="countryCode" style="all: unset;\text-align: center;font-size: 14px;line-height: 1;">
-                    <option value="+54">Argentina (+54)</option>
-                    <option value="+297">Aruba (+297)</option>
-                    <option value="+591">Bolivia (+591)</option>
-                    <option value="+55">Brazil (+55)</option>
-                    <option value="+1">Canada (+1)</option>
-                    <option value="+56">Chile (+56)</option>
-                    <option value="+57">Colombia (+57)</option>
-                    <option value="+506">Costa Rica (+506)</option>
-                    <option value="+53">Cuba (+53)</option>
-                    <option value="+1">Dominican Republic (+1)</option>
-                    <option value="+593">Ecuador (+593)</option>
-                    <option value="+503">El Salvador (+503)</option>
-                    <option value="+500">Falkland Islands (+500)</option>
-                    <option value="+594">French Guiana (+594)</option>
-                    <option value="+502">Guatemala (+502)</option>
-                    <option value="+592">Guyana (+592)</option>
-                    <option value="+504">Honduras (+504)</option>
-                    <option value="+52">Mexico (+52)</option>
-                    <option value="+505">Nicaragua (+505)</option>
-                    <option value="+507">Panama (+507)</option>
-                    <option value="+595">Paraguay (+595)</option>
-                    <option value="+51">Peru (+51)</option>
-                    <option value="+1">Puerto Rico (+1)</option>
-                    <option value="+597">Suriname (+597)</option>
-                    <option value="+1">United States (+1)</option>
-                    <option value="+598">Uruguay (+598)</option>
-                    <option value="+58">Venezuela (+58)</option>
-                  </select>
-  
-                </span>
-              <input id="telefono" name="telefono" type="tel" style="width:100%;appearance:none;border-top-right-radius:0.25rem;border-bottom-right-radius:0.25rem;border-width:1px;padding-left:0.75rem;padding-right:0.75rem;padding-top:0.5rem;padding-bottom:0.5rem;line-height:1.25;color:rgb(55,65,81);box-shadow:0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgb(0,0,0,0.1), 0 1px 2px -1px rgb(0,0,0,0.1);outline:2px solid transparent;outline-offset:2px;">
-              </div>
-            </div>
-            <div style="margin-bottom:1.5rem;">
-              <input id="acepto" name="acepto" type="checkbox" style="display: inline;margin-right:0.5rem;line-height:1.25;width: 8%;vertical-align: middle;">
-              <label for="acepto" style="width: 90%;font-size:0.875rem;line-height:1.25rem;display: inline;vertical-align: middle;">
-                Acepto recibir comunicaciones de Maaji. *
-              </label>
-            </div>
-            <p style="margin-bottom:1.5rem;font-size:0.875rem;line-height:1.25rem;">
-              *Al hacer clic y proporcionarnos tus datos, aceptas los términos de nuestra
-              <a style="color:rgb(59,130,246);">
-              Política de Privacidad
-              </a>
-              y
-              <a style="color:rgb(59,130,246);">
-              Términos y Condiciones
-              </a>
-              . El consentimiento no es una condición para la compra. Puede darse de baja en cualquier momento.
-            </p>
-            <button type="submit" style="line-height: 0;border-radius:0.25rem;background-color:#f8c8da;padding-left:1rem;padding-right:1rem;padding-top:0.5rem;padding-bottom:0.5rem;font-weight:700;color:rgb(255,255,255);outline:2px solid transparent;outline-offset:2px;">
-              ¡OBTÉN 15% OFF YA!
-            </button>
-            </form>
-          </div>
-        </div>
-      </popup-root>
+<popup-root class="popup--root">
+  {%- if settings.popup--newsletter--heading != blank -%}
+    <div class="popup--heading" data-item="block-heading">
+      {{- settings.popup--newsletter--heading -}}
     </div>
-  </div>
-</dialog>
-<div class="popup-modal-close hide" aria-label="{{ 'general.a11y.close' | t }}" tabindex="0">
+  {%- endif -%}
+
+  {%- form 'customer', id: 'popup_form' -%}
+    <input type="hidden" name="contact[tags]" value="newsletter" />
+    <input type="hidden" name="contact[first_name]" value="Newsletter" />
+    <input type="hidden" name="contact[last_name]" value="Subscriber" />
+    <label for="contact[email]" data-item='hidden-text'>
+      {{- placeholder_t -}}
+    </label>
+    <input
+      class="small"
+      type="email"
+      placeholder="{{ placeholder_t }}"
+      autocomplete="email"
+      name="contact[email]"
+      id="contact[email]"
+      required
+    />
+    <div data-item='button'>
+      <button type="submit" value="{{ button_t }}">
+        {{- button_t -}}
+      </button>
+    </div>
+
+    {%- if form.posted_successfully? or form.errors -%}
+      <script>window.location.hash = '#feedback-bar--newsletter';</script>
+    {%- endif -%}
+
+    <div data-item="hidden-text">
+      {% comment %} remove the below line to display reCAPTCHA badge {% endcomment %}
+      {{- shopify_disclaimer_t -}}
+    </div>
+  {%- endform -%}
+</popup-root>
+
+<div class="popup-modal-close" aria-label="{{ 'general.a11y.close' | t }}" tabindex="0">
   {%- render 'icons', icon: 'cross' -%}
 </div>
-<script>
-  const itemStr = localStorage.getItem('popup_showin');
-  if(!itemStr){
-      setTimeout(()=>{
-          document.querySelector('.popup.popup-modal').classList.remove('hide');
-          document.querySelector('.popup-modal-close').classList.remove('hide');
-      }, {{ settings.popup--seconds-range | times: 1000 }} );
-  }else{
-      let item = JSON.parse(itemStr);
-      let now = new Date();
 
-      if (now.getTime() > item.expiry) {
-          localStorage.removeItem('popup_showin');
-      }
-  }
-
-  document.querySelector('.popup-modal-close').addEventListener('click', el => {
-      el.preventDefault();
-      document.querySelector('.popup-modal-close').classList.add('hide');
-      document.querySelector('.popup.popup-modal').classList.add('hide');
-      
-      let now = new Date()
-
-      let item = {
-          value: 1,
-          expiry: now.setDate(now.getDate() + {{ settings.popup--days-range }}),
-      }
-      localStorage.setItem('popup_showin', JSON.stringify(item));
-      
-      // document.querySelector('.get-button--section').classList.remove('hide');
-  })
-</script>
-
+<div class="popup-modal-mask"></div>
