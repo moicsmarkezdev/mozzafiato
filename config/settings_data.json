@@ -25,12 +25,17 @@
     "product--label-light-text": false,
     "product--variant-style": "buttons",
     "search--show-in-header": true,
-    "popup--enabled": false,
+    "popup--enabled": true,
     "popup--test-mode": false,
     "popup--image": "shopify:\/\/shop_images\/Screen_Shot_2023-07-25_at_12.31.07.png",
     "popup--image-url": "",
     "popup--page-content": "",
+<<<<<<< HEAD
     "popup--newsletter--heading": "JOIN US!",
+=======
+    "popup--newsletter--heading": "¡Sé parte de las Mozzigirls!",
+    "popup--sub-heading": "Suscríbete para recibir ofertas exclusivas, contenido único y 10% OFF en tu primera compra.",
+>>>>>>> ca21aadc50e488d39742d1cf371feccac193146a
     "popup--social--enabled": true,
     "popup--seconds-range": 4,
     "popup--days-range": 2,
