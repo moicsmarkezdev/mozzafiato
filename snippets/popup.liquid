@@ -22,6 +22,7 @@
   .hide {
     display: none !important;
   }
+
 </style>
 
 <dialog class="popup popup-modal has-image has-no-page-content has-newsletter has-social-icons completed hide">
@@ -42,53 +43,55 @@
               {{ settings.popup--sub-heading }}
             </p>
             <form>
-            <div style="margin-bottom:1rem;">
-              <label for="nombre" style="margin-bottom:0.5rem;display:block;font-size:0.875rem;line-height:1.25rem;font-weight:700;color:rgb(55,65,81);">
-              Nombre *
-              </label>
-              <input id="nombre" name="nombre" required="" type="text" style="width:100%;appearance:none;border-radius:0.25rem;border-width:1px;padding-left:0.75rem;padding-right:0.75rem;padding-top:0.5rem;padding-bottom:0.5rem;line-height:1.25;color:rgb(55,65,81);box-shadow:0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgb(0,0,0,0.1), 0 1px 2px -1px rgb(0,0,0,0.1);outline:2px solid transparent;outline-offset:2px;margin-bottom: 0px;margin-bottom: 0px">
-            </div>
-            <div style="margin-bottom:1rem;">
-              <label for="nombre" style="margin-bottom:0.5rem;display:block;font-size:0.875rem;line-height:1.25rem;font-weight:700;color:rgb(55,65,81);">
-              Apellido *
-              </label>
-              <input id="nombre" name="nombre" required="" type="text" style="width:100%;appearance:none;border-radius:0.25rem;border-width:1px;padding-left:0.75rem;padding-right:0.75rem;padding-top:0.5rem;padding-bottom:0.5rem;line-height:1.25;color:rgb(55,65,81);box-shadow:0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgb(0,0,0,0.1), 0 1px 2px -1px rgb(0,0,0,0.1);outline:2px solid transparent;outline-offset:2px;margin-bottom: 0px;margin-bottom: 0px">
-            </div>
-            <div style="margin-bottom:1rem;">
-              <label for="correo" style="margin-bottom:0.5rem;display:block;font-size:0.875rem;line-height:1.25rem;font-weight:700;color:rgb(55,65,81);">
-              Correo *
-              </label>
-              <input id="correo" name="correo" required="" type="email" style="width:100%;appearance:none;border-radius:0.25rem;border-width:1px;padding-left:0.75rem;padding-right:0.75rem;padding-top:0.5rem;padding-bottom:0.5rem;line-height:1.25;color:rgb(55,65,81);box-shadow:0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgb(0,0,0,0.1), 0 1px 2px -1px rgb(0,0,0,0.1);outline:2px solid transparent;outline-offset:2px;margin-bottom: 0px;margin-bottom: 0px">
-            </div>
-            <div style="margin-bottom:1rem;">
-              <label for="telefono" style="margin-bottom:0.5rem;display:block;font-size:0.875rem;line-height:1.25rem;font-weight:700;color:rgb(55,65,81);">
-              Fecha de nacimiento:
-              </label>
-              <div style="display:flex;">
-                <div class="datepicker-container">
-                  <input type="text" id="datepicker-input" placeholder="Select date" style="margin-bottom: 0px">
-                  
+              <div style="margin-bottom:1rem;">
+                <label for="nombre" style="margin-bottom:0.5rem;display:block;font-size:0.875rem;line-height:1.25rem;font-weight:700;color:rgb(55,65,81);">
+                Nombre *
+                </label>
+                <input id="nombre" name="nombre" required="" type="text" style="width:100%;appearance:none;border-radius:0.25rem;border-width:1px;padding-left:0.75rem;padding-right:0.75rem;padding-top:0.5rem;padding-bottom:0.5rem;line-height:1.25;color:rgb(55,65,81);box-shadow:0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgb(0,0,0,0.1), 0 1px 2px -1px rgb(0,0,0,0.1);outline:2px solid transparent;outline-offset:2px;margin-bottom: 0px;margin-bottom: 0px">
+              </div>
+              <div style="margin-bottom:1rem;">
+                <label for="nombre" style="margin-bottom:0.5rem;display:block;font-size:0.875rem;line-height:1.25rem;font-weight:700;color:rgb(55,65,81);">
+                Apellido *
+                </label>
+                <input id="nombre" name="nombre" required="" type="text" style="width:100%;appearance:none;border-radius:0.25rem;border-width:1px;padding-left:0.75rem;padding-right:0.75rem;padding-top:0.5rem;padding-bottom:0.5rem;line-height:1.25;color:rgb(55,65,81);box-shadow:0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgb(0,0,0,0.1), 0 1px 2px -1px rgb(0,0,0,0.1);outline:2px solid transparent;outline-offset:2px;margin-bottom: 0px;margin-bottom: 0px">
+              </div>
+              <div style="margin-bottom:1rem;">
+                <label for="correo" style="margin-bottom:0.5rem;display:block;font-size:0.875rem;line-height:1.25rem;font-weight:700;color:rgb(55,65,81);">
+                Correo *
+                </label>
+                <input id="correo" name="correo" required="" type="email" style="width:100%;appearance:none;border-radius:0.25rem;border-width:1px;padding-left:0.75rem;padding-right:0.75rem;padding-top:0.5rem;padding-bottom:0.5rem;line-height:1.25;color:rgb(55,65,81);box-shadow:0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgb(0,0,0,0.1), 0 1px 2px -1px rgb(0,0,0,0.1);outline:2px solid transparent;outline-offset:2px;margin-bottom: 0px;margin-bottom: 0px">
+              </div>
+              <div style="margin-bottom:1rem;">
+                <label for="telefono" style="margin-bottom:0.5rem;display:block;font-size:0.875rem;line-height:1.25rem;font-weight:700;color:rgb(55,65,81);">
+                Fecha de nacimiento:
+                </label>
+                <div style="display:flex;">
+                  <div class="datepicker-container">
+                    <input type="text" id="datepicker-input" placeholder="Select date" style="margin-bottom: 0px">
+                    
+                  </div>
                 </div>
               </div>
-            </div>
-            <div style="margin-bottom:1.5rem;">
-              <input id="acepto" name="acepto" type="checkbox" style="display: inline;margin-right:0.5rem;line-height:1.25;width: 8%;vertical-align: middle;">
-              <label for="acepto" style="width: 90%;font-size:0.875rem;line-height:1.25rem;display: inline;vertical-align: middle;">
-                Acepto recibir comunicaciones de Maaji. *
-              </label>
-            </                Acepto recibir comunicaciones *
-              </label>
-            </div>
-            <p style="margin-bottom:1.5rem;font-size:0.875rem;line-height:1.25rem;">
-              *Al hacer clic y proporcionarnos tus datos, aceptas nuestros
-              <a style="color:rgb(59,130,246);">
-              <a style="color:rgb(59,130,246);"href="https://mozzafiato.pe/pages/terminos-y-condiciones">Términos y Condiciones</a>
-              </a>
-              . El consentimiento no es una condición para la compra. Puede darse de baja en cualquier momento.
-            </p>
-            <button type="submit" style="line-height: 0;border-radius:0.25rem;background-color:#f8c8da;padding-left:1rem;padding-right:1rem;padding-top:0.5rem;padding-bottom:0.5rem;font-weight:700;color:rgb(255,255,255);outline:2px solid transparent;outline-offset:2px;">
-              ¡OBTÉN 10% OFF YA!
-            </button>
+              <div style="margin-bottom:1.5rem;">
+                <input id="acepto" name="acepto" type="checkbox" style="display: inline;margin-right:0.5rem;line-height:1.25;width: 8%;vertical-align: middle;" />
+                <label for="acepto" style="width: 90%;font-size:0.875rem;line-height:1.25rem;display: inline;vertical-align: middle;">
+                  Acepto recibir comunicaciones. *
+                </label>
+              </div>
+              <p style="margin-bottom:1.5rem;font-size:0.875rem;line-height:1.25rem;">
+                *Al hacer clic y proporcionarnos tus datos, aceptas nuestros
+                <a style="color:rgb(59,130,246);"href="https://mozzafiato.pe/pages/terminos-y-condiciones">Términos y Condiciones</a>
+                . El consentimiento no es una condición para la compra. Puede darse de baja en cualquier momento.
+              </p>
+              <button type="submit" style="line-height: 0;border-radius:0.25rem;background-color:#f8c8da;padding-left:1rem;padding-right:1rem;padding-top:0.5rem;padding-bottom:0.5rem;font-weight:700;color:rgb(255,255,255);outline:2px solid transparent;outline-offset:2px;">
+                ¡OBTÉN 10% OFF YA!
+              </button>
+            </form>
+          </div>
+        </div>
+      </popup-root>
+    </div>
+  </div>
 </dialog>
 <div class="popup-modal-close hide" aria-label="{{ 'general.a11y.close' | t }}" tabindex="0">
   {%- render 'icons', icon: 'cross' -%}
