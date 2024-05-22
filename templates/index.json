@@ -17,6 +17,20 @@
             "mobile-image": "shopify:\/\/shop_images\/Mozzafiatoxfrmiar-Banner_1.jpg"
           }
         },
+        "4caf9002-011c-4ae6-88ef-0b25f3654fbc": {
+          "type": "image",
+          "settings": {
+            "text-position": "bottom-left",
+            "text-width": "medium",
+            "image": "shopify:\/\/shop_images\/Amanda_Totebag_-_Banner.jpg",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "shopify:\/\/collections\/tote-bags",
+            "link-text": "",
+            "mobile-image": "shopify:\/\/shop_images\/Amanda_Totebag_-_Banner_1.jpg"
+          }
+        },
         "a5482328-e971-4c6e-b38b-4e3380fe7526": {
           "type": "image",
           "settings": {
@@ -44,27 +58,13 @@
             "link-text": "",
             "mobile-image": "shopify:\/\/shop_images\/Beauty_Pack_-_Banner.jpg"
           }
-        },
-        "4caf9002-011c-4ae6-88ef-0b25f3654fbc": {
-          "type": "image",
-          "settings": {
-            "text-position": "bottom-left",
-            "text-width": "medium",
-            "image": "shopify:\/\/shop_images\/Tocuyo_Bag_-_Banner_1.jpg",
-            "overline": "",
-            "title": "",
-            "description": "",
-            "link-url": "shopify:\/\/products\/mozzafiato-bag",
-            "link-text": "",
-            "mobile-image": "shopify:\/\/shop_images\/Tocuyo_Bag_-_Banner.jpg"
-          }
         }
       },
       "block_order": [
         "image_Hmdzyy",
+        "4caf9002-011c-4ae6-88ef-0b25f3654fbc",
         "a5482328-e971-4c6e-b38b-4e3380fe7526",
-        "4993a4c6-5948-4c34-853f-dc9d8e106671",
-        "4caf9002-011c-4ae6-88ef-0b25f3654fbc"
+        "4993a4c6-5948-4c34-853f-dc9d8e106671"
       ],
       "settings": {
         "text-color": "auto",
