@@ -23,72 +23,157 @@
     display: none !important;
   }
 
+  .popup-root {
+    /* Styles for the root element */
+  }
+
+  .popup-container {
+      display: flex;
+  }
+
+  .popup-image {
+      width: 50%;
+      background-size: cover;
+  }
+
+  .popup-form {
+      width: 50%;
+      padding: 3rem;
+  }
+
+  .form-heading {
+      margin-bottom: 1rem;
+      font-size: 1.875rem;
+      line-height: 2.25rem;
+      font-weight: 700;
+  }
+
+  .form-subheading {
+      margin-bottom: 1.5rem;
+  }
+
+  .form-group {
+      margin-bottom: 1rem;
+  }
+
+  .form-label {
+      margin-bottom: 0.5rem;
+      display: block;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      font-weight: 700;
+      color: rgb(55, 65, 81);
+  }
+
+  .form-input {
+      width: 100%;
+      appearance: none;
+      border-radius: 0.25rem;
+      border-width: 1px;
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      line-height: 1.25;
+      color: rgb(55, 65, 81);
+      box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgb(0, 0, 0, 0.1), 0 1px 2px -1px rgb(0, 0, 0, 0.1);
+      outline: 2px solid transparent;
+      outline-offset: 2px;
+  }
+
+  .form-group-checkbox {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1.5rem;
+  }
+
+  .form-checkbox {
+      display: inline;
+      margin-right: 0.5rem;
+      line-height: 1.25;
+      width: 8%;
+      vertical-align: middle;
+  }
+
+  .form-checkbox-label {
+      width: 90%;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+      display: inline;
+      vertical-align: middle;
+  }
+
+  .form-terms {
+      margin-bottom: 1.5rem;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+  }
+
+  .form-link {
+      color: rgb(59, 130, 246);
+  }
+
+  .form-button {
+      line-height: 0;
+      border-radius: 0.25rem;
+      background-color: #f8c8da;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      font-weight: 700;
+      color: rgb(255, 255, 255);
+      outline: 2px solid transparent;
+      outline-offset: 2px;
+  }
+
 </style>
 
 <dialog class="popup popup-modal has-image has-no-page-content has-newsletter has-social-icons completed hide">
   <div class="inner">
     <div id="subscribe_module">
-      <popup-root class="popup--root">
-        <div style="display:flex;">
-          <!-- Left side with image -->
-          <div style="width:50%;background-image:url({{ settings.popup--image | image_url: width: 1200 }}); background-size: cover;" >
-            &nbsp;
+      <popup-root class="popup-root">
+        <div class="popup-container">
+            <!-- Left side with image -->
+            <div class="popup-image" style="background-image:url({{ settings.popup--image | image_url: width: 1200 }});">
+                &nbsp;
+            </div>
+            <!-- Right side with form -->
+            <div class="popup-form">
+                <h2 class="form-heading">{{ settings.popup--newsletter--heading }}</h2>
+                <p class="form-subheading">{{ settings.popup--sub-heading }}</p>
+                <form>
+                    <div class="form-group">
+                        <label for="nombre" class="form-label">Nombre *</label>
+                        <input id="nombre" name="nombre" required="" type="text" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido" class="form-label">Apellido *</label>
+                        <input id="apellido" name="apellido" required="" type="text" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="correo" class="form-label">Correo *</label>
+                        <input id="correo" name="correo" required="" type="email" class="form-input">
+                    </div>
+                    <div class="form-group">
+                        <label for="datepicker-input" class="form-label">Fecha de nacimiento:</label>
+                        <div class="datepicker-container">
+                            <input type="text" id="datepicker-input" placeholder="Select date" class="form-input">
+                        </div>
+                    </div>
+                    <div class="form-group form-group-checkbox">
+                        <input id="acepto" name="acepto" type="checkbox" class="form-checkbox">
+                        <label for="acepto" class="form-checkbox-label">Acepto recibir comunicaciones. *</label>
+                    </div>
+                    <p class="form-terms">
+                        *Al hacer clic y proporcionarnos tus datos, aceptas nuestros
+                        <a href="https://mozzafiato.pe/pages/terminos-y-condiciones" class="form-link">Términos y Condiciones</a>.
+                        El consentimiento no es una condición para la compra. Puede darse de baja en cualquier momento.
+                    </p>
+                    <button type="submit" class="form-button">¡OBTÉN 10% OFF YA!</button>
+                </form>
+            </div>
           </div>
-          <!-- Right side with form -->
-          <div style="width:50%;padding:3rem;">
-            <h2 style="margin-bottom:1rem;font-size:1.875rem;line-height:2.25rem;font-weight:700;">
-             {{ settings.popup--newsletter--heading }}
-            </h2>
-            <p style="margin-bottom:1.5rem;">
-              {{ settings.popup--sub-heading }}
-            </p>
-            <form>
-              <div style="margin-bottom:1rem;">
-                <label for="nombre" style="margin-bottom:0.5rem;display:block;font-size:0.875rem;line-height:1.25rem;font-weight:700;color:rgb(55,65,81);">
-                Nombre *
-                </label>
-                <input id="nombre" name="nombre" required="" type="text" style="width:100%;appearance:none;border-radius:0.25rem;border-width:1px;padding-left:0.75rem;padding-right:0.75rem;padding-top:0.5rem;padding-bottom:0.5rem;line-height:1.25;color:rgb(55,65,81);box-shadow:0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgb(0,0,0,0.1), 0 1px 2px -1px rgb(0,0,0,0.1);outline:2px solid transparent;outline-offset:2px;margin-bottom: 0px;margin-bottom: 0px">
-              </div>
-              <div style="margin-bottom:1rem;">
-                <label for="nombre" style="margin-bottom:0.5rem;display:block;font-size:0.875rem;line-height:1.25rem;font-weight:700;color:rgb(55,65,81);">
-                Apellido *
-                </label>
-                <input id="nombre" name="nombre" required="" type="text" style="width:100%;appearance:none;border-radius:0.25rem;border-width:1px;padding-left:0.75rem;padding-right:0.75rem;padding-top:0.5rem;padding-bottom:0.5rem;line-height:1.25;color:rgb(55,65,81);box-shadow:0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgb(0,0,0,0.1), 0 1px 2px -1px rgb(0,0,0,0.1);outline:2px solid transparent;outline-offset:2px;margin-bottom: 0px;margin-bottom: 0px">
-              </div>
-              <div style="margin-bottom:1rem;">
-                <label for="correo" style="margin-bottom:0.5rem;display:block;font-size:0.875rem;line-height:1.25rem;font-weight:700;color:rgb(55,65,81);">
-                Correo *
-                </label>
-                <input id="correo" name="correo" required="" type="email" style="width:100%;appearance:none;border-radius:0.25rem;border-width:1px;padding-left:0.75rem;padding-right:0.75rem;padding-top:0.5rem;padding-bottom:0.5rem;line-height:1.25;color:rgb(55,65,81);box-shadow:0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgb(0,0,0,0.1), 0 1px 2px -1px rgb(0,0,0,0.1);outline:2px solid transparent;outline-offset:2px;margin-bottom: 0px;margin-bottom: 0px">
-              </div>
-              <div style="margin-bottom:1rem;">
-                <label for="telefono" style="margin-bottom:0.5rem;display:block;font-size:0.875rem;line-height:1.25rem;font-weight:700;color:rgb(55,65,81);">
-                Fecha de nacimiento:
-                </label>
-                <div style="display:flex;">
-                  <div class="datepicker-container">
-                    <input type="text" id="datepicker-input" placeholder="Select date" style="margin-bottom: 0px">
-                    
-                  </div>
-                </div>
-              </div>
-              <div style="margin-bottom:1.5rem;">
-                <input id="acepto" name="acepto" type="checkbox" style="display: inline;margin-right:0.5rem;line-height:1.25;width: 8%;vertical-align: middle;" />
-                <label for="acepto" style="width: 90%;font-size:0.875rem;line-height:1.25rem;display: inline;vertical-align: middle;">
-                  Acepto recibir comunicaciones. *
-                </label>
-              </div>
-              <p style="margin-bottom:1.5rem;font-size:0.875rem;line-height:1.25rem;">
-                *Al hacer clic y proporcionarnos tus datos, aceptas nuestros
-                <a style="color:rgb(59,130,246);"href="https://mozzafiato.pe/pages/terminos-y-condiciones">Términos y Condiciones</a>
-                . El consentimiento no es una condición para la compra. Puede darse de baja en cualquier momento.
-              </p>
-              <button type="submit" style="line-height: 0;border-radius:0.25rem;background-color:#f8c8da;padding-left:1rem;padding-right:1rem;padding-top:0.5rem;padding-bottom:0.5rem;font-weight:700;color:rgb(255,255,255);outline:2px solid transparent;outline-offset:2px;">
-                ¡OBTÉN 10% OFF YA!
-              </button>
-            </form>
-          </div>
-        </div>
       </popup-root>
     </div>
   </div>
