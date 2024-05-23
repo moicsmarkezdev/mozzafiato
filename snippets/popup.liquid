@@ -13,6 +13,19 @@
   .flatpickr-current-month .numInputWrapper {
     display: none !important;
   }
+
+  .popup-modal {
+    max-height: 860px;
+  }
+
+  @media (max-width: 901px) {
+    .popup-modal {
+      max-height: none;
+      width: 100%;
+      padding: 10px;
+    }
+  }
+
   .popup-modal-close {
     position: fixed;
     width: 100%;
@@ -45,14 +58,15 @@
   }
 
   .form-heading-pp {
-      margin-bottom: 1rem;
-      font-size: 1.875rem;
-      line-height: 2.25rem;
-      font-weight: 700;
+    margin-bottom: 1rem;
+    font-size: 1.175rem;
+    line-height: 1.25rem;
+    font-weight: 700;
   }
 
   .form-subheading-pp {
       margin-bottom: 1.5rem;
+      font-size: 0.9rem;
   }
 
   .form-group-pp {
@@ -62,7 +76,7 @@
   .form-label-pp {
       margin-bottom: 0.5rem !important;
       display: block;
-      font-size: 0.875rem !important;
+      font-size: 0.775rem !important;
       line-height: 1.25rem;
       font-weight: 700 !important;
       color: rgb(55, 65, 81);
@@ -83,6 +97,7 @@
       outline: 2px solid transparent;
       outline-offset: 2px;
       margin-bottom: 0px;
+      font-size: 13px;
   }
 
   .form-group-pp-checkbox {
