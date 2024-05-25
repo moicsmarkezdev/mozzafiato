@@ -44,17 +44,17 @@
   }
 
   .popup-container {
-    display: flex;
+      display: flex;
   }
 
   .popup-image {
-    width: 50%;
-    background-size: cover;
+      width: 50%;
+      background-size: cover;
   }
 
   .popup-form {
-    width: 50%;
-    padding: 3rem;
+      width: 50%;
+      padding: 3rem;
   }
 
   .form-heading-pp {
@@ -65,84 +65,84 @@
   }
 
   .form-subheading-pp {
-    margin-bottom: 5px;
-    font-size: 12px;
+      margin-bottom: 5px;
+      font-size: 12px;
   }
 
   .form-group-pp {
-    margin-bottom: 1rem;
+      margin-bottom: 1rem;
   }
 
   .form-label-pp {
-    margin-bottom: 0 !important;
-    display: block;
-    font-size: 12px !important;
-    line-height: 1.25rem;
-    font-weight: 700 !important;
-    color: rgb(55, 65, 81);
+      margin-bottom: 0 !important;
+      display: block;
+      font-size: 12px !important;
+      line-height: 1.25rem;
+      font-weight: 700 !important;
+      color: rgb(55, 65, 81);
   }
 
   .form-input-pp {
-    width: 100%;
-    appearance: none;
-    border-radius: 0.25rem;
-    border-width: 1px;
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    line-height: 1.25;
-    color: rgb(55, 65, 81);
-    box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgb(0, 0, 0, 0.1), 0 1px 2px -1px rgb(0, 0, 0, 0.1);
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-    margin-bottom: 0px;
-    font-size: 12px;
+      width: 100%;
+      appearance: none;
+      border-radius: 0.25rem;
+      border-width: 1px;
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      line-height: 1.25;
+      color: rgb(55, 65, 81);
+      box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgb(0, 0, 0, 0.1), 0 1px 2px -1px rgb(0, 0, 0, 0.1);
+      outline: 2px solid transparent;
+      outline-offset: 2px;
+      margin-bottom: 0px;
+      font-size: 12px;
   }
 
   .form-group-pp-checkbox {
-    margin-bottom: 1.5rem;
+      margin-bottom: 1.5rem;
   }
 
   .form-checkbox-pp {
-    display: inline;
-    margin-right: 0.5rem;
-    line-height: 1.25;
-    vertical-align: middle;
+      display: inline;
+      margin-right: 0.5rem;
+      line-height: 1.25;
+      vertical-align: middle;
   }
 
   .form-checkbox-pp-label {
-    width: 100%;
-    font-size: 0.875rem !important;
-    line-height: 1.25rem;
-    display: inline;
-    vertical-align: middle;
-    padding: 0px;
-    margin-top: 2.53px;
+      width: 100%;
+      font-size: 0.875rem !important;
+      line-height: 1.25rem;
+      display: inline;
+      vertical-align: middle;
+      padding: 0px;
+      margin-top: 2.53px;
   }
 
   .form-terms-pp {
-    margin-bottom: 7px;
-    font-size: 11px;
-    line-height: 1rem;
+      margin-bottom: 7px;
+      font-size: 11px;
+      line-height: 1rem;
   }
 
   .form-link-pp {
-    color: rgb(59, 130, 246);
+      color: rgb(59, 130, 246);
   }
 
   .form-button-pp {
-    line-height: 0;
-    border-radius: 0.25rem;
-    background-color: #f8c8da;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    font-weight: 700;
-    color: rgb(255, 255, 255);
-    outline: 2px solid transparent;
-    outline-offset: 2px;
+      line-height: 0;
+      border-radius: 0.25rem;
+      background-color: #f8c8da;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      font-weight: 700;
+      color: rgb(255, 255, 255);
+      outline: 2px solid transparent;
+      outline-offset: 2px;
   }
 
   @media (max-width: 901px) {
@@ -306,18 +306,25 @@
     const data = new FormData(form);
 
     if (validateForm(form)) {
-      fetch('https://mozzafiato.us18.list-manage.com/subscribe/post?u=03463ad5181c8d7668383cd88&id=63b6090f97&f_id=00f62ce2f0', {
+      fetch('https://mozzafiato.us18.list-manage.com/subscribe/post-json?u=03463ad5181c8d7668383cd88&id=63b6090f97&c=?', {
         method: 'POST',
         body: data,
-        mode: 'no-cors'
+        headers: {
+          'Accept': 'application/json',
+          'Content-Type': 'application/json'
+        },
       })
-      .then(response => {
+      .then(response => response.json())
+      .then(data => {
+        if (data.result !== "success") {
+          throw new Error(data.msg || 'Hubo un error al enviar el formulario. Por favor, inténtelo de nuevo.');
+        }
         document.getElementById('mce-success-response').textContent = '¡Gracias por suscribirte!';
         document.getElementById('mce-success-response').style.display = 'block';
         document.getElementById('mce-error-response').style.display = 'none';
       })
       .catch(error => {
-        document.getElementById('mce-error-response').textContent = 'Hubo un error al enviar el formulario. Por favor, inténtelo de nuevo.';
+        document.getElementById('mce-error-response').textContent = error.message;
         document.getElementById('mce-error-response').style.display = 'block';
         document.getElementById('mce-success-response').style.display = 'none';
       });
