@@ -143,7 +143,7 @@
     color: rgb(255, 255, 255);
     outline: 2px solid transparent;
     outline-offset: 2px;
-    cursor: pointer; /* Added cursor to show the button is clickable */
+    cursor: not-allowed;
   }
 
   @media (max-width: 901px) {
@@ -258,8 +258,10 @@
 
                 if (fname && lname && email && acepta) {
                   document.getElementById('mc-embedded-subscribe').disabled = false;
+                  document.getElementById('mc-embedded-subscribe').style.cursor = 'pointer';
                 } else {
                   document.getElementById('mc-embedded-subscribe').disabled = true;
+                  document.getElementById('mc-embedded-subscribe').style.cursor = 'not-allowed';
                 }
               }
 
