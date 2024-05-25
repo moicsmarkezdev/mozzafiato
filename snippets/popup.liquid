@@ -7,7 +7,7 @@
 -%}
 
 {{ 'flatpickr.css' | asset_url | stylesheet_tag }}
-<script src="{{ 'flatpickr.js' | asset_url }}" async ></script>
+<script src="{{ 'flatpickr.js' | asset_url }}" async></script>
 
 <style>
   .flatpickr-current-month .numInputWrapper {
@@ -44,17 +44,17 @@
   }
 
   .popup-container {
-      display: flex;
+    display: flex;
   }
 
   .popup-image {
-      width: 50%;
-      background-size: cover;
+    width: 50%;
+    background-size: cover;
   }
 
   .popup-form {
-      width: 50%;
-      padding: 3rem;
+    width: 50%;
+    padding: 3rem;
   }
 
   .form-heading-pp {
@@ -65,86 +65,85 @@
   }
 
   .form-subheading-pp {
-      margin-bottom: 5px;
-      font-size: 12px;
+    margin-bottom: 5px;
+    font-size: 12px;
   }
 
   .form-group-pp {
-      margin-bottom: 1rem;
+    margin-bottom: 1rem;
   }
 
   .form-label-pp {
-      margin-bottom: 0 !important;
-      display: block;
-      font-size: 12px !important;
-      line-height: 1.25rem;
-      font-weight: 700 !important;
-      color: rgb(55, 65, 81);
+    margin-bottom: 0 !important;
+    display: block;
+    font-size: 12px !important;
+    line-height: 1.25rem;
+    font-weight: 700 !important;
+    color: rgb(55, 65, 81);
   }
 
   .form-input-pp {
-      width: 100%;
-      appearance: none;
-      border-radius: 0.25rem;
-      border-width: 1px;
-      padding-left: 0.75rem;
-      padding-right: 0.75rem;
-      padding-top: 0.5rem;
-      padding-bottom: 0.5rem;
-      line-height: 1.25;
-      color: rgb(55, 65, 81);
-      box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgb(0, 0, 0, 0.1), 0 1px 2px -1px rgb(0, 0, 0, 0.1);
-      outline: 2px solid transparent;
-      outline-offset: 2px;
-      margin-bottom: 0px;
-      font-size: 12px;
+    width: 100%;
+    appearance: none;
+    border-radius: 0.25rem;
+    border-width: 1px;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    line-height: 1.25;
+    color: rgb(55, 65, 81);
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgb(0, 0, 0, 0.1), 0 1px 2px -1px rgb(0, 0, 0, 0.1);
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    margin-bottom: 0px;
+    font-size: 12px;
   }
 
   .form-group-pp-checkbox {
-      margin-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
   .form-checkbox-pp {
-      display: inline;
-      margin-right: 0.5rem;
-      line-height: 1.25;
-      vertical-align: middle;
+    display: inline;
+    margin-right: 0.5rem;
+    line-height: 1.25;
+    vertical-align: middle;
   }
 
   .form-checkbox-pp-label {
-      width: 100%;
-      font-size: 0.875rem !important;
-      line-height: 1.25rem;
-      display: inline;
-      vertical-align: middle;
-      padding: 0px;
-      margin-top: 2.53px;
+    width: 100%;
+    font-size: 0.875rem !important;
+    line-height: 1.25rem;
+    display: inline;
+    vertical-align: middle;
+    padding: 0px;
+    margin-top: 2.53px;
   }
 
   .form-terms-pp {
-      margin-bottom: 7px;
-      font-size: 11px;
-      line-height: 1rem;
+    margin-bottom: 7px;
+    font-size: 11px;
+    line-height: 1rem;
   }
 
   .form-link-pp {
-      color: rgb(59, 130, 246);
+    color: rgb(59, 130, 246);
   }
 
   .form-button-pp {
-      line-height: 0;
-      border-radius: 0.25rem;
-      background-color: #f8c8da;
-      padding-left: 1rem;
-      padding-right: 1rem;
-      padding-top: 0.5rem;
-      padding-bottom: 0.5rem;
-      font-weight: 700;
-      color: rgb(255, 255, 255);
-      outline: 2px solid transparent;
-      outline-offset: 2px;
+    line-height: 0;
+    border-radius: 0.25rem;
+    background-color: #f8c8da;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    outline: 2px solid transparent;
+    outline-offset: 2px;
   }
-
 
   @media (max-width: 901px) {
     .popup-image {
@@ -160,6 +159,7 @@
       margin-bottom: 0.5rem;
       font-size: 0.775rem !important;
     }
+
     .form-terms-pp {
       margin-bottom: 0.7rem;
       font-size: 0.675rem;
@@ -173,64 +173,84 @@
     <div id="subscribe_module">
       <popup-root class="popup-root">
         <div class="popup-container">
-            <!-- Left side with image -->
-            <div class="popup-image" style="background-image:url({{ settings.popup--image | image_url: width: 1200 }});">
-                &nbsp;
-            </div>
-            <!-- Right side with form -->
-            <div class="popup-form">
-                <h2 class="form-heading-pp">{{ settings.popup--newsletter--heading }}</h2>
-                <p class="form-subheading-pp">{{ settings.popup--sub-heading }}</p>
-                <div id="mc_embed_signup" >
-                  <form action="https://mozzafiato.us18.list-manage.com/subscribe/post?u=03463ad5181c8d7668383cd88&amp;id=63b6090f97&amp;f_id=00f62ce2f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" >
-                      <div class="form-group-pp">
-                        <label for="mce-FNAME" class="form-label-pp" >Nombre </label>
-                        <input type="text" name="FNAME" class="form-input-pp text" id="mce-FNAME" value="" required="true" >
-                      </div>
-                      <div class="form-group-pp">
-                        <label for="mce-LNAME" class="form-label-pp" >Apellido </label>
-                        <input type="text" name="LNAME" class="form-input-pp text" id="mce-LNAME" value="" required="true" >
-                      </div>
-                      <div class="form-group-pp">
-                        <label for="mce-EMAIL" class="form-label-pp" >Correo electrónico <span class="asterisk">*</span></label>
-                        <input type="email" name="EMAIL" class="form-input-pp required email" id="mce-EMAIL" value="" required="">
-                      </div>
-                      <div class="form-group-pp">
-                        <label for="datepicker-input" class="form-label-pp">Fecha de cumpleaños:</label>
-                        <div class="datepicker-container">
-                            <input type="text" id="datepicker-input" placeholder="03/12" class="form-input-pp">
-                            <div class="datefield hide">
-                              <span class="subfield monthfield">
-                                <input class="birthday REQ_CSS" type="text" pattern="[0-9]*" placeholder="MM" size="2" maxlength="2" name="BIRTHDAY[month]" id="mce-BIRTHDAY-month" value="">
-                              </span> /<span class="subfield dayfield">
-                                <input class="birthday REQ_CSS" type="text" pattern="[0-9]*" placeholder="DD" size="2" maxlength="2" name="BIRTHDAY[day]" id="mce-BIRTHDAY-day" value="">
-                              </span>
-                              <span class="small-meta nowrap">( mm / dd )</span>
-                            </div>
-                        </div>
-                      </div>
-                      <div class="form-group-pp form-group-pp-checkbox">
-                        <input id="acepto" name="acepto" type="checkbox" class="form-checkbox-pp" required="true" >
-                        <label for="acepto" class="form-checkbox-pp-label">Acepto recibir comunicaciones*</label>
-                      </div>
-                      <p class="form-terms-pp">
-                        *Al hacer clic y proporcionarnos tus datos, aceptas nuestros
-                        <a style="color:rgb(59,130,246)" href="https://mozzafiato.pe/pages/terminos-y-condiciones" class="form-link-pp">Términos y Condiciones</a>.
-                        El consentimiento no es una condición para la compra. Puede darse de baja en cualquier momento.
-                      </p>
-                      <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="form-button-pp" value="¡OBTÉN 10% OFF YA!" />
-                      <div id="mce-responses" class="clear">
-                        <div class="response" id="mce-error-response" style="display: none;"></div>
-                        <div class="response" id="mce-success-response" style="display: none;"></div>
-                      </div>
-                      <div aria-hidden="true" style="position: absolute; left: -5000px;" class="hide">
-                        <input type="text" name="b_03463ad5181c8d7668383cd88_63b6090f97" tabindex="-1" value="">
-                      </div>
-                  </form>
-                </div>
-                <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[5]='BIRTHDAY';ftypes[5]='birthday';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
-            </div>
+          <!-- Left side with image -->
+          <div class="popup-image" style="background-image:url({{ settings.popup--image | image_url: width: 1200 }});">
+            &nbsp;
           </div>
+          <!-- Right side with form -->
+          <div class="popup-form">
+            <h2 class="form-heading-pp">{{ settings.popup--newsletter--heading }}</h2>
+            <p class="form-subheading-pp">{{ settings.popup--sub-heading }}</p>
+            <div id="mc_embed_signup">
+              <form action="https://mozzafiato.us18.list-manage.com/subscribe/post?u=03463ad5181c8d7668383cd88&amp;id=63b6090f97&amp;f_id=00f62ce2f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div class="form-group-pp">
+                  <label for="mce-FNAME" class="form-label-pp">Nombre </label>
+                  <input type="text" name="FNAME" class="form-input-pp text" id="mce-FNAME" value="" required>
+                </div>
+                <div class="form-group-pp">
+                  <label for="mce-LNAME" class="form-label-pp">Apellido </label>
+                  <input type="text" name="LNAME" class="form-input-pp text" id="mce-LNAME" value="" required>
+                </div>
+                <div class="form-group-pp">
+                  <label for="mce-EMAIL" class="form-label-pp">Correo electrónico <span class="asterisk">*</span></label>
+                  <input type="email" name="EMAIL" class="form-input-pp required email" id="mce-EMAIL" value="" required>
+                </div>
+                <div class="form-group-pp">
+                  <label for="datepicker-input" class="form-label-pp">Fecha de cumpleaños:</label>
+                  <div class="datepicker-container">
+                    <input type="text" id="datepicker-input" placeholder="03/12" class="form-input-pp">
+                    <div class="datefield hide">
+                      <span class="subfield monthfield">
+                        <input class="birthday REQ_CSS" type="text" pattern="[0-9]*" placeholder="MM" size="2" maxlength="2" name="BIRTHDAY[month]" id="mce-BIRTHDAY-month" value="">
+                      </span> /
+                      <span class="subfield dayfield">
+                        <input class="birthday REQ_CSS" type="text" pattern="[0-9]*" placeholder="DD" size="2" maxlength="2" name="BIRTHDAY[day]" id="mce-BIRTHDAY-day" value="">
+                      </span>
+                      <span class="small-meta nowrap">( mm / dd )</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group-pp form-group-pp-checkbox">
+                  <input id="acepto" name="acepto" type="checkbox" class="form-checkbox-pp" required>
+                  <label for="acepto" class="form-checkbox-pp-label">Acepto recibir comunicaciones*</label>
+                </div>
+                <p class="form-terms-pp">
+                  *Al hacer clic y proporcionarnos tus datos, aceptas nuestros
+                  <a style="color:rgb(59,130,246)" href="https://mozzafiato.pe/pages/terminos-y-condiciones" class="form-link-pp">Términos y Condiciones</a>.
+                  El consentimiento no es una condición para la compra. Puede darse de baja en cualquier momento.
+                </p>
+                <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="form-button-pp" value="¡OBTÉN 10% OFF YA!" />
+                <div id="mce-responses" class="clear">
+                  <div class="response" id="mce-error-response" style="display: none; color: red;"></div>
+                  <div class="response" id="mce-success-response" style="display: none; color: green;"></div>
+                </div>
+                <div aria-hidden="true" style="position: absolute; left: -5000px;" class="hide">
+                  <input type="text" name="b_03463ad5181c8d7668383cd88_63b6090f97" tabindex="-1" value="">
+                </div>
+              </form>
+            </div>
+            <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+            <script type="text/javascript">
+              (function($) {
+                window.fnames = new Array();
+                window.ftypes = new Array();
+                fnames[1] = 'FNAME';
+                ftypes[1] = 'text';
+                fnames[2] = 'LNAME';
+                ftypes[2] = 'text';
+                fnames[0] = 'EMAIL';
+                ftypes[0] = 'email';
+                fnames[5] = 'BIRTHDAY';
+                ftypes[5] = 'birthday';
+                fnames[3] = 'ADDRESS';
+                ftypes[3] = 'address';
+                fnames[4] = 'PHONE';
+                ftypes[4] = 'phone';
+              }(jQuery));
+              var $mcj = jQuery.noConflict(true);
+            </script>
+          </div>
+        </div>
       </popup-root>
     </div>
   </div>
@@ -240,47 +260,74 @@
 </div>
 <script>
   const itemStr = localStorage.getItem('popup_showin');
-  if(!itemStr){
-      setTimeout(()=>{
-          document.querySelector('.popup.popup-modal').classList.remove('hide');
-          document.querySelector('.popup-modal-close').classList.remove('hide');
-      }, {{ settings.popup--seconds-range | times: 1000 }} );
-  }else{
-      let item = JSON.parse(itemStr);
-      let now = new Date();
+  if (!itemStr) {
+    setTimeout(() => {
+      document.querySelector('.popup.popup-modal').classList.remove('hide');
+      document.querySelector('.popup-modal-close').classList.remove('hide');
+    }, {{ settings.popup--seconds-range | times: 1000 }});
+  } else {
+    let item = JSON.parse(itemStr);
+    let now = new Date();
 
-      if (now.getTime() > item.expiry) {
-          localStorage.removeItem('popup_showin');
-      }
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem('popup_showin');
+    }
   }
 
   document.querySelector('.popup-modal-close').addEventListener('click', el => {
-      el.preventDefault();
-      document.querySelector('.popup-modal-close').classList.add('hide');
-      document.querySelector('.popup.popup-modal').classList.add('hide');
-      
-      let now = new Date()
+    el.preventDefault();
+    document.querySelector('.popup-modal-close').classList.add('hide');
+    document.querySelector('.popup.popup-modal').classList.add('hide');
 
-      let item = {
-          value: 1,
-          expiry: now.setDate(now.getDate() + {{ settings.popup--days-range }}),
-      }
-      localStorage.setItem('popup_showin', JSON.stringify(item));
-      
-      // document.querySelector('.get-button--section').classList.remove('hide');
-  })
+    let now = new Date();
+
+    let item = {
+      value: 1,
+      expiry: now.setDate(now.getDate() + {{ settings.popup--days-range }}),
+    };
+    localStorage.setItem('popup_showin', JSON.stringify(item));
+  });
 
   const flatpickrelement = document.querySelector('#datepicker-input');
   flatpickr(flatpickrelement, {
     dateFormat: "m/d",
     disableMobile: "true",
     onChange: function(selectedDates, dateStr, instance) {
-        const date = new Date(dateStr);
-        const day = date.getDate();
-        const month = date.getMonth() + 1; // Months are 0-based
+      const date = new Date(dateStr);
+      const day = date.getDate();
+      const month = date.getMonth() + 1; // Months are 0-based
 
-        document.getElementById('mce-BIRTHDAY-day').value = day;
-        document.getElementById('mce-BIRTHDAY-month').value = month;
+      document.getElementById('mce-BIRTHDAY-day').value = day;
+      document.getElementById('mce-BIRTHDAY-month').value = month;
     }
   });
+
+  document.getElementById('mc-embedded-subscribe-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const form = event.target;
+
+    if (validateForm(form)) {
+      form.submit();
+      document.getElementById('mce-success-response').textContent = '¡Gracias por suscribirte!';
+      document.getElementById('mce-success-response').style.display = 'block';
+      document.getElementById('mce-error-response').style.display = 'none';
+    } else {
+      document.getElementById('mce-error-response').textContent = 'Por favor, complete todos los campos requeridos.';
+      document.getElementById('mce-error-response').style.display = 'block';
+      document.getElementById('mce-success-response').style.display = 'none';
+    }
+  });
+
+  function validateForm(form) {
+    let isValid = true;
+    const inputs = form.querySelectorAll('input[required]');
+
+    inputs.forEach(input => {
+      if (!input.value) {
+        isValid = false;
+      }
+    });
+
+    return isValid;
+  }
 </script>
