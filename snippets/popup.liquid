@@ -221,8 +221,8 @@
                 </p>
                 <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="form-button-pp" value="¡OBTÉN 10% OFF YA!" disabled />
                 <div id="mce-responses" class="clear">
-                  <div class="response" id="mce-error-response" style="display:none;"></div>
-                  <div class="response" id="mce-success-response" style="display:none;"></div>
+                  <div class="response" id="mce-error-response" style="display:none;">Ha ocurrido un error, por favor intente nuevamente.</div>
+                  <div class="response" id="mce-success-response" style="display:none;">¡Gracias por suscribirse!</div>
                 </div>
                 <div aria-hidden="true" style="position: absolute; left: -5000px;" class="hide">
                   <input type="text" name="b_03463ad5181c8d7668383cd88_63b6090f97" tabindex="-1" value="">
@@ -276,9 +276,9 @@
                 dateFormat: "m/d",
                 disableMobile: "true",
                 onChange: function(selectedDates, dateStr, instance) {
-                  const date = new Date(dateStr);
-                  const day = date.getDate();
-                  const month = date.getMonth() + 1; // Months are 0-based
+                  const dateParts = dateStr.split('/');
+                  const month = dateParts[0];
+                  const day = dateParts[1];
 
                   document.getElementById('mce-BIRTHDAY-day').value = day;
                   document.getElementById('mce-BIRTHDAY-month').value = month;
