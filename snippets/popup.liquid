@@ -143,6 +143,7 @@
     color: rgb(255, 255, 255);
     outline: 2px solid transparent;
     outline-offset: 2px;
+    cursor: pointer; /* Added cursor to show the button is clickable */
   }
 
   @media (max-width: 901px) {
@@ -247,6 +248,40 @@
                 ftypes[4] = 'phone';
               }(jQuery));
               var $mcj = jQuery.noConflict(true);
+              
+              // Function to enable submit button if all fields are valid
+              function validateForm() {
+                const fname = document.getElementById('mce-FNAME').value;
+                const lname = document.getElementById('mce-LNAME').value;
+                const email = document.getElementById('mce-EMAIL').value;
+                const acepta = document.getElementById('acepto').checked;
+
+                if (fname && lname && email && acepta) {
+                  document.getElementById('mc-embedded-subscribe').disabled = false;
+                } else {
+                  document.getElementById('mc-embedded-subscribe').disabled = true;
+                }
+              }
+
+              // Add event listeners to the form fields
+              document.getElementById('mce-FNAME').addEventListener('input', validateForm);
+              document.getElementById('mce-LNAME').addEventListener('input', validateForm);
+              document.getElementById('mce-EMAIL').addEventListener('input', validateForm);
+              document.getElementById('acepto').addEventListener('change', validateForm);
+
+              const flatpickrElement = document.querySelector('#datepicker-input');
+              flatpickr(flatpickrElement, {
+                dateFormat: "m/d",
+                disableMobile: "true",
+                onChange: function(selectedDates, dateStr, instance) {
+                  const date = new Date(dateStr);
+                  const day = date.getDate();
+                  const month = date.getMonth() + 1; // Months are 0-based
+
+                  document.getElementById('mce-BIRTHDAY-day').value = day;
+                  document.getElementById('mce-BIRTHDAY-month').value = month;
+                }
+              });
             </script>
           </div>
         </div>
@@ -284,19 +319,5 @@
       expiry: now.setDate(now.getDate() + {{ settings.popup--days-range }}),
     };
     localStorage.setItem('popup_showin', JSON.stringify(item));
-  });
-
-  const flatpickrElement = document.querySelector('#datepicker-input');
-  flatpickr(flatpickrElement, {
-    dateFormat: "m/d",
-    disableMobile: "true",
-    onChange: function(selectedDates, dateStr, instance) {
-      const date = new Date(dateStr);
-      const day = date.getDate();
-      const month = date.getMonth() + 1; // Months are 0-based
-
-      document.getElementById('mce-BIRTHDAY-day').value = day;
-      document.getElementById('mce-BIRTHDAY-month').value = month;
-    }
   });
 </script>
