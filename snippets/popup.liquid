@@ -182,7 +182,7 @@
             <h2 class="form-heading-pp">{{ settings.popup--newsletter--heading }}</h2>
             <p class="form-subheading-pp">{{ settings.popup--sub-heading }}</p>
             <div id="mc_embed_signup">
-              <form action="https://mozzafiato.us18.list-manage.com/subscribe/post?u=03463ad5181c8d7668383cd88&amp;id=63b6090f97&amp;f_id=00f62ce2f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <form id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
                 <div class="form-group-pp">
                   <label for="mce-FNAME" class="form-label-pp">Nombre </label>
                   <input type="text" name="FNAME" class="form-input-pp text" id="mce-FNAME" value="" required>
@@ -219,7 +219,7 @@
                   <a style="color:rgb(59,130,246)" href="https://mozzafiato.pe/pages/terminos-y-condiciones" class="form-link-pp">Términos y Condiciones</a>.
                   El consentimiento no es una condición para la compra. Puede darse de baja en cualquier momento.
                 </p>
-                <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="form-button-pp" value="¡OBTÉN 10% OFF YA!" />
+                <input type="button" id="mc-embedded-subscribe" class="form-button-pp" value="¡OBTÉN 10% OFF YA!" />
                 <div id="mce-responses" class="clear">
                   <div class="response" id="mce-error-response" style="display: none; color: red;"></div>
                   <div class="response" id="mce-success-response" style="display: none; color: green;"></div>
@@ -229,7 +229,6 @@
                 </div>
               </form>
             </div>
-            <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
             <script type="text/javascript">
               (function($) {
                 window.fnames = new Array();
@@ -302,15 +301,26 @@
     }
   });
 
-  document.getElementById('mc-embedded-subscribe-form').addEventListener('submit', function(event) {
-    event.preventDefault();
-    const form = event.target;
+  document.getElementById('mc-embedded-subscribe').addEventListener('click', function() {
+    const form = document.getElementById('mc-embedded-subscribe-form');
+    const data = new FormData(form);
 
     if (validateForm(form)) {
-      form.submit();
-      document.getElementById('mce-success-response').textContent = '¡Gracias por suscribirte!';
-      document.getElementById('mce-success-response').style.display = 'block';
-      document.getElementById('mce-error-response').style.display = 'none';
+      fetch('https://mozzafiato.us18.list-manage.com/subscribe/post?u=03463ad5181c8d7668383cd88&id=63b6090f97&f_id=00f62ce2f0', {
+        method: 'POST',
+        body: data,
+        mode: 'no-cors'
+      })
+      .then(response => {
+        document.getElementById('mce-success-response').textContent = '¡Gracias por suscribirte!';
+        document.getElementById('mce-success-response').style.display = 'block';
+        document.getElementById('mce-error-response').style.display = 'none';
+      })
+      .catch(error => {
+        document.getElementById('mce-error-response').textContent = 'Hubo un error al enviar el formulario. Por favor, inténtelo de nuevo.';
+        document.getElementById('mce-error-response').style.display = 'block';
+        document.getElementById('mce-success-response').style.display = 'none';
+      });
     } else {
       document.getElementById('mce-error-response').textContent = 'Por favor, complete todos los campos requeridos.';
       document.getElementById('mce-error-response').style.display = 'block';
@@ -327,6 +337,12 @@
         isValid = false;
       }
     });
+
+    const day = document.getElementById('mce-BIRTHDAY-day').value;
+    const month = document.getElementById('mce-BIRTHDAY-month').value;
+    if (!day || !month) {
+      isValid = false;
+    }
 
     return isValid;
   }
