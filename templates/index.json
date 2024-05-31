@@ -3,20 +3,6 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
-        "image_Hmdzyy": {
-          "type": "image",
-          "settings": {
-            "text-position": "bottom-left",
-            "text-width": "medium",
-            "image": "shopify:\/\/shop_images\/Mozzafiatoxfrmiar-Banner.jpg",
-            "overline": "",
-            "title": "",
-            "description": "",
-            "link-url": "shopify:\/\/collections\/mozzafiato-x-frmiar",
-            "link-text": "",
-            "mobile-image": "shopify:\/\/shop_images\/Mozzafiatoxfrmiar-Banner_1.jpg"
-          }
-        },
         "4caf9002-011c-4ae6-88ef-0b25f3654fbc": {
           "type": "image",
           "settings": {
@@ -29,6 +15,20 @@
             "link-url": "shopify:\/\/collections\/super-sale",
             "link-text": "",
             "mobile-image": "shopify:\/\/shop_images\/IMG_0516.jpg"
+          }
+        },
+        "image_Hmdzyy": {
+          "type": "image",
+          "settings": {
+            "text-position": "bottom-left",
+            "text-width": "medium",
+            "image": "shopify:\/\/shop_images\/Mozzafiatoxfrmiar-Banner.jpg",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "shopify:\/\/collections\/mozzafiato-x-frmiar",
+            "link-text": "",
+            "mobile-image": "shopify:\/\/shop_images\/Mozzafiatoxfrmiar-Banner_1.jpg"
           }
         },
         "a5482328-e971-4c6e-b38b-4e3380fe7526": {
@@ -61,8 +61,8 @@
         }
       },
       "block_order": [
-        "image_Hmdzyy",
         "4caf9002-011c-4ae6-88ef-0b25f3654fbc",
+        "image_Hmdzyy",
         "a5482328-e971-4c6e-b38b-4e3380fe7526",
         "4993a4c6-5948-4c34-853f-dc9d8e106671"
       ],
