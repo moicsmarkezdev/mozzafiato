@@ -26,6 +26,20 @@
             "mobile-image": "shopify:\/\/shop_images\/IMG_0516.jpg"
           }
         },
+        "4993a4c6-5948-4c34-853f-dc9d8e106671": {
+          "type": "image",
+          "settings": {
+            "text-position": "bottom-left",
+            "text-width": "medium",
+            "image": "shopify:\/\/shop_images\/Beauty_Pack_-_Banner_1_2683a816-eef9-4344-9c79-5784c6ff0f36.jpg",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "shopify:\/\/products\/beauty-pack",
+            "link-text": "",
+            "mobile-image": "shopify:\/\/shop_images\/Beauty_Pack_-_Banner_14225675-712b-4023-bd32-d247c6b3f632.jpg"
+          }
+        },
         "image_Hmdzyy": {
           "type": "image",
           "settings": {
@@ -53,27 +67,13 @@
             "link-text": "",
             "mobile-image": "shopify:\/\/shop_images\/Tocuyo_Bag_-_Banner.jpg"
           }
-        },
-        "4993a4c6-5948-4c34-853f-dc9d8e106671": {
-          "type": "image",
-          "settings": {
-            "text-position": "bottom-left",
-            "text-width": "medium",
-            "image": "shopify:\/\/shop_images\/Beauty_Pack_-_Banner_1_2683a816-eef9-4344-9c79-5784c6ff0f36.jpg",
-            "overline": "",
-            "title": "",
-            "description": "",
-            "link-url": "shopify:\/\/products\/beauty-pack",
-            "link-text": "",
-            "mobile-image": "shopify:\/\/shop_images\/Beauty_Pack_-_Banner_14225675-712b-4023-bd32-d247c6b3f632.jpg"
-          }
         }
       },
       "block_order": [
         "4caf9002-011c-4ae6-88ef-0b25f3654fbc",
+        "4993a4c6-5948-4c34-853f-dc9d8e106671",
         "image_Hmdzyy",
-        "a5482328-e971-4c6e-b38b-4e3380fe7526",
-        "4993a4c6-5948-4c34-853f-dc9d8e106671"
+        "a5482328-e971-4c6e-b38b-4e3380fe7526"
       ],
       "settings": {
         "text-color": "auto",
