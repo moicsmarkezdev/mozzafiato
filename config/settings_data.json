@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "current": {
     "color--accent-1": "#f8c8da",
@@ -39,7 +48,7 @@
     "hide-tags": "featured, pinned",
     "cart--type": "drawer",
     "cart--show-note": true,
-    "free_shipping_threshold_1": 270,
+    "free_shipping_threshold_1": 159,
     "free_shipping_threshold_2": 0,
     "free_shipping_threshold_3": 0,
     "free_shipping_success_1": "¡Felicitaciones, obtuviste envío gratuito!",
