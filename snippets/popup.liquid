@@ -1,172 +1,26 @@
-{%- liquid
-  assign placeholder_t = 'layout.footer.newsletter_placeholder' | t
-  assign button_t = 'layout.footer.newsletter_button' | t
-  assign shopify_disclaimer_t = 'shopify.online_store.spam_detection.disclaimer_html' | t
-
-  render 'section-assets', name: 'popup', type: 'script'
--%}
-
-{{ 'flatpickr.css' | asset_url | stylesheet_tag }}
-<script src="{{ 'flatpickr.js' | asset_url }}" async></script>
-
 <style>
-  .flatpickr-current-month .numInputWrapper {
-    display: none !important;
-  }
-
-  .popup-modal {
-    max-height: 760px;
-  }
-
-  @media (max-width: 801px) {
-    .popup-modal {
-      max-height: none;
-      width: 100%;
-      padding: 10px;
-    }
-  }
-
-  .popup-modal-close {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: #0000004a !important;
-    display: block;
-    z-index: 3;
-  }
-
-  .hide {
-    display: none !important;
-  }
-
-  .popup-root {
-    /* Styles for the root element */
-  }
-
-  .popup-container {
-    display: flex;
-  }
-
   .popup-image {
     width: 50%;
     background-size: cover;
+    position: relative;
   }
 
-  .popup-form {
-    width: 50%;
-    padding: 1.5rem; /* Reduced padding */
+  .popup-image:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0); /* Color de fondo blanco transparente */
+    z-index: 1; /* Asegura que el fondo blanco esté detrás de la imagen */
   }
 
-  .form-heading-pp {
-    margin-bottom: 8px; /* Reduced margin */
-    font-size: 14px; /* Smaller font size */
-    line-height: 1;
-    font-weight: 700; /* Reduced font weight */
-  }
-
-  .form-subheading-pp {
-    margin-bottom: 4px; /* Reduced margin */
-    font-size: 10px; /* Smaller font size */
-  }
-
-  .form-group-pp {
-    margin-bottom: 0.8rem; /* Reduced margin */
-  }
-
-  .form-label-pp {
-    margin-bottom: 0 !important;
-    display: block;
-    font-size: 10px !important; /* Smaller font size */
-    line-height: 1.1rem;
-    font-weight: 600 !important; /* Reduced font weight */
-    color: rgb(55, 65, 81);
-  }
-
-  .form-input-pp {
+  .popup-image img {
+    position: relative;
+    z-index: 2; /* Asegura que la imagen esté sobre el fondo blanco */
     width: 100%;
-    appearance: none;
-    border-radius: 0.2rem; /* Smaller border radius */
-    border-width: 1px;
-    padding-left: 0.6rem; /* Reduced padding */
-    padding-right: 0.6rem; /* Reduced padding */
-    padding-top: 0.4rem; /* Reduced padding */
-    padding-bottom: 0.4rem; /* Reduced padding */
-    line-height: 1.1;
-    color: rgb(55, 65, 81);
-    box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-    margin-bottom: 0px;
-    font-size: 10px; /* Smaller font size */
-  }
-
-  .form-group-pp-checkbox {
-    margin-bottom: 1.2rem; /* Reduced margin */
-  }
-
-  .form-checkbox-pp {
-    display: inline;
-    margin-right: 0.4rem; /* Reduced margin */
-    line-height: 1.1;
-    vertical-align: middle;
-  }
-
-  .form-checkbox-pp-label {
-    width: 100%;
-    font-size: 0.8rem !important; /* Smaller font size */
-    line-height: 1.1rem;
-    display: inline;
-    vertical-align: middle;
-    padding: 0px;
-    margin-top: 1.5px; /* Adjusted margin */
-  }
-
-  .form-terms-pp {
-    margin-bottom: 5px; /* Reduced margin */
-    font-size: 9px; /* Smaller font size */
-    line-height: 0.9rem;
-  }
-
-  .form-link-pp {
-    color: rgb(59, 130, 246);
-  }
-
-  .form-button-pp {
-    line-height: 0;
-    border-radius: 0.2rem; /* Smaller border radius */
-    background-color: #f8c8da;
-    padding-left: 0.8rem; /* Reduced padding */
-    padding-right: 0.8rem; /* Reduced padding */
-    padding-top: 0.4rem; /* Reduced padding */
-    padding-bottom: 0.4rem; /* Reduced padding */
-    font-weight: 700;
-    color: rgb(255, 255, 255);
-    outline: 2px solid transparent;
-    outline-offset: 2px;
-    cursor: not-allowed;
-    font-size: 10px; /* Smaller font size */
-  }
-
-  @media (max-width: 901px) {
-    .popup-image {
-      display: none;
-    }
-
-    .popup-form {
-      width: 100%;
-      padding: 1rem; /* Further reduced padding */
-    }
-
-    .form-group-pp-checkbox {
-      margin-bottom: 0.6rem; /* Further reduced margin */
-      font-size: 0.7rem !important; /* Smaller font size */
-    }
-
-    .form-terms-pp {
-      margin-bottom: 0.6rem; /* Further reduced margin */
-      font-size: 0.6rem; /* Smaller font size */
-      line-height: 0.6rem;
-    }
+    height: auto;
   }
 </style>
 
@@ -177,7 +31,7 @@
         <div class="popup-container">
           <!-- Lado izquierdo con imagen -->
           <div class="popup-image" style="background-image:url({{ settings.popup--image | image_url: width: 1200 }});">
-            &nbsp;
+            <img src="{{ settings.popup--image | image_url: width: 1200 }}" alt="Imagen del popup">
           </div>
           <!-- Lado derecho con formulario -->
           <div class="popup-form">
