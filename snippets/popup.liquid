@@ -6,6 +6,10 @@
   .popup-modal {
     max-height: 700px;
     max-width: 900px;
+    padding: 10px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: white;
   }
 
   @media (max-width: 801px) {
@@ -18,11 +22,13 @@
 
   .popup-modal-close {
     position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
     background: #0000004a !important;
     display: block;
-    z-index: 9999; /* Asegúrate de que este valor sea alto */
+    z-index: 9999;
   }
 
   .hide {
@@ -35,16 +41,19 @@
 
   .popup-container {
     display: flex;
+    flex-direction: column;
   }
 
   .popup-image {
-    width: 50%;
+    width: 100%;
+    height: 200px;
     background-size: cover;
+    background-position: center;
   }
 
   .popup-form {
-    width: 50%;
-    padding: 2.5rem;
+    width: 100%;
+    padding: 1.5rem;
   }
 
   .form-heading-pp {
