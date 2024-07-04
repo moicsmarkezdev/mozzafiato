@@ -96,8 +96,8 @@
     outline: 2px solid transparent;
     outline-offset: 2px;
     margin-bottom: 0px;
-    font-size: 8px; /* Adjust the font size */
-    height: 24px; /* Reduce the height */
+    font-size: 10px; /* Adjust the font size */
+    height: 30px; /* Reduce the height */
   }
 
   .form-group-pp-checkbox {
@@ -206,11 +206,11 @@
                   <label for="datepicker-input" class="form-label-pp">Fecha de cumpleaños:</label>
                   <div class="datepicker-container">
                     <input type="text" id="datepicker-input" placeholder="mm/dd" class="form-input-pp">
-                    <div class="datefield hide">
+                    <div class="datefield">
                       <span class="subfield monthfield">
-                        <input class="birthday REQ_CSS" type="text" pattern="[0-9]*" placeholder="MM" size="2" maxlength="2" name="BIRTHDAY[month]" id="mce-BIRTHDAY-month" value="">
+                        <input class="birthday" type="text" pattern="[0-9]*" placeholder="MM" size="2" maxlength="2" name="BIRTHDAY[month]" id="mce-BIRTHDAY-month" value="">
                       </span> /<span class="subfield dayfield">
-                        <input class="birthday REQ_CSS" type="text" pattern="[0-9]*" placeholder="DD" size="2" maxlength="2" name="BIRTHDAY[day]" id="mce-BIRTHDAY-day" value="">
+                        <input class="birthday" type="text" pattern="[0-9]*" placeholder="DD" size="2" maxlength="2" name="BIRTHDAY[day]" id="mce-BIRTHDAY-day" value="">
                       </span>
                       <span class="small-meta nowrap">( mm / dd )</span>
                     </div>
@@ -254,7 +254,7 @@
                 ftypes[4] = 'phone';
               }(jQuery));
               var $mcj = jQuery.noConflict(true);
-              
+
               // Function to enable submit button if all fields are valid
               function validateForm() {
                 const fname = document.getElementById('mce-FNAME').value;
