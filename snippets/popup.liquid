@@ -206,14 +206,6 @@
                   <label for="datepicker-input" class="form-label-pp">Fecha de cumpleaños:</label>
                   <div class="datepicker-container">
                     <input type="text" id="datepicker-input" placeholder="mm/dd" class="form-input-pp">
-                    <div class="datefield hide">
-                      <span class="subfield monthfield">
-                        <input class="birthday REQ_CSS" type="text" pattern="[0-9]*" placeholder="MM" size="2" maxlength="2" name="BIRTHDAY[month]" id="mce-BIRTHDAY-month" value="">
-                      </span> /<span class="subfield dayfield">
-                        <input class="birthday REQ_CSS" type="text" pattern="[0-9]*" placeholder="DD" size="2" maxlength="2" name="BIRTHDAY[day]" id="mce-BIRTHDAY-day" value="">
-                      </span>
-                      <span class="small-meta nowrap">( mm / dd )</span>
-                    </div>
                   </div>
                 </div>
                 <div class="form-group-pp form-group-pp-checkbox">
@@ -254,7 +246,7 @@
                 ftypes[4] = 'phone';
               }(jQuery));
               var $mcj = jQuery.noConflict(true);
-              
+
               // Function to enable submit button if all fields are valid
               function validateForm() {
                 const fname = document.getElementById('mce-FNAME').value;
@@ -281,14 +273,6 @@
               flatpickr(flatpickrElement, {
                 dateFormat: "m/d",
                 disableMobile: "true",
-                onChange: function(selectedDates, dateStr, instance) {
-                  const dateParts = dateStr.split('/');
-                  const month = dateParts[0];
-                  const day = dateParts[1];
-
-                  document.getElementById('mce-BIRTHDAY-day').value = day;
-                  document.getElementById('mce-BIRTHDAY-month').value = month;
-                }
               });
             </script>
           </div>
