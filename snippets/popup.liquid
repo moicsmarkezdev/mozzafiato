@@ -292,14 +292,6 @@
               flatpickr(flatpickrElement, {
                 dateFormat: "m/d",
                 disableMobile: "true",
-                onChange: function(selectedDates, dateStr, instance) {
-                  const dateParts = dateStr.split('/');
-                  const month = dateParts[0];
-                  const day = dateParts[1];
-
-                  document.getElementById('mce-BIRTHDAY-day').value = day;
-                  document.getElementById('mce-BIRTHDAY-month').value = month;
-                }
               });
             </script>
           </div>
