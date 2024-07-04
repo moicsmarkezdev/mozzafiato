@@ -205,11 +205,11 @@
                   <label for="datepicker-input" class="form-label-pp">Fecha de cumpleaños:</label>
                   <div class="datepicker-container">
                     <input type="text" id="datepicker-input" placeholder="mm/dd" class="form-input-pp">
-                    <div class="datefield hide">
+                    <div class="datefield">
                       <span class="subfield monthfield">
-                        <input class="birthday REQ_CSS" type="text" pattern="[0-9]*" placeholder="MM" size="2" maxlength="2" name="BIRTHDAY[month]" id="mce-BIRTHDAY-month" value="">
+                        <input class="birthday" type="text" pattern="[0-9]*" placeholder="MM" size="2" maxlength="2" name="BIRTHDAY[month]" id="mce-BIRTHDAY-month" value="">
                       </span> /<span class="subfield dayfield">
-                        <input class="birthday REQ_CSS" type="text" pattern="[0-9]*" placeholder="DD" size="2" maxlength="2" name="BIRTHDAY[day]" id="mce-BIRTHDAY-day" value="">
+                        <input class="birthday" type="text" pattern="[0-9]*" placeholder="DD" size="2" maxlength="2" name="BIRTHDAY[day]" id="mce-BIRTHDAY-day" value="">
                       </span>
                       <span class="small-meta nowrap">( mm / dd )</span>
                     </div>
@@ -328,4 +328,3 @@
     localStorage.setItem('popup_showin', JSON.stringify(item));
   });
 </script>
-
