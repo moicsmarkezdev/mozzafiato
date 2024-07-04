@@ -1,182 +1,306 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulario con Selector de Fechas</title>
-  <style>
-    /* Estilos CSS para el formulario */
+<style>
+  .flatpickr-current-month .numInputWrapper {
+    display: none !important;
+  }
+
+  .popup-modal {
+    max-height: 600px; /* Reduce the height */
+    max-width: 700px; /* Reduce the width */
+    padding: 15px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    z-index: 9999; /* Ensure the popup is on top */
+  }
+
+  @media (max-width: 801px) {
     .popup-modal {
-      max-height: 600px; /* Reducir la altura */
-      max-width: 700px; /* Reducir el ancho */
-      padding: 15px;
-      margin: auto;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      background: white;
-      z-index: 9999; /* Asegurar que el popup esté arriba */
+      max-height: 500px;
+      width: 90%;
+      padding: 10px;
     }
-    
-    /* Estilos adicionales según el tamaño de la pantalla */
-    @media (max-width: 801px) {
-      .popup-modal {
-        max-height: 500px;
-        width: 90%;
-        padding: 10px;
-      }
+  }
+
+  .popup-modal-close {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0000004a !important;
+    display: block;
+    z-index: 9998; /* Ensure the overlay is behind the popup */
+  }
+
+  .hide {
+    display: none !important;
+  }
+
+  .popup-root {
+    /* Styles for the root element */
+  }
+
+  .popup-container {
+    display: flex;
+    flex-direction: row; /* Ensure the image and form are side by side */
+  }
+
+  .popup-image {
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .popup-form {
+    width: 50%;
+    padding: 1rem;
+  }
+
+  .form-heading-pp {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 900;
+  }
+
+  .form-subheading-pp {
+    margin-bottom: 4px;
+    font-size: 10px;
+  }
+
+  .form-group-pp {
+    margin-bottom: 0.75rem;
+  }
+
+  .form-label-pp {
+    margin-bottom: 0 !important;
+    display: block;
+    font-size: 10px !important;
+    line-height: 1rem;
+    font-weight: 700 !important;
+    color: rgb(55, 65, 81);
+  }
+
+  .form-input-pp {
+    width: 100%;
+    appearance: none;
+    border-radius: 0.25rem;
+    border-width: 1px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.15rem;
+    padding-bottom: 0.15rem;
+    line-height: 1;
+    color: rgb(55, 65, 81);
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgb(0, 0, 0, 0.1), 0 1px 2px -1px rgb(0, 0, 0, 0.1);
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    margin-bottom: 0px;
+    font-size: 8px; /* Adjust the font size */
+    height: 24px; /* Reduce the height */
+  }
+
+  .form-group-pp-checkbox {
+    margin-bottom: 1rem;
+  }
+
+  .form-checkbox-pp {
+    display: inline;
+    margin-right: 0.5rem;
+    line-height: 1.25;
+    vertical-align: middle;
+  }
+
+  .form-checkbox-pp-label {
+    width: 100%;
+    font-size: 0.75rem !important;
+    line-height: 1rem;
+    display: inline;
+    vertical-align: middle;
+    padding: 0px;
+    margin-top: 2px;
+  }
+
+  .form-terms-pp {
+    margin-bottom: 5px;
+    font-size: 9px;
+    line-height: 1rem;
+  }
+
+  .form-link-pp {
+    color: rgb(59, 130, 246);
+  }
+
+  .form-button-pp {
+    line-height: 1;
+    border-radius: 0.25rem;
+    background-color: #f8c8da;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    cursor: not-allowed;
+    font-size: 10px;
+  }
+
+  .response {
+    font-size: 0.75rem; /* Match the font size of "ACEPTO RECIBIR COMUNICACIONES*" */
+    font-weight: bold; /* Make the text bold */
+  }
+
+  @media (max-width: 901px) {
+    .popup-image {
+      display: none;
     }
-    
-    /* Estilos para el formulario */
+
     .popup-form {
       width: 100%;
       padding: 1rem;
-      display: flex;
-      flex-direction: row; /* Alinear imagen y formulario lado a lado */
     }
-    
-    /* Estilos para la imagen */
-    .popup-image {
-      width: 50%;
-      background-size: cover;
-      background-position: center;
-    }
-    
-    /* Estilos para el formulario */
-    .popup-form-content {
-      width: 50%;
-      padding: 0 1rem; /* Espacio adicional en los lados */
-    }
-    
-    /* Estilos para los campos de entrada */
-    .form-input-pp {
-      width: 100%;
-      appearance: none;
-      border-radius: 0.25rem;
-      border-width: 1px;
-      padding-left: 0.5rem;
-      padding-right: 0.5rem;
-      padding-top: 0.15rem;
-      padding-bottom: 0.15rem;
-      line-height: 1;
-      color: rgb(55, 65, 81);
-      box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgb(0, 0, 0, 0.1), 0 1px 2px -1px rgb(0, 0, 0, 0.1);
-      outline: 2px solid transparent;
-      outline-offset: 2px;
-      margin-bottom: 0px;
-      font-size: 12px; /* Ajustar el tamaño de fuente */
-      height: 24px; /* Reducir la altura */
-    }
-    
-    /* Estilos para los mensajes de respuesta */
-    .response {
-      font-size: 0.75rem; /* Igualar el tamaño de fuente de "ACEPTO RECIBIR COMUNICACIONES*" */
-      font-weight: bold; /* Hacer el texto en negrita */
-    }
-    
-    /* Estilos adicionales para pantallas pequeñas */
-    @media (max-width: 901px) {
-      .popup-image {
-        display: none;
-      }
-    
-      .popup-form {
-        width: 100%;
-        padding: 1rem;
-      }
-    
-      .form-group-pp-checkbox {
-        margin-bottom: 0.5rem;
-        font-size: 0.775rem !important;
-      }
-    
-      .form-terms-pp {
-        margin-bottom: 0.7rem;
-        font-size: 0.675rem;
-        line-height: 0.75rem;
-      }
-    }
-  </style>
-</head>
-<body>
 
-<!-- Contenido del diálogo modal -->
+    .form-group-pp-checkbox {
+      margin-bottom: 0.5rem;
+      font-size: 0.775rem !important;
+    }
+
+    .form-terms-pp {
+      margin-bottom: 0.7rem;
+      font-size: 0.675rem;
+      line-height: 0.75rem;
+    }
+  }
+</style>
+
 <dialog class="popup popup-modal has-image has-no-page-content has-newsletter has-social-icons completed hide">
   <div class="inner">
     <div id="subscribe_module">
       <popup-root class="popup-root">
         <div class="popup-container">
-          <!-- Lado izquierdo con imagen (opcional) -->
+          <!-- Lado izquierdo con imagen -->
           <div class="popup-image" style="background-image:url({{ settings.popup--image | image_url: width: 1200 }});">
             &nbsp;
           </div>
           <!-- Lado derecho con formulario -->
           <div class="popup-form">
-            <div class="popup-form-content">
-              <h2 class="form-heading-pp">{{ settings.popup--newsletter--heading }}</h2>
-              <p class="form-subheading-pp">{{ settings.popup--sub-heading }}</p>
-              <div id="mc_embed_signup">
-                <form action="https://mozzafiato.us18.list-manage.com/subscribe/post?u=03463ad5181c8d7668383cd88&amp;id=63b6090f97&amp;f_id=00f62ce2f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-                  <div class="form-group-pp">
-                    <label for="mce-FNAME" class="form-label-pp">Nombre</label>
-                    <input type="text" name="FNAME" class="form-input-pp text" id="mce-FNAME" value="" required>
-                  </div>
-                  <div class="form-group-pp">
-                    <label for="mce-LNAME" class="form-label-pp">Apellido</label>
-                    <input type="text" name="LNAME" class="form-input-pp text" id="mce-LNAME" value="" required>
-                  </div>
-                  <div class="form-group-pp">
-                    <label for="mce-EMAIL" class="form-label-pp">Correo electrónico <span class="asterisk">*</span></label>
-                    <input type="email" name="EMAIL" class="form-input-pp required email" id="mce-EMAIL" value="" required>
-                  </div>
-                  <div class="form-group-pp">
-                    <label for="datepicker-input" class="form-label-pp">Fecha de cumpleaños:</label>
-                    <div class="datepicker-container">
-                      <input type="text" id="datepicker-input" placeholder="mm/dd" class="form-input-pp">
-                      <div class="datefield hide">
-                        <span class="subfield monthfield">
-                          <input class="birthday REQ_CSS" type="text" pattern="[0-9]*" placeholder="MM" size="2" maxlength="2" name="BIRTHDAY[month]" id="mce-BIRTHDAY-month" value="">
-                        </span> /<span class="subfield dayfield">
-                          <input class="birthday REQ_CSS" type="text" pattern="[0-9]*" placeholder="DD" size="2" maxlength="2" name="BIRTHDAY[day]" id="mce-BIRTHDAY-day" value="">
-                        </span>
-                        <span class="small-meta nowrap">( mm / dd )</span>
-                      </div>
+            <h2 class="form-heading-pp">{{ settings.popup--newsletter--heading }}</h2>
+            <p class="form-subheading-pp">{{ settings.popup--sub-heading }}</p>
+            <div id="mc_embed_signup">
+              <form action="https://mozzafiato.us18.list-manage.com/subscribe/post?u=03463ad5181c8d7668383cd88&amp;id=63b6090f97&amp;f_id=00f62ce2f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                <div class="form-group-pp">
+                  <label for="mce-FNAME" class="form-label-pp">Nombre</label>
+                  <input type="text" name="FNAME" class="form-input-pp text" id="mce-FNAME" value="" required>
+                </div>
+                <div class="form-group-pp">
+                  <label for="mce-LNAME" class="form-label-pp">Apellido</label>
+                  <input type="text" name="LNAME" class="form-input-pp text" id="mce-LNAME" value="" required>
+                </div>
+                <div class="form-group-pp">
+                  <label for="mce-EMAIL" class="form-label-pp">Correo electrónico <span class="asterisk">*</span></label>
+                  <input type="email" name="EMAIL" class="form-input-pp required email" id="mce-EMAIL" value="" required>
+                </div>
+                <div class="form-group-pp">
+                  <label for="datepicker-input" class="form-label-pp">Fecha de cumpleaños:</label>
+                  <div class="datepicker-container">
+                    <input type="text" id="datepicker-input" placeholder="mm/dd" class="form-input-pp">
+                    <div class="datefield hide">
+                      <span class="subfield monthfield">
+                        <input class="birthday REQ_CSS" type="text" pattern="[0-9]*" placeholder="MM" size="2" maxlength="2" name="BIRTHDAY[month]" id="mce-BIRTHDAY-month" value="">
+                      </span> /<span class="subfield dayfield">
+                        <input class="birthday REQ_CSS" type="text" pattern="[0-9]*" placeholder="DD" size="2" maxlength="2" name="BIRTHDAY[day]" id="mce-BIRTHDAY-day" value="">
+                      </span>
+                      <span class="small-meta nowrap">( mm / dd )</span>
                     </div>
                   </div>
-                  <div class="form-group-pp form-group-pp-checkbox">
-                    <input id="acepto" name="acepto" type="checkbox" class="form-checkbox-pp" required>
-                    <label for="acepto" class="form-checkbox-pp-label">Acepto recibir comunicaciones*</label>
-                  </div>
-                  <p class="form-terms-pp">
-                    *Al hacer clic y proporcionarnos tus datos, aceptas nuestros
-                    <a style="color:rgb(59,130,246)" href="https://mozzafiato.pe/pages/terminos-y-condiciones" class="form-link-pp">Términos y Condiciones</a>.
-                    El consentimiento no es una condición para la compra. Puede darse de baja en cualquier momento.
-                  </p>
-                  <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="form-button-pp" value="¡OBTÉN 10% OFF YA!" disabled />
-                  <div id="mce-responses" class="clear">
-                    <div class="response" id="mce-error-response" style="display:none;">Ha ocurrido un error, por favor intente nuevamente.</div>
-                    <div class="response" id="mce-success-response" style="display:none;">¡Gracias por suscribirse!</div>
-                  </div>
-                  <div aria-hidden="true" style="position: absolute; left: -5000px;" class="hide">
-                    <input type="text" name="b_03463ad5181c8d7668383cd88_63b6090f97" tabindex="-1" value="">
-                  </div>
-                </form>
-              </div>
+                </div>
+                <div class="form-group-pp form-group-pp-checkbox">
+                  <input id="acepto" name="acepto" type="checkbox" class="form-checkbox-pp" required>
+                  <label for="acepto" class="form-checkbox-pp-label">Acepto recibir comunicaciones*</label>
+                </div>
+                <p class="form-terms-pp">
+                  *Al hacer clic y proporcionarnos tus datos, aceptas nuestros
+                  <a style="color:rgb(59,130,246)" href="https://mozzafiato.pe/pages/terminos-y-condiciones" class="form-link-pp">Términos y Condiciones</a>.
+                  El consentimiento no es una condición para la compra. Puede darse de baja en cualquier momento.
+                </p>
+                <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="form-button-pp" value="¡OBTÉN 10% OFF YA!" disabled />
+                <div id="mce-responses" class="clear">
+                  <div class="response" id="mce-error-response" style="display:none;">Ha ocurrido un error, por favor intente nuevamente.</div>
+                  <div class="response" id="mce-success-response" style="display:none;">¡Gracias por suscribirse!</div>
+                </div>
+                <div aria-hidden="true" style="position: absolute; left: -5000px;" class="hide">
+                  <input type="text" name="b_03463ad5181c8d7668383cd88_63b6090f97" tabindex="-1" value="">
+                </div>
+              </form>
             </div>
+            <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
+            <script type="text/javascript">
+              (function($) {
+                window.fnames = new Array(); 
+                window.ftypes = new Array();
+                fnames[1] = 'FNAME';
+                ftypes[1] = 'text';
+                fnames[2] = 'LNAME';
+                ftypes[2] = 'text';
+                fnames[0] = 'EMAIL';
+                ftypes[0] = 'email';
+                fnames[5] = 'BIRTHDAY';
+                ftypes[5] = 'birthday';
+                fnames[3] = 'ADDRESS';
+                ftypes[3] = 'address';
+                fnames[4] = 'PHONE';
+                ftypes[4] = 'phone';
+              }(jQuery));
+              var $mcj = jQuery.noConflict(true);
+              
+              // Function to enable submit button if all fields are valid
+              function validateForm() {
+                const fname = document.getElementById('mce-FNAME').value;
+                const lname = document.getElementById('mce-LNAME').value;
+                const email = document.getElementById('mce-EMAIL').value;
+                const acepta = document.getElementById('acepto').checked;
+
+                if (fname && lname && email && acepta) {
+                  document.getElementById('mc-embedded-subscribe').disabled = false;
+                  document.getElementById('mc-embedded-subscribe').style.cursor = 'pointer';
+                } else {
+                  document.getElementById('mc-embedded-subscribe').disabled = true;
+                  document.getElementById('mc-embedded-subscribe').style.cursor = 'not-allowed';
+                }
+              }
+
+              // Add event listeners to the form fields
+              document.getElementById('mce-FNAME').addEventListener('input', validateForm);
+              document.getElementById('mce-LNAME').addEventListener('input', validateForm);
+              document.getElementById('mce-EMAIL').addEventListener('input', validateForm);
+              document.getElementById('acepto').addEventListener('change', validateForm);
+
+              const flatpickrElement = document.querySelector('#datepicker-input');
+              flatpickr(flatpickrElement, {
+                dateFormat: "m/d",
+                disableMobile: "true",
+                onChange: function(selectedDates, dateStr, instance) {
+                  const dateParts = dateStr.split('/');
+                  const month = dateParts[0];
+                  const day = dateParts[1];
+
+                  document.getElementById('mce-BIRTHDAY-day').value = day;
+                  document.getElementById('mce-BIRTHDAY-month').value = month;
+                }
+              });
+            </script>
           </div>
         </div>
       </popup-root>
     </div>
   </div>
 </dialog>
-
-<!-- Botón de cierre del modal -->
 <div class="popup-modal-close hide" aria-label="{{ 'general.a11y.close' | t }}" tabindex="0">
-  <!-- Icono para cerrar -->
   {%- render 'icons', icon: 'cross' -%}
 </div>
-
-<!-- Script para mostrar y ocultar el modal -->
 <script>
-  // Mostrar el modal después de cierto tiempo
   const itemStr = localStorage.getItem('popup_showin');
   if (!itemStr) {
     setTimeout(() => {
@@ -186,18 +310,17 @@
   } else {
     let item = JSON.parse(itemStr);
     let now = new Date();
-    
+
     if (now.getTime() > item.expiry) {
       localStorage.removeItem('popup_showin');
     }
   }
-  
-  // Agregar evento para cerrar el modal
+
   document.querySelector('.popup-modal-close').addEventListener('click', function(el) {
     el.preventDefault();
     document.querySelector('.popup-modal-close').classList.add('hide');
     document.querySelector('.popup.popup-modal').classList.add('hide');
-    
+
     let now = new Date();
     let item = {
       value: 1,
@@ -206,26 +329,3 @@
     localStorage.setItem('popup_showin', JSON.stringify(item));
   });
 </script>
-
-<!-- Script para flatpickr -->
-<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const flatpickrElement = document.querySelector('#datepicker-input');
-    flatpickr(flatpickrElement, {
-      dateFormat: "m/d",
-      disableMobile: true,
-      onChange: function(selectedDates, dateStr, instance) {
-        const dateParts = dateStr.split('/');
-        const month = dateParts[0];
-        const day = dateParts[1];
-  
-        document.getElementById('mce-BIRTHDAY-day').value = day;
-        document.getElementById('mce-BIRTHDAY-month').value = month;
-      }
-    });
-  });
-</script>
-
-</body>
-</html>
