@@ -109,7 +109,6 @@
     outline-offset: 2px;
     margin-bottom: 0px;
     font-size: 10px; /* Adjust the font size */
-    height: 24px; /* Reduce the height */
   }
 
   .form-group-pp-checkbox {
@@ -293,6 +292,14 @@
               flatpickr(flatpickrElement, {
                 dateFormat: "m/d",
                 disableMobile: "true",
+                onChange: function(selectedDates, dateStr, instance) {
+                  const dateParts = dateStr.split('/');
+                  const month = dateParts[0];
+                  const day = dateParts[1];
+
+                  document.getElementById('mce-BIRTHDAY-day').value = day;
+                  document.getElementById('mce-BIRTHDAY-month').value = month;
+                }
               });
             </script>
           </div>
