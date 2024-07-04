@@ -34,7 +34,7 @@
     "product--label-light-text": false,
     "product--variant-style": "buttons",
     "search--show-in-header": true,
-    "popup--enabled": true,
+    "popup--enabled": false,
     "popup--test-mode": false,
     "popup--image": "shopify:\/\/shop_images\/Captura_de_pantalla_2024-07-04_a_la_s_3.07.17_p._m._1.png",
     "popup--image-url": "",
