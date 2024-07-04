@@ -1,28 +1,23 @@
-{%- liquid
-  assign placeholder_t = 'layout.footer.newsletter_placeholder' | t
-  assign button_t = 'layout.footer.newsletter_button' | t
-  assign shopify_disclaimer_t = 'shopify.online_store.spam_detection.disclaimer_html' | t
-
-  render 'section-assets', name: 'popup', type: 'script'
--%}
-
-{{ 'flatpickr.css' | asset_url | stylesheet_tag }}
-<script src="{{ 'flatpickr.js' | asset_url }}" async></script>
-
 <style>
   .flatpickr-current-month .numInputWrapper {
     display: none !important;
   }
 
   .popup-modal {
-    max-height: 760px;
+    max-height: 500px;
+    max-width: 400px;
+    padding: 10px;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: white;
   }
 
   @media (max-width: 801px) {
     .popup-modal {
-      max-height: none;
-      width: 100%;
-      padding: 10px;
+      max-height: 300px;
+      max-width: 300px;
+      width: 90%;
+      padding: 5px;
     }
   }
 
@@ -32,7 +27,7 @@
     height: 100%;
     background: #0000004a !important;
     display: block;
-    z-index: 3;
+    z-index: 9999; /* Asegúrate de que este valor sea alto */
   }
 
   .hide {
@@ -45,28 +40,31 @@
 
   .popup-container {
     display: flex;
+    flex-direction: column;
   }
 
   .popup-image {
-    width: 50%;
+    width: 100%;
+    height: 150px;
     background-size: cover;
+    background-position: center;
   }
 
   .popup-form {
-    width: 50%;
-    padding: 3rem;
+    width: 100%;
+    padding: 1rem;
   }
 
   .form-heading-pp {
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1;
     font-weight: 900;
   }
 
   .form-subheading-pp {
     margin-bottom: 5px;
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .form-group-pp {
@@ -76,7 +74,7 @@
   .form-label-pp {
     margin-bottom: 0 !important;
     display: block;
-    font-size: 12px !important;
+    font-size: 10px !important;
     line-height: 1.25rem;
     font-weight: 700 !important;
     color: rgb(55, 65, 81);
@@ -97,7 +95,7 @@
     outline: 2px solid transparent;
     outline-offset: 2px;
     margin-bottom: 0px;
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .form-group-pp-checkbox {
@@ -113,7 +111,7 @@
 
   .form-checkbox-pp-label {
     width: 100%;
-    font-size: 0.875rem !important;
+    font-size: 0.75rem !important;
     line-height: 1.25rem;
     display: inline;
     vertical-align: middle;
@@ -123,7 +121,7 @@
 
   .form-terms-pp {
     margin-bottom: 7px;
-    font-size: 11px;
+    font-size: 10px;
     line-height: 1rem;
   }
 
@@ -153,12 +151,12 @@
 
     .popup-form {
       width: 100%;
-      padding: 1.4rem;
+      padding: 0.7rem;
     }
 
     .form-group-pp-checkbox {
       margin-bottom: 0.5rem;
-      font-size: 0.775rem !important;
+      font-size: 0.675rem !important;
     }
 
     .form-terms-pp {
@@ -221,105 +219,4 @@
                 </p>
                 <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="form-button-pp" value="¡OBTÉN 10% OFF YA!" disabled />
                 <div id="mce-responses" class="clear">
-                  <div class="response" id="mce-error-response" style="display:none;">Ha ocurrido un error, por favor intente nuevamente.</div>
-                  <div class="response" id="mce-success-response" style="display:none;">¡Gracias por suscribirse!</div>
-                </div>
-                <div aria-hidden="true" style="position: absolute; left: -5000px;" class="hide">
-                  <input type="text" name="b_03463ad5181c8d7668383cd88_63b6090f97" tabindex="-1" value="">
-                </div>
-              </form>
-            </div>
-            <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
-            <script type="text/javascript">
-              (function($) {
-                window.fnames = new Array(); 
-                window.ftypes = new Array();
-                fnames[1] = 'FNAME';
-                ftypes[1] = 'text';
-                fnames[2] = 'LNAME';
-                ftypes[2] = 'text';
-                fnames[0] = 'EMAIL';
-                ftypes[0] = 'email';
-                fnames[5] = 'BIRTHDAY';
-                ftypes[5] = 'birthday';
-                fnames[3] = 'ADDRESS';
-                ftypes[3] = 'address';
-                fnames[4] = 'PHONE';
-                ftypes[4] = 'phone';
-              }(jQuery));
-              var $mcj = jQuery.noConflict(true);
-              
-              // Function to enable submit button if all fields are valid
-              function validateForm() {
-                const fname = document.getElementById('mce-FNAME').value;
-                const lname = document.getElementById('mce-LNAME').value;
-                const email = document.getElementById('mce-EMAIL').value;
-                const acepta = document.getElementById('acepto').checked;
-
-                if (fname && lname && email && acepta) {
-                  document.getElementById('mc-embedded-subscribe').disabled = false;
-                  document.getElementById('mc-embedded-subscribe').style.cursor = 'pointer';
-                } else {
-                  document.getElementById('mc-embedded-subscribe').disabled = true;
-                  document.getElementById('mc-embedded-subscribe').style.cursor = 'not-allowed';
-                }
-              }
-
-              // Add event listeners to the form fields
-              document.getElementById('mce-FNAME').addEventListener('input', validateForm);
-              document.getElementById('mce-LNAME').addEventListener('input', validateForm);
-              document.getElementById('mce-EMAIL').addEventListener('input', validateForm);
-              document.getElementById('acepto').addEventListener('change', validateForm);
-
-              const flatpickrElement = document.querySelector('#datepicker-input');
-              flatpickr(flatpickrElement, {
-                dateFormat: "m/d",
-                disableMobile: "true",
-                onChange: function(selectedDates, dateStr, instance) {
-                  const dateParts = dateStr.split('/');
-                  const month = dateParts[0];
-                  const day = dateParts[1];
-
-                  document.getElementById('mce-BIRTHDAY-day').value = day;
-                  document.getElementById('mce-BIRTHDAY-month').value = month;
-                }
-              });
-            </script>
-          </div>
-        </div>
-      </popup-root>
-    </div>
-  </div>
-</dialog>
-<div class="popup-modal-close hide" aria-label="{{ 'general.a11y.close' | t }}" tabindex="0">
-  {%- render 'icons', icon: 'cross' -%}
-</div>
-<script>
-  const itemStr = localStorage.getItem('popup_showin');
-  if (!itemStr) {
-    setTimeout(() => {
-      document.querySelector('.popup.popup-modal').classList.remove('hide');
-      document.querySelector('.popup-modal-close').classList.remove('hide');
-    }, {{ settings.popup--seconds-range | times: 1000 }});
-  } else {
-    let item = JSON.parse(itemStr);
-    let now = new Date();
-
-    if (now.getTime() > item.expiry) {
-      localStorage.removeItem('popup_showin');
-    }
-  }
-
-  document.querySelector('.popup-modal-close').addEventListener('click', el => {
-    el.preventDefault();
-    document.querySelector('.popup-modal-close').classList.add('hide');
-    document.querySelector('.popup.popup-modal').classList.add('hide');
-
-    let now = new Date();
-    let item = {
-      value: 1,
-      expiry: now.setDate(now.getDate() + {{ settings.popup--days-range }}),
-    };
-    localStorage.setItem('popup_showin', JSON.stringify(item));
-  });
-</script>
+                  <div class="response" id="mce-error-response" style="display:none;">Ha ocurrido un error, por favor intente
