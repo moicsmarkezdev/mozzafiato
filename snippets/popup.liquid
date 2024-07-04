@@ -11,7 +11,6 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background: white;
     z-index: 9999; /* Ensure the popup is on top */
-    position: relative;
   }
 
   @media (max-width: 801px) {
@@ -23,17 +22,14 @@
   }
 
   .popup-modal-close {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 30px;
-    height: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: #0000004a !important;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    z-index: 10000; /* Ensure the close button is on top */
+    display: block;
+    z-index: 9998; /* Ensure the overlay is behind the popup */
   }
 
   .hide {
@@ -53,19 +49,11 @@
     width: 50%;
     background-size: cover;
     background-position: center;
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 1;
   }
 
   .popup-form {
     width: 50%;
     padding: 1rem;
-    background: white;
-    position: relative;
-    z-index: 2;
   }
 
   .form-heading-pp {
@@ -108,7 +96,8 @@
     outline: 2px solid transparent;
     outline-offset: 2px;
     margin-bottom: 0px;
-    font-size: 10px; /* Adjust the font size */
+    font-size: 8px; /* Adjust the font size */
+    height: 24px; /* Reduce the height */
   }
 
   .form-group-pp-checkbox {
@@ -292,6 +281,14 @@
               flatpickr(flatpickrElement, {
                 dateFormat: "m/d",
                 disableMobile: "true",
+                onChange: function(selectedDates, dateStr, instance) {
+                  const dateParts = dateStr.split('/');
+                  const month = dateParts[0];
+                  const day = dateParts[1];
+
+                  document.getElementById('mce-BIRTHDAY-day').value = day;
+                  document.getElementById('mce-BIRTHDAY-month').value = month;
+                }
               });
             </script>
           </div>
