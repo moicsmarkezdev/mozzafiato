@@ -2,6 +2,177 @@
   .flatpickr-current-month .numInputWrapper {
     display: none !important;
   }
+
+  .popup-modal {
+    max-height: 600px; /* Reduce the height */
+    max-width: 700px; /* Reduce the width */
+    padding: 15px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background: white;
+    z-index: 9999; /* Ensure the popup is on top */
+  }
+
+  @media (max-width: 801px) {
+    .popup-modal {
+      max-height: 500px;
+      width: 90%;
+      padding: 10px;
+    }
+  }
+
+  .popup-modal-close {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #0000004a !important;
+    display: block;
+    z-index: 9998; /* Ensure the overlay is behind the popup */
+  }
+
+  .hide {
+    display: none !important;
+  }
+
+  .popup-root {
+    /* Styles for the root element */
+  }
+
+  .popup-container {
+    display: flex;
+    flex-direction: row; /* Ensure the image and form are side by side */
+  }
+
+  .popup-image {
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .popup-form {
+    width: 50%;
+    padding: 1rem;
+  }
+
+  .form-heading-pp {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 900;
+  }
+
+  .form-subheading-pp {
+    margin-bottom: 4px;
+    font-size: 10px;
+  }
+
+  .form-group-pp {
+    margin-bottom: 0.75rem;
+  }
+
+  .form-label-pp {
+    margin-bottom: 0 !important;
+    display: block;
+    font-size: 10px !important;
+    line-height: 1rem;
+    font-weight: 700 !important;
+    color: rgb(55, 65, 81);
+  }
+
+  .form-input-pp {
+    width: 100%;
+    appearance: none;
+    border-radius: 0.25rem;
+    border-width: 1px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.15rem;
+    padding-bottom: 0.15rem;
+    line-height: 1;
+    color: rgb(55, 65, 81);
+    box-shadow: 0 0 #0000, 0 0 #0000, 0 1px 3px 0 rgb(0, 0, 0, 0.1), 0 1px 2px -1px rgb(0, 0, 0, 0.1);
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    margin-bottom: 0px;
+    font-size: 8px; /* Adjust the font size */
+    height: 24px; /* Reduce the height */
+  }
+
+  .form-group-pp-checkbox {
+    margin-bottom: 1rem;
+  }
+
+  .form-checkbox-pp {
+    display: inline;
+    margin-right: 0.5rem;
+    line-height: 1.25;
+    vertical-align: middle;
+  }
+
+  .form-checkbox-pp-label {
+    width: 100%;
+    font-size: 0.75rem !important;
+    line-height: 1rem;
+    display: inline;
+    vertical-align: middle;
+    padding: 0px;
+    margin-top: 2px;
+  }
+
+  .form-terms-pp {
+    margin-bottom: 5px;
+    font-size: 9px;
+    line-height: 1rem;
+  }
+
+  .form-link-pp {
+    color: rgb(59, 130, 246);
+  }
+
+  .form-button-pp {
+    line-height: 1;
+    border-radius: 0.25rem;
+    background-color: #f8c8da;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    cursor: not-allowed;
+    font-size: 10px;
+  }
+
+  .response {
+    font-size: 0.75rem; /* Match the font size of "ACEPTO RECIBIR COMUNICACIONES*" */
+    font-weight: bold; /* Make the text bold */
+  }
+
+  @media (max-width: 901px) {
+    .popup-image {
+      display: none;
+    }
+
+    .popup-form {
+      width: 100%;
+      padding: 1rem;
+    }
+
+    .form-group-pp-checkbox {
+      margin-bottom: 0.5rem;
+      font-size: 0.775rem !important;
+    }
+
+    .form-terms-pp {
+      margin-bottom: 0.7rem;
+      font-size: 0.675rem;
+      line-height: 0.75rem;
+    }
+  }
 </style>
 
 <dialog class="popup popup-modal has-image has-no-page-content has-newsletter has-social-icons completed hide">
@@ -66,24 +237,24 @@
             </div>
             <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
             <script type="text/javascript">
-              // Initialize Flatpickr
-              const flatpickrElement = document.querySelector('#datepicker-input');
-              flatpickr(flatpickrElement, {
-                dateFormat: "m/d",
-                disableMobile: true,
-                onChange: function(selectedDates, dateStr, instance) {
-                  const dateParts = dateStr.split('/');
-                  const month = dateParts[0];
-                  const day = dateParts[1];
-
-                  document.getElementById('mce-BIRTHDAY-day').value = day;
-                  document.getElementById('mce-BIRTHDAY-month').value = month;
-
-                  // Enable submit button if all required fields are filled
-                  validateForm();
-                }
-              });
-
+              (function($) {
+                window.fnames = new Array(); 
+                window.ftypes = new Array();
+                fnames[1] = 'FNAME';
+                ftypes[1] = 'text';
+                fnames[2] = 'LNAME';
+                ftypes[2] = 'text';
+                fnames[0] = 'EMAIL';
+                ftypes[0] = 'email';
+                fnames[5] = 'BIRTHDAY';
+                ftypes[5] = 'birthday';
+                fnames[3] = 'ADDRESS';
+                ftypes[3] = 'address';
+                fnames[4] = 'PHONE';
+                ftypes[4] = 'phone';
+              }(jQuery));
+              var $mcj = jQuery.noConflict(true);
+              
               // Function to enable submit button if all fields are valid
               function validateForm() {
                 const fname = document.getElementById('mce-FNAME').value;
@@ -105,6 +276,20 @@
               document.getElementById('mce-LNAME').addEventListener('input', validateForm);
               document.getElementById('mce-EMAIL').addEventListener('input', validateForm);
               document.getElementById('acepto').addEventListener('change', validateForm);
+
+              const flatpickrElement = document.querySelector('#datepicker-input');
+              flatpickr(flatpickrElement, {
+                dateFormat: "m/d",
+                disableMobile: "true",
+                onChange: function(selectedDates, dateStr, instance) {
+                  const dateParts = dateStr.split('/');
+                  const month = dateParts[0];
+                  const day = dateParts[1];
+
+                  document.getElementById('mce-BIRTHDAY-day').value = day;
+                  document.getElementById('mce-BIRTHDAY-month').value = month;
+                }
+              });
             </script>
           </div>
         </div>
