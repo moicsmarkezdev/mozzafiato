@@ -4,17 +4,18 @@
   }
 
   .popup-modal {
-    max-height: 700px;
-    max-width: 850px;
+    max-height: 600px; /* Reduce the height */
+    max-width: 700px; /* Reduce the width */
     padding: 20px;
     margin: auto;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background: white;
+    z-index: 9999; /* Ensure the popup is on top */
   }
 
   @media (max-width: 801px) {
     .popup-modal {
-      max-height: 600px;
+      max-height: 500px;
       width: 90%;
       padding: 15px;
     }
@@ -28,7 +29,7 @@
     height: 100%;
     background: #0000004a !important;
     display: block;
-    z-index: 9999;
+    z-index: 9998; /* Ensure the overlay is behind the popup */
   }
 
   .hide {
@@ -41,16 +42,19 @@
 
   .popup-container {
     display: flex;
+    flex-direction: column;
   }
 
   .popup-image {
-    width: 50%;
+    width: 100%;
+    height: 150px; /* Reduce the height */
     background-size: cover;
+    background-position: center;
   }
 
   .popup-form {
-    width: 50%;
-    padding: 2.5rem;
+    width: 100%;
+    padding: 1.5rem;
   }
 
   .form-heading-pp {
