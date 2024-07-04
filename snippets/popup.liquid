@@ -48,10 +48,8 @@
   }
 
   .popup-image {
-    width: 50%;
-    background-size: cover;
-    position: relative; /* Añadido */
-    overflow: hidden; /* Añadido para ocultar el desbordamiento */
+    position: relative;
+    overflow: hidden;
   }
 
   .popup-image img {
@@ -59,9 +57,9 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: calc(100% + 40px); /* Ajuste para superponer la franja */
-    object-fit: cover; /* Ajusta la imagen para cubrir completamente el contenedor */
-    z-index: 2; /* Asegura que la imagen esté sobre la franja */
+    height: 100%;
+    object-fit: cover;
+    z-index: 2;
   }
 
   .popup-form {
@@ -188,7 +186,7 @@
       <popup-root class="popup-root">
         <div class="popup-container">
           <!-- Lado izquierdo con imagen -->
-          <div class="popup-image" style="background-image:url({{ settings.popup--image | image_url: width: 1200 }});">
+          <div class="popup-image">
             <img src="{{ settings.popup--image | image_url: width: 1200 }}" alt="Imagen del popup">
           </div>
           <!-- Lado derecho con formulario -->
