@@ -105,9 +105,9 @@
         "display-type": "slideshow",
         "products-per-row--desktop": "3",
         "products-per-row--mobile": "2",
-        "collection": "mozzafiato-x-frmiar",
+        "collection": "tote-bags",
         "max-products": 4,
-        "heading": "NEW COLLAB! MOZZAFIATO x FRMIAR"
+        "heading": "¡TOTEBAGS - 50% OFF!"
       }
     },
     "39b7e8a7-1bbc-491e-8390-2751caf3e237": {
@@ -181,7 +181,7 @@
         "text-alignment": "left",
         "thumbnail-width": 80,
         "media-gap": 8,
-        "featured_product": "comprar-online-tote-bag-paint-brushes-mozzafiato",
+        "featured_product": "toalla-de-microfibra-fruitopia",
         "loop-enabled": false
       }
     },
@@ -196,12 +196,12 @@
         "products-per-row--desktop": "3",
         "products-per-row--mobile": "2",
         "product-list": [
-          "toalla-de-microfibra-fruitopia",
-          "panuelo-sienna-negro",
-          "panuelo-sienna-naranja",
-          "panuelo-sienna"
+          "visor-cap-sunshine",
+          "visor-cap-palm-trees",
+          "visor-cap-mozzibabe",
+          "visor-cap-good-vibes"
         ],
-        "heading": "¡LAST CALL!",
+        "heading": "VISOR CAPS",
         "link-url": "",
         "link-text": ""
       }
