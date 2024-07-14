@@ -42,6 +42,7 @@
         },
         "4993a4c6-5948-4c34-853f-dc9d8e106671": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "text-position": "bottom-left",
             "text-width": "medium",
@@ -342,15 +343,6 @@
     "e1bcfcee-d979-4e6c-b6ec-30817d050e0c": {
       "type": "testimonials",
       "blocks": {
-        "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-0": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "10",
-            "author-role": "",
-            "author-name": "",
-            "description": "<p>Hola! La verdad es que he amado la toalla de microfibra! La llevé hace poco de viaje , dónde solo podía llevar una mochila y me ha ayudado full. No ocupa mucho espacio y seca muy bien! Definitivamente volveré a comprar otra!<br\/><br\/>- <strong>Alexandra<\/strong><\/p>"
-          }
-        },
         "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-1": {
           "type": "testimonial",
           "settings": {
@@ -358,6 +350,15 @@
             "author-role": "",
             "author-name": "",
             "description": "<p>Me encanto el bolso, está muy bonito 🤩 y llegó en buen estado<\/p><p>- <strong>María Jose<\/strong><\/p>"
+          }
+        },
+        "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-0": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "10",
+            "author-role": "",
+            "author-name": "",
+            "description": "<p>Hola! La verdad es que he amado la toalla de microfibra! La llevé hace poco de viaje , dónde solo podía llevar una mochila y me ha ayudado full. No ocupa mucho espacio y seca muy bien! Definitivamente volveré a comprar otra!<br\/><br\/>- <strong>Alexandra<\/strong><\/p>"
           }
         },
         "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-2": {
@@ -371,8 +372,8 @@
         }
       },
       "block_order": [
-        "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-0",
         "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-1",
+        "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-0",
         "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-2"
       ],
       "settings": {
