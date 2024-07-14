@@ -12,6 +12,20 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
+        "4caf9002-011c-4ae6-88ef-0b25f3654fbc": {
+          "type": "image",
+          "settings": {
+            "text-position": "bottom-left",
+            "text-width": "medium",
+            "image": "shopify:\/\/shop_images\/Banner_MozziDays_WEB.png",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "",
+            "link-text": "",
+            "mobile-image": "shopify:\/\/shop_images\/Banner_MozziDays_MOBILE.png"
+          }
+        },
         "a5482328-e971-4c6e-b38b-4e3380fe7526": {
           "type": "image",
           "settings": {
@@ -24,20 +38,6 @@
             "link-url": "shopify:\/\/collections\/toallas-de-microfibra",
             "link-text": "",
             "mobile-image": "shopify:\/\/shop_images\/Imagen_de_WhatsApp_2024-06-27_a_las_17.15.20_1e08a3aa.jpg"
-          }
-        },
-        "4caf9002-011c-4ae6-88ef-0b25f3654fbc": {
-          "type": "image",
-          "settings": {
-            "text-position": "bottom-left",
-            "text-width": "medium",
-            "image": "shopify:\/\/shop_images\/Super_Sale_-_Banner.jpg",
-            "overline": "",
-            "title": "",
-            "description": "",
-            "link-url": "shopify:\/\/collections\/super-sale",
-            "link-text": "",
-            "mobile-image": "shopify:\/\/shop_images\/IMG_0516.jpg"
           }
         },
         "4993a4c6-5948-4c34-853f-dc9d8e106671": {
@@ -70,8 +70,8 @@
         }
       },
       "block_order": [
-        "a5482328-e971-4c6e-b38b-4e3380fe7526",
         "4caf9002-011c-4ae6-88ef-0b25f3654fbc",
+        "a5482328-e971-4c6e-b38b-4e3380fe7526",
         "4993a4c6-5948-4c34-853f-dc9d8e106671",
         "image_Hmdzyy"
       ],
