@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin language editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "blog": {
     "all": "Todo",
@@ -301,7 +310,7 @@
       "return": "Volver al producto",
       "view_store_info": "Ver información de la tienda"
     },
-    "sale": "Sale",
+    "sale": "Mozzi cyber",
     "select_options": "seleccionar opciones",
     "size_chart": "Tabla de tallas",
     "size_chart_path": "Página del producto > Selector de variantes",
