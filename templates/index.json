@@ -308,22 +308,66 @@
         "mobile-image": "shopify:\/\/shop_images\/Captura_de_pantalla_2024-01-05_173116.png"
       }
     },
-    "82eacfab-15c2-4296-8479-1a3242836d3d": {
-      "type": "featured-collection",
-      "disabled": true,
+    "featured_product_hmX3Xa": {
+      "type": "featured-product",
+      "blocks": {
+        "heading_y8KEGW": {
+          "type": "heading",
+          "settings": {
+          }
+        },
+        "vendor_cWmXjw": {
+          "type": "vendor",
+          "settings": {
+          }
+        },
+        "price_Ya9UKT": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "options_y9tytw": {
+          "type": "options",
+          "settings": {
+            "variant-style": "buttons",
+            "swatches-enabled": true,
+            "size-chart-enabled": true,
+            "size-chart-option": "size",
+            "size-chart-content": ""
+          }
+        },
+        "low_stock_eNtA7g": {
+          "type": "low-stock",
+          "settings": {
+            "threshold": 5
+          }
+        },
+        "buy_buttons_LMiQPa": {
+          "type": "buy-buttons",
+          "settings": {
+            "smart-payment-enabled": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_y8KEGW",
+        "vendor_cWmXjw",
+        "price_Ya9UKT",
+        "options_y9tytw",
+        "low_stock_eNtA7g",
+        "buy_buttons_LMiQPa"
+      ],
       "settings": {
         "background-color": "none",
-        "light-text": false,
+        "container-width": 4,
         "spacing-above": true,
         "spacing-below": true,
-        "featured-collection--image--show": false,
-        "featured-collection--description--show": false,
-        "display-type": "slideshow",
-        "products-per-row--desktop": "3",
-        "products-per-row--mobile": "2",
-        "collection": "panuelos",
-        "max-products": 8,
-        "heading": "PAÑUELOS"
+        "text-column-width": 30,
+        "text-alignment": "left",
+        "thumbnail-width": 80,
+        "media-gap": 8,
+        "featured_product": "comprar-online-tote-bag-paint-brushes-mozzafiato",
+        "loop-enabled": false
       }
     },
     "e1bcfcee-d979-4e6c-b6ec-30817d050e0c": {
@@ -588,7 +632,7 @@
     "featured_products_PVYXMN",
     "53875c54-020d-4d79-8ff9-85371bcd2995",
     "9547d1fa-e436-446d-a9b9-77f7a3bd07b9",
-    "82eacfab-15c2-4296-8479-1a3242836d3d",
+    "featured_product_hmX3Xa",
     "e1bcfcee-d979-4e6c-b6ec-30817d050e0c",
     "grid-with-overlay",
     "0b1cd38c-2dd8-4607-abdb-1424619e78d5",
