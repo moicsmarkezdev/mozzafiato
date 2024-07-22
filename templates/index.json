@@ -366,8 +366,25 @@
         "text-alignment": "left",
         "thumbnail-width": 80,
         "media-gap": 8,
-        "featured_product": "comprar-online-tote-bag-paint-brushes-mozzafiato",
+        "featured_product": "beauty-pack",
         "loop-enabled": false
+      }
+    },
+    "featured_collection_rQqFgM": {
+      "type": "featured-collection",
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "featured-collection--image--show": false,
+        "featured-collection--description--show": false,
+        "display-type": "slideshow",
+        "products-per-row--desktop": "3",
+        "products-per-row--mobile": "1",
+        "collection": "tote-bags",
+        "max-products": 6,
+        "heading": "totebags - 50% off"
       }
     },
     "e1bcfcee-d979-4e6c-b6ec-30817d050e0c": {
@@ -633,6 +650,7 @@
     "53875c54-020d-4d79-8ff9-85371bcd2995",
     "9547d1fa-e436-446d-a9b9-77f7a3bd07b9",
     "featured_product_hmX3Xa",
+    "featured_collection_rQqFgM",
     "e1bcfcee-d979-4e6c-b6ec-30817d050e0c",
     "grid-with-overlay",
     "0b1cd38c-2dd8-4607-abdb-1424619e78d5",
