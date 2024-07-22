@@ -92,7 +92,7 @@
         "products-per-row--desktop": "3",
         "products-per-row--mobile": "2",
         "collection": "panuelos",
-        "max-products": 12,
+        "max-products": 6,
         "heading": "¡LAST UNITS!"
       }
     },
@@ -182,11 +182,11 @@
         "products-per-row--desktop": "4",
         "products-per-row--mobile": "2",
         "product-list": [
-          "visor-cap-good-vibes",
-          "visor-cap-mozzibabe",
-          "visor-cap-palm-trees",
+          "mozzi-cap-rosada",
           "visor-cap-sunshine",
-          "mozzi-cap-rosada"
+          "visor-cap-good-vibes",
+          "visor-cap-palm-trees",
+          "visor-cap-mozzibabe"
         ],
         "heading": "caps - 20% off",
         "link-url": "",
