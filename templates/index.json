@@ -179,15 +179,16 @@
         "spacing-above": true,
         "spacing-below": true,
         "display-type": "slideshow",
-        "products-per-row--desktop": "3",
+        "products-per-row--desktop": "4",
         "products-per-row--mobile": "2",
         "product-list": [
-          "panuelo-chili",
-          "panuelo-scorpio",
-          "panuelo-wine",
-          "panuelo-zebra"
+          "visor-cap-good-vibes",
+          "visor-cap-mozzibabe",
+          "visor-cap-palm-trees",
+          "visor-cap-sunshine",
+          "mozzi-cap-rosada"
         ],
-        "heading": "COLLAB FRMIAR",
+        "heading": "caps - 20% off",
         "link-url": "",
         "link-text": ""
       }
