@@ -12,20 +12,6 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
-        "4caf9002-011c-4ae6-88ef-0b25f3654fbc": {
-          "type": "image",
-          "settings": {
-            "text-position": "bottom-left",
-            "text-width": "medium",
-            "image": "shopify:\/\/shop_images\/Banner_MozziDays_WEB_1.png",
-            "overline": "",
-            "title": "",
-            "description": "",
-            "link-url": "shopify:\/\/collections\/mozzi-cyber",
-            "link-text": "",
-            "mobile-image": "shopify:\/\/shop_images\/Banner_MozziDays_MOBILE_1.png"
-          }
-        },
         "a5482328-e971-4c6e-b38b-4e3380fe7526": {
           "type": "image",
           "settings": {
@@ -71,7 +57,6 @@
         }
       },
       "block_order": [
-        "4caf9002-011c-4ae6-88ef-0b25f3654fbc",
         "a5482328-e971-4c6e-b38b-4e3380fe7526",
         "4993a4c6-5948-4c34-853f-dc9d8e106671",
         "image_Hmdzyy"
@@ -106,9 +91,9 @@
         "display-type": "slideshow",
         "products-per-row--desktop": "3",
         "products-per-row--mobile": "2",
-        "collection": "mozzi-cyber",
+        "collection": "panuelos",
         "max-products": 12,
-        "heading": "¡Hasta 50% off!"
+        "heading": "¡LAST UNITS!"
       }
     },
     "39b7e8a7-1bbc-491e-8390-2751caf3e237": {
