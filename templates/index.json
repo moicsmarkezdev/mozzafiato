@@ -193,6 +193,68 @@
         "link-text": ""
       }
     },
+    "featured_product_VBNFCz": {
+      "type": "featured-product",
+      "blocks": {
+        "overline_ciEpyi": {
+          "type": "overline",
+          "settings": {
+            "text": "Overline text"
+          }
+        },
+        "heading_C4xdHY": {
+          "type": "heading",
+          "settings": {
+          }
+        },
+        "vendor_dFDptL": {
+          "type": "vendor",
+          "settings": {
+          }
+        },
+        "price_Gk49Dg": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "options_Xp44Vr": {
+          "type": "options",
+          "settings": {
+            "variant-style": "buttons",
+            "swatches-enabled": true,
+            "size-chart-enabled": true,
+            "size-chart-option": "size",
+            "size-chart-content": ""
+          }
+        },
+        "buy_buttons_rgRRtL": {
+          "type": "buy-buttons",
+          "settings": {
+            "smart-payment-enabled": true
+          }
+        }
+      },
+      "block_order": [
+        "overline_ciEpyi",
+        "heading_C4xdHY",
+        "vendor_dFDptL",
+        "price_Gk49Dg",
+        "options_Xp44Vr",
+        "buy_buttons_rgRRtL"
+      ],
+      "settings": {
+        "background-color": "none",
+        "container-width": 4,
+        "spacing-above": true,
+        "spacing-below": true,
+        "text-column-width": 30,
+        "text-alignment": "left",
+        "thumbnail-width": 80,
+        "media-gap": 8,
+        "featured_product": "mozzi-cap-rosada",
+        "loop-enabled": false
+      }
+    },
     "53875c54-020d-4d79-8ff9-85371bcd2995": {
       "type": "scrolling-content",
       "blocks": {
@@ -306,68 +368,6 @@
         "heading": "",
         "image": "shopify:\/\/shop_images\/Captura_de_pantalla_2024-01-05_172915.png",
         "mobile-image": "shopify:\/\/shop_images\/Captura_de_pantalla_2024-01-05_173116.png"
-      }
-    },
-    "featured_product_hmX3Xa": {
-      "type": "featured-product",
-      "blocks": {
-        "heading_y8KEGW": {
-          "type": "heading",
-          "settings": {
-          }
-        },
-        "vendor_cWmXjw": {
-          "type": "vendor",
-          "settings": {
-          }
-        },
-        "price_Ya9UKT": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "options_y9tytw": {
-          "type": "options",
-          "settings": {
-            "variant-style": "buttons",
-            "swatches-enabled": true,
-            "size-chart-enabled": true,
-            "size-chart-option": "size",
-            "size-chart-content": ""
-          }
-        },
-        "low_stock_eNtA7g": {
-          "type": "low-stock",
-          "settings": {
-            "threshold": 5
-          }
-        },
-        "buy_buttons_LMiQPa": {
-          "type": "buy-buttons",
-          "settings": {
-            "smart-payment-enabled": true
-          }
-        }
-      },
-      "block_order": [
-        "heading_y8KEGW",
-        "vendor_cWmXjw",
-        "price_Ya9UKT",
-        "options_y9tytw",
-        "low_stock_eNtA7g",
-        "buy_buttons_LMiQPa"
-      ],
-      "settings": {
-        "background-color": "none",
-        "container-width": 4,
-        "spacing-above": true,
-        "spacing-below": true,
-        "text-column-width": 30,
-        "text-alignment": "left",
-        "thumbnail-width": 80,
-        "media-gap": 8,
-        "featured_product": "beauty-pack",
-        "loop-enabled": false
       }
     },
     "featured_collection_rQqFgM": {
@@ -647,9 +647,9 @@
     "5ba33054-4d1e-44a1-a62b-81a200f21bc2",
     "39b7e8a7-1bbc-491e-8390-2751caf3e237",
     "featured_products_PVYXMN",
+    "featured_product_VBNFCz",
     "53875c54-020d-4d79-8ff9-85371bcd2995",
     "9547d1fa-e436-446d-a9b9-77f7a3bd07b9",
-    "featured_product_hmX3Xa",
     "featured_collection_rQqFgM",
     "e1bcfcee-d979-4e6c-b6ec-30817d050e0c",
     "grid-with-overlay",
