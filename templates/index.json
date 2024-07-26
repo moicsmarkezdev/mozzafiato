@@ -12,6 +12,20 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
+        "image_ADfrQD": {
+          "type": "image",
+          "settings": {
+            "text-position": "bottom-left",
+            "text-width": "medium",
+            "image": "shopify:\/\/shop_images\/Viernes26-BannerWeb.jpg",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "shopify:\/\/collections\/last-units",
+            "link-text": "",
+            "mobile-image": "shopify:\/\/shop_images\/Viernes26-BannerMovil.jpg"
+          }
+        },
         "a5482328-e971-4c6e-b38b-4e3380fe7526": {
           "type": "image",
           "settings": {
@@ -56,6 +70,7 @@
         }
       },
       "block_order": [
+        "image_ADfrQD",
         "a5482328-e971-4c6e-b38b-4e3380fe7526",
         "4993a4c6-5948-4c34-853f-dc9d8e106671",
         "image_Hmdzyy"
