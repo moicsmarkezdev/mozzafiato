@@ -12,6 +12,20 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
+        "4993a4c6-5948-4c34-853f-dc9d8e106671": {
+          "type": "image",
+          "settings": {
+            "text-position": "bottom-left",
+            "text-width": "medium",
+            "image": "shopify:\/\/shop_images\/Miercoles31-BannerWeb.png",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "shopify:\/\/products\/beauty-pack",
+            "link-text": "",
+            "mobile-image": "shopify:\/\/shop_images\/Miercoles31-BannerMovil.png"
+          }
+        },
         "image_ADfrQD": {
           "type": "image",
           "settings": {
@@ -40,20 +54,6 @@
             "mobile-image": "shopify:\/\/shop_images\/Imagen_de_WhatsApp_2024-06-27_a_las_17.15.20_1e08a3aa.jpg"
           }
         },
-        "4993a4c6-5948-4c34-853f-dc9d8e106671": {
-          "type": "image",
-          "settings": {
-            "text-position": "bottom-left",
-            "text-width": "medium",
-            "image": "shopify:\/\/shop_images\/Miercoles31-BannerWeb.png",
-            "overline": "",
-            "title": "",
-            "description": "",
-            "link-url": "shopify:\/\/products\/beauty-pack",
-            "link-text": "",
-            "mobile-image": "shopify:\/\/shop_images\/Miercoles31-BannerMovil.png"
-          }
-        },
         "image_Hmdzyy": {
           "type": "image",
           "settings": {
@@ -70,9 +70,9 @@
         }
       },
       "block_order": [
+        "4993a4c6-5948-4c34-853f-dc9d8e106671",
         "image_ADfrQD",
         "a5482328-e971-4c6e-b38b-4e3380fe7526",
-        "4993a4c6-5948-4c34-853f-dc9d8e106671",
         "image_Hmdzyy"
       ],
       "settings": {
