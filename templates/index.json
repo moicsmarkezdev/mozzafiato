@@ -12,6 +12,20 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
+        "image_Hmdzyy": {
+          "type": "image",
+          "settings": {
+            "text-position": "bottom-left",
+            "text-width": "medium",
+            "image": "shopify:\/\/shop_images\/Martes27-Banner-Web.png",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "shopify:\/\/collections\/toallas-de-microfibra",
+            "link-text": "",
+            "mobile-image": "shopify:\/\/shop_images\/Martes27-Banner-Mobile.png"
+          }
+        },
         "a5482328-e971-4c6e-b38b-4e3380fe7526": {
           "type": "image",
           "settings": {
@@ -53,27 +67,13 @@
             "link-text": "",
             "mobile-image": "shopify:\/\/shop_images\/Viernes26-BannerMovil.jpg"
           }
-        },
-        "image_Hmdzyy": {
-          "type": "image",
-          "settings": {
-            "text-position": "bottom-left",
-            "text-width": "medium",
-            "image": "shopify:\/\/shop_images\/Miercoles7-BannerWeb.png",
-            "overline": "",
-            "title": "",
-            "description": "",
-            "link-url": "shopify:\/\/collections\/panuelos",
-            "link-text": "",
-            "mobile-image": "shopify:\/\/shop_images\/Miercoles7-BannerMobile.png"
-          }
         }
       },
       "block_order": [
+        "image_Hmdzyy",
         "a5482328-e971-4c6e-b38b-4e3380fe7526",
         "4993a4c6-5948-4c34-853f-dc9d8e106671",
-        "image_ADfrQD",
-        "image_Hmdzyy"
+        "image_ADfrQD"
       ],
       "settings": {
         "text-color": "auto",
