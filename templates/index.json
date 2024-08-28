@@ -106,7 +106,7 @@
         "products-per-row--desktop": "3",
         "products-per-row--mobile": "2",
         "collection": "panuelos",
-        "max-products": 6,
+        "max-products": 9,
         "heading": "PAÑUELOS"
       }
     },
@@ -181,7 +181,7 @@
         "text-alignment": "left",
         "thumbnail-width": 80,
         "media-gap": 8,
-        "featured_product": "toalla-de-microfibra-fruitopia",
+        "featured_product": "comprar-online-tote-bag-paint-brushes-mozzafiato",
         "loop-enabled": false
       }
     },
