@@ -550,7 +550,7 @@
           "type": "collapsible-row",
           "settings": {
             "heading": "¿En cuantos días recibo mi pedido?",
-            "description": "<ul><li><strong>Envíos dentro de Lima Metropolitana<\/strong><\/li><\/ul><p>Nuestros envíos son realizados por servicios de courier tercerizados responsables de la seguridad y entrega del producto. El plazo de entrega a cualquier distrito dentro de Lima Metropolitana es de 2 a 4 días hábiles a partir del día de despacho del pedido.<\/p><ul><li><strong>Envío a Provincia <\/strong><\/li><\/ul><p>Nuestros envíos son realizados por servicios de courier tercerizados responsables de la seguridad y entrega del producto. El plazo de entrega a cualquier distrito de provincia es de 2 a 10 días hábiles a partir del día de despacho del producto.<\/p><p>¿Te gustaría recogerlo sin costo adicional?<strong> ¡Elige nuestra opción de recojo en tienda!<\/strong><\/p>",
+            "description": "<ul><li><strong>Envíos dentro de Lima Metropolitana<\/strong><\/li><\/ul><p>Nuestros envíos son realizados por servicios de courier tercerizados responsables de la seguridad y entrega del producto. El plazo de entrega a cualquier distrito dentro de Lima Metropolitana es de 2 a 4 días hábiles a partir del día de despacho del pedido.<\/p><ul><li><strong>Envío a Provincia <\/strong><\/li><\/ul><p>Nuestros envíos son realizados por servicios de courier tercerizados responsables de la seguridad y entrega del producto. El plazo de entrega a cualquier distrito de provincia es de 2 a 10 días hábiles a partir del día de despacho del producto.<\/p><p>¿Te gustaría recogerlo sin costo adicional?<strong> ¡Elige nuestra opción de recojo en oficina!<\/strong><\/p>",
             "page-content": "",
             "default-open": false
           }
@@ -559,7 +559,7 @@
           "type": "collapsible-row",
           "settings": {
             "heading": "¿Cómo puedo hacerle seguimiento a mi pedido?",
-            "description": "<p>Cuando enviemos tu pedido, te enviaremos un código de seguimiento y el link a la página del courier utilizado para que de esta forma puedas ver cuál es el estado de tu pedido.<\/p>",
+            "description": "<p>Cuando enviemos tu pedido, te llegará un código de seguimiento y el link a la página del courier utilizado para que de esta forma puedas ver cuál es el estado de tu pedido.<\/p>",
             "page-content": "",
             "default-open": false
           }
