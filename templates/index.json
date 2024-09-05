@@ -210,12 +210,6 @@
     "featured_product_VBNFCz": {
       "type": "featured-product",
       "blocks": {
-        "overline_ciEpyi": {
-          "type": "overline",
-          "settings": {
-            "text": "Overline text"
-          }
-        },
         "heading_C4xdHY": {
           "type": "heading",
           "settings": {
@@ -249,7 +243,6 @@
         }
       },
       "block_order": [
-        "overline_ciEpyi",
         "heading_C4xdHY",
         "vendor_dFDptL",
         "price_Gk49Dg",
