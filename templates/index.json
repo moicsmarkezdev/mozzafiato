@@ -422,6 +422,15 @@
             "description": "<p>Había comprado el año pasado dos toallas para un viaje, este año completé las 4 toallas para toda la familia. Son muy buenas, los diseños lindos y la calidad gruesita que te seca muy bien y se seca al toque.<br\/><br\/>- <strong>Lucía<\/strong><\/p>"
           }
         },
+        "testimonial_7pJrmH": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "10",
+            "author-role": "",
+            "author-name": "",
+            "description": "<p>Linda la caja, el pedido, los stickers, hasta tenia una cartita que olía rico. ¡Realmente lindo el servicio y experiencia, las felicito!<br\/><br\/><strong>- Vanessa<\/strong><\/p>"
+          }
+        },
         "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-2": {
           "type": "testimonial",
           "settings": {
@@ -435,6 +444,7 @@
       "block_order": [
         "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-1",
         "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-0",
+        "testimonial_7pJrmH",
         "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-2"
       ],
       "settings": {
