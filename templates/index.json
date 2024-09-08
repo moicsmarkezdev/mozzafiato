@@ -110,6 +110,136 @@
         "heading": "PAÑUELOS - 20% OFF"
       }
     },
+    "featured_product_VBNFCz": {
+      "type": "featured-product",
+      "blocks": {
+        "heading_C4xdHY": {
+          "type": "heading",
+          "settings": {
+          }
+        },
+        "price_Gk49Dg": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "low_stock_qg3tNM": {
+          "type": "low-stock",
+          "settings": {
+            "threshold": 5
+          }
+        },
+        "buy_buttons_rgRRtL": {
+          "type": "buy-buttons",
+          "settings": {
+            "smart-payment-enabled": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_C4xdHY",
+        "price_Gk49Dg",
+        "low_stock_qg3tNM",
+        "buy_buttons_rgRRtL"
+      ],
+      "settings": {
+        "background-color": "none",
+        "container-width": 4,
+        "spacing-above": true,
+        "spacing-below": true,
+        "text-column-width": 30,
+        "text-alignment": "left",
+        "thumbnail-width": 80,
+        "media-gap": 8,
+        "featured_product": "toalla-de-microfibra-fruitopia",
+        "loop-enabled": false
+      }
+    },
+    "featured_products_PVYXMN": {
+      "type": "featured-products",
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "display-type": "slideshow",
+        "products-per-row--desktop": "4",
+        "products-per-row--mobile": "2",
+        "product-list": [
+          "mozzi-cap-rosada",
+          "visor-cap-sunshine",
+          "visor-cap-good-vibes",
+          "visor-cap-mozzibabe",
+          "visor-cap-palm-trees"
+        ],
+        "heading": "caps",
+        "link-url": "",
+        "link-text": ""
+      }
+    },
+    "53875c54-020d-4d79-8ff9-85371bcd2995": {
+      "type": "scrolling-content",
+      "blocks": {
+        "template--15496343486600__53875c54-020d-4d79-8ff9-85371bcd2995-image-1": {
+          "type": "image",
+          "settings": {
+            "image-height": 100,
+            "link": "",
+            "hide-on-desktop": false,
+            "mobile-image-height": 70,
+            "hide-on-mobile": false
+          }
+        },
+        "template--15496343486600__53875c54-020d-4d79-8ff9-85371bcd2995-text-1": {
+          "type": "text",
+          "settings": {
+            "text": "Your scrolling text here",
+            "link": "",
+            "hide-on-mobile": false,
+            "hide-on-desktop": false
+          }
+        },
+        "template--15496343486600__53875c54-020d-4d79-8ff9-85371bcd2995-image-2": {
+          "type": "image",
+          "settings": {
+            "image-height": 100,
+            "link": "",
+            "hide-on-desktop": false,
+            "mobile-image-height": 70,
+            "hide-on-mobile": false
+          }
+        },
+        "template--15496343486600__53875c54-020d-4d79-8ff9-85371bcd2995-text-2": {
+          "type": "text",
+          "settings": {
+            "text": "Your scrolling text here",
+            "link": "",
+            "hide-on-mobile": false,
+            "hide-on-desktop": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15496343486600__53875c54-020d-4d79-8ff9-85371bcd2995-image-1",
+        "template--15496343486600__53875c54-020d-4d79-8ff9-85371bcd2995-text-1",
+        "template--15496343486600__53875c54-020d-4d79-8ff9-85371bcd2995-image-2",
+        "template--15496343486600__53875c54-020d-4d79-8ff9-85371bcd2995-text-2"
+      ],
+      "disabled": true,
+      "settings": {
+        "top-border": false,
+        "background-color": "none",
+        "parallax-enabled": false,
+        "apply-overlay": false,
+        "light-text": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "text-size": "section-heading",
+        "animation-direction": "left",
+        "animation-speed": 6,
+        "pause-on-hover": false
+      }
+    },
     "39b7e8a7-1bbc-491e-8390-2751caf3e237": {
       "type": "featured-product",
       "blocks": {
@@ -183,146 +313,6 @@
         "media-gap": 8,
         "featured_product": "comprar-online-tote-bag-amanda-flowers-mozzafiato",
         "loop-enabled": false
-      }
-    },
-    "featured_products_PVYXMN": {
-      "type": "featured-products",
-      "settings": {
-        "background-color": "none",
-        "light-text": false,
-        "spacing-above": true,
-        "spacing-below": true,
-        "display-type": "slideshow",
-        "products-per-row--desktop": "4",
-        "products-per-row--mobile": "2",
-        "product-list": [
-          "mozzi-cap-rosada",
-          "visor-cap-sunshine",
-          "visor-cap-good-vibes",
-          "visor-cap-mozzibabe",
-          "visor-cap-palm-trees"
-        ],
-        "heading": "caps",
-        "link-url": "",
-        "link-text": ""
-      }
-    },
-    "featured_product_VBNFCz": {
-      "type": "featured-product",
-      "blocks": {
-        "heading_C4xdHY": {
-          "type": "heading",
-          "settings": {
-          }
-        },
-        "vendor_dFDptL": {
-          "type": "vendor",
-          "settings": {
-          }
-        },
-        "price_Gk49Dg": {
-          "type": "price",
-          "settings": {
-          }
-        },
-        "options_Xp44Vr": {
-          "type": "options",
-          "settings": {
-            "variant-style": "buttons",
-            "swatches-enabled": true,
-            "size-chart-enabled": true,
-            "size-chart-option": "size",
-            "size-chart-content": ""
-          }
-        },
-        "buy_buttons_rgRRtL": {
-          "type": "buy-buttons",
-          "settings": {
-            "smart-payment-enabled": true
-          }
-        }
-      },
-      "block_order": [
-        "heading_C4xdHY",
-        "vendor_dFDptL",
-        "price_Gk49Dg",
-        "options_Xp44Vr",
-        "buy_buttons_rgRRtL"
-      ],
-      "settings": {
-        "background-color": "none",
-        "container-width": 4,
-        "spacing-above": true,
-        "spacing-below": true,
-        "text-column-width": 30,
-        "text-alignment": "left",
-        "thumbnail-width": 80,
-        "media-gap": 8,
-        "featured_product": "comprar-online-toalla-de-microfibra-cosmic-mozzafiato",
-        "loop-enabled": false
-      }
-    },
-    "53875c54-020d-4d79-8ff9-85371bcd2995": {
-      "type": "scrolling-content",
-      "blocks": {
-        "template--15496343486600__53875c54-020d-4d79-8ff9-85371bcd2995-image-1": {
-          "type": "image",
-          "settings": {
-            "image-height": 100,
-            "link": "",
-            "hide-on-desktop": false,
-            "mobile-image-height": 70,
-            "hide-on-mobile": false
-          }
-        },
-        "template--15496343486600__53875c54-020d-4d79-8ff9-85371bcd2995-text-1": {
-          "type": "text",
-          "settings": {
-            "text": "Your scrolling text here",
-            "link": "",
-            "hide-on-mobile": false,
-            "hide-on-desktop": false
-          }
-        },
-        "template--15496343486600__53875c54-020d-4d79-8ff9-85371bcd2995-image-2": {
-          "type": "image",
-          "settings": {
-            "image-height": 100,
-            "link": "",
-            "hide-on-desktop": false,
-            "mobile-image-height": 70,
-            "hide-on-mobile": false
-          }
-        },
-        "template--15496343486600__53875c54-020d-4d79-8ff9-85371bcd2995-text-2": {
-          "type": "text",
-          "settings": {
-            "text": "Your scrolling text here",
-            "link": "",
-            "hide-on-mobile": false,
-            "hide-on-desktop": false
-          }
-        }
-      },
-      "block_order": [
-        "template--15496343486600__53875c54-020d-4d79-8ff9-85371bcd2995-image-1",
-        "template--15496343486600__53875c54-020d-4d79-8ff9-85371bcd2995-text-1",
-        "template--15496343486600__53875c54-020d-4d79-8ff9-85371bcd2995-image-2",
-        "template--15496343486600__53875c54-020d-4d79-8ff9-85371bcd2995-text-2"
-      ],
-      "disabled": true,
-      "settings": {
-        "top-border": false,
-        "background-color": "none",
-        "parallax-enabled": false,
-        "apply-overlay": false,
-        "light-text": false,
-        "spacing-above": true,
-        "spacing-below": true,
-        "text-size": "section-heading",
-        "animation-direction": "left",
-        "animation-speed": 6,
-        "pause-on-hover": false
       }
     },
     "9547d1fa-e436-446d-a9b9-77f7a3bd07b9": {
@@ -662,10 +652,10 @@
   "order": [
     "slideshow",
     "5ba33054-4d1e-44a1-a62b-81a200f21bc2",
-    "39b7e8a7-1bbc-491e-8390-2751caf3e237",
-    "featured_products_PVYXMN",
     "featured_product_VBNFCz",
+    "featured_products_PVYXMN",
     "53875c54-020d-4d79-8ff9-85371bcd2995",
+    "39b7e8a7-1bbc-491e-8390-2751caf3e237",
     "9547d1fa-e436-446d-a9b9-77f7a3bd07b9",
     "featured_collection_rQqFgM",
     "e1bcfcee-d979-4e6c-b6ec-30817d050e0c",
