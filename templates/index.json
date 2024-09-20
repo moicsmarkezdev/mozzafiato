@@ -376,12 +376,12 @@
         "spacing-below": true,
         "featured-collection--image--show": false,
         "featured-collection--description--show": false,
-        "display-type": "slideshow",
+        "display-type": "grid",
         "products-per-row--desktop": "3",
-        "products-per-row--mobile": "1",
+        "products-per-row--mobile": "2",
         "collection": "neceseres",
         "max-products": 4,
-        "heading": "Neceseres - 30% off"
+        "heading": "Neceseres"
       }
     },
     "e1bcfcee-d979-4e6c-b6ec-30817d050e0c": {
