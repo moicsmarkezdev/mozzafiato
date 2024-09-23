@@ -17,13 +17,13 @@
           "settings": {
             "text-position": "bottom-left",
             "text-width": "medium",
-            "image": "shopify:\/\/shop_images\/Martes10-Banner_web.png",
+            "image": "shopify://shop_images/Martes10-Banner_web.png",
             "overline": "",
             "title": "",
             "description": "",
-            "link-url": "shopify:\/\/collections\/tote-bags",
+            "link-url": "shopify://collections/tote-bags",
             "link-text": "",
-            "mobile-image": "shopify:\/\/shop_images\/Martes10-Banner_mobile.png"
+            "mobile-image": "shopify://shop_images/Martes10-Banner_mobile.png"
           }
         },
         "image_ADfrQD": {
@@ -31,13 +31,13 @@
           "settings": {
             "text-position": "bottom-left",
             "text-width": "medium",
-            "image": "shopify:\/\/shop_images\/Lunes12-Banner_web.png",
+            "image": "shopify://shop_images/Lunes23-Banner-web.png",
             "overline": "",
             "title": "",
             "description": "",
-            "link-url": "shopify:\/\/products\/giftcard-mozzafiato",
+            "link-url": "shopify://collections/panuelos",
             "link-text": "",
-            "mobile-image": "shopify:\/\/shop_images\/Lunes12-Banner_mobile.png"
+            "mobile-image": "shopify://shop_images/Lunes23-Banner-mobile.png"
           }
         },
         "image_Hmdzyy": {
@@ -45,13 +45,13 @@
           "settings": {
             "text-position": "bottom-left",
             "text-width": "medium",
-            "image": "shopify:\/\/shop_images\/Martes27-Banner-Web.png",
+            "image": "shopify://shop_images/Martes27-Banner-Web.png",
             "overline": "",
             "title": "",
             "description": "",
-            "link-url": "shopify:\/\/collections\/toallas-de-microfibra",
+            "link-url": "shopify://collections/toallas-de-microfibra",
             "link-text": "",
-            "mobile-image": "shopify:\/\/shop_images\/Martes27-Banner-Mobile.png"
+            "mobile-image": "shopify://shop_images/Martes27-Banner-Mobile.png"
           }
         },
         "4993a4c6-5948-4c34-853f-dc9d8e106671": {
@@ -59,13 +59,13 @@
           "settings": {
             "text-position": "bottom-left",
             "text-width": "medium",
-            "image": "shopify:\/\/shop_images\/Miercoles31-BannerWeb.png",
+            "image": "shopify://shop_images/Miercoles31-BannerWeb.png",
             "overline": "",
             "title": "",
             "description": "",
-            "link-url": "shopify:\/\/products\/beauty-pack",
+            "link-url": "shopify://products/beauty-pack",
             "link-text": "",
-            "mobile-image": "shopify:\/\/shop_images\/Miercoles31-BannerMovil.png"
+            "mobile-image": "shopify://shop_images/Miercoles31-BannerMovil.png"
           }
         }
       },
@@ -363,8 +363,8 @@
         "spacing-below": true,
         "hotspot-color": "white",
         "heading": "",
-        "image": "shopify:\/\/shop_images\/Captura_de_pantalla_2024-01-05_172915.png",
-        "mobile-image": "shopify:\/\/shop_images\/Captura_de_pantalla_2024-01-05_173116.png"
+        "image": "shopify://shop_images/Captura_de_pantalla_2024-01-05_172915.png",
+        "mobile-image": "shopify://shop_images/Captura_de_pantalla_2024-01-05_173116.png"
       }
     },
     "featured_collection_rQqFgM": {
@@ -393,7 +393,7 @@
             "icon": "10",
             "author-role": "",
             "author-name": "",
-            "description": "<p>Me encantaron las toallas, los stickers y la fragancia que utilizan es muy agradable 🙂. Qué bueno saber que se toman el tiempo para recibir feedback, dice mucho de la marca!<br\/><br\/>- <strong>Mery<\/strong><\/p>"
+            "description": "<p>Me encantaron las toallas, los stickers y la fragancia que utilizan es muy agradable 🙂. Qué bueno saber que se toman el tiempo para recibir feedback, dice mucho de la marca!<br/><br/>- <strong>Mery</strong></p>"
           }
         },
         "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-0": {
@@ -402,7 +402,7 @@
             "icon": "10",
             "author-role": "",
             "author-name": "",
-            "description": "<p>Había comprado el año pasado dos toallas para un viaje, este año completé las 4 toallas para toda la familia. Son muy buenas, los diseños lindos y la calidad gruesita que te seca muy bien y se seca al toque.<br\/><br\/>- <strong>Lucía<\/strong><\/p>"
+            "description": "<p>Había comprado el año pasado dos toallas para un viaje, este año completé las 4 toallas para toda la familia. Son muy buenas, los diseños lindos y la calidad gruesita que te seca muy bien y se seca al toque.<br/><br/>- <strong>Lucía</strong></p>"
           }
         },
         "testimonial_7pJrmH": {
@@ -411,7 +411,7 @@
             "icon": "10",
             "author-role": "",
             "author-name": "",
-            "description": "<p>Linda la caja, el pedido, los stickers, hasta tenia una cartita que olía rico. ¡Realmente lindo el servicio y experiencia, las felicito!<br\/><br\/><strong>- Vanessa<\/strong><\/p>"
+            "description": "<p>Linda la caja, el pedido, los stickers, hasta tenia una cartita que olía rico. ¡Realmente lindo el servicio y experiencia, las felicito!<br/><br/><strong>- Vanessa</strong></p>"
           }
         },
         "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-2": {
@@ -420,7 +420,7 @@
             "icon": "10",
             "author-role": "",
             "author-name": "",
-            "description": "<p>La calidad y material de la toalla es increíble 😊 Y los pañuelos tiene un color hermoso tal cual las fotos!<br\/><br\/>- <strong>Carolina<\/strong><\/p>"
+            "description": "<p>La calidad y material de la toalla es increíble 😊 Y los pañuelos tiene un color hermoso tal cual las fotos!<br/><br/>- <strong>Carolina</strong></p>"
           }
         }
       },
@@ -448,39 +448,39 @@
         "overlay-block-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/posts_rebranding.png",
-            "mobile-image": "shopify:\/\/shop_images\/posts_rebranding.png",
+            "image": "shopify://shop_images/posts_rebranding.png",
+            "mobile-image": "shopify://shop_images/posts_rebranding.png",
             "wide": false,
             "tall": false,
             "retain-ratio": false,
             "title": "MOZZI CAPS",
-            "link-url": "shopify:\/\/collections\/mozzi-caps",
+            "link-url": "shopify://collections/mozzi-caps",
             "link-text": "Ver más"
           }
         },
         "overlay-block-3": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/14_eda42ebc-9dfe-409f-bdd6-07971cdc4428.png",
-            "mobile-image": "shopify:\/\/shop_images\/14_eda42ebc-9dfe-409f-bdd6-07971cdc4428.png",
+            "image": "shopify://shop_images/14_eda42ebc-9dfe-409f-bdd6-07971cdc4428.png",
+            "mobile-image": "shopify://shop_images/14_eda42ebc-9dfe-409f-bdd6-07971cdc4428.png",
             "wide": false,
             "tall": false,
             "retain-ratio": false,
             "title": "PAÑUELOS",
-            "link-url": "shopify:\/\/collections\/panuelos",
+            "link-url": "shopify://collections/panuelos",
             "link-text": "Ver más"
           }
         },
         "overlay-block-2": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/13_63eeee35-0d39-48d4-84c7-ec9418da49ba.png",
-            "mobile-image": "shopify:\/\/shop_images\/13_63eeee35-0d39-48d4-84c7-ec9418da49ba.png",
+            "image": "shopify://shop_images/13_63eeee35-0d39-48d4-84c7-ec9418da49ba.png",
+            "mobile-image": "shopify://shop_images/13_63eeee35-0d39-48d4-84c7-ec9418da49ba.png",
             "wide": false,
             "tall": false,
             "retain-ratio": false,
             "title": "TOALLAS DE MICROFIBRA",
-            "link-url": "shopify:\/\/collections\/toallas-de-microfibra",
+            "link-url": "shopify://collections/toallas-de-microfibra",
             "link-text": "Ver más"
           }
         }
@@ -515,7 +515,7 @@
           "type": "collapsible-row",
           "settings": {
             "heading": "¿Cómo realizo un pedido?",
-            "description": "<p>Puedes realizar tu pedido a través de nuestra web, Instagram o a través de nuestro WhatsApp (+51 922 328 133).<\/p>",
+            "description": "<p>Puedes realizar tu pedido a través de nuestra web, Instagram o a través de nuestro WhatsApp (+51 922 328 133).</p>",
             "page-content": "",
             "default-open": false
           }
@@ -524,7 +524,7 @@
           "type": "collapsible-row",
           "settings": {
             "heading": "¿Qué métodos de pago ofrecen?",
-            "description": "<p>Puedes pagar con tarjeta de crédito o débito, yape o transferencia bancaria e interbancaria (BCP). Todos estos métodos de pago están disponibles por compras en Instagram, WhatsApp y nuestra página web.<\/p>",
+            "description": "<p>Puedes pagar con tarjeta de crédito o débito, yape o transferencia bancaria e interbancaria (BCP). Todos estos métodos de pago están disponibles por compras en Instagram, WhatsApp y nuestra página web.</p>",
             "page-content": "",
             "default-open": false
           }
@@ -533,7 +533,7 @@
           "type": "collapsible-row",
           "settings": {
             "heading": "¿En cuantos días recibo mi pedido?",
-            "description": "<ul><li><strong>Envíos dentro de Lima Metropolitana<\/strong><\/li><\/ul><p>Nuestros envíos son realizados por servicios de courier tercerizados responsables de la seguridad y entrega del producto. El plazo de entrega a cualquier distrito dentro de Lima Metropolitana es de 2 a 4 días hábiles a partir del día de despacho del pedido.<\/p><ul><li><strong>Envío a Provincia <\/strong><\/li><\/ul><p>Nuestros envíos son realizados por servicios de courier tercerizados responsables de la seguridad y entrega del producto. El plazo de entrega a cualquier distrito de provincia es de 2 a 10 días hábiles a partir del día de despacho del producto.<\/p><p>¿Te gustaría recogerlo sin costo adicional?<strong> ¡Elige nuestra opción de recojo en oficina!<\/strong><\/p>",
+            "description": "<ul><li><strong>Envíos dentro de Lima Metropolitana</strong></li></ul><p>Nuestros envíos son realizados por servicios de courier tercerizados responsables de la seguridad y entrega del producto. El plazo de entrega a cualquier distrito dentro de Lima Metropolitana es de 2 a 4 días hábiles a partir del día de despacho del pedido.</p><ul><li><strong>Envío a Provincia </strong></li></ul><p>Nuestros envíos son realizados por servicios de courier tercerizados responsables de la seguridad y entrega del producto. El plazo de entrega a cualquier distrito de provincia es de 2 a 10 días hábiles a partir del día de despacho del producto.</p><p>¿Te gustaría recogerlo sin costo adicional?<strong> ¡Elige nuestra opción de recojo en oficina!</strong></p>",
             "page-content": "",
             "default-open": false
           }
@@ -542,7 +542,7 @@
           "type": "collapsible-row",
           "settings": {
             "heading": "¿Cómo puedo hacerle seguimiento a mi pedido?",
-            "description": "<p>Cuando enviemos tu pedido, te llegará un código de seguimiento y el link a la página del courier utilizado para que de esta forma puedas ver cuál es el estado de tu pedido.<\/p>",
+            "description": "<p>Cuando enviemos tu pedido, te llegará un código de seguimiento y el link a la página del courier utilizado para que de esta forma puedas ver cuál es el estado de tu pedido.</p>",
             "page-content": "",
             "default-open": false
           }
