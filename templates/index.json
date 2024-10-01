@@ -45,13 +45,13 @@
           "settings": {
             "text-position": "bottom-left",
             "text-width": "medium",
-            "image": "shopify://shop_images/Martes27-Banner-Web.png",
+            "image": "shopify://shop_images/Martes1-Banner_web.png",
             "overline": "",
             "title": "",
             "description": "",
-            "link-url": "shopify://collections/toallas-de-microfibra",
+            "link-url": "shopify://collections",
             "link-text": "",
-            "mobile-image": "shopify://shop_images/Martes27-Banner-Mobile.png"
+            "mobile-image": "shopify://shop_images/Martes1-Banner_mobile.png"
           }
         },
         "4993a4c6-5948-4c34-853f-dc9d8e106671": {
