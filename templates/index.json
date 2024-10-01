@@ -12,34 +12,6 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
-        "image_ADfrQD": {
-          "type": "image",
-          "settings": {
-            "text-position": "bottom-left",
-            "text-width": "medium",
-            "image": "shopify://shop_images/Lunes23-Banner-web.png",
-            "overline": "",
-            "title": "",
-            "description": "",
-            "link-url": "shopify://collections/panuelos",
-            "link-text": "",
-            "mobile-image": "shopify://shop_images/Lunes23-Banner-mobile.png"
-          }
-        },
-        "a5482328-e971-4c6e-b38b-4e3380fe7526": {
-          "type": "image",
-          "settings": {
-            "text-position": "bottom-left",
-            "text-width": "medium",
-            "image": "shopify://shop_images/Martes10-Banner_web.png",
-            "overline": "",
-            "title": "",
-            "description": "",
-            "link-url": "shopify://collections/tote-bags",
-            "link-text": "",
-            "mobile-image": "shopify://shop_images/Martes10-Banner_mobile.png"
-          }
-        },
         "image_Hmdzyy": {
           "type": "image",
           "settings": {
@@ -52,6 +24,20 @@
             "link-url": "shopify://collections",
             "link-text": "",
             "mobile-image": "shopify://shop_images/Martes1-Banner_mobile.png"
+          }
+        },
+        "image_ADfrQD": {
+          "type": "image",
+          "settings": {
+            "text-position": "bottom-left",
+            "text-width": "medium",
+            "image": "shopify://shop_images/Lunes23-Banner-web.png",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "shopify://collections/panuelos",
+            "link-text": "",
+            "mobile-image": "shopify://shop_images/Lunes23-Banner-mobile.png"
           }
         },
         "4993a4c6-5948-4c34-853f-dc9d8e106671": {
@@ -67,13 +53,27 @@
             "link-text": "",
             "mobile-image": "shopify://shop_images/Miercoles31-BannerMovil.png"
           }
+        },
+        "a5482328-e971-4c6e-b38b-4e3380fe7526": {
+          "type": "image",
+          "settings": {
+            "text-position": "bottom-left",
+            "text-width": "medium",
+            "image": "shopify://shop_images/Martes10-Banner_web.png",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "shopify://collections/tote-bags",
+            "link-text": "",
+            "mobile-image": "shopify://shop_images/Martes10-Banner_mobile.png"
+          }
         }
       },
       "block_order": [
-        "image_ADfrQD",
-        "a5482328-e971-4c6e-b38b-4e3380fe7526",
         "image_Hmdzyy",
-        "4993a4c6-5948-4c34-853f-dc9d8e106671"
+        "image_ADfrQD",
+        "4993a4c6-5948-4c34-853f-dc9d8e106671",
+        "a5482328-e971-4c6e-b38b-4e3380fe7526"
       ],
       "settings": {
         "text-color": "auto",
