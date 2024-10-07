@@ -59,13 +59,13 @@
           "settings": {
             "text-position": "bottom-left",
             "text-width": "medium",
-            "image": "shopify://shop_images/Martes10-Banner_web.png",
+            "image": "shopify://shop_images/Lunes7-Banner_web.png",
             "overline": "",
             "title": "",
             "description": "",
-            "link-url": "shopify://collections/tote-bags",
+            "link-url": "shopify://collections/mozzi-caps",
             "link-text": "",
-            "mobile-image": "shopify://shop_images/Martes10-Banner_mobile.png"
+            "mobile-image": "shopify://shop_images/Lunes7-Banner_mobile.png"
           }
         }
       },
