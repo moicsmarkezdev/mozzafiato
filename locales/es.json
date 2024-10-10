@@ -252,15 +252,15 @@
   },
   "legales": {
     "terms": {
-      "agreement_html": "I accept the <a href=\"{{ terms_url }}\" target=\"_blank\">terms and conditions</a>"
+      "agreement_html": "Acepto los <a href=\"{{ terms_url }}\" target=\"_blank\">términos y condiciones</a>"
     },
     "policy": {
-      "agreement_html": "I accept the <a href=\"{{ politica_url }}\" target=\"_blank\">privacy policy</a>"
+      "agreement_html": "Acepto la <a href=\"{{ politica_url }}\" target=\"_blank\">política de privacidad</a>"
     },
     "general": {
-      "confirmation": "You must accept the terms and conditions and the privacy policy before continuing.",
-      "contactpolitica_html": "I accept the <a href=\"{{ politica_url }}\" target=\"_blank\">privacy policy</a>",
-      "popupsuscripcion_html": "I accept the <a href=\"{{ politica_url }}\" target=\"_blank\">newsletter subscription policy</a>"
+      "confirmation": "Debe aceptar los términos y condiciones y la política de privacidad antes de continuar.",
+      "contactpolitica_html": "Acepto la <a href=\"{{ politica_url }}\" target=\"_blank\">política de privacidad</a>",
+      "popupsuscripcion_html": "Acepto la <a href=\"{{ politica_url }}\" target=\"_blank\">política de suscripción al newsletter</a>"
     }
   },
   "layout": {
