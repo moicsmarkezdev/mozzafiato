@@ -167,7 +167,7 @@ label.check-legal-section {
 label.labelcheck-legales-new-section {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   margin-bottom: 5px;
 }
 .labelcheck-legales {
