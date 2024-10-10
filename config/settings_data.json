@@ -56,6 +56,8 @@
     "color_text_permtiirtodas_cookies_gdpr": "#ffffff",
     "color_link_cookies_gdpr": "#444444",
     "hover_color_link_cookies_gdpr": "#f59e54",
+    "enable_contact_privacy_policy": true,
+    "contact_politica_legales": "shopify://pages/politica-de-cookies",
     "cart--type": "drawer",
     "cart--show-note": true,
     "free_shipping_threshold_1": 0,
