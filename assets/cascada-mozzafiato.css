@@ -237,7 +237,7 @@ input#policy-privacy-legales-cart:before {
   box-sizing: content-box;
   width: 16px;
   height: 16px;
-  border: 2px solid var(--colorborderchecklegalescart);
+  border: 1px solid var(--colorborderchecklegalescart);
   background-color: var(--colorbackgroundchecklegalescart);
   transition: 0.2s border-color ease;
 }
