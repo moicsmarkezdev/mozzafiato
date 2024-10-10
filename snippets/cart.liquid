@@ -465,6 +465,7 @@
         {% else %}
 
          {% if settings.enable_accept_terms %}
+           <div class="terminos-condiciones-cart">
                 <div class="input-row">
                   <label class="labelcheck-legales" for="terms-conditions-legales-cart">
                      <input type="checkbox" id="terms-conditions-legales-cart" name="c-group-filled" class="cbox legalesinput" required oninvalid="this.setCustomValidity('Completa la casilla')" oninput="setCustomValidity('')"/>
@@ -482,9 +483,9 @@
                 <div class="opacitytext">
                   <p>{{ 'legales.general.confirmation' | t }}</p>
                 </div>
+             </div>
           {% endif %}
-
-              {% endif %}
+       {% endif %}
 
         
         <div class="cart--nav">
