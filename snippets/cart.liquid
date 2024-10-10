@@ -464,7 +464,25 @@
         {% endif %}
         {% else %}
 
-         holaaaa
+         {% if settings.enable_accept_terms %}
+                <div class="input-row">
+                  <label class="labelcheck-legales" for="terms-conditions-legales-cart">
+                     <input type="checkbox" id="terms-conditions-legales-cart" name="c-group-filled" class="cbox legalesinput" required oninvalid="this.setCustomValidity('Completa la casilla')" oninput="setCustomValidity('')"/>
+                     <span class="label-text-legales-cart">{{ 'legales.terms.agreement_html' | t: terms_url: settings.cart_terms_conditions_legales }}</span>
+                   </label>
+                 </div> 
+    
+                <div class="input-row mb-4">
+                  <label class="labelcheck-legales" for="policy-privacy-legales-cart">
+                     <input type="checkbox" id="policy-privacy-legales-cart" name="c-group-filled" class="cbox legalesinput" required oninvalid="this.setCustomValidity('Completa la casilla')" oninput="setCustomValidity('')"/>
+                     <span class="label-text-legales-cart">{{ 'legales.policy.agreement_html' | t: politica_url: settings.cart_policy_privacy_legales }}</span>
+                   </label>
+                 </div>
+    
+                <div class="opacitytext">
+                  <p>{{ 'legales.general.confirmation' | t }}</p>
+                </div>
+          {% endif %}
 
               {% endif %}
 
