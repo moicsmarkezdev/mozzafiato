@@ -104,11 +104,13 @@
                             {{- link.title -}}
                           </a>
                         {%- endif -%}
-                      </li>
-                       {% if block.settings.custom_icon != blank %}
+                      </li> 
+                    {%- endfor -%}
+                    
+                    {% if block.settings.custom_icon != blank %}
                       <li><a href="{{ block.settings.link | default: '/' }}"><img src="{{ block.settings.custom_icon | image_url: width:100 }}" width="60" height="60" style="height:auto"></a></li>
                       {% endif %}
-                    {%- endfor -%}
+                    
                   </ul>
                 {%- endif -%}
               </div>
