@@ -1,0 +1,676 @@
+{% if page.handle == "libro-de-reclamaciones" %}
+{{ 'jquery-v3-2-1.js' | asset_url | script_tag }}
+{{ 'core.js' | asset_url | script_tag }}
+{{ 'core.css' | asset_url | stylesheet_tag }}
+{{ 'datepicker.css' | asset_url | stylesheet_tag }}
+{{ 'datepicker.js' | asset_url | script_tag }}
+{% endif %}
+
+{% assign razon_social = 'MOZZAFIATO S.A.C.' %}
+{% assign ruc = '20608094670' %}
+{% assign direccion = 'Calle La Cima #130, Urb. Rinconada 1era Etapa, La Molina – Lima Perú' %}
+{% assign mail = 'admin@mozzafiato.pe' %}
+{% assign app_token = '5f9fe7ae3d3091fabcae93223b95d5fb' %}
+{% assign app_email = 'mozzafiato.librodereclamos@gmail.com' %}
+
+{{ 'base-reclamaciones.css' | asset_url | stylesheet_tag }}
+
+<script src="https://smtp.codeandoliquid.com/assets/v2/smtp.js"></script>
+<script>
+let departamentos=[{coddepartamento:"00",departamento:"Departamento"},{coddepartamento:"01",departamento:"Amazonas"},{coddepartamento:"02",departamento:"Ancash"},{coddepartamento:"03",departamento:"Apurimac"},{coddepartamento:"04",departamento:"Arequipa"},{coddepartamento:"05",departamento:"Ayacucho"},{coddepartamento:"06",departamento:"Cajamarca"},{coddepartamento:"07",departamento:"Cusco"},{coddepartamento:"08",departamento:"Huancavelica"},{coddepartamento:"09",departamento:"Huanuco"},{coddepartamento:"10",departamento:"Ica"},{coddepartamento:"11",departamento:"Junín"},{coddepartamento:"12",departamento:"La Libertad"},{coddepartamento:"13",departamento:"Lambayeque"},{coddepartamento:"14",departamento:"Lima"},{coddepartamento:"15",departamento:"Loreto"},{coddepartamento:"16",departamento:"Madre De Dios"},{coddepartamento:"17",departamento:"Moquegua"},{coddepartamento:"18",departamento:"Pasco"},{coddepartamento:"19",departamento:"Piura"},{coddepartamento:"20",departamento:"Puno"},{coddepartamento:"21",departamento:"San Martin"},{coddepartamento:"22",departamento:"Tacna"},{coddepartamento:"23",departamento:"Tumbes"},{coddepartamento:"24",departamento:"Ucayali"}],provincias=[{"00":[{codprovincia:"0999",provincia:"Provincia"}]},{"01":[{codprovincia:"0101",provincia:"Bagua"},{codprovincia:"0102",provincia:"Chachapoyas"},{codprovincia:"0103",provincia:"Utcubamba"}]},{"02":[{codprovincia:"0201",provincia:"Casma"},{codprovincia:"0202",provincia:"Huaraz"},{codprovincia:"0203",provincia:"Huaylas"},{codprovincia:"0204",provincia:"Santa"}]},{"03":[{codprovincia:"0301",provincia:"Abancay"},{codprovincia:"0302",provincia:"Andahuaylas"}]},{"04":[{codprovincia:"0401",provincia:"Arequipa"},{codprovincia:"0402",provincia:"Camana"},{codprovincia:"0403",provincia:"Caylloma"},{codprovincia:"0404",provincia:"Islay"}]},{"05":[{codprovincia:"0501",provincia:"Huamanga"}]},{"06":[{codprovincia:"0601",provincia:"Cajamarca"},{codprovincia:"0602",provincia:"Chota"},{codprovincia:"0603",provincia:"Cutervo"},{codprovincia:"0604",provincia:"Jaen"}]},{"07":[{codprovincia:"0701",provincia:"Canchis"},{codprovincia:"0702",provincia:"Cusco"},{codprovincia:"0703",provincia:"La Convencion"},{codprovincia:"0704",provincia:"Urubamba"}]},{"08":[{codprovincia:"0801",provincia:"Huancavelica"}]},{"09":[{codprovincia:"0901",provincia:"Huanuco"},{codprovincia:"0902",provincia:"Leoncio Prado"}]},{10:[{codprovincia:"1001",provincia:"Chincha"},{codprovincia:"1002",provincia:"Ica"},{codprovincia:"1003",provincia:"Nazca"},{codprovincia:"1004",provincia:"Pisco"}]},{11:[{codprovincia:"1101",provincia:"Huancayo"},{codprovincia:"1102",provincia:"Chanchamayo"},{codprovincia:"1103",provincia:"Huancayo"},{codprovincia:"1104",provincia:"Jauja"},{codprovincia:"1105",provincia:"Satipo"},{codprovincia:"1106",provincia:"Tarma"},{codprovincia:"1107",provincia:"Yauli"}]},{12:[{codprovincia:"1201",provincia:"Chepen"},{codprovincia:"1202",provincia:"Pacasmayo"},{codprovincia:"1203",provincia:"Sanchez Carrion"},{codprovincia:"1204",provincia:"Trujillo"}]},{13:[{codprovincia:"1301",provincia:"Chiclayo"},{codprovincia:"1302",provincia:"Lambayeque"}]},{14:[{codprovincia:"1401",provincia:"Barranca"},{codprovincia:"1402",provincia:"Callao"},{codprovincia:"1403",provincia:"Cañete"},{codprovincia:"1404",provincia:"Huaral"},{codprovincia:"1405",provincia:"Huaura"},{codprovincia:"1406",provincia:"Lima"}]},{15:[{codprovincia:"1501",provincia:"Alto Amazonas"},{codprovincia:"1502",provincia:"Maynas"}]},{16:[{codprovincia:"1601",provincia:"Tambopata"}]},{17:[{codprovincia:"1701",provincia:"Ilo"},{codprovincia:"1702",provincia:"Mariscal Nieto"}]},{18:[{codprovincia:"1801",provincia:"Oxapampa"},{codprovincia:"1802",provincia:"Pasco"}]},{19:[{codprovincia:"1901",provincia:"Paita"},{codprovincia:"1902",provincia:"Piura"},{codprovincia:"1903",provincia:"Sullana"},{codprovincia:"1904",provincia:"Talara"},{codprovincia:"1901",provincia:"Sechura "}]},{20:[{codprovincia:"2001",provincia:"Juliaca"},{codprovincia:"2002",provincia:"Puno"},{codprovincia:"2003",provincia:"San Román"}]},{21:[{codprovincia:"2101",provincia:"Mariscal Caceres"},{codprovincia:"2102",provincia:"Moyobamba"},{codprovincia:"2103",provincia:"Rioja"},{codprovincia:"2104",provincia:"San Martin"}]},{22:[{codprovincia:"2201",provincia:"Jorge Basadre"},{codprovincia:"2202",provincia:"Tacna"}]},{23:[{codprovincia:"2301",provincia:"Tumbes"},{codprovincia:"2302",provincia:"Zarumilla"}]},{24:[{codprovincia:"2401",provincia:"Coronel Portillo"}]}],distritos=[{"0999":[{coddistrito:"099999",distrito:"Distrito"}]},{"0101":[{coddistrito:"010101",distrito:"Bagua"}]},{"0102":[{coddistrito:"010201",distrito:"Chachapoyas"}]},{"0103":[{coddistrito:"010301",distrito:"Bagua Grande"}]},{"0201":[{coddistrito:"020101",distrito:"Casma"}]},{"0202":[{coddistrito:"020201",distrito:"Huaraz"}]},{"0203":[{coddistrito:"020301",distrito:"Caraz"}]},{"0204":[{coddistrito:"020401",distrito:"Chimbote"},{coddistrito:"020402",distrito:"Nuevo Chimbote"}]},{"0301":[{coddistrito:"030101",distrito:"Abancay"}]},{"0302":[{coddistrito:"030201",distrito:"Andahuaylas"}]},{"0401":[{coddistrito:"040101",distrito:"Arequipa"},{coddistrito:"040102",distrito:"Bustamante Y Rivero"},{coddistrito:"040103",distrito:"Cayma"},{coddistrito:"040104",distrito:"Cercado"},{coddistrito:"040105",distrito:"Cerro Colorado"},{coddistrito:"040106",distrito:"Jacobo Hunter"},{coddistrito:"040107",distrito:"Mariano Melgar"},{coddistrito:"040108",distrito:"Paucarpata"},{coddistrito:"040109",distrito:"Socabaya"},{coddistrito:"040110",distrito:"Yanahuara"}]},{"0402":[{coddistrito:"040201",distrito:"Camana"}]},{"0403":[{coddistrito:"040301",distrito:"Majes"}]},{"0404":[{coddistrito:"040401",distrito:"Mollendo"}]},{"0501":[{coddistrito:"050101",distrito:"Ayacucho"}]},{"0601":[{coddistrito:"060101",distrito:"Cajamarca"}]},{"0602":[{coddistrito:"060201",distrito:"Chota"}]},{"0603":[{coddistrito:"060301",distrito:"Cutervo"}]},{"0604":[{coddistrito:"060401",distrito:"Jaen"}]},{"0701":[{coddistrito:"070101",distrito:"Sicuani"}]},{"0702":[{coddistrito:"070201",distrito:"Cusco"},{coddistrito:"070202",distrito:"San Jeronimo"},{coddistrito:"070203",distrito:"Wanchaq"}]},{"0703":[{coddistrito:"070301",distrito:"Santa Ana"}]},{"0704":[{coddistrito:"070401",distrito:"Machupicchu"},{coddistrito:"070402",distrito:"Urubamba"}]},{"0801":[{coddistrito:"080101",distrito:"Huancavelica"}]},{"0901":[{coddistrito:"090101",distrito:"Huanuco"}]},{"0902":[{coddistrito:"090201",distrito:"Rupa Rupa"}]},{1001:[{coddistrito:"100101",distrito:"Chincha Alta"},{coddistrito:"100102",distrito:"Pueblo Nuevo"}]},{1002:[{coddistrito:"100201",distrito:"Ica"},{coddistrito:"100202",distrito:"Parcona"}]},{1003:[{coddistrito:"100301",distrito:"Marcona"},{coddistrito:"100302",distrito:"Nazca"}]},{1004:[{coddistrito:"100401",distrito:"Pisco"}]},{1101:[{coddistrito:"110101",distrito:"Chilca"},{coddistrito:"110102",distrito:"El Tambo"}]},{1102:[{coddistrito:"110201",distrito:"Chanchamayo"},{coddistrito:"110202",distrito:"Pichanaki"},{coddistrito:"110203",distrito:"San Ramín "}]},{1103:[{coddistrito:"110301",distrito:"El Tambo"},{coddistrito:"110302",distrito:"Huancayo"}]},{1104:[{coddistrito:"110401",distrito:"Jauja"}]},{1105:[{coddistrito:"110501",distrito:"San Martín De Pangoa "},{coddistrito:"110502",distrito:"Satipo"}]},{1106:[{coddistrito:"110601",distrito:"Tarma"}]},{1107:[{coddistrito:"110701",distrito:"La Oroya"}]},{1201:[{coddistrito:"120101",distrito:"Chepen"}]},{1202:[{coddistrito:"120201",distrito:"Pacasmayo"}]},{1203:[{coddistrito:"120301",distrito:"Huamachuco"}]},{1204:[{coddistrito:"120401",distrito:"El Porvenir"},{coddistrito:"120402",distrito:"La Esperanza"},{coddistrito:"120403",distrito:"Trujillo"},{coddistrito:"120404",distrito:"Victor Larco"}]},{1301:[{coddistrito:"130101",distrito:"Chiclayo"},{coddistrito:"130102",distrito:"Jose Leonardo Ortiz"}]},{1302:[{coddistrito:"130201",distrito:"Lambayeque"}]},{1401:[{coddistrito:"140101",distrito:"Barranca"}]},{1402:[{coddistrito:"140201",distrito:"Bellavista"},{coddistrito:"140202",distrito:"Callao"},{coddistrito:"140203",distrito:"La Punta"},{coddistrito:"140204",distrito:"Ventanilla"}]},{1403:[{coddistrito:"140301",distrito:"Asia"},{coddistrito:"140302",distrito:"Imperial"},{coddistrito:"140303",distrito:"San Pedro De Mala"},{coddistrito:"140304",distrito:"San Vicente De Cañete"}]},{1404:[{coddistrito:"140401",distrito:"Chancay"},{coddistrito:"140402",distrito:"Huaral"}]},{1405:[{coddistrito:"140501",distrito:"Huacho"}]},{1406:[{coddistrito:"140601",distrito:"Ate"},{coddistrito:"140602",distrito:"Barranco"},{coddistrito:"140603",distrito:"Breña"},{coddistrito:"140604",distrito:"Callao"},{coddistrito:"140605",distrito:"Carabayllo"},{coddistrito:"140606",distrito:"Cercado De Lima"},{coddistrito:"140607",distrito:"Chaclacayo"},{coddistrito:"140608",distrito:"Chorrillos"},{coddistrito:"140609",distrito:"Comas"},{coddistrito:"140610",distrito:"El Agustino"},{coddistrito:"140611",distrito:"Independencia"},{coddistrito:"140612",distrito:"Jesus Maria"},{coddistrito:"140613",distrito:"La Molina"},{coddistrito:"140614",distrito:"La Molina "},{coddistrito:"140615",distrito:"La Victoria"},{coddistrito:"140616",distrito:"Lima"},{coddistrito:"140617",distrito:"Lince"},{coddistrito:"140618",distrito:"Los Olivos"},{coddistrito:"140619",distrito:"Lurigancho"},{coddistrito:"140620",distrito:"Lurin"},{coddistrito:"140621",distrito:"Magdalena"},{coddistrito:"140622",distrito:"Magdalena Del Mar"},{coddistrito:"140623",distrito:"Miraflores"},{coddistrito:"140624",distrito:"Pueblo Libre"},{coddistrito:"140625",distrito:"Puente Piedra"},{coddistrito:"140626",distrito:"Rimac"},{coddistrito:"140627",distrito:"San Borja"},{coddistrito:"140628",distrito:"San Isidro"},{coddistrito:"140629",distrito:"San Juan De Lurigancho"},{coddistrito:"140630",distrito:"San Juan De Miraflores"},{coddistrito:"140631",distrito:"San Luis"},{coddistrito:"140632",distrito:"San Martin De Porres"},{coddistrito:"140633",distrito:"San Miguel"},{coddistrito:"140634",distrito:"Santa Anita"},{coddistrito:"140635",distrito:"Santiago De Surco"},{coddistrito:"140636",distrito:"Surco"},{coddistrito:"140637",distrito:"Surquillo"},{coddistrito:"140638",distrito:"Villa El Salvador"},{coddistrito:"140639",distrito:"Villa Maria Del Triunfo"},{coddistrito:"140640",distrito:"Villa María Del Triunfo"}]},{1501:[{coddistrito:"150101",distrito:"Yurimaguas"}]},{1502:[{coddistrito:"150201",distrito:"Belen"},{coddistrito:"150202",distrito:"Iquitos"},{coddistrito:"150203",distrito:"Punchana"}]},{1601:[{coddistrito:"160101",distrito:"Tambopata"}]},{1701:[{coddistrito:"170101",distrito:"Ilo"},{coddistrito:"170102",distrito:"Pacocha"}]},{1702:[{coddistrito:"170201",distrito:"Moquegua"},{coddistrito:"170202",distrito:"Torata"}]},{1801:[{coddistrito:"180101",distrito:"Oxapampa"}]},{1802:[{coddistrito:"180201",distrito:"Chaupimarca"},{coddistrito:"180202",distrito:"Yanacancha"}]},{1901:[{coddistrito:"190101",distrito:"Paita"}]},{1902:[{coddistrito:"190201",distrito:"Castilla"},{coddistrito:"190202",distrito:"Catacaos"},{coddistrito:"190203",distrito:"Chulucanas"},{coddistrito:"190204",distrito:"Piura"},{coddistrito:"190205",distrito:"Tambogrande"}]},{1903:[{coddistrito:"190301",distrito:"Sullana"}]},{1904:[{coddistrito:"190401",distrito:"Pariñas"}]},{1905:[{coddistrito:"190501",distrito:"Sechura "}]},{2001:[{coddistrito:"200101",distrito:"Cercado"}]},{2002:[{coddistrito:"200201",distrito:"Puno"}]},{2003:[{coddistrito:"200301",distrito:"Juliaca"}]},{2101:[{coddistrito:"210101",distrito:"Juanjui"}]},{2102:[{coddistrito:"210201",distrito:"Moyobamba"}]},{2103:[{coddistrito:"210301",distrito:"Nueva Cajamarca"},{coddistrito:"210302",distrito:"Rioja"}]},{2104:[{coddistrito:"210401",distrito:"Tarapoto"}]},{2201:[{coddistrito:"220101",distrito:"Ilabaya"}]},{2202:[{coddistrito:"220201",distrito:"Cono Sur"},{coddistrito:"220202",distrito:"Tacna"}]},{2301:[{coddistrito:"230101",distrito:"Tumbes"}]},{2302:[{coddistrito:"230201",distrito:"Aguas Verdes"}]},{2401:[{coddistrito:"240101",distrito:"Calleria"},{coddistrito:"240102",distrito:"Yarinacocha"}]}];
+</script>
+
+<style> 
+
+@media (max-width: 767px){
+  .libro-reclamaciones label {
+    display: inline;
+    margin-bottom: 0.5rem;
+ }
+}
+
+.libro-reclamaciones a {
+  {% if settings.desactive_font_weight %}
+    font-weight: 500 !important;
+  {% endif %}
+}
+
+.btn-printer{
+    font-size: 13px;
+    padding: 5px 0;
+    cursor: pointer;
+}
+  .btn-printer svg{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+  }
+.alert-success {
+	color: #155724;
+	background-color: #d4edda;
+	border-color: #c3e6cb;
+}
+
+.alert-success p {
+	margin: 0;
+}
+
+.alert {
+	position: relative;
+	padding: .75rem 1.25rem;
+	margin-bottom: 1rem;
+	border: 1px solid transparent;
+	border-radius: .25rem;
+}
+
+.form-check-menor,
+.form-check-entregado {
+	margin: 15px 0;
+}
+
+.small-txt {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.terms-input {
+	font-size: 13px;
+}
+
+
+
+button.btn.btn-block.add.secondary-button {
+	width: 40%;
+	margin: auto;
+}
+
+textarea {
+	min-width: 10px;
+}
+
+.sml {
+	font-size: 14px !important;
+}
+
+.gj-picker-md table tr th, .gj-picker-md table tr td {
+    border-bottom: 0px !important;
+    border-top: 0px !important; 
+    padding: 0px !important;
+    border: 1px solid #FFFFFF !important; 
+}
+
+@media screen and (max-width: 767px) {
+	.cmdl,
+	.cmdr {
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.cmdl {
+		text-align: left;
+	}
+	.cmdr {
+		text-align: right;
+	}
+}
+.libro-reclamaciones .form-check-input {
+    position: relative !important;
+    margin-top: 0px !important;
+    margin-left: 0px !important;
+}
+
+.button-styles{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.libro-reclamaciones .form-control {
+    font-size: 15px !important;
+}
+.libro-reclamaciones .h5, .libro-reclamaciones h5 {
+    font-size: 17px !important;
+}
+table:not([class]) {
+    box-shadow: none !important;
+}
+.libro-reclamaciones .h2, .libro-reclamaciones h2 {
+    font-size: 30px !important;
+}
+@media (max-width: 767px){
+  tr {
+      display: table-row !important;
+  }
+  .container-v2{
+    width: 90%;
+    margin: auto;
+  }
+}
+.entry-content table, .table, table {
+    font-weight: 600 !important;
+}
+
+{{ settings.css_reclamos_link }}  
+
+ {{ settings.css_reclamos_btn }}  
+
+</style>
+
+{% form 'contact', id: 'ecom-reclamaciones-form'%}
+
+
+<iframe id="print-iframe" width="0" height="0"></iframe>   
+
+{% if form.posted_successfully? %}
+<div class="form-row" style="text-align: center;">
+   <div class="col">
+      <div class="alert alert-success" role="alert">
+         <p>Reclamo enviado con éxito</p>
+      </div>
+     
+    
+             <a id="print-button" class="btn-printer"><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 490 490" xml:space="preserve"> <g> <path d="M420.931,104.275h-44.166V0H113.236v104.275H69.069C30.982,104.275,0,136.499,0,176.104v123.732 c0,39.615,30.982,71.839,69.069,71.839h33.506V490h284.839V371.675h33.516c38.089,0,69.069-32.224,69.069-71.839V176.104 C490,136.499,459.02,104.275,420.931,104.275z M134.087,20.852h221.827v83.424H134.087V20.852z M366.564,469.149H123.427V290.204 h243.137V469.149z M469.149,299.836c0,28.109-21.635,50.987-48.218,50.987h-33.516v-81.47H102.576v81.47H69.069 c-26.583,0-48.218-22.878-48.218-50.987V176.104c0-28.11,21.635-50.978,48.218-50.978h351.862 c26.583,0,48.218,22.867,48.218,50.978V299.836z"/> <rect x="173.997" y="337.975" width="141.997" height="20.852"/> <rect x="173.997" y="395.508" width="141.997" height="20.852"/> <rect x="366.34" y="173.354" width="31.124" height="20.852"/> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> <g> </g> </svg>
+          Imprimir hoja de reclamo</a>
+   </div>
+</div>
+    
+    <script>
+      
+const printButton = document.getElementById('print-button');
+printButton.addEventListener('click', event => {
+  var fd = localStorage.getItem('reclamo_print');
+  
+  if (fd !== null) {
+	var reportid = '';
+	var string_form = '';
+	fd = JSON.parse(fd);
+	for (let i = 0; i < fd.length; ++i) {
+		if (i > 1) {
+			const item = fd[i];
+
+			if (item[0] == 'contact[id-reclamo]') {
+
+				reportid = item[1];
+			}
+          
+          if(item[1] !=='') {
+            string_form += '<div style="margin-top:8px"><b style="font-size:12px">' + capitalize(item[0].replaceAll("-", " ").replace("contact", "").replaceAll("[", "").replace("]", "")) + ':</b><pre style="font-size:12px;font-weight:400;line-height:1;text-transform:initial;letter-spacing:initial;color:#202223;font-family:-apple-system,BlinkMacSystemFont,San Francisco,Segoe UI,Roboto,Helvetica Neue,sans-serif;margin-top:0;margin-bottom:0;white-space:pre-line;padding:0">' + item[1] + '</pre></div>';
+           }
+		}
+	}
+
+
+
+  const printHtml = `<div style="height:100%;width:100%;font-size:12px;font-weight:400;line-height:1;text-transform:initial;letter-spacing:initial;color:#202223;font-family:-apple-system,BlinkMacSystemFont,San Francisco,Segoe UI,Roboto,Helvetica Neue,sans-serif;margin:0;padding:0">
+
+  
+  <table style="width:100%;border-collapse:collapse;border-spacing:0;margin-top:0;margin-bottom:0;padding:0" cellpadding="0" cellspacing="0"><tbody><tr style="margin-top:0;margin-bottom:0;border-top-width:1px;border-top-color:#c9cccf;border-top-style:solid;padding:0"><td style="margin-top:0;margin-bottom:0;padding:20px 4px 0;border:0">
+${string_form}
+</td></tr></tbody></table>    
+</td></tr></tbody></table></td></tr>
+<tr style="margin-top:0;margin-bottom:0;padding:0"><td style="margin-top:0;margin-bottom:0;padding:0;border:0"></td></tr>
+</tbody></table></td>
+<td style="margin-top:0;margin-bottom:0;padding:0;border:0"></td>
+</tr></tbody></table></div>`;
+  let iFrame = document.getElementById('print-iframe');
+  console.log(iFrame);
+  console.log(iFrame.contentDocument);
+  iFrame.contentDocument.body.innerHTML = printHtml;
+  iFrame.focus();
+   iFrame.contentWindow.print();
+
+}
+  else{
+  alert("Nada que imprimir");
+  }
+
+  
+});     
+     
+function capitalize(str) {
+	const lower = str.toLowerCase();
+	return str.charAt(0).toUpperCase() + lower.slice(1);
+}
+
+var fd = localStorage.getItem('reclamo_form');
+
+if (fd !== null) {
+
+	var app_token = '{{app_token}}';
+    var app_email = '{{app_email}}';
+	var email = '';
+	var reportid = '';
+	var string_form = '';
+	fd = JSON.parse(fd);
+	for (let i = 0; i < fd.length; ++i) {
+		if (i > 1) {
+			const item = fd[i];
+			if (item[0] == 'contact[email]') {
+
+				email = item[1];
+			}
+
+			if (item[0] == 'contact[id-reclamo]') {
+
+				reportid = item[1];
+			}
+          
+          if(item[1] !=='') {
+			string_form += '<div style="margin-top:8px"><b>' + capitalize(item[0].replaceAll("-", " ").replace("contact", "").replaceAll("[", "").replace("]", "")) + ':</b><pre style="font-size:14px;font-weight:400;line-height:20px;text-transform:initial;letter-spacing:initial;color:#202223;font-family:-apple-system,BlinkMacSystemFont,San Francisco,Segoe UI,Roboto,Helvetica Neue,sans-serif;margin-top:0;margin-bottom:0;white-space:pre-line;padding:0">' + item[1] + '</pre></div>';
+           }
+		}
+	}
+
+
+	Email.send({
+      SecureToken: app_token,
+		To: email,
+      From: app_email,
+		Subject: "Copia de tu Reclamo N°" + reportid,
+		Body: `<div style="height:100%;width:100%;font-size:14px;font-weight:400;line-height:20px;text-transform:initial;letter-spacing:initial;color:#202223;font-family:-apple-system,BlinkMacSystemFont,San Francisco,Segoe UI,Roboto,Helvetica Neue,sans-serif;margin:0;padding:0"><div class="adM">
+    </div><table style="width:100%;border-collapse:collapse;border-spacing:0;margin-top:0;margin-bottom:0;padding:0" cellpadding="0" cellspacing="0"><tbody><tr style="margin-top:0;margin-bottom:0;padding:0"><td style="margin-top:0;margin-bottom:0;border-top-style:solid;height:0;border-top-color:#c9cccf;padding:0;border-width:5px 0 0"></td></tr></tbody></table>
+<table style="width:100%;border-collapse:collapse;border-spacing:0;margin-top:0;margin-bottom:0;padding:0" cellpadding="0" cellspacing="0"><tbody><tr style="margin-top:0;margin-bottom:0;padding:0">
+<td style="margin-top:0;margin-bottom:0;padding:0;border:0"></td>
+<td style="margin-top:0;margin-bottom:0;padding:0;border:0"><table align="center" style="width:100%;border-collapse:initial;border-spacing:0;max-width:470px;text-align:left;border-radius:8px;margin:32px auto 0;padding:0;border:1px solid #c9cccf" cellpadding="0" cellspacing="0"><tbody>
+<tr style="margin-top:0;margin-bottom:0;padding:0"><td style="margin-top:0;margin-bottom:0;padding:0;border:0"><table style="width:100%;border-collapse:collapse;border-spacing:0;margin-top:0;margin-bottom:0;padding:0" cellpadding="0" cellspacing="0"><tbody><tr style="margin-top:0;margin-bottom:0;padding:0"><td style="margin-top:0;margin-bottom:0;padding:24px 20px;border:0">
+<table style="width:100%;border-collapse:collapse;border-spacing:0;margin-top:0;margin-bottom:0;padding:0" cellpadding="0" cellspacing="0"><tbody><tr style="margin-top:0;margin-bottom:0;padding:0"><td style="margin-top:0;margin-bottom:0;padding:0 4px 20px;border:0"><table style="width:100%;border-collapse:collapse;border-spacing:0;margin-top:0;margin-bottom:0;padding:0" cellpadding="0" cellspacing="0"><tbody><tr style="margin-top:0;margin-bottom:0;padding:0"><td style="margin-top:0;margin-bottom:0;padding:0;border:0"><div>Hola, aquí los detalles de tu reclamo.</div></td></tr></tbody></table></td></tr></tbody></table>
+  
+  <table style="width:100%;border-collapse:collapse;border-spacing:0;margin-top:0;margin-bottom:0;padding:0" cellpadding="0" cellspacing="0"><tbody><tr style="margin-top:0;margin-bottom:0;border-top-width:1px;border-top-color:#c9cccf;border-top-style:solid;padding:0"><td style="margin-top:0;margin-bottom:0;padding:20px 4px 0;border:0">
+${string_form}
+</td></tr></tbody></table>    
+</td></tr></tbody></table></td></tr>
+<tr style="margin-top:0;margin-bottom:0;padding:0"><td style="margin-top:0;margin-bottom:0;padding:0;border:0"></td></tr>
+</tbody></table></td>
+<td style="margin-top:0;margin-bottom:0;padding:0;border:0"></td>
+</tr></tbody></table><div class="yj6qo"></div><div class="adL"></div><div class="adL">
+</div></div>`
+	}).then(
+		message => (console.log(message), localStorage.removeItem('reclamo_form'))
+
+	);
+
+
+}
+    </script>
+    
+    
+    {% endif %}
+
+    {% if form.errors %}
+    <div class="form-row" style="text-align: center;">
+      <div class="col">
+        <hr style="color: transparent;border-style: none;">
+        <p>Hubo un error en tu solicitud, intenta nuevamente</p>
+        <ul class="center">
+          {% for field in form.errors %}
+          <li>
+            Error en {{ field }}
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    {% endif %}
+
+<div class="libro-reclamaciones">
+   <div class="container">
+      <div class="form-row" style="text-align: center;">
+
+         <h1 class="main-page-title page-title h0{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
+            {{ page.title | escape }}
+          </h1>
+
+      </div>
+      <div class="form-row" style="text-align: center;">
+         <div class="col">
+            <p class="small-txt">Conforme a lo establecido en el Código de Protección y Defensa del Consumidor,
+               esta institución cuenta con un Libro de Reclamaciones a su disposición.
+            </p>
+         </div>
+      </div>
+      <div class="form-row">
+         <div class="col-12 col-md-8 cmdl">
+            <h5>Datos de la empresa:</h5>
+            {% if razon_social != '' %}
+            <p class="mb-0 sml"><b>Razón social: </b>{{ razon_social }}</p>
+            {% endif %}
+            {% if ruc != '' %}
+            <p class="mb-0 sml"><b>RUC: </b>{{ ruc }}</p>
+            {% endif %}
+            {% if direccion != '' %}
+            <p class="mb-0 sml"><b>Dirección: </b>{{ direccion }}</p>
+            {% endif %}
+            {% if mail != '' %}
+            <p class="mb-0 sml"><b>Mail: </b>{{ mail }}</p>
+            {% endif %}
+         </div>
+         <div class="col-12 col-md-4 cmdr">
+            <h5>Hoja de reclamación: </h5>
+            <p class="mb-0" id="uid"></p>
+            <input type="hidden" class="uuid">
+         </div>
+      </div>
+      <div class="form-row" style="text-align: center;">
+         <div class="col">
+            <h3>Identificación del consumidor o reclamante<br></h3>
+         </div>
+      </div>
+      <div class="container-v2">
+        <div class="form-row">
+           <input type="hidden" name="contact[tipo-contacto]" value="{{page.title}}">
+           <div class="col-12 col-md-6">
+              <select class="form-control" title="Tipo de documento" required=""
+                 name="contact[tipo-de-documento]">
+                 <option value="" selected="selected" disabled="disabled">Tipo de documento</option>
+                 <option value="DNI">DNI</option>
+                 <option value="Carné de extranjería">Carné de Extranjería</option>
+                 <option value="Pasaporte">Pasaporte</option>
+              </select>
+           </div>
+           <div class="col-12 col-md-6"><input class="form-control" type="tel" placeholder="N° de Documento" required=""
+              maxlength="40" name="contact[numero-de-documento]"></div>
+        </div>
+        <div class="form-row">
+           <div class="col-12 col-md-4"><input class="form-control" type="text" placeholder="Nombres" name="contact[nombres]"
+              required=""></div>
+           <div class="col-12 col-md-4"><input class="form-control" type="text" placeholder="Apellido Paterno"
+              name="contact[apellido paterno]" required=""></div>
+           <div class="col-12 col-md-4"><input class="form-control" type="text" placeholder="Apellido Materno"
+              name="contact[apellido materno]" required="">
+           </div>
+        </div>
+        <div class="form-row">
+           <div class="col-12 col-md-6">
+              <select class="form-control" required="" name="contact[tipo-de-respuesta]">
+                 <option value="" selected="selected" disabled="disabled">Tipo de respuesta</option>
+                 <option value="Correo electrónico">Correo electrónico</option>
+                 <option value="Dirección domiciliaria">Dirección domiciliaria</option>
+              </select>
+           </div>
+           <div class="col-12 col-md-6"><input class="form-control" type="email" placeholder="Email" required=""
+              name="contact[email]">
+           </div>
+        </div>
+        <div class="form-row">
+           <div class="col-12 col-md-4"><select class="form-control" id="ubigeo_dep" required=""
+              name="contact[departamento]"></select></div>
+           <div class="col-12 col-md-4"><select class="form-control" id="ubigeo_pro" required=""
+              name="contact[provincia]"></select></div>
+           <div class="col-12 col-md-4"><select class="form-control" id="ubigeo_dis" required=""
+              name="contact[distrito]"></select></div>
+        </div>
+        <div class="form-row">
+           <div class="col-12 col-md-6"><input class="form-control" type="text" placeholder="Dirección" required=""
+              name="contact[direccion]"></div>
+           <div class="col-12 col-md-6"><input class="form-control" type="tel" placeholder="Teléfono celular" required=""
+              name="contact[celular]"></div>
+        </div>
+        <div class="form-check form-check-menor">
+           <input class="form-check-input reclamosinput" type="checkbox" value="" id="checkmenor">
+           <label class="form-check-label" for="checkmenor">
+           Eres menor de edad?
+           </label>
+        </div>
+        <div id="form-menor-info" style="display:none">
+           <div class="form-row">
+              <div class="col-12 col-md-7"><input class="form-control" type="text" placeholder="Nombre completo del padre o madre"
+                 name="contact[nombre-tutor]"></div>
+              <div class="col-12 col-md-5"><input class="form-control" type="text" placeholder="Dirección"
+                 name="contact[direccion-tutor]"></div>
+           </div>
+           <div class="form-row">
+              <div class="col-12 col-md-5"><input class="form-control" type="text" placeholder="Teléfono"
+                 name="contact[telefono-tutor]"></div>
+              <div class="col-12 col-md-7"><input class="form-control" type="text" placeholder="Correo electrónico"
+                 name="contact[email-tutor]"></div>
+           </div>
+        </div>
+        <div class="form-check form-check-entregado">
+           <input class="form-check-input reclamosinput" type="checkbox" value="" id="checkentregado">
+           <label class="form-check-label" for="checkentregado">
+           Tu producto fue entregado?
+           </label>
+        </div>
+        <div id="form-producto-info" style="display:none">
+           <div class="form-row">
+              <div class="col-12 col-md-6"><input class="form-control" type="tel" placeholder="N° Boleta o factura"
+                 name="contact[boleto-factura]"></div>
+              <div class="col-12 col-md-6"><input class="form-control" id="datepicker" title="Fecha de compra" name="contact[fecha-compra]"></div>
+           </div>
+        </div>
+        <div class="form-row">
+           <div class="col text-center">
+              <hr style="border-style: none;">
+              <h3>Identificación del bien contratado<br></h3>
+           </div>
+        </div>
+        <div class="form-row">
+           <div class="col-12 col-md-4"><input class="form-control" type="text" placeholder="N° Pedido"
+              name="contact[numero-pedido]" required=""></div>
+           <div class="col-12 col-md-4">
+              <select class="form-control" title="Identificación del bien contratado" required=""
+                 name="contact[identificacion-de-bien-contratado]">
+                 <option selected="selected" value="" disabled="disabled">Bien contratado</option>
+                 <option value="producto">Producto</option>
+                 <option value="servicio">Servicio</option>
+              </select>
+           </div>
+           <div class="col-12 col-md-4"><input class="form-control" type="tel" placeholder="Monto reclamado"
+              name="contact[monto-reclamo]" required=""></div>
+        </div>
+        <div class="form-row">
+           <div class="col text-center">
+              <h3>Detalle de su reclamo<br></h3>
+           </div>
+        </div>
+        <div class="form-row">
+           <div class="col-12 col-md-6">
+              <select class="form-control" title="Tipo de reclamo" required="" name="contact[tipo]">
+                 <option value="" selected="selected" disabled="disabled">Tipo de reclamo</option>
+                 <option value="">Reclamo</option>
+                 <option value="">Queja</option>
+              </select>
+           </div>
+           <div class="col-12 col-md-6"><input class="form-control" data-toggle="tooltip" id="datereport" data-bs-tooltip="Fecha de su reclamo" type="date"
+              title="Fecha de su reclamo" name="contact[fecha-reclamo]" readonly></div>
+        </div>
+        <div class="form-row">
+           <div class="col-12 col-md-6"><textarea class="form-control" placeholder="Detalle del reclamo / queja" required=""
+              name="contact[detalle-reclamo]"></textarea></div>
+           <div class="col-12 col-md-6"><textarea class="form-control" placeholder="Pedido" name="contact[pedido]"
+              required=""></textarea></div>
+        </div>
+        <div class="form-check form-check-menor">
+           <input class="form-check-input reclamosinput" type="checkbox" value="" id="checkterms" required>
+           <label class="form-check-label terms-input" for="checkterms">
+           Declaro haber leído y acepto la <a href="politica-de-privacidad">Política de Privacidad</a>. Declaro que los datos consignados son correctos y fiel expresión de la verdad.
+           </label>
+        </div>
+        <div class="form-row">
+           <div class="col-12 offset-0 col-md-12">
+              <hr style="border-style: none;">
+              <p class="text-justify sml mb-0">    
+                 * La respuesta a este reclamo o queja será enviada al mail indicado en este formulario
+              </p>
+              <p class="text-justify sml mb-0">    
+                 * La formulación del reclamo no impide acudir a otras vías de solución de controversias ni es requisito previo para interponer una denuncia
+                 ante el INDECOPI.
+              </p>
+              <p class="text-justify sml mb-0">    
+                 * El proveedor deberá dar respuesta al reclamo en un plazo no mayor a treinta (30) días calendario, pudiendo ampliar el plazo hasta por
+                 treinta (30) días más, previa comunicación al consumidor.
+              </p>
+             <p class="text-justify sml mb-0">
+              * <strong>Reclamo:</strong> Manifestación mediante el cual un consumidor expresa una disconformidad relacionada a los bienes o servicios suministrados. La reclamación no constituye una denuncia y en consecuencia, no inicia un procedimiento administrativo sancionador por infracción a la normativa de protección al consumidor.
+            </p>
+             <p class="text-justify sml mb-0">
+              * <strong>Queja:</strong> Manifestación que un consumidor realiza para expresar el malestar o descontento por la atención al público, sin que tenga por finalidad la obtención de un procedimiento por parte del proveedor. La queja tampoco constituye una denuncia y tampoco inicia el procedimiento administrativo por infracción a la normativa de protección&nbsp;al&nbsp;consumidor.
+            </p>
+           </div>
+        </div>
+        <div class="form-row">
+           <div class="col-6 col-md-6 col-lg-6 text-center wow fadeIn delay-1" style="visibility: visible; animation-name: fadeIn;">
+             <button
+              class="add {{ settings.classbuttonreclamos }} {% if settings.active_custom_btn_reclamos %}btn-reclamos{% endif %}" type="submit" id="r-send">ENVIAR
+             </button>  
+           </div>
+        </div>
+
+        <br>
+      
+      </div>
+   </div>
+</div>
+{% endform %}
+
+
+
+<script>
+ var today, datepicker;
+   today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
+    datepicker = $('#datepicker').datepicker({
+        maxDate: today
+  });
+</script>
+
+
+<script>
+ Date.prototype.toDateInputValue = (function () {
+	var local = new Date(this);
+	local.setMinutes(this.getMinutes() - this.getTimezoneOffset());
+	return local.toJSON().slice(0, 10);
+});
+window.onload = function () {
+
+
+	document.getElementById('datereport').value = new Date().toDateInputValue();
+  
+	var select01 = "";
+	document.querySelector('#ecom-reclamaciones-form').addEventListener('submit', (e) => {
+		const form = document.getElementById('ecom-reclamaciones-form');
+		const data = new FormData(form);
+		const arr = Array.from(data);
+		localStorage.setItem('reclamo_form', JSON.stringify(arr));
+        localStorage.setItem('reclamo_print', JSON.stringify(arr));
+	});
+
+
+	function ischeckedmenor() {
+
+	var checkbox = document.getElementById('checkmenor');
+	 var con = document.getElementById('form-menor-info');
+	  checkbox.addEventListener('change', (event) => {
+			if (event.currentTarget.checked) {
+				con.style.display = 'block';
+			} else {
+				con.style.display = 'none';
+			}
+		})
+	}
+
+	function ischeckedentregado() {
+
+		var checkbox = document.getElementById('checkentregado');
+		var con = document.getElementById('form-producto-info');
+		checkbox.addEventListener('change', (event) => {
+			if (event.currentTarget.checked) {
+				con.style.display = 'block';
+			} else {
+				con.style.display = 'none';
+			}
+		})
+	}
+
+	function ab(item, index, arr) {
+		select01 =
+			'<option value="' +
+			arr[index].departamento +
+			'" data-id="' + arr[index].coddepartamento + '">' +
+			arr[index].departamento +
+			"</option>";
+
+		document.getElementById("ubigeo_dep").innerHTML += select01;
+	}
+
+	let input = document.querySelector('#ubigeo_dep');
+	input.addEventListener('change', function () {
+
+		document.querySelectorAll('#ubigeo_pro option').forEach(option => option.remove())
+		document.querySelectorAll('#ubigeo_dis option').forEach(option => option.remove())
+
+		var selectedOption = this.options[this.selectedIndex];
+		var getoptionid = selectedOption.getAttribute('data-id');
+		let iddep = getoptionid;
+		let select02 = "";
+
+		function bc(item) {
+			return item[iddep];
+		}
+		var provincias_result = provincias.filter(bc);
+		var provincias_result_array = provincias_result[0][iddep];
+
+		function de(item, index, arr) {
+			select02 =
+				'<option value="' +
+				provincias_result_array[index].provincia +
+				'" data-id="' + provincias_result_array[index].codprovincia + '">' +
+				provincias_result_array[index].provincia +
+				"</option>";
+			document.getElementById("ubigeo_pro").innerHTML += select02;
+		}
+
+		provincias_result_array.forEach(de);
+		document.getElementById("ubigeo_pro").dispatchEvent(new Event("change"));
+	});
+
+	let input_2 = document.querySelector('#ubigeo_pro');
+	input_2.addEventListener('change', function () {
+
+		document.querySelectorAll('#ubigeo_dis option').forEach(option => option.remove())
+		var selectedOption_p = this.options[this.selectedIndex];
+		var getoptionid_p = selectedOption_p.getAttribute('data-id');
+		let idpro = getoptionid_p;
+		let select03 = "";
+
+		function ez(z) {
+			return z[idpro];
+		}
+
+		var distritos_result = distritos.filter(ez);
+		var distritos_result_array = distritos_result[0][idpro];
+
+		function fz(item, index, arr) {
+			select03 =
+				'<option value="' +
+				distritos_result_array[index].distrito +
+				'" data-id="' + distritos_result_array[index].coddistrito + '">' +
+				distritos_result_array[index].distrito +
+				"</option>";
+			document.getElementById("ubigeo_dis").innerHTML += select03;
+		}
+		distritos_result_array.forEach(fz);
+	});
+
+	departamentos.forEach(ab);
+	document.getElementById("ubigeo_dep").dispatchEvent(new Event("change"));
+
+	ischeckedmenor();
+	ischeckedentregado();
+
+}
+
+
+document.addEventListener("DOMContentLoaded", function (event) {
+	let uuid = Math.random().toString().slice(2, 12);
+	let uuidSpan = document.querySelector('#uid');
+	let idreclamo = document.getElementsByClassName('uuid');
+
+	for (var i = 0; i < idreclamo.length; ++i) {
+		idreclamo[i].value = uuid;
+	}
+
+	uuidSpan.textContent = uuid;
+})
+
+</script>
