@@ -53,7 +53,7 @@
     "all_items_added": "Todos los artículos se han agregado a su carrito.",
     "checkout": "Finalizar compra",
     "continue": "Seguir comprando",
-    "empty_html": "<span data-item='rte-content'>Su carrito está vacío.<br\/> <a href='{{ collections_url }}'>Haga clic aquí para seguir comprando<\/a>.<\/span>",
+    "empty_html": "<span data-item='rte-content'>Su carrito está vacío.<br/> <a href='{{ collections_url }}'>Haga clic aquí para seguir comprando</a>.</span>",
     "minus": "Menos",
     "order_notes": "Deje una nota con su pedido",
     "plus": "Más",
@@ -250,6 +250,19 @@
       "return_links_html": "Vuelva a nuestra {{ home_page_link }} o vea nuestra gama de {{ products_link }}."
     }
   },
+  "legales": {
+    "terms": {
+      "agreement_html": "I accept the <a href=\"{{ terms_url }}\" target=\"_blank\">terms and conditions</a>"
+    },
+    "policy": {
+      "agreement_html": "I accept the <a href=\"{{ politica_url }}\" target=\"_blank\">privacy policy</a>"
+    },
+    "general": {
+      "confirmation": "You must accept the terms and conditions and the privacy policy before continuing.",
+      "contactpolitica_html": "I accept the <a href=\"{{ politica_url }}\" target=\"_blank\">privacy policy</a>",
+      "popupsuscripcion_html": "I accept the <a href=\"{{ politica_url }}\" target=\"_blank\">newsletter subscription policy</a>"
+    }
+  },
   "layout": {
     "gift_card": {
       "active": "Expira el {{ expiry }}",
@@ -304,9 +317,9 @@
       "other_pickup_locations": "Ver ubicaciones de recogida",
       "map": "mapa",
       "available": "Recogida disponible",
-      "available_at_html": "Recogida disponible en <strong>{{ location_name }}<\/strong>",
+      "available_at_html": "Recogida disponible en <strong>{{ location_name }}</strong>",
       "unavailable": "Recogida actualmente no disponible",
-      "unavailable_at_html": "Recogida actualmente no disponible en <strong>{{ location_name }}<\/strong>",
+      "unavailable_at_html": "Recogida actualmente no disponible en <strong>{{ location_name }}</strong>",
       "return": "Volver al producto",
       "view_store_info": "Ver información de la tienda"
     },
@@ -383,7 +396,7 @@
   "shopify": {
     "checkout": {
       "contact": {
-        "company_label": "DNI \/ RUC"
+        "company_label": "DNI / RUC"
       },
       "order_summary": {
         "apply_discount_button_label": "Aplicar"
