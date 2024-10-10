@@ -46,6 +46,8 @@
     "popup--days-range": 2,
     "favicon": "shopify://shop_images/Diseno_sin_titulo_6.png",
     "hide-tags": "featured, pinned",
+    "reclamourl": "#f8c8da",
+    "reclamourlhover": "#000000",
     "background_cookies_gdpr": "#ffffff",
     "color_text_cookies_gdpr": "#444444",
     "background_necesarias_cookies_gdpr": "#f59e54",
