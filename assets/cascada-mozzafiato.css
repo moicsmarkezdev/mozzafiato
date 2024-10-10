@@ -227,7 +227,7 @@ input#policy-privacy-legales:before {
   box-sizing: content-box;
   width: 16px;
   height: 16px;
-  border: 2px solid var(--colorborderchecklegales);
+  border: 1px solid var(--colorborderchecklegales);
   background-color: var(--colorbackgroundchecklegales);
   transition: 0.2s border-color ease;
 }
