@@ -12,36 +12,38 @@
   endcapture
 -%}
 
-<div class="cart--external--icon" data-item-count="{{ cart.item_count }}">
-  <a
-    class="header--cart-toggle"
-    aria-label="{{ cart_t }}"
-    {% if settings.cart--type == 'drawer' %}
-      data-drawer-open="right"
-      data-drawer-view="cart-drawer"
-      aria-haspopup="menu"
-      href="#"
-    {% else %}
-      href="{{ routes.cart_url }}"
-    {% endif %}
-  >
-    {{ cart_icon }}
-    <span class="cart--external--total-items">
-      {%- if cart.item_count > 0 -%}{{ cart.item_count }}{%- endif -%}
-    </span>
-  </a>
-
-  <noscript>
+{% if template != 'cart' %}
+  <div class="cart--external--icon" data-item-count="{{ cart.item_count }}">
     <a
-      class="header--cart-toggle--noscript"
+      class="header--cart-toggle"
       aria-label="{{ cart_t }}"
-      href="{{ routes.cart_url }}"
+      {% if settings.cart--type == 'drawer' %}
+        data-drawer-open="right"
+        data-drawer-view="cart-drawer"
+        aria-haspopup="menu"
+        href="#"
+      {% else %}
+        href="{{ routes.cart_url }}"
+      {% endif %}
     >
       {{ cart_icon }}
       <span class="cart--external--total-items">
         {%- if cart.item_count > 0 -%}{{ cart.item_count }}{%- endif -%}
       </span>
     </a>
-  </noscript>
-
-</div>
+  
+    <noscript>
+      <a
+        class="header--cart-toggle--noscript"
+        aria-label="{{ cart_t }}"
+        href="{{ routes.cart_url }}"
+      >
+        {{ cart_icon }}
+        <span class="cart--external--total-items">
+          {%- if cart.item_count > 0 -%}{{ cart.item_count }}{%- endif -%}
+        </span>
+      </a>
+    </noscript>
+  
+  </div>
+{% endif %}
