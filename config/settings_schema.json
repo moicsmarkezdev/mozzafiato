@@ -504,6 +504,458 @@
     ]
   },
   {
+    "name": "Libro de Reclamos",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Checkbox"
+      },
+      {
+        "type": "color",
+        "id": "border_check_page_reclamaciones",
+        "label": "Border check",
+        "default": "#000000"
+      },
+      {
+        "type": "range",
+        "id": "border_radius_check",
+        "min": 0,
+        "max": 5,
+        "step": 1,
+        "unit": "px",
+        "label": "Border Radius",
+        "default": 5
+      },
+      {
+        "type": "range",
+        "id": "range_border_check",
+        "min": 0,
+        "max": 5,
+        "step": 1,
+        "unit": "px",
+        "label": "Range Border",
+        "default": 1
+      },
+      {
+        "type": "color",
+        "id": "activo_check_page_reclamaciones",
+        "label": "Active check",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "text_check_page_reclamaciones",
+        "label": "Text check",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "reclamourl",
+        "label": "Color Url",
+        "default": "#AC6477"
+      },
+      {
+        "type": "color",
+        "id": "reclamourlhover",
+        "label": "Color Hover Url",
+        "default": "#AC6477"
+      },
+      {
+        "type": "text",
+        "id": "reclamos_font_family_link",
+        "label": "Font Family Link"
+      },
+      {
+        "type": "checkbox",
+        "id": "desactive_font_weight",
+        "label": "Desactive Font-Weight"
+      },
+      {
+        "type": "textarea",
+        "id": "css_reclamos_link",
+        "label": "CSS Link"
+      },
+      {
+        "type": "header",
+        "content": "Button"
+      },
+      {
+        "type": "text",
+        "id": "classbuttonreclamos",
+        "label": "Class Button"
+      },
+      {
+        "type": "checkbox",
+        "id": "active_custom_btn_reclamos",
+        "label": "Activate btn customizer"
+      },
+      {
+        "type": "color",
+        "id": "buttonreclamos",
+        "label": "Background Buttom",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "buttonreclamoshover",
+        "label": "Background Hover Buttom",
+        "default": "#DDD9D4"
+      },
+      {
+        "type": "color",
+        "id": "buttoncolorreclamos",
+        "label": "Color Buttom",
+        "default": "#ffffff"
+      },
+      {
+        "type": "textarea",
+        "id": "css_reclamos_btn",
+        "label": "CSS Button"
+      },
+      {
+        "type": "header",
+        "content": "Color Libro Icon Footer"
+      },
+      {
+        "type": "color",
+        "id": "icon_color_footer",
+        "label": "Icon color",
+        "default": "#ffffff"
+      },
+      {
+        "type": "header",
+        "content": "Tipografia Form"
+      },
+      {
+        "type": "text",
+        "id": "font_reclamaciones",
+        "label": "Font Campos",
+        "default": "Arial"
+      }
+    ]
+  },
+  {
+    "name": "Cookies GDPR",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Color"
+      },
+      {
+        "type": "color",
+        "id": "background_cookies_gdpr",
+        "label": "Background",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "color_text_cookies_gdpr",
+        "label": "Color text",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "background_necesarias_cookies_gdpr",
+        "label": "Background Necesarias",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_text_necesarias_cookies_gdpr",
+        "label": "Color Text Necesarias",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "background_permitirtodas_cookies_gdpr",
+        "label": "Background Permitir Todas",
+        "default": "#e9ecef"
+      },
+      {
+        "type": "color",
+        "id": "color_text_permtiirtodas_cookies_gdpr",
+        "label": "Color Text Permitir Todas",
+        "default": "#000000"
+      },
+      {
+        "type": "header",
+        "content": "Font Family"
+      },
+      {
+        "type": "text",
+        "id": "font_family_heading_cookies_gdpr",
+        "label": "Font Family Heading"
+      },
+      {
+        "type": "text",
+        "id": "font_family_text_cookies_gdpr",
+        "label": "Font Family Text"
+      },
+      {
+        "type": "header",
+        "content": "Color \/ Family Link"
+      },
+      {
+        "type": "color",
+        "id": "color_link_cookies_gdpr",
+        "label": "Color Link",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "hover_color_link_cookies_gdpr",
+        "label": "Hover Color Link",
+        "default": "#e9ecef"
+      },
+      {
+        "type": "text",
+        "id": "font_family_link_cookies_gdpr",
+        "label": "Font Family Link"
+      }
+    ]
+  },
+  {
+    "name": "Legales Page",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Page Contact"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_contact_privacy_policy",
+        "label": "Enable privacy policy requirement for checkout",
+        "info": "This will disable the \"submit\" button",
+        "default": false
+      },
+      {
+        "type": "url",
+        "id": "contact_politica_legales",
+        "label": "Privacy Policy"
+      },
+      {
+        "type": "color",
+        "id": "color_border_check_legales_contacto",
+        "label": "Border check",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "color_background_check_legales_contacto",
+        "label": "Background check",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_active_check_legales_contacto",
+        "label": "Active check",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "color_text_check_legales_contacto",
+        "label": "Text check",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "color_link_check_legales_contacto",
+        "label": "Link check",
+        "default": "#FF0000"
+      },
+      {
+        "type": "color",
+        "id": "color_hover_link_check_legales_contacto",
+        "label": "Hover Link check",
+        "default": "#BD7070"
+      },
+      {
+        "type": "header",
+        "content": "Section Newsletter Footer"
+      },
+      {
+        "type": "checkbox",
+        "id": "enable_section_suscripcion_newsletter_footer",
+        "label": "Enable privacy policy requirement for checkout",
+        "info": "This will disable the \"submit\" button",
+        "default": false
+      },
+      {
+        "type": "url",
+        "id": "section_suscripcion_newsletter_footer",
+        "label": "Política de suscripción al newsletter"
+      },
+      {
+        "type": "color",
+        "id": "color_border_check_newsletterfooter",
+        "label": "Border check",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "color_background_check_newsletterfooter",
+        "label": "Background check",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_active_check_newsletterfooter",
+        "label": "Active check",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "color_text_check_newsletterfooter",
+        "label": "Text check",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "color_link_check_newsletterfooter",
+        "label": "Link check",
+        "default": "#FF0000"
+      },
+      {
+        "type": "color",
+        "id": "color_hover_link_check_newsletterfooter",
+        "label": "Hover Link check",
+        "default": "#BD7070"
+      },
+      {
+        "type": "text",
+        "id": "font_family_link_legales_contacto",
+        "label": "Font Family Link"
+      },
+      {
+        "type": "text",
+        "id": "font_weight_link_legales_contacto",
+        "label": "Font Weight",
+        "default": "500",
+        "info": "Usar 500 normal o 600 bold"
+      }
+    ]
+  },
+  {
+    "name": "Legales Cart \/ Cart-Drawer",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "enable_accepto_terms",
+        "label": "Enable terms and conditions requirement for checkout",
+        "info": "This will disable the \"Buy it now\" button",
+        "default": false
+      },
+      {
+        "type": "url",
+        "id": "cart_terms_conditions_legales",
+        "label": "Terms and Conditions"
+      },
+      {
+        "type": "url",
+        "id": "cart_policy_privacy_legales",
+        "label": "Privacy Policy"
+      },
+      {
+        "type": "header",
+        "content": "Color Drawer"
+      },
+      {
+        "type": "color",
+        "id": "color_border_check_legales",
+        "label": "Border check",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "color_background_check_legales",
+        "label": "Background check",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_active_check_legales",
+        "label": "Active check",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "color_text_check_legales",
+        "label": "Text check",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "color_link_check_legales",
+        "label": "Link check",
+        "default": "#FF0000"
+      },
+      {
+        "type": "color",
+        "id": "color_hover_link_check_legales",
+        "label": "Hover Link check",
+        "default": "#BD7070"
+      },
+      {
+        "type": "header",
+        "content": "Color Cart"
+      },
+      {
+        "type": "color",
+        "id": "color_border_check_legales_cart",
+        "label": "Border check",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "color_background_check_legales_cart",
+        "label": "Background check",
+        "default": "#ffffff"
+      },
+      {
+        "type": "color",
+        "id": "color_active_check_legales_cart",
+        "label": "Active check",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "color_text_check_legales_cart",
+        "label": "Text check",
+        "default": "#000000"
+      },
+      {
+        "type": "color",
+        "id": "color_link_check_legales_cart",
+        "label": "Link check",
+        "default": "#FF0000"
+      },
+      {
+        "type": "color",
+        "id": "color_hover_link_check_legales_cart",
+        "label": "Hover Link check",
+        "default": "#BD7070"
+      },
+      {
+        "type": "text",
+        "id": "font-weight-legales",
+        "label": "Font Weight",
+        "default": "500",
+        "info": "Usar 500 normal o 600 bold"
+      },
+      {
+        "type": "text",
+        "id": "font-family-legales-link",
+        "label": "Font Family Link"
+      },
+      {
+        "type": "color",
+        "id": "color_error_alerta_check_legales",
+        "label": "Color Error Message",
+        "default": "#FF0000"
+      }
+    ]
+  },
+  {
     "name": "Cart page",
     "settings": [
       {
