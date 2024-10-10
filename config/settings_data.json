@@ -58,6 +58,8 @@
     "hover_color_link_cookies_gdpr": "#f59e54",
     "enable_contact_privacy_policy": true,
     "contact_politica_legales": "shopify://pages/politica-de-cookies",
+    "color_link_check_legales_contacto": "#f8c8da",
+    "color_hover_link_check_legales_contacto": "#000000",
     "cart--type": "drawer",
     "cart--show-note": true,
     "free_shipping_threshold_1": 0,
