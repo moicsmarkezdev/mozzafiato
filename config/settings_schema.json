@@ -840,7 +840,7 @@
     "settings": [
       {
         "type": "checkbox",
-        "id": "enable_accepto_terms",
+        "id": "enable_accept_terms",
         "label": "Enable terms and conditions requirement for checkout",
         "info": "This will disable the \"Buy it now\" button",
         "default": false
