@@ -441,7 +441,25 @@
         </div>
 
 
-         Hola
+          {% if settings.enable_accept_terms %}
+                  <div class="input-row">
+                    <label class="labelcheck-legales" for="terms-conditions-legales">
+                       <input type="checkbox" id="terms-conditions-legales" name="c-group-filled" class="cbox legalesinput" required oninvalid="this.setCustomValidity('Completa la casilla')" oninput="setCustomValidity('')"/>
+                       <span class="label-text-legales">{{ 'legales.terms.agreement_html' | t: terms_url: settings.cart_terms_conditions_legales }}</span>
+                     </label>
+                   </div> 
+      
+                  <div class="input-row mb-4">
+                    <label class="labelcheck-legales" for="policy-privacy-legales">
+                       <input type="checkbox" id="policy-privacy-legales" name="c-group-filled" class="cbox legalesinput" required oninvalid="this.setCustomValidity('Completa la casilla')" oninput="setCustomValidity('')"/>
+                       <span class="label-text-legales">{{ 'legales.policy.agreement_html' | t: politica_url: settings.cart_policy_privacy_legales }}</span>
+                     </label>
+                   </div>
+      
+                <div class="opacitytext">
+                  <p>{{ 'legales.general.confirmation' | t }}</p>
+              </div>
+            {% endif %}
 
         
         <div class="cart--nav">
@@ -458,7 +476,7 @@
           </div>
 
           <div class="cart--checkout-button" data-item="button">
-            <button type="submit" name="checkout">
+            <button type="submit" name="checkout" class="btncart btnopacity">
               <span class="cart-button--text">
                 {{- checkout_t -}}
               </span>
