@@ -1,0 +1,95 @@
+{%- style -%}
+  
+:root {
+   {% comment %} LIBRO DE RECLAMOS {% endcomment %}
+  --reclamos-a: {{ settings.reclamourl }};
+  --reclamos-a-hover: {{ settings.reclamourlhover }};
+  --reclamos-background-btn: {{ settings.buttonreclamos }};
+  --reclamos-background-btn-hover: {{ settings.buttonreclamoshover }};
+  --reclamos-color-btn: {{ settings.buttoncolorreclamos }};
+  --reclamos-campos-font: {{ settings.font_reclamaciones }};
+  --reclamosfontfamilylink : {{ settings.reclamos_font_family_link }};
+  --bordercheck-pagereclamaciones: {{ settings.border_check_page_reclamaciones }};
+  --activocheck-pagereclamaciones: {{ settings.activo_check_page_reclamaciones }};
+  --textcheck-pagereclamaciones: {{ settings.text_check_page_reclamaciones }};
+  --borderradiuscheck : {{ settings.border_radius_check }}px;
+  --rangebordercheck: {{ settings.range_border_check }}px;
+
+  
+   {% comment %} COOKIES GDPR {% endcomment %}
+  --backgroundcookiesgdpr : {{ settings.background_cookies_gdpr }};
+  --colortextcookiesgdpr : {{ settings.color_text_cookies_gdpr }};
+  --backgroundnecesariascookiesgdpr : {{ settings.background_necesarias_cookies_gdpr }};
+  --colortextnecesariascookiesgdpr : {{ settings.color_text_necesarias_cookies_gdpr }};
+  --backgroundpermitirtodascookiesgdpr : {{ settings.background_permitirtodas_cookies_gdpr }};
+  --colortext_permtiirtodascookiesgdpr : {{ settings.color_text_permtiirtodas_cookies_gdpr }};
+  --fontfamilyheadingcookiesgdpr : {{ settings.font_family_heading_cookies_gdpr }};  
+  --fontfamilytextcookiesgdpr : {{ settings.font_family_text_cookies_gdpr }};
+  --colorlinkcookiesgdpr : {{ settings.color_link_cookies_gdpr }};
+  --hovercolorlinkcookiesgdpr : {{ settings.hover_color_link_cookies_gdpr }};
+  --fontfamilylinkcookiesgdpr : {{ settings.font_family_link_cookies_gdpr }};
+
+  
+  {% comment %} CHECKBOX PERSONALIZADO {% endcomment %}
+  --colorborderchecklegales : {{ settings.color_border_check_legales }};
+  --colorbackgroundchecklegales : {{ settings.color_background_check_legales }};
+  --coloractivechecklegales : {{ settings.color_active_check_legales }};
+  --colortextchecklegales : {{ settings.color_text_check_legales }};
+  --colorlinkchecklegales : {{ settings.color_link_check_legales }};
+  --colorhoverlinkchecklegales : {{ settings.color_hover_link_check_legales }};
+  --colorerroralertachecklegales : {{ settings.color_error_alerta_check_legales }};
+  --fontfamilylegaleslink : {{ settings.font-family-legales-link }};
+  --fontweightlegales : {{ settings.font-weight-legales }};
+
+  --colorborderchecklegalescart : {{ settings.color_border_check_legales_cart }};
+  --colorbackgroundchecklegalescart : {{ settings.color_background_check_legales_cart }};
+  --coloractivechecklegalescart : {{ settings.color_active_check_legales_Cart }};  
+  --colortextchecklegalescart : {{ settings.color_text_check_legales_cart }};  
+  --colorlinkchecklegalescart : {{ settings.color_link_check_legales_cart }};
+  --colorhoverlinkchecklegalescart : {{ settings.color_hover_link_check_legales_cart }};   
+
+  --colorborderchecklegalescontacto : {{ settings.color_border_check_legales_contacto }};
+  --colorbackgroundchecklegalescontacto : {{ settings.color_background_check_legales_contacto }};
+  --coloractivechecklegalescontacto : {{ settings.color_active_check_legales_contacto }};
+  --colortextchecklegalescontacto : {{ settings.color_text_check_legales_contacto }};
+  --colorlinkchecklegalescontacto : {{ settings.color_link_check_legales_contacto }};
+  --colorhoverlinkchecklegalescontacto : {{ settings.color_hover_link_check_legales_contacto }};
+  --colorerroralertachecklegalescontacto : {{ settings.color_error_alerta_check_legales_contacto }};
+  --fontfamilylinklegalescontacto : {{ settings.font_family_link_legales_contacto }};
+  --fontweightlinklegalescontacto : {{ settings.font_weight_link_legales_contacto }};
+
+  --colorborderchecknewsletterfooter : {{ settings.color_border_check_newsletterfooter }};
+  --colorbackgroundchecknewsletterfooter : {{ settings.color_background_check_newsletterfooter }};
+  --coloractivechecknewsletterfooter : {{ settings.color_active_check_newsletterfooter }};
+  --colortextchecknewsletterfooter : {{ settings.color_text_check_newsletterfooter }};
+  --colorlinkchecknewsletterfooter : {{ settings.color_link_check_newsletterfooter }};
+  --colorhoverlinkchecknewsletterfooter : {{ settings.color_hover_link_check_newsletterfooter }};
+  --colorerroralertachecknewsletterfooter : {{ settings.color_error_alerta_check_newsletterfooter }};
+  --fontfamilylinknewsletterfooter : {{ settings.font_family_link_newsletterfooter }};
+  --fontweightlinknewsletterfooter : {{ settings.font_weight_link_newsletterfooter }};
+
+  --colorborderchecklegalespopupsuscripcionnewsletter : {{ settings.color_border_check_legales_popup_suscripcion_newsletter }};
+  --colorbackgroundchecklegalespopupsuscripcionnewsletter : {{ settings.color_background_check_legales_popup_suscripcion_newsletter }};
+  --coloractivechecklegalespopupsuscripcionnewsletter : {{ settings.color_active_check_legales_popup_suscripcion_newsletter }};
+  --colortextchecklegalespopupsuscripcionnewsletter : {{ settings.color_text_check_legales_popup_suscripcion_newsletter }};
+  --colorlinkchecklegalespopupsuscripcionnewsletter : {{ settings.color_link_check_legales_popup_suscripcion_newsletter }};
+  --colorhoverlinkchecklegalespopupsuscripcionnewsletter : {{ settings.color_hover_link_check_legales_popup_suscripcion_newsletter }};
+  --colorerroralertachecklegalespopupsuscripcionnewsletter : {{ settings.color_error_alerta_check_legales_popup_suscripcion_newsletter }};
+
+  --colorborderchecklegalessectionsuscripcionnewsletter : {{ settings.color_border_check_legales_section_suscripcion_newsletter }};
+  --colorbackgroundchecklegalessectionsuscripcionnewsletter : {{ settings.color_background_check_legales_section_suscripcion_newsletter }};
+  --coloractivechecklegalessectionsuscripcionnewsletter : {{ settings.color_active_check_legales_section_suscripcion_newsletter }};
+  --colortextchecklegalessectionsuscripcionnewsletter : {{ settings.color_text_check_legales_section_suscripcion_newsletter }};
+  --colorlinkchecklegalessectionsuscripcionnewsletter : {{ settings.color_link_check_legales_section_suscripcion_newsletter }};
+  --colorhoverlinkchecklegalessectionsuscripcionnewsletter : {{ settings.color_hover_link_check_legales_section_suscripcion_newsletter }};
+  --colorerroralertachecklegalessectionsuscripcionnewsletter : {{ settings.color_error_alerta_check_legales_section_suscripcion_newsletter }};
+  
+   {% comment %} CUSTOM CODE {% endcomment %}
+ --colorbackgroundcollection : {{ settings.collection_background }}; 
+
+
+
+  
+}
+
+{%- endstyle -%}
