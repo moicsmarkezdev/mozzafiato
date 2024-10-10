@@ -142,5 +142,63 @@
       render 'feedback-bar'
       render 'icons', icon: 'defs'
     -%}
-  {% render 'automizely-recommendations' %}</body>
+  {% render 'automizely-recommendations' %}
+
+     {% render 'GDPR' %}
+
+
+   {% if template != 'cart' %}
+    <script>
+          document.addEventListener("DOMContentLoaded", function() {
+      
+              var observer = new MutationObserver(function(mutationsList) {
+                  for(var mutation of mutationsList) {
+                      if (mutation.type === 'childList') {
+                          checkCheckboxes();
+                      }
+                  }
+              });
+      
+              var observerConfig = { childList: true, subtree: true };
+              observer.observe(document.body, observerConfig);
+      
+              function checkCheckboxes() {
+                  var termsChecked = document.getElementById('terms-conditions-legales');
+                  var privacyChecked = document.getElementById('policy-privacy-legales');
+                  var opacityText = document.querySelector('.opacitytext');
+      
+                  if (termsChecked && privacyChecked) {
+                      termsChecked.addEventListener('change', updateButtonState);
+                      privacyChecked.addEventListener('change', updateButtonState);
+                  }
+              }
+      
+              function updateButtonState() {
+                  var termsChecked = document.getElementById('terms-conditions-legales').checked;
+                  var privacyChecked = document.getElementById('policy-privacy-legales').checked;
+                  var opacityText = document.querySelector('.opacitytext');
+                  var checkoutButtons = document.querySelectorAll('.btncart');
+      
+                  if (!termsChecked || !privacyChecked) {
+                      opacityText.classList.add('textalertckeck');
+                      checkoutButtons.forEach(function(button) {
+                          button.classList.add('btnopacity');
+                          button.disabled = true;
+                      });
+                  } else {
+                      opacityText.classList.remove('textalertckeck');
+                      checkoutButtons.forEach(function(button) {
+                          button.classList.remove('btnopacity');
+                          button.disabled = false;
+                      });
+                  }
+              }
+      
+              checkCheckboxes();
+          });
+      </script>
+    {% endif %}
+
+    
+  </body>
 </html>
