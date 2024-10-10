@@ -502,7 +502,7 @@
           </div>
 
           <div class="cart--checkout-button" data-item="button">
-            <button type="submit" name="checkout" class="btncart btnopacity">
+            <button type="submit" name="checkout" class="{% if template != 'cart' %}btncart btnopacity{% else %}btncart btndisabled{% endif %}">
               <span class="cart-button--text">
                 {{- checkout_t -}}
               </span>
@@ -532,3 +532,27 @@
     {{- empty_html_t -}}
   </div>
 </cart-root>
+
+
+{% if template == 'cart' %}
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$('#checkout').attr("disabled",true);
+
+$('.cbox').change(function() {
+
+    if( $('#terms-conditions-legales-cart:checked, #policy-privacy-legales-cart:checked').length < 2 ) {
+      $('.opacitytext').addClass('textalertckeck');
+      $('.btncart').addClass('btnopacity');
+      $('.btncart').addClass('btndisabled');
+    } else {
+      $('.opacitytext').removeClass('textalertckeck');
+      $('.btncart').removeClass('btnopacity');
+      $('.btncart').removeClass('btndisabled');
+    }
+  
+    $('#checkout').attr('disabled', $('#terms-conditions-legales-cart:checked').length == 0 || $('#policy-privacy-legales-cart:checked').length == 0 );
+  
+});
+</script>
+{% endif %}
