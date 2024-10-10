@@ -43,7 +43,6 @@ textarea.form-control {
   color: var(--colortextchecklegales);
   text-transform: none;
   letter-spacing: 0;
-  font-weight: 600;
 }
 .label-text-legales-cart {
   padding-left: 8px;
@@ -51,7 +50,6 @@ textarea.form-control {
   color: var(--colortextchecklegalescart);
   text-transform: none;
   letter-spacing: 0;
-  font-weight: 600;
 }
 .label-text-legales-contact {
   padding-left: 8px;
