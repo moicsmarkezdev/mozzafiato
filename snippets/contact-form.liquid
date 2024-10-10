@@ -88,6 +88,15 @@
         required
       >{{ contact.fields.body }}</textarea>
 
+      {% if settings.enable_contact_privacy_policy %}
+           <div id="c-group-filled" class="form-item form-single">
+              <label class="labelcheck-legales" for="policy-legales-contact">
+                  <input type="checkbox" id="policy-legales-contact" name="c-group-filled" class="filled-contact legalesinput" required oninvalid="this.setCustomValidity('Completa la casilla')" oninput="setCustomValidity('')"/>
+                <span class="label-text-legales-contact">{{ 'legales.general.contactpolitica_html' | t: politica_url: settings.contact_politica_legales }}</span>
+              </label>
+            </div>
+          {% endif %}
+
       <div class="contact--form-submit" data-item="{{ button_type }}">
         <button type="submit" value="{{ contact_button_t }}">
           {{- contact_button_t -}}
