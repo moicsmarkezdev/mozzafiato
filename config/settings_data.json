@@ -52,6 +52,8 @@
     "color_text_necesarias_cookies_gdpr": "#ffffff",
     "background_permitirtodas_cookies_gdpr": "#f59e54",
     "color_text_permtiirtodas_cookies_gdpr": "#ffffff",
+    "color_link_cookies_gdpr": "#444444",
+    "hover_color_link_cookies_gdpr": "#f59e54",
     "cart--type": "drawer",
     "cart--show-note": true,
     "free_shipping_threshold_1": 0,
