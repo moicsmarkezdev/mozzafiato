@@ -440,7 +440,7 @@
           {{- shipping_taxes_t -}}
         </div>
 
-
+       {% if template != 'cart' %}
           {% if settings.enable_accept_terms %}
             <div class="terminos-condiciones-drawer">
                   <div class="input-row">
@@ -462,6 +462,11 @@
               </div>
             </div>
         {% endif %}
+        {% else %}
+
+         holaaaa
+
+              {% endif %}
 
         
         <div class="cart--nav">
