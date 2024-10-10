@@ -1,0 +1,418 @@
+/*
+
+█░░ █ █▄▄ █▀█ █▀█   █▀▄ █▀▀   █▀█ █▀▀ █▀▀ █░░ ▄▀█ █▀▄▀█ █▀█ █▀
+█▄▄ █ █▄█ █▀▄ █▄█   █▄▀ ██▄   █▀▄ ██▄ █▄▄ █▄▄ █▀█ █░▀░█ █▄█ ▄█
+*/
+.libro-reclamaciones a {
+  color: var(--reclamos-a) !important;
+  font-family: var(--reclamosfontfamilylink) !important;
+  text-decoration: underline;
+}
+.libro-reclamaciones a:hover {
+  color: var(--reclamos-a-hover) !important;
+}
+button.btn-reclamos {
+  color: var(--reclamos-color-btn) !important;
+  background-color: var(--reclamos-background-btn) !important;
+}
+button.btn-reclamos:hover {
+  background-color: var(--reclamos-background-btn-hover) !important;
+}
+button.btn-reclamos:before {
+  background-color: var(--reclamos-background-btn-hover) !important;
+}
+select.form-control,
+input.form-control,
+textarea.form-control {
+  font-family: var(--reclamos-campos-font) !important;
+}
+.libro-reclamaciones label {
+  color: var(--textcheck-pagereclamaciones);
+  font-size: 13px;
+}
+
+/*
+
+█░░ █▀▀ █▀▀ ▄▀█ █░░ █▀▀ █▀   █▀▀ █░█ █▀▀ █▀▀ █▄▀ █▄▄ █▀█ ▀▄▀
+█▄▄ ██▄ █▄█ █▀█ █▄▄ ██▄ ▄█   █▄▄ █▀█ ██▄ █▄▄ █░█ █▄█ █▄█ █░█
+*/
+
+.label-text-legales {
+  padding-left: 8px;
+  font-size: 13px;
+  color: var(--colortextchecklegales);
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 600;
+}
+.label-text-legales-cart {
+  padding-left: 8px;
+  font-size: 13px;
+  color: var(--colortextchecklegalescart);
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 600;
+}
+.label-text-legales-contact {
+  padding-left: 8px;
+  font-size: 13px;
+  color: var(--colortextchecklegalescontacto);
+  letter-spacing: 0;
+  text-transform: none;
+}
+.label-text-legales-newsletterfooter {
+  padding-left: 8px;
+  font-size: 13px;
+  color: var(--colortextchecknewsletterfooter);
+  text-transform: none;
+  letter-spacing: 0;
+}
+.label-text-legales-suscripcion-popup {
+  padding-left: 8px;
+  font-size: 13px;
+  color: var(--colortextchecklegalespopupsuscripcionnewsletter);
+}
+.label-text-legales-suscripcion-section {
+  padding-left: 8px;
+  font-size: 13px;
+  color: var(--colortextchecklegalessectionsuscripcionnewsletter);
+}
+
+.label-text-legales a {
+  color: var(--colorlinkchecklegales);
+  text-decoration-line: underline;
+  border-bottom: none;
+  font-family: var(--fontfamilylegaleslink) !important;
+  font-weight: var(--fontweightlegales) !important;
+}
+
+.label-text-legales-cart a {
+  color: var(--colorlinkchecklegalescart);
+  text-decoration-line: underline;
+  border-bottom: none;
+  font-family: var(--fontfamilylegaleslink) !important;
+  font-weight: var(--fontweightlegales) !important;
+}
+ 
+.label-text-legales-contact a {
+  color: var(--colorlinkchecklegalescontacto);
+  text-decoration-line: underline;
+  border-bottom: none;
+  font-family: var(--fontfamilylinklegalescontacto) !important;
+  font-weight: var(--fontweightlinklegalescontacto) !important;
+}
+.label-text-legales-newsletterfooter a {
+  color: var(--colorlinkchecknewsletterfooter);
+  text-decoration-line: underline;
+  border-bottom: none;
+  font-family: var(--fontfamilylinknewsletterfooter) !important;
+  font-weight: var(--fontweightlinknewsletterfooter) !important;
+}
+.label-text-legales-suscripcion-popup a {  
+  color: var(--colorlinkchecklegalespopupsuscripcionnewsletter);
+  text-decoration-line: underline;
+  border-bottom: none;
+  font-family: var(--fontfamilylinklegalescontacto) !important;
+  font-weight: var(--fontweightlinklegalescontacto) !important;
+}
+
+.label-text-legales-suscripcion-section a {  
+  color: var(--colorlinkchecklegalessectionsuscripcionnewsletter);
+  text-decoration-line: underline;
+  border-bottom: none;
+  font-family: var(--fontfamilylinklegalescontacto) !important;
+  font-weight: var(--fontweightlinklegalescontacto) !important;
+}
+
+
+.label-text-legales a:hover {
+  color: var(--colorhoverlinkchecklegales);
+  text-decoration-line: underline;
+  opacity: 1;
+}
+.label-text-legales-cart a:hover {
+  color: var(--colorhoverlinkchecklegalescart);
+  text-decoration-line: underline;
+  opacity: 1;
+}
+.label-text-legales-contact a:hover {
+  color: var(--colorhoverlinkchecklegalescontacto);
+  text-decoration-line: underline;
+  opacity: 1;
+}
+.label-text-legales-newsletterfooter a:hover {
+  color: var(--colorhoverlinkchecknewsletterfooter);
+  text-decoration-line: underline;
+  opacity: 1;
+}
+.label-text-legales-suscripcion-popup a:hover {
+  color: var(--colorhoverlinkchecklegalespopupsuscripcionnewsletter);
+  text-decoration-line: underline;
+  opacity: 1;
+}
+.label-text-legales-suscripcion-section a:hover {
+  color: var(--colorhoverlinkchecklegalessectionsuscripcionnewsletter);
+  text-decoration-line: underline;
+  opacity: 1;
+}
+
+
+label.labelcheck-legales {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: center;
+}
+label.check-legal-section {
+  justify-content: center;
+}
+label.labelcheck-legales-new-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+.labelcheck-legales {
+  display: flex !important;
+  flex-direction: row;
+  margin-bottom: 5px;
+}
+
+input#terms-conditions-legales-cart,
+input#policy-privacy-legales-cart,
+input#terms-conditions-legales,
+input#policy-privacy-legales,
+input#policy-legales-contact,
+input#policy-legales-newsletterfooter,
+input#suscription-legales-popup,
+input#suscription-legales-section {
+  width: auto;
+  margin-right: 10px;
+  padding: 0;
+  cursor: pointer;
+}
+
+input#terms-conditions-legales:after,
+input#policy-privacy-legales:after {
+  box-shadow: 4px 4px var(--coloractivechecklegales);
+}
+input#terms-conditions-legales-cart:after,
+input#policy-privacy-legales-cart:after {
+  box-shadow: 4px 4px var(--coloractivechecklegalescart);
+}
+input#policy-legales-contact:after {
+  box-shadow: 4px 4px var(--coloractivechecklegalescontacto);
+}
+input#policy-legales-newsletterfooter:after {
+  box-shadow: 4px 4px var(--coloractivechecknewsletterfooter);
+}
+input#suscription-legales-popup:after {
+  box-shadow: 4px 4px var(--coloractivechecklegalespopupsuscripcionnewsletter);
+}
+input#suscription-legales-section:after {
+  box-shadow: 4px 4px var(--coloractivechecklegalespopupsuscripcionnewsletter);
+}
+
+
+input#checkmenor:after,
+input#checkentregado:after,
+input#checkterms:after {
+  box-shadow: 4px 4px var(--activocheck-pagereclamaciones);
+}
+
+input#terms-conditions-legales:before,
+input#policy-privacy-legales:before {
+  content: "";
+  display: block;
+  box-sizing: content-box;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--colorborderchecklegales);
+  background-color: var(--colorbackgroundchecklegales);
+  transition: 0.2s border-color ease;
+}
+
+input#terms-conditions-legales-cart:before,
+input#policy-privacy-legales-cart:before {
+  content: "";
+  display: block;
+  box-sizing: content-box;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--colorborderchecklegalescart);
+  background-color: var(--colorbackgroundchecklegalescart);
+  transition: 0.2s border-color ease;
+}
+
+input#policy-legales-contact:before {
+  content: "";
+  display: block;
+  box-sizing: content-box;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--colorborderchecklegalescontacto);
+  background-color: var(--colorbackgroundchecklegalescontacto);
+  transition: 0.2s border-color ease;
+}
+input#policy-legales-newsletterfooter:before {
+  content: "";
+  display: block;
+  box-sizing: content-box;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--colorborderchecknewsletterfooter);
+  background-color: var(--colorbackgroundchecknewsletterfooter);
+  transition: 0.2s border-color ease;
+}
+input#suscription-legales-popup:before {
+  content: "";
+  display: block;
+  box-sizing: content-box;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--colorborderchecklegalespopupsuscripcionnewsletter);
+  background-color: var(--colorbackgroundchecklegalespopupsuscripcionnewsletter);
+  transition: 0.2s border-color ease;
+}
+input#suscription-legales-section:before {
+  content: "";
+  display: block;
+  box-sizing: content-box;
+  width: 16px;
+  height: 16px;
+  border: 2px solid var(--colorborderchecklegalessectionsuscripcionnewsletter);
+  background-color: var(--colorbackgroundchecklegalessectionsuscripcionnewsletter);
+  transition: 0.2s border-color ease;
+}
+
+
+input#checkmenor:before {
+  content: "";
+  display: block;
+  box-sizing: content-box;
+  width: 16px;
+  height: 16px;
+  border-radius: var(--borderradiuscheck);
+  border: var(--rangebordercheck) solid var(--bordercheck-pagereclamaciones);
+  transition: 0.2s border-color ease;
+}
+input#checkentregado:before {
+  content: "";
+  display: block;
+  box-sizing: content-box;
+  width: 16px;
+  height: 16px;
+  border-radius: var(--borderradiuscheck);
+  border: var(--rangebordercheck) solid var(--bordercheck-pagereclamaciones);
+  transition: 0.2s border-color ease;
+}
+input#checkterms:before {
+  content: "";
+  display: block;
+  box-sizing: content-box;
+  width: 16px;
+  height: 16px;
+  border-radius: var(--borderradiuscheck);
+  border: var(--rangebordercheck) solid var(--bordercheck-pagereclamaciones);
+  transition: 0.2s border-color ease;
+}
+
+input[type="checkbox" i]#terms-conditions-legales,
+input[type="checkbox" i]#policy-privacy-legales,
+input[type="checkbox" i]#terms-conditions-legales-cart,
+input[type="checkbox" i]#policy-privacy-legales-cart,
+input[type="checkbox" i]#policy-legales-contact,
+input[type="checkbox" i]#policy-legales-newsletterfooter,
+input[type="checkbox" i]#suscription-legales-popup,
+input[type="checkbox" i]#suscription-legales-section,
+input[type="checkbox" i]#checkmenor,
+input[type="checkbox" i]#checkentregado,
+input[type="checkbox" i]#checkterms {
+  position: relative !important;
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  margin: 0;
+}
+
+input[type="checkbox"].legalesinput:before {
+  border-radius: 4px;
+  transition: 0.2s border-color ease, 0.2s background-color ease;
+}
+
+input[type="checkbox"]:checked:after {
+  -webkit-animation: toggleOnCheckbox 0.2s ease forwards;
+  animation: toggleOnCheckbox 0.2s ease forwards;
+}
+
+input[type="checkbox"]:after {
+  width: 9.6px;
+  height: 16px;
+  border-radius: 0;
+  transform: translate(-50%, -85%) scale(0) rotate(45deg);
+  background-color: transparent;
+  box-shadow: 4px 4px 0 0 #eccabb;
+}
+input:after {
+  content: "";
+  display: block;
+  position: absolute;
+  box-sizing: content-box;
+  top: 50%;
+  left: 50%;
+  transform-origin: 50% 50%;
+  background-color: #12cbc4;
+  width: 16px;
+  height: 16px;
+  border-radius: 100vh;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+@keyframes toggleOnCheckbox {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -85%) scale(0) rotate(45deg);
+  }
+  70% {
+    opacity: 1;
+    transform: translate(-50%, -85%) scale(0.9) rotate(45deg);
+  }
+  100% {
+    transform: translate(-50%, -85%) scale(0.8) rotate(45deg);
+  }
+}
+
+@media (min-width: 768px) {
+  .form-check.form-check-menor,
+  .form-check.form-check-entregado {
+    display: flex !important;
+    align-items: center;
+    gap: 5px;
+  }
+}
+
+
+.mb-4 {
+  margin-bottom: 10px;
+}
+.textalertckeck p {
+  font-size: 12px;
+  color: var(--colorerroralertachecklegales);
+  line-height: 15px;
+  margin-top: 15px;
+}
+.textalertckeck {
+  display: block !important;
+}
+.opacitytext {
+  display: none;
+}
+.btnopacity {
+  cursor: not-allowed;
+  opacity: 0.5;
+  pointer-events: none;
+}
+.btndisabled {
+  pointer-events: none !important;
+  opacity: 0.4 !important;
+} 
