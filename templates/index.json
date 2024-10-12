@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "slideshow": {
@@ -647,6 +647,23 @@
         "link-url": "",
         "link-text": ""
       }
+    },
+    "map_UmWXbf": {
+      "type": "map",
+      "disabled": true,
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "container-width": 4,
+        "spacing-above": true,
+        "spacing-below": true,
+        "theme": "grayscale",
+        "heading": "Módulo Mozzafiato",
+        "address": "<p>391 Sunrise Blvd,<br/>Los Angeles<br/>CA 94108, USA</p>",
+        "hours": "<p>Lunes - Domingo <br/>11 am. - 10 pm.</p>",
+        "api-key": "",
+        "map-address": "Av. Javier Prado Este 4200, Santiago de Surco 15023"
+      }
     }
   },
   "order": [
@@ -661,6 +678,7 @@
     "e1bcfcee-d979-4e6c-b6ec-30817d050e0c",
     "grid-with-overlay",
     "0b1cd38c-2dd8-4607-abdb-1424619e78d5",
-    "grid_with_overlay_4rPb6r"
+    "grid_with_overlay_4rPb6r",
+    "map_UmWXbf"
   ]
 }
