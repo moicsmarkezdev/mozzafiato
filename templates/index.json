@@ -659,7 +659,7 @@
         "spacing-below": true,
         "theme": "grayscale",
         "heading": "Módulo Mozzafiato",
-        "address": "<p>391 Sunrise Blvd,<br/>Los Angeles<br/>CA 94108, USA</p>",
+        "address": "<p>Av. Javier Prado Este 4200 - Santiago de Surco </p><p>Lima, Perú</p>",
         "hours": "<p>Lunes - Domingo <br/>11 am. - 10 pm.</p>",
         "api-key": "",
         "map-address": "Av. Javier Prado Este 4200, Santiago de Surco 15023"
