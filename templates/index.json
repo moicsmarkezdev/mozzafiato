@@ -59,13 +59,13 @@
           "settings": {
             "text-position": "bottom-left",
             "text-width": "medium",
-            "image": "shopify://shop_images/Miercoles31-BannerWeb.png",
+            "image": "shopify://shop_images/Jueves24-Banner_web.png",
             "overline": "",
             "title": "",
             "description": "",
-            "link-url": "shopify://products/beauty-pack",
+            "link-url": "shopify://collections/last-units",
             "link-text": "",
-            "mobile-image": "shopify://shop_images/Miercoles31-BannerMovil.png"
+            "mobile-image": "shopify://shop_images/Jueves24-Banner_mobile.png"
           }
         }
       },
