@@ -12,6 +12,20 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
+        "4993a4c6-5948-4c34-853f-dc9d8e106671": {
+          "type": "image",
+          "settings": {
+            "text-position": "bottom-left",
+            "text-width": "medium",
+            "image": "shopify://shop_images/Jueves24-Banner_web.png",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "shopify://collections/last-units",
+            "link-text": "",
+            "mobile-image": "shopify://shop_images/Jueves24-Banner_mobile.png"
+          }
+        },
         "a5482328-e971-4c6e-b38b-4e3380fe7526": {
           "type": "image",
           "settings": {
@@ -54,26 +68,26 @@
             "mobile-image": "shopify://shop_images/Lunes23-Banner-mobile.png"
           }
         },
-        "4993a4c6-5948-4c34-853f-dc9d8e106671": {
+        "image_ihGBW6": {
           "type": "image",
           "settings": {
             "text-position": "bottom-left",
             "text-width": "medium",
-            "image": "shopify://shop_images/Jueves24-Banner_web.png",
+            "image": "shopify://shop_images/Bannersweb.png",
             "overline": "",
             "title": "",
             "description": "",
-            "link-url": "shopify://collections/last-units",
-            "link-text": "",
-            "mobile-image": "shopify://shop_images/Jueves24-Banner_mobile.png"
+            "link-url": "/",
+            "link-text": ""
           }
         }
       },
       "block_order": [
+        "4993a4c6-5948-4c34-853f-dc9d8e106671",
         "a5482328-e971-4c6e-b38b-4e3380fe7526",
         "image_Hmdzyy",
         "image_ADfrQD",
-        "4993a4c6-5948-4c34-853f-dc9d8e106671"
+        "image_ihGBW6"
       ],
       "settings": {
         "text-color": "auto",
