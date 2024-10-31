@@ -665,7 +665,6 @@
     },
     "map_UmWXbf": {
       "type": "map",
-      "disabled": true,
       "settings": {
         "background-color": "none",
         "light-text": false,
