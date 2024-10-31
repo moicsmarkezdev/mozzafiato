@@ -28,16 +28,17 @@
         },
         "4993a4c6-5948-4c34-853f-dc9d8e106671": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "text-position": "bottom-left",
             "text-width": "medium",
-            "image": "shopify://shop_images/Jueves24-Banner_web.png",
+            "image": "shopify://shop_images/Sabado2-Banner_web.png",
             "overline": "",
             "title": "",
             "description": "",
-            "link-url": "shopify://collections/last-units",
+            "link-url": "",
             "link-text": "",
-            "mobile-image": "shopify://shop_images/Jueves24-Banner_mobile.png"
+            "mobile-image": "shopify://shop_images/Sabado2-Banner_Mobile.png"
           }
         },
         "a5482328-e971-4c6e-b38b-4e3380fe7526": {
