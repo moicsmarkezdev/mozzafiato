@@ -255,6 +255,23 @@
         "pause-on-hover": false
       }
     },
+    "featured_collection_rQqFgM": {
+      "type": "featured-collection",
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "featured-collection--image--show": false,
+        "featured-collection--description--show": false,
+        "display-type": "grid",
+        "products-per-row--desktop": "3",
+        "products-per-row--mobile": "2",
+        "collection": "neceseres",
+        "max-products": 4,
+        "heading": "Neceseres"
+      }
+    },
     "39b7e8a7-1bbc-491e-8390-2751caf3e237": {
       "type": "featured-product",
       "blocks": {
@@ -380,23 +397,6 @@
         "heading": "",
         "image": "shopify://shop_images/Captura_de_pantalla_2024-01-05_172915.png",
         "mobile-image": "shopify://shop_images/Captura_de_pantalla_2024-01-05_173116.png"
-      }
-    },
-    "featured_collection_rQqFgM": {
-      "type": "featured-collection",
-      "settings": {
-        "background-color": "none",
-        "light-text": false,
-        "spacing-above": true,
-        "spacing-below": true,
-        "featured-collection--image--show": false,
-        "featured-collection--description--show": false,
-        "display-type": "grid",
-        "products-per-row--desktop": "3",
-        "products-per-row--mobile": "2",
-        "collection": "neceseres",
-        "max-products": 4,
-        "heading": "Neceseres"
       }
     },
     "e1bcfcee-d979-4e6c-b6ec-30817d050e0c": {
@@ -687,9 +687,9 @@
     "featured_product_VBNFCz",
     "featured_products_PVYXMN",
     "53875c54-020d-4d79-8ff9-85371bcd2995",
+    "featured_collection_rQqFgM",
     "39b7e8a7-1bbc-491e-8390-2751caf3e237",
     "9547d1fa-e436-446d-a9b9-77f7a3bd07b9",
-    "featured_collection_rQqFgM",
     "e1bcfcee-d979-4e6c-b6ec-30817d050e0c",
     "grid-with-overlay",
     "0b1cd38c-2dd8-4607-abdb-1424619e78d5",
