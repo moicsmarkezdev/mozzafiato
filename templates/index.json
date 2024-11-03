@@ -118,10 +118,10 @@
         "featured-collection--image--show": false,
         "featured-collection--description--show": false,
         "display-type": "slideshow",
-        "products-per-row--desktop": "3",
+        "products-per-row--desktop": "4",
         "products-per-row--mobile": "2",
         "collection": "sale",
-        "max-products": 9,
+        "max-products": 12,
         "heading": "CYBER MOZZI - HASTA 50% OFF"
       }
     },
