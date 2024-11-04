@@ -12,6 +12,20 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
+        "image_Hmdzyy": {
+          "type": "image",
+          "settings": {
+            "text-position": "bottom-left",
+            "text-width": "medium",
+            "image": "shopify://shop_images/Lunes4-Cyber_web.jpg",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "shopify://collections/sale",
+            "link-text": "",
+            "mobile-image": "shopify://shop_images/Lunes4-Cyber_mobile.jpg"
+          }
+        },
         "4993a4c6-5948-4c34-853f-dc9d8e106671": {
           "type": "image",
           "settings": {
@@ -54,20 +68,6 @@
             "mobile-image": "shopify://shop_images/Lunes7-Banner_mobile.png"
           }
         },
-        "image_Hmdzyy": {
-          "type": "image",
-          "settings": {
-            "text-position": "bottom-left",
-            "text-width": "medium",
-            "image": "shopify://shop_images/Lunes4-Cyber_web.jpg",
-            "overline": "",
-            "title": "",
-            "description": "",
-            "link-url": "shopify://collections/sale",
-            "link-text": "",
-            "mobile-image": "shopify://shop_images/Lunes4-Cyber_mobile.jpg"
-          }
-        },
         "image_ADfrQD": {
           "type": "image",
           "settings": {
@@ -84,10 +84,10 @@
         }
       },
       "block_order": [
+        "image_Hmdzyy",
         "4993a4c6-5948-4c34-853f-dc9d8e106671",
         "image_ihGBW6",
         "a5482328-e971-4c6e-b38b-4e3380fe7526",
-        "image_Hmdzyy",
         "image_ADfrQD"
       ],
       "settings": {
