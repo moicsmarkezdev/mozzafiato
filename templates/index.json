@@ -448,7 +448,7 @@
       ],
       "settings": {
         "image-shape": "circle",
-        "background-color": "accent-2",
+        "background-color": "light",
         "light-text": false,
         "container-width": 4,
         "spacing-above": true,
@@ -522,6 +522,23 @@
         "subtitle": "",
         "link-url": "",
         "link-text": ""
+      }
+    },
+    "map_UmWXbf": {
+      "type": "map",
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "container-width": 4,
+        "spacing-above": true,
+        "spacing-below": true,
+        "theme": "grayscale",
+        "heading": "Módulo Mozzafiato",
+        "address": "<p>C.C Jockey Plaza - 1er piso Barrio Jockey </p><p>Av. Javier Prado Este 4200 - Santiago de Surco - Lima, Perú</p>",
+        "hours": "<p>Lunes - Domingo <br/>11 am. - 1 pm. / 2 pm. - 10 pm.</p>",
+        "image": "shopify://shop_images/Croquis_jockey_c3bc4894-3692-4331-a20e-351ac55b8ff0.png",
+        "api-key": "",
+        "map-address": "Av. Javier Prado Este 4200, Santiago de Surco 15023"
       }
     },
     "0b1cd38c-2dd8-4607-abdb-1424619e78d5": {
@@ -663,23 +680,6 @@
         "link-url": "",
         "link-text": ""
       }
-    },
-    "map_UmWXbf": {
-      "type": "map",
-      "settings": {
-        "background-color": "none",
-        "light-text": false,
-        "container-width": 4,
-        "spacing-above": true,
-        "spacing-below": true,
-        "theme": "grayscale",
-        "heading": "Módulo Mozzafiato",
-        "address": "<p>C.C Jockey Plaza - 1er piso Barrio Jockey </p><p>Av. Javier Prado Este 4200 - Santiago de Surco - Lima, Perú</p>",
-        "hours": "<p>Lunes - Domingo <br/>11 am. - 1 pm. / 2 pm. - 10 pm.</p>",
-        "image": "shopify://shop_images/Croquis_jockey_c3bc4894-3692-4331-a20e-351ac55b8ff0.png",
-        "api-key": "",
-        "map-address": "Av. Javier Prado Este 4200, Santiago de Surco 15023"
-      }
     }
   },
   "order": [
@@ -693,8 +693,8 @@
     "9547d1fa-e436-446d-a9b9-77f7a3bd07b9",
     "e1bcfcee-d979-4e6c-b6ec-30817d050e0c",
     "grid-with-overlay",
+    "map_UmWXbf",
     "0b1cd38c-2dd8-4607-abdb-1424619e78d5",
-    "grid_with_overlay_4rPb6r",
-    "map_UmWXbf"
+    "grid_with_overlay_4rPb6r"
   ]
 }
