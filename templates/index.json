@@ -40,6 +40,20 @@
             "mobile-image": "shopify://shop_images/Sabado2-Banner_Mobile.png"
           }
         },
+        "image_ADfrQD": {
+          "type": "image",
+          "settings": {
+            "text-position": "bottom-left",
+            "text-width": "medium",
+            "image": "shopify://shop_images/Lunes23-Banner-web.png",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "shopify://collections/panuelos",
+            "link-text": "",
+            "mobile-image": "shopify://shop_images/Lunes23-Banner-mobile.png"
+          }
+        },
         "image_ihGBW6": {
           "type": "image",
           "settings": {
@@ -56,6 +70,7 @@
         },
         "a5482328-e971-4c6e-b38b-4e3380fe7526": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "text-position": "bottom-left",
             "text-width": "medium",
@@ -67,28 +82,14 @@
             "link-text": "",
             "mobile-image": "shopify://shop_images/Lunes7-Banner_mobile.png"
           }
-        },
-        "image_ADfrQD": {
-          "type": "image",
-          "settings": {
-            "text-position": "bottom-left",
-            "text-width": "medium",
-            "image": "shopify://shop_images/Lunes23-Banner-web.png",
-            "overline": "",
-            "title": "",
-            "description": "",
-            "link-url": "shopify://collections/panuelos",
-            "link-text": "",
-            "mobile-image": "shopify://shop_images/Lunes23-Banner-mobile.png"
-          }
         }
       },
       "block_order": [
         "image_Hmdzyy",
         "4993a4c6-5948-4c34-853f-dc9d8e106671",
+        "image_ADfrQD",
         "image_ihGBW6",
-        "a5482328-e971-4c6e-b38b-4e3380fe7526",
-        "image_ADfrQD"
+        "a5482328-e971-4c6e-b38b-4e3380fe7526"
       ],
       "settings": {
         "text-color": "auto",
@@ -255,23 +256,6 @@
         "pause-on-hover": false
       }
     },
-    "featured_collection_rQqFgM": {
-      "type": "featured-collection",
-      "settings": {
-        "background-color": "none",
-        "light-text": false,
-        "spacing-above": true,
-        "spacing-below": true,
-        "featured-collection--image--show": false,
-        "featured-collection--description--show": false,
-        "display-type": "grid",
-        "products-per-row--desktop": "3",
-        "products-per-row--mobile": "2",
-        "collection": "neceseres",
-        "max-products": 4,
-        "heading": "Neceseres"
-      }
-    },
     "39b7e8a7-1bbc-491e-8390-2751caf3e237": {
       "type": "featured-product",
       "blocks": {
@@ -345,6 +329,23 @@
         "media-gap": 8,
         "featured_product": "comprar-online-tote-bag-amanda-flowers-mozzafiato",
         "loop-enabled": false
+      }
+    },
+    "featured_collection_rQqFgM": {
+      "type": "featured-collection",
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "featured-collection--image--show": false,
+        "featured-collection--description--show": false,
+        "display-type": "grid",
+        "products-per-row--desktop": "3",
+        "products-per-row--mobile": "2",
+        "collection": "neceseres",
+        "max-products": 4,
+        "heading": "Neceseres"
       }
     },
     "9547d1fa-e436-446d-a9b9-77f7a3bd07b9": {
@@ -674,7 +675,7 @@
         "theme": "grayscale",
         "heading": "Módulo Mozzafiato",
         "address": "<p>C.C Jockey Plaza - 1er piso Barrio Jockey </p><p>Av. Javier Prado Este 4200 - Santiago de Surco - Lima, Perú</p>",
-        "hours": "<p>Lunes - Domingo <br/>11 am. - 10 pm.</p>",
+        "hours": "<p>Lunes - Domingo <br/>11 am. - 1 pm. / 2 pm. - 10 pm.</p>",
         "image": "shopify://shop_images/Croquis_jockey_c3bc4894-3692-4331-a20e-351ac55b8ff0.png",
         "api-key": "",
         "map-address": "Av. Javier Prado Este 4200, Santiago de Surco 15023"
@@ -687,8 +688,8 @@
     "featured_product_VBNFCz",
     "featured_products_PVYXMN",
     "53875c54-020d-4d79-8ff9-85371bcd2995",
-    "featured_collection_rQqFgM",
     "39b7e8a7-1bbc-491e-8390-2751caf3e237",
+    "featured_collection_rQqFgM",
     "9547d1fa-e436-446d-a9b9-77f7a3bd07b9",
     "e1bcfcee-d979-4e6c-b6ec-30817d050e0c",
     "grid-with-overlay",
