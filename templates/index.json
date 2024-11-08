@@ -14,6 +14,7 @@
       "blocks": {
         "image_Hmdzyy": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "text-position": "bottom-left",
             "text-width": "medium",
@@ -131,13 +132,11 @@
       "blocks": {
         "heading_C4xdHY": {
           "type": "heading",
-          "settings": {
-          }
+          "settings": {}
         },
         "price_Gk49Dg": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "low_stock_qg3tNM": {
           "type": "low-stock",
@@ -267,23 +266,19 @@
         },
         "template--15445438103688__39b7e8a7-1bbc-491e-8390-2751caf3e237-heading-1": {
           "type": "heading",
-          "settings": {
-          }
+          "settings": {}
         },
         "template--15445438103688__39b7e8a7-1bbc-491e-8390-2751caf3e237-vendor-1": {
           "type": "vendor",
-          "settings": {
-          }
+          "settings": {}
         },
         "rating_n3JijB": {
           "type": "rating",
-          "settings": {
-          }
+          "settings": {}
         },
         "template--15445438103688__39b7e8a7-1bbc-491e-8390-2751caf3e237-price-1": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "3c8d0925-22f4-4bfa-ac21-fb30ff9ff0cc": {
           "type": "buy-buttons",
