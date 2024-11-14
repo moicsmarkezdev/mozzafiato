@@ -122,80 +122,26 @@
         "display-type": "slideshow",
         "products-per-row--desktop": "4",
         "products-per-row--mobile": "2",
-        "collection": "comprar-online-summer-is-calling-mozzafiato",
+        "collection": "comprar-online-toallas-de-microfibra-mozzafiato",
         "max-products": 12,
-        "heading": "¡NEW COLLECTION!"
+        "heading": "TOALLAS DE MICROFIBRA"
       }
     },
-    "39b7e8a7-1bbc-491e-8390-2751caf3e237": {
-      "type": "featured-product",
-      "blocks": {
-        "template--15445438103688__39b7e8a7-1bbc-491e-8390-2751caf3e237-overline-1": {
-          "type": "overline",
-          "settings": {
-            "text": ""
-          }
-        },
-        "template--15445438103688__39b7e8a7-1bbc-491e-8390-2751caf3e237-heading-1": {
-          "type": "heading",
-          "settings": {}
-        },
-        "template--15445438103688__39b7e8a7-1bbc-491e-8390-2751caf3e237-vendor-1": {
-          "type": "vendor",
-          "settings": {}
-        },
-        "rating_n3JijB": {
-          "type": "rating",
-          "settings": {}
-        },
-        "template--15445438103688__39b7e8a7-1bbc-491e-8390-2751caf3e237-price-1": {
-          "type": "price",
-          "settings": {}
-        },
-        "3c8d0925-22f4-4bfa-ac21-fb30ff9ff0cc": {
-          "type": "buy-buttons",
-          "settings": {
-            "smart-payment-enabled": false
-          }
-        },
-        "46f930c4-0729-4703-8060-7e3750d86c1d": {
-          "type": "low-stock",
-          "settings": {
-            "threshold": 10
-          }
-        },
-        "template--15445438103688__39b7e8a7-1bbc-491e-8390-2751caf3e237-options-1": {
-          "type": "options",
-          "settings": {
-            "variant-style": "buttons",
-            "swatches-enabled": true,
-            "size-chart-enabled": true,
-            "size-chart-option": "size",
-            "size-chart-content": ""
-          }
-        }
-      },
-      "block_order": [
-        "template--15445438103688__39b7e8a7-1bbc-491e-8390-2751caf3e237-overline-1",
-        "template--15445438103688__39b7e8a7-1bbc-491e-8390-2751caf3e237-heading-1",
-        "template--15445438103688__39b7e8a7-1bbc-491e-8390-2751caf3e237-vendor-1",
-        "rating_n3JijB",
-        "template--15445438103688__39b7e8a7-1bbc-491e-8390-2751caf3e237-price-1",
-        "3c8d0925-22f4-4bfa-ac21-fb30ff9ff0cc",
-        "46f930c4-0729-4703-8060-7e3750d86c1d",
-        "template--15445438103688__39b7e8a7-1bbc-491e-8390-2751caf3e237-options-1"
-      ],
+    "featured_collection_xwa693": {
+      "type": "featured-collection",
       "settings": {
         "background-color": "none",
-        "container-width": 4,
-        "spacing-above": false,
+        "light-text": false,
+        "spacing-above": true,
         "spacing-below": true,
-        "text-column-width": 30,
-        "text-alignment": "left",
-        "thumbnail-width": 80,
-        "media-gap": 8,
-        "featured_product": "panuelo-sienna-naranja",
-        "loop-enabled": false
+        "featured-collection--image--show": false,
+        "featured-collection--description--show": false,
+        "display-type": "slideshow",
+        "products-per-row--desktop": "3",
+        "products-per-row--mobile": "1",
+        "collection": "comprar-online-panuelos-mozzafiato",
+        "max-products": 6,
+        "heading": "Pañuelos"
       }
     },
     "featured_product_VBNFCz": {
@@ -693,7 +639,7 @@
   "order": [
     "slideshow",
     "5ba33054-4d1e-44a1-a62b-81a200f21bc2",
-    "39b7e8a7-1bbc-491e-8390-2751caf3e237",
+    "featured_collection_xwa693",
     "featured_product_VBNFCz",
     "featured_collection_WXVa4B",
     "53875c54-020d-4d79-8ff9-85371bcd2995",
