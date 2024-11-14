@@ -147,18 +147,14 @@
     "featured_product_mncDmF": {
       "type": "featured-product",
       "blocks": {
-        "overline_pkQCc9": {
+        "overline_Wmr98V": {
           "type": "overline",
           "settings": {
-            "text": "Overline text"
+            "text": "¡last units!"
           }
         },
         "heading_kYQMaR": {
           "type": "heading",
-          "settings": {}
-        },
-        "vendor_jqcqdd": {
-          "type": "vendor",
           "settings": {}
         },
         "price_aXxwgU": {
@@ -180,15 +176,21 @@
           "settings": {
             "smart-payment-enabled": true
           }
+        },
+        "low_stock_M9qyxY": {
+          "type": "low-stock",
+          "settings": {
+            "threshold": 10
+          }
         }
       },
       "block_order": [
-        "overline_pkQCc9",
+        "overline_Wmr98V",
         "heading_kYQMaR",
-        "vendor_jqcqdd",
         "price_aXxwgU",
         "options_zgNyRK",
-        "buy_buttons_AjjPcY"
+        "buy_buttons_AjjPcY",
+        "low_stock_M9qyxY"
       ],
       "settings": {
         "background-color": "none",
