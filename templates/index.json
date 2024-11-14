@@ -50,7 +50,7 @@
             "overline": "",
             "title": "",
             "description": "",
-            "link-url": "shopify://collections/neceseres",
+            "link-url": "shopify://collections/comprar-online-neceseres-mozzafiato",
             "link-text": "",
             "mobile-image": "shopify://shop_images/Martes29-Banner_mobile.png"
           }
@@ -337,7 +337,7 @@
         "display-type": "grid",
         "products-per-row--desktop": "3",
         "products-per-row--mobile": "2",
-        "collection": "neceseres",
+        "collection": "comprar-online-neceseres-mozzafiato",
         "max-products": 4,
         "heading": "Neceseres"
       }
