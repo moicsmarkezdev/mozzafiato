@@ -322,6 +322,81 @@
         "pause-on-hover": false
       }
     },
+    "featured_collection_hR7KJK": {
+      "type": "featured-collection",
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "featured-collection--image--show": false,
+        "featured-collection--description--show": false,
+        "display-type": "slideshow",
+        "products-per-row--desktop": "3",
+        "products-per-row--mobile": "2",
+        "collection": "comprar-online-toalla-de-microfibra-essential-mozzafiato",
+        "max-products": 6,
+        "heading": "Toallas de microfibra"
+      }
+    },
+    "e1bcfcee-d979-4e6c-b6ec-30817d050e0c": {
+      "type": "testimonials",
+      "blocks": {
+        "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-1": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "10",
+            "author-role": "",
+            "author-name": "",
+            "description": "<p>Me encantaron las toallas, los stickers y la fragancia que utilizan es muy agradable 🙂. Qué bueno saber que se toman el tiempo para recibir feedback, dice mucho de la marca!<br/><br/>- <strong>Mery</strong></p>"
+          }
+        },
+        "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-0": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "10",
+            "author-role": "",
+            "author-name": "",
+            "description": "<p>Había comprado el año pasado dos toallas para un viaje, este año completé las 4 toallas para toda la familia. Son muy buenas, los diseños lindos y la calidad gruesita que te seca muy bien y se seca al toque.<br/><br/>- <strong>Lucía</strong></p>"
+          }
+        },
+        "testimonial_7pJrmH": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "10",
+            "author-role": "",
+            "author-name": "",
+            "description": "<p>Linda la caja, el pedido, los stickers, hasta tenia una cartita que olía rico. ¡Realmente lindo el servicio y experiencia, las felicito!<br/><br/><strong>- Vanessa</strong></p>"
+          }
+        },
+        "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-2": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "10",
+            "author-role": "",
+            "author-name": "",
+            "description": "<p>La calidad y material de la toalla es increíble 😊 Y los pañuelos tiene un color hermoso tal cual las fotos!<br/><br/>- <strong>Carolina</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-1",
+        "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-0",
+        "testimonial_7pJrmH",
+        "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-2"
+      ],
+      "settings": {
+        "image-shape": "circle",
+        "background-color": "light",
+        "light-text": false,
+        "container-width": 4,
+        "spacing-above": true,
+        "spacing-below": true,
+        "mobile-width": "1",
+        "overline": "",
+        "heading": "Lo que dicen nuestras mozzi girls!"
+      }
+    },
     "featured_collection_rQqFgM": {
       "type": "featured-collection",
       "settings": {
@@ -389,64 +464,6 @@
         "heading": "",
         "image": "shopify://shop_images/Captura_de_pantalla_2024-01-05_172915.png",
         "mobile-image": "shopify://shop_images/Captura_de_pantalla_2024-01-05_173116.png"
-      }
-    },
-    "e1bcfcee-d979-4e6c-b6ec-30817d050e0c": {
-      "type": "testimonials",
-      "blocks": {
-        "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-1": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "10",
-            "author-role": "",
-            "author-name": "",
-            "description": "<p>Me encantaron las toallas, los stickers y la fragancia que utilizan es muy agradable 🙂. Qué bueno saber que se toman el tiempo para recibir feedback, dice mucho de la marca!<br/><br/>- <strong>Mery</strong></p>"
-          }
-        },
-        "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-0": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "10",
-            "author-role": "",
-            "author-name": "",
-            "description": "<p>Había comprado el año pasado dos toallas para un viaje, este año completé las 4 toallas para toda la familia. Son muy buenas, los diseños lindos y la calidad gruesita que te seca muy bien y se seca al toque.<br/><br/>- <strong>Lucía</strong></p>"
-          }
-        },
-        "testimonial_7pJrmH": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "10",
-            "author-role": "",
-            "author-name": "",
-            "description": "<p>Linda la caja, el pedido, los stickers, hasta tenia una cartita que olía rico. ¡Realmente lindo el servicio y experiencia, las felicito!<br/><br/><strong>- Vanessa</strong></p>"
-          }
-        },
-        "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-2": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "10",
-            "author-role": "",
-            "author-name": "",
-            "description": "<p>La calidad y material de la toalla es increíble 😊 Y los pañuelos tiene un color hermoso tal cual las fotos!<br/><br/>- <strong>Carolina</strong></p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-1",
-        "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-0",
-        "testimonial_7pJrmH",
-        "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-2"
-      ],
-      "settings": {
-        "image-shape": "circle",
-        "background-color": "light",
-        "light-text": false,
-        "container-width": 4,
-        "spacing-above": true,
-        "spacing-below": true,
-        "mobile-width": "1",
-        "overline": "",
-        "heading": "Lo que dicen nuestras mozzi girls!"
       }
     },
     "grid-with-overlay": {
@@ -680,6 +697,7 @@
     "featured_product_VBNFCz",
     "featured_collection_WXVa4B",
     "53875c54-020d-4d79-8ff9-85371bcd2995",
+    "featured_collection_hR7KJK",
     "e1bcfcee-d979-4e6c-b6ec-30817d050e0c",
     "featured_collection_rQqFgM",
     "9547d1fa-e436-446d-a9b9-77f7a3bd07b9",
