@@ -249,23 +249,6 @@
         "loop-enabled": false
       }
     },
-    "featured_collection_WXVa4B": {
-      "type": "featured-collection",
-      "settings": {
-        "background-color": "none",
-        "light-text": false,
-        "spacing-above": true,
-        "spacing-below": true,
-        "featured-collection--image--show": false,
-        "featured-collection--description--show": false,
-        "display-type": "slideshow",
-        "products-per-row--desktop": "3",
-        "products-per-row--mobile": "1",
-        "collection": "comprar-online-descuento-mozzafiato",
-        "max-products": 6,
-        "heading": "Sale"
-      }
-    },
     "53875c54-020d-4d79-8ff9-85371bcd2995": {
       "type": "scrolling-content",
       "blocks": {
@@ -343,7 +326,7 @@
         "products-per-row--mobile": "2",
         "collection": "comprar-online-toalla-de-microfibra-essential-mozzafiato",
         "max-products": 6,
-        "heading": "Toallas de microfibra"
+        "heading": "¡new essentials!"
       }
     },
     "e1bcfcee-d979-4e6c-b6ec-30817d050e0c": {
@@ -404,7 +387,7 @@
         "heading": "Lo que dicen nuestras mozzi girls!"
       }
     },
-    "featured_collection_rQqFgM": {
+    "featured_collection_WXVa4B": {
       "type": "featured-collection",
       "settings": {
         "background-color": "none",
@@ -413,12 +396,12 @@
         "spacing-below": true,
         "featured-collection--image--show": false,
         "featured-collection--description--show": false,
-        "display-type": "grid",
+        "display-type": "slideshow",
         "products-per-row--desktop": "3",
-        "products-per-row--mobile": "2",
-        "collection": "comprar-online-neceseres-mozzafiato",
-        "max-products": 4,
-        "heading": "Neceseres"
+        "products-per-row--mobile": "1",
+        "collection": "comprar-online-descuento-mozzafiato",
+        "max-products": 6,
+        "heading": "Sale"
       }
     },
     "9547d1fa-e436-446d-a9b9-77f7a3bd07b9": {
@@ -703,11 +686,10 @@
     "featured_collection_xwa693",
     "featured_product_mncDmF",
     "featured_product_VBNFCz",
-    "featured_collection_WXVa4B",
     "53875c54-020d-4d79-8ff9-85371bcd2995",
     "featured_collection_hR7KJK",
     "e1bcfcee-d979-4e6c-b6ec-30817d050e0c",
-    "featured_collection_rQqFgM",
+    "featured_collection_WXVa4B",
     "9547d1fa-e436-446d-a9b9-77f7a3bd07b9",
     "grid-with-overlay",
     "map_UmWXbf",
