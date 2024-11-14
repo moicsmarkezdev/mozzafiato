@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "slideshow": {
@@ -8,13 +17,13 @@
           "settings": {
             "text-position": "bottom-left",
             "text-width": "medium",
-            "image": "shopify:\/\/shop_images\/Mozzafiatoxfrmiar-Banner.jpg",
+            "image": "shopify://shop_images/Mozzafiatoxfrmiar-Banner.jpg",
             "overline": "",
             "title": "",
             "description": "",
-            "link-url": "shopify:\/\/collections\/mozzafiato-x-frmiar",
+            "link-url": "shopify://collections/mozzafiato-x-frmiar",
             "link-text": "",
-            "mobile-image": "shopify:\/\/shop_images\/Mozzafiatoxfrmiar-Banner_1.jpg"
+            "mobile-image": "shopify://shop_images/Mozzafiatoxfrmiar-Banner_1.jpg"
           }
         },
         "4caf9002-011c-4ae6-88ef-0b25f3654fbc": {
@@ -22,13 +31,13 @@
           "settings": {
             "text-position": "bottom-left",
             "text-width": "medium",
-            "image": "shopify:\/\/shop_images\/Amanda_Totebag_-_Banner.jpg",
+            "image": "shopify://shop_images/Amanda_Totebag_-_Banner.jpg",
             "overline": "",
             "title": "",
             "description": "",
-            "link-url": "shopify:\/\/collections\/tote-bags",
+            "link-url": "shopify://collections/comprar-online-totebags-mozzafiato",
             "link-text": "",
-            "mobile-image": "shopify:\/\/shop_images\/Amanda_Totebag_-_Banner_1.jpg"
+            "mobile-image": "shopify://shop_images/Amanda_Totebag_-_Banner_1.jpg"
           }
         },
         "a5482328-e971-4c6e-b38b-4e3380fe7526": {
@@ -36,13 +45,13 @@
           "settings": {
             "text-position": "bottom-left",
             "text-width": "medium",
-            "image": "shopify:\/\/shop_images\/Sienna_Style_-_Banner.jpg",
+            "image": "shopify://shop_images/Sienna_Style_-_Banner.jpg",
             "overline": "",
             "title": "",
             "description": "",
-            "link-url": "shopify:\/\/collections\/panuelos",
+            "link-url": "shopify://collections/panuelos",
             "link-text": "",
-            "mobile-image": "shopify:\/\/shop_images\/Sienna_Style_-_Banner_1.jpg"
+            "mobile-image": "shopify://shop_images/Sienna_Style_-_Banner_1.jpg"
           }
         },
         "4993a4c6-5948-4c34-853f-dc9d8e106671": {
@@ -50,13 +59,13 @@
           "settings": {
             "text-position": "bottom-left",
             "text-width": "medium",
-            "image": "shopify:\/\/shop_images\/Beauty_Pack_-_Banner_1.jpg",
+            "image": "shopify://shop_images/Beauty_Pack_-_Banner_1.jpg",
             "overline": "",
             "title": "",
             "description": "",
-            "link-url": "shopify:\/\/products\/beauty-pack",
+            "link-url": "shopify://products/beauty-pack",
             "link-text": "",
-            "mobile-image": "shopify:\/\/shop_images\/Beauty_Pack_-_Banner.jpg"
+            "mobile-image": "shopify://shop_images/Beauty_Pack_-_Banner.jpg"
           }
         }
       },
@@ -112,23 +121,19 @@
         },
         "template--15445438103688__39b7e8a7-1bbc-491e-8390-2751caf3e237-heading-1": {
           "type": "heading",
-          "settings": {
-          }
+          "settings": {}
         },
         "template--15445438103688__39b7e8a7-1bbc-491e-8390-2751caf3e237-vendor-1": {
           "type": "vendor",
-          "settings": {
-          }
+          "settings": {}
         },
         "rating_n3JijB": {
           "type": "rating",
-          "settings": {
-          }
+          "settings": {}
         },
         "template--15445438103688__39b7e8a7-1bbc-491e-8390-2751caf3e237-price-1": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "3c8d0925-22f4-4bfa-ac21-fb30ff9ff0cc": {
           "type": "buy-buttons",
@@ -308,8 +313,8 @@
         "spacing-below": true,
         "hotspot-color": "white",
         "heading": "",
-        "image": "shopify:\/\/shop_images\/Captura_de_pantalla_2024-01-05_172915.png",
-        "mobile-image": "shopify:\/\/shop_images\/Captura_de_pantalla_2024-01-05_173116.png"
+        "image": "shopify://shop_images/Captura_de_pantalla_2024-01-05_172915.png",
+        "mobile-image": "shopify://shop_images/Captura_de_pantalla_2024-01-05_173116.png"
       }
     },
     "82eacfab-15c2-4296-8479-1a3242836d3d": {
@@ -339,7 +344,7 @@
             "icon": "10",
             "author-role": "",
             "author-name": "",
-            "description": "<p>Me encanta mi toalla , visera y mi neceser que lo uso todos los días, tienen cosas lindas 😍<br\/><br\/>- <strong>Chio<\/strong><\/p>"
+            "description": "<p>Me encanta mi toalla , visera y mi neceser que lo uso todos los días, tienen cosas lindas 😍<br/><br/>- <strong>Chio</strong></p>"
           }
         },
         "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-1": {
@@ -348,7 +353,7 @@
             "icon": "10",
             "author-role": "",
             "author-name": "",
-            "description": "<p>Utilice mi toalla en mis vacaciones y me encantó tanto el diseño y el estuche para guardarla. Súper práctica, ocupa poco espacio y los colores muy lindos. <\/p><p>- <strong>Alessia<\/strong><\/p>"
+            "description": "<p>Utilice mi toalla en mis vacaciones y me encantó tanto el diseño y el estuche para guardarla. Súper práctica, ocupa poco espacio y los colores muy lindos. </p><p>- <strong>Alessia</strong></p>"
           }
         },
         "template--15445438103688__e1bcfcee-d979-4e6c-b6ec-30817d050e0c-1686715651c75fc5b4-2": {
@@ -357,7 +362,7 @@
             "icon": "10",
             "author-role": "",
             "author-name": "",
-            "description": "<p>La calidad y material de la toalla es increíble 😊 Y los pañuelos tiene un color hermoso tal cual las fotos!<\/p><p>- <strong>Carolina<\/strong><\/p>"
+            "description": "<p>La calidad y material de la toalla es increíble 😊 Y los pañuelos tiene un color hermoso tal cual las fotos!</p><p>- <strong>Carolina</strong></p>"
           }
         }
       },
@@ -384,39 +389,39 @@
         "overlay-block-1": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/posts_rebranding.png",
-            "mobile-image": "shopify:\/\/shop_images\/posts_rebranding.png",
+            "image": "shopify://shop_images/posts_rebranding.png",
+            "mobile-image": "shopify://shop_images/posts_rebranding.png",
             "wide": false,
             "tall": false,
             "retain-ratio": false,
             "title": "MOZZI CAPS",
-            "link-url": "shopify:\/\/collections\/mozzi-caps",
+            "link-url": "shopify://collections/mozzi-caps",
             "link-text": "Ver más"
           }
         },
         "overlay-block-3": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/14_eda42ebc-9dfe-409f-bdd6-07971cdc4428.png",
-            "mobile-image": "shopify:\/\/shop_images\/14_eda42ebc-9dfe-409f-bdd6-07971cdc4428.png",
+            "image": "shopify://shop_images/14_eda42ebc-9dfe-409f-bdd6-07971cdc4428.png",
+            "mobile-image": "shopify://shop_images/14_eda42ebc-9dfe-409f-bdd6-07971cdc4428.png",
             "wide": false,
             "tall": false,
             "retain-ratio": false,
             "title": "PAÑUELOS",
-            "link-url": "shopify:\/\/collections\/panuelos",
+            "link-url": "shopify://collections/panuelos",
             "link-text": "Ver más"
           }
         },
         "overlay-block-2": {
           "type": "image",
           "settings": {
-            "image": "shopify:\/\/shop_images\/13_63eeee35-0d39-48d4-84c7-ec9418da49ba.png",
-            "mobile-image": "shopify:\/\/shop_images\/13_63eeee35-0d39-48d4-84c7-ec9418da49ba.png",
+            "image": "shopify://shop_images/13_63eeee35-0d39-48d4-84c7-ec9418da49ba.png",
+            "mobile-image": "shopify://shop_images/13_63eeee35-0d39-48d4-84c7-ec9418da49ba.png",
             "wide": false,
             "tall": false,
             "retain-ratio": false,
             "title": "TOALLAS DE MICROFIBRA",
-            "link-url": "shopify:\/\/collections\/toallas-de-microfibra",
+            "link-url": "shopify://collections/toallas-de-microfibra",
             "link-text": "Ver más"
           }
         }
@@ -451,7 +456,7 @@
           "type": "collapsible-row",
           "settings": {
             "heading": "¿Cómo realizo un pedido?",
-            "description": "<p>Puedes realizar tu pedido a través de nuestra web, Instagram o a través de nuestro WhatsApp (+51 922 328 133).<\/p>",
+            "description": "<p>Puedes realizar tu pedido a través de nuestra web, Instagram o a través de nuestro WhatsApp (+51 922 328 133).</p>",
             "page-content": "",
             "default-open": false
           }
@@ -460,7 +465,7 @@
           "type": "collapsible-row",
           "settings": {
             "heading": "¿Qué métodos de pago ofrecen?",
-            "description": "<p>Puedes pagar con tarjeta de crédito o débito, yape o transferencia bancaria e interbancaria (BCP). Todos estos métodos de pago están disponibles por compras en Instagram, WhatsApp y nuestra página web.<\/p>",
+            "description": "<p>Puedes pagar con tarjeta de crédito o débito, yape o transferencia bancaria e interbancaria (BCP). Todos estos métodos de pago están disponibles por compras en Instagram, WhatsApp y nuestra página web.</p>",
             "page-content": "",
             "default-open": false
           }
@@ -469,7 +474,7 @@
           "type": "collapsible-row",
           "settings": {
             "heading": "¿En cuantos días recibo mi pedido?",
-            "description": "<ul><li><strong>Envíos dentro de Lima Metropolitana<\/strong><\/li><\/ul><p>Nuestros envíos son realizados por servicios de courier tercerizados responsables de la seguridad y entrega del producto. El plazo de entrega a cualquier distrito dentro de Lima Metropolitana es de 2 a 4 días hábiles a partir del día de despacho del pedido.<\/p><ul><li><strong>Envío a Provincia <\/strong><\/li><\/ul><p>Nuestros envíos son realizados por servicios de courier tercerizados responsables de la seguridad y entrega del producto. El plazo de entrega a cualquier distrito de provincia es de 2 a 10 días hábiles a partir del día de despacho del producto.<\/p><p>¿Te gustaría recogerlo sin costo adicional?<strong> ¡Elige nuestra opción de recojo en tienda!<\/strong><\/p>",
+            "description": "<ul><li><strong>Envíos dentro de Lima Metropolitana</strong></li></ul><p>Nuestros envíos son realizados por servicios de courier tercerizados responsables de la seguridad y entrega del producto. El plazo de entrega a cualquier distrito dentro de Lima Metropolitana es de 2 a 4 días hábiles a partir del día de despacho del pedido.</p><ul><li><strong>Envío a Provincia </strong></li></ul><p>Nuestros envíos son realizados por servicios de courier tercerizados responsables de la seguridad y entrega del producto. El plazo de entrega a cualquier distrito de provincia es de 2 a 10 días hábiles a partir del día de despacho del producto.</p><p>¿Te gustaría recogerlo sin costo adicional?<strong> ¡Elige nuestra opción de recojo en tienda!</strong></p>",
             "page-content": "",
             "default-open": false
           }
@@ -478,7 +483,7 @@
           "type": "collapsible-row",
           "settings": {
             "heading": "¿Cómo puedo hacerle seguimiento a mi pedido?",
-            "description": "<p>Cuando enviemos tu pedido, te enviaremos un código de seguimiento y el link a la página del courier utilizado para que de esta forma puedas ver cuál es el estado de tu pedido.<\/p>",
+            "description": "<p>Cuando enviemos tu pedido, te enviaremos un código de seguimiento y el link a la página del courier utilizado para que de esta forma puedas ver cuál es el estado de tu pedido.</p>",
             "page-content": "",
             "default-open": false
           }
