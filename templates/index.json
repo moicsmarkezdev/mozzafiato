@@ -144,6 +144,65 @@
         "heading": "Pañuelos"
       }
     },
+    "featured_product_mncDmF": {
+      "type": "featured-product",
+      "blocks": {
+        "overline_pkQCc9": {
+          "type": "overline",
+          "settings": {
+            "text": "Overline text"
+          }
+        },
+        "heading_kYQMaR": {
+          "type": "heading",
+          "settings": {}
+        },
+        "vendor_jqcqdd": {
+          "type": "vendor",
+          "settings": {}
+        },
+        "price_aXxwgU": {
+          "type": "price",
+          "settings": {}
+        },
+        "options_zgNyRK": {
+          "type": "options",
+          "settings": {
+            "variant-style": "buttons",
+            "swatches-enabled": true,
+            "size-chart-enabled": true,
+            "size-chart-option": "size",
+            "size-chart-content": ""
+          }
+        },
+        "buy_buttons_AjjPcY": {
+          "type": "buy-buttons",
+          "settings": {
+            "smart-payment-enabled": true
+          }
+        }
+      },
+      "block_order": [
+        "overline_pkQCc9",
+        "heading_kYQMaR",
+        "vendor_jqcqdd",
+        "price_aXxwgU",
+        "options_zgNyRK",
+        "buy_buttons_AjjPcY"
+      ],
+      "settings": {
+        "background-color": "none",
+        "container-width": 4,
+        "spacing-above": true,
+        "spacing-below": true,
+        "text-column-width": 30,
+        "text-alignment": "left",
+        "thumbnail-width": 80,
+        "media-gap": 8,
+        "featured_product": "comprar-online-toalla-de-microfibra-cosmic-mozzafiato",
+        "loop-enabled": false
+      }
+    },
     "featured_product_VBNFCz": {
       "type": "featured-product",
       "blocks": {
@@ -640,6 +699,7 @@
     "slideshow",
     "5ba33054-4d1e-44a1-a62b-81a200f21bc2",
     "featured_collection_xwa693",
+    "featured_product_mncDmF",
     "featured_product_VBNFCz",
     "featured_collection_WXVa4B",
     "53875c54-020d-4d79-8ff9-85371bcd2995",
