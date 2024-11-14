@@ -49,7 +49,7 @@
             "overline": "",
             "title": "",
             "description": "",
-            "link-url": "shopify://collections/panuelos",
+            "link-url": "shopify://collections/comprar-online-panuelos-mozzafiato",
             "link-text": "",
             "mobile-image": "shopify://shop_images/Sienna_Style_-_Banner_1.jpg"
           }
@@ -330,7 +330,7 @@
         "display-type": "slideshow",
         "products-per-row--desktop": "3",
         "products-per-row--mobile": "2",
-        "collection": "panuelos",
+        "collection": "comprar-online-panuelos-mozzafiato",
         "max-products": 8,
         "heading": "PAÑUELOS"
       }
@@ -408,7 +408,7 @@
             "tall": false,
             "retain-ratio": false,
             "title": "PAÑUELOS",
-            "link-url": "shopify://collections/panuelos",
+            "link-url": "shopify://collections/comprar-online-panuelos-mozzafiato",
             "link-text": "Ver más"
           }
         },
