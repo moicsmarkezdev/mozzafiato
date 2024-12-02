@@ -400,7 +400,7 @@
         "products-per-row--desktop": "3",
         "products-per-row--mobile": "1",
         "collection": "comprar-online-descuento-sale-mozzafiato",
-        "max-products": 6,
+        "max-products": 12,
         "heading": "Sale"
       }
     },
