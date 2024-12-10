@@ -26,6 +26,20 @@
             "mobile-image": "shopify://shop_images/Martes2-Banner_mobile.png"
           }
         },
+        "image_ihGBW6": {
+          "type": "image",
+          "settings": {
+            "text-position": "bottom-left",
+            "text-width": "medium",
+            "image": "shopify://shop_images/Martes10-Web.jpg",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "",
+            "link-text": "",
+            "mobile-image": "shopify://shop_images/Martes10-Mobile.jpg"
+          }
+        },
         "image_Hmdzyy": {
           "type": "image",
           "settings": {
@@ -54,21 +68,6 @@
             "mobile-image": "shopify://shop_images/Sabado2-Banner_Mobile.png"
           }
         },
-        "image_ihGBW6": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "text-position": "bottom-left",
-            "text-width": "medium",
-            "image": "shopify://shop_images/Bannersweb.png",
-            "overline": "",
-            "title": "",
-            "description": "",
-            "link-url": "shopify://collections/comprar-online-neceseres-mozzafiato",
-            "link-text": "",
-            "mobile-image": "shopify://shop_images/Martes29-Banner_mobile.png"
-          }
-        },
         "a5482328-e971-4c6e-b38b-4e3380fe7526": {
           "type": "image",
           "disabled": true,
@@ -87,9 +86,9 @@
       },
       "block_order": [
         "image_ADfrQD",
+        "image_ihGBW6",
         "image_Hmdzyy",
         "4993a4c6-5948-4c34-853f-dc9d8e106671",
-        "image_ihGBW6",
         "a5482328-e971-4c6e-b38b-4e3380fe7526"
       ],
       "settings": {
