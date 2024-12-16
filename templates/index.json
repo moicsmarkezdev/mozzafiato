@@ -12,18 +12,18 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
-        "image_ADfrQD": {
+        "image_Hmdzyy": {
           "type": "image",
           "settings": {
             "text-position": "bottom-left",
             "text-width": "medium",
-            "image": "shopify://shop_images/Martes2-Banner_web.png",
+            "image": "shopify://shop_images/Lunes16-Banner_web.png",
             "overline": "",
             "title": "",
             "description": "",
-            "link-url": "shopify://collections/comprar-online-summer-is-calling-mozzafiato",
+            "link-url": "",
             "link-text": "",
-            "mobile-image": "shopify://shop_images/Martes2-Banner_mobile.png"
+            "mobile-image": "shopify://shop_images/Lunes16-Banner_mobile.png"
           }
         },
         "image_ihGBW6": {
@@ -40,18 +40,18 @@
             "mobile-image": "shopify://shop_images/Martes10-Mobile.jpg"
           }
         },
-        "image_Hmdzyy": {
+        "image_ADfrQD": {
           "type": "image",
           "settings": {
             "text-position": "bottom-left",
             "text-width": "medium",
-            "image": "shopify://shop_images/Lunes16-Banner_web.png",
+            "image": "shopify://shop_images/Martes2-Banner_web.png",
             "overline": "",
             "title": "",
             "description": "",
-            "link-url": "",
+            "link-url": "shopify://collections/comprar-online-summer-is-calling-mozzafiato",
             "link-text": "",
-            "mobile-image": "shopify://shop_images/Lunes16-Banner_mobile.png"
+            "mobile-image": "shopify://shop_images/Martes2-Banner_mobile.png"
           }
         },
         "4993a4c6-5948-4c34-853f-dc9d8e106671": {
@@ -86,9 +86,9 @@
         }
       },
       "block_order": [
-        "image_ADfrQD",
-        "image_ihGBW6",
         "image_Hmdzyy",
+        "image_ihGBW6",
+        "image_ADfrQD",
         "4993a4c6-5948-4c34-853f-dc9d8e106671",
         "a5482328-e971-4c6e-b38b-4e3380fe7526"
       ],
