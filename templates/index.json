@@ -45,17 +45,18 @@
           "settings": {
             "text-position": "bottom-left",
             "text-width": "medium",
-            "image": "shopify://shop_images/Jueves14-Banner_web.jpg",
+            "image": "shopify://shop_images/Lunes16-Banner_web.png",
             "overline": "",
             "title": "",
             "description": "",
-            "link-url": "shopify://collections/comprar-online-summer-is-calling-mozzafiato",
+            "link-url": "",
             "link-text": "",
-            "mobile-image": "shopify://shop_images/Jueves14-Banner_mobile.jpg"
+            "mobile-image": "shopify://shop_images/Lunes16-Banner_mobile.png"
           }
         },
         "4993a4c6-5948-4c34-853f-dc9d8e106671": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "text-position": "bottom-left",
             "text-width": "medium",
