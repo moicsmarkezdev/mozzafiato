@@ -37,8 +37,7 @@
   endcapture
 
   render 'section-assets', name: 'product-page', type: 'style'
--%}
-
+ -%}
 <div
   class="product-page--root"
   data-product-id="{{ product_id }}"
@@ -64,7 +63,6 @@
         </h1>
       </div>
     {%- endif -%}
-
     <div class="product-page--desktop-container" data-mq="medium-large">
       {%-
         render 'product-media--variants',
@@ -80,7 +78,6 @@
         zoom_enabled: zoom_enabled
       -%}
     </div>
-
     <div class="product-page--mobile-container" data-mq="small">
       {%- if mobile_media_layout == 'thumbnails' -%}
         {%-
@@ -91,7 +88,6 @@
           thumbs_enabled: true,
           video_looping_enabled: video_looping_enabled
         -%}
-
       {%- elsif mobile_media_layout == 'slideshow' -%}
         {%- render 'section-assets', name: 'product-media--carousel', type: 'script' -%}
 
@@ -120,7 +116,6 @@
         </product-media-carousel>
       {%- endif -%}
     </div>
-
     <div class="product-page--info">
       {%- if breadcrumbs_enabled -%}
         <div
@@ -154,7 +149,6 @@
               <div class="product-page--overline" data-item="overline">
                 {{- block.settings.text -}}
               </div>
-
             {%- when 'heading' -%}
               <div
                 data-transition-cropper
@@ -268,258 +262,6 @@
                     </div>
                   </bundle-addtocart>
                 </bundle-select>
-                <style>
-
-                  .bundle_container__title {
-                    flex: 1 1 100%;
-                  }
-                  .bundle__container {
-                    display: flex;
-                    flex-flow: row wrap;
-                    width: 100%;
-                    align-items: flex-start;
-                    justify-content: space-between;
-                  }
-
-                  .bundle_item__wrapper {
-                    display: flex;
-                    flex-flow: column;
-                    align-items: center;
-                    justify-content: flex-start;
-                    border: 1px solid #e1e1e1;
-                    width: 48%;
-                    border-radius: 5px;
-                    margin-bottom: 10px;
-                    user-select: none;
-                    cursor: pointer;
-                  }
-
-                  .item__img {
-                    max-width: 100px;
-                    overflow: hidden;
-                    padding: 0px;
-                  }
-
-                  .bundle__title {
-                    display: flex;
-                    flex-flow: column;
-                    font-size: 14px;
-                  }
-                  
-                 .bundle_item__wrapper.active {
-                  border: 2px solid var(--bg-color--button);
-                  color: var(--bg-color--button);
-                 }
-                 
-                 .bundle_item__wrapper[disable] {
-                    border: 2px solid #c4cdd5;
-                    color: #c4cdd5;
-                    user-select: none;
-                    pointer-events: none;
-                    position: relative;
-                    overflow: hidden;
-                  }
-
-                  .bundle_item__wrapper[disable] .item__img {
-                    opacity: .67;
-                  }
-                 
-                  .bundle_item__wrapper[disable]::after {
-                    content: "";
-                    width: 230px;
-                    height: 2px;
-                    border: 1px solid;
-                    transform: rotate(37deg);
-                    top: 70px;
-                    left: -25px;
-                    position: absolute;
-                  }
-                 
-
-                 /* .bundle_item__wrapper.active .bundle__title {
-                    display: flex;
-                    flex-flow: column;
-                    font-size: 14px;
-                  } */
-
-                  /* .icon--spinner {
-                    width: 100px;
-                    position: absolute;
-                  } */
-
-                </style>
-                <script>
-                  class bundeSelect extends HTMLElement {
-                    constructor(){
-                      super();
-
-                      this.bundlesItem = this.querySelectorAll('.bundle_item__wrapper');
-                      this.wrapperPrice = document.querySelector('.product-price--original');
-                      this.bundlesItem.forEach(elm => elm.addEventListener('click', this.onclickItem.bind(this)));
-                    }
-
-                    onclickItem(evt){
-                      evt.preventDefault();
-                      evt.currentTarget.closest('.bundle__container').querySelectorAll('.bundle_item__wrapper').forEach(elm => elm.classList.remove('active'));
-                      evt.currentTarget.classList.toggle('active');
-
-                      const allActives = this.querySelectorAll('.bundle_item__wrapper.active');
-                      let price = 0;
-                      allActives.forEach(elm => {
-                        price += parseFloat(elm.getAttribute('data-variantPrice'));
-                      });
-                      this.wrapperPrice.textContent = S/. ${price.toFixed(2)};
-                    }
-                  }
-                  customElements.define('bundle-select', bundeSelect);
-
-                  class bunmdleAddtoCart extends HTMLElement {
-                    constructor(){
-                      super();
-                      
-                      this.buttonAdd = this.querySelector('button');
-                      this.buttonAdd.addEventListener('click', this.onclickAdd.bind(this));
-
-                      this.bundleVariants = document.querySelectorAll('.bundle_item__wrapper');
-                    }
-
-                    async onclickAdd(evt) {
-                      // console.log(evt.target);
-                      if (this.buttonAdd.getAttribute('aria-disabled') === 'true') return;
-                      
-                      this.handleErrorMessage();
-                      
-                      this.buttonAdd.setAttribute('aria-disabled', true);
-                      this.buttonAdd.classList.add('loading');
-                      this.buttonAdd.closest('.product-buy-buttons--primary').setAttribute('data-loading', true);
-                      this.buttonAdd.closest('.product-buy-buttons--primary').setAttribute('data-enabled', false);
-                      this.querySelector('.product-buy-buttons--spinner').classList.remove('hidden');
-                      
-                      const config = this.fetchConfig('javascript');
-                      config.headers['X-Requested-With'] = 'XMLHttpRequest';
-                      // delete config.headers['Content-Type'];
-
-                      const items = [];
-                      let combineIds = '';
-                      
-                      this.bundleVariants.forEach(elm => {
-                        if(!elm.classList.contains('active')) return;  
-
-                        const idtoCombine = elm.getAttribute('data-vaiantId');
-                        if(idtoCombine != null || idtoCombine != ''){
-                          combineIds += _${elm.getAttribute('data-vaiantId')};
-                        }
-                      })
-
-                      console.log('combineIds', combineIds);
-
-                      this.bundleVariants.forEach(elm => {
-                        if(!elm.classList.contains('active')) return;  
-
-                        let slected = elm;
-                        let variantSelc = slected.getAttribute('data-vaiantId');
-                        
-                        if(variantSelc == '' || variantSelc == null) return;
-
-                        let item =  {
-                          id: variantSelc,
-                          quantity: 1,
-                          properties: {
-                            "_bundled": 1,
-                            "_parentProduct": this.buttonAdd.getAttribute('data-parent-id'),
-                            "_combineIds": ${this.buttonAdd.getAttribute('data-parent-id')}${combineIds}
-                          }
-                        }
-                      
-                        items.push(item);
-                      });
-                      
-                      if(items.map(item => item.id).join('') == '' || items.map(item => item.id).join(',') == null ) {
-                        this.buttonAdd.classList.remove('loading');
-                        this.buttonAdd.closest('.product-buy-buttons--primary').setAttribute('data-loading', false);
-                        this.buttonAdd.closest('.product-buy-buttons--primary').setAttribute('data-enabled', true);
-                        this.buttonAdd.removeAttribute('aria-disabled');
-                        this.querySelector('.product-buy-buttons--spinner').classList.add('hidden');
-                        return;
-                      };
-                      
-                      config.body = {
-                        items: items
-                      };
-                      
-                      // if (this.cart) {
-                      //   config.body.sections = this.cart.getSectionsToRender().map((section) => section.id);
-                      //   config.body.sections_url = window.location.pathname;
-                      //   this.cart.setActiveElement(document.activeElement);
-                      // }
-                      
-                      const drawer_cart = document.querySelector('cart-notification') || document.querySelector('cart-drawer') || document.querySelector('drawer-root') || theme.drawer ;
-                      const _cart = theme.cart ;
-                      
-                      if (typeof config.body !== 'string') {
-                        config.body = JSON.stringify(config.body);
-                      }
-                      
-                      await fetch(${theme.urls.cart_add}, config)
-                      .then((response) => response.json())
-                      .then(async (response) => {
-                        if (response.status) {
-                          this.handleErrorMessage(response.description);
-
-                          const soldOutMessage = this.buttonAdd.querySelector('.sold-out-message');
-                          if (!soldOutMessage) return;
-                          this.buttonAdd.setAttribute('aria-disabled', true);
-                          this.buttonAdd.querySelector('span').classList.add('hidden');
-                          soldOutMessage.classList.remove('hidden');
-                          this.error = true;
-                          return;
-                        } else if (!drawer_cart) {
-                          window.location = theme.urls.cart;
-                          // console.log(_cart);
-                          return;
-                        }
-                        await _cart.fetchTotals();
-                        await _cart.updateAllHtml(!0), window.trigger("theme:cart:productAdded", items[0].id);
-                        drawer_cart.open("right", "cart-drawer", this.primary_button)
-                        this.error = false;
-                      })
-                      .catch((e) => {
-                        console.error(e);
-                      })
-                      .finally(() => {
-                        this.buttonAdd.classList.remove('loading');
-                        // if (this.cart && this.cart.classList.contains('is-empty')) this.cart.classList.remove('is-empty');
-                        if (!this.error) this.buttonAdd.removeAttribute('aria-disabled');
-                        this.buttonAdd.closest('.product-buy-buttons--primary').setAttribute('data-loading', false);
-                        this.buttonAdd.closest('.product-buy-buttons--primary').setAttribute('data-enabled', true);
-                        this.querySelector('.product-buy-buttons--spinner').classList.add('hidden');
-                      });
-                    }
-                    
-                    fetchConfig(type = 'json') {
-                      return {
-                        method: 'POST',
-                        headers: { 'Content-Type': 'application/json', Accept: application/${type} },
-                      };
-                    }
-                    
-                    handleErrorMessage(errorMessage = false) {
-                      if (this.hideErrors) return;
-
-                      this.errorMessageWrapper =
-                        this.errorMessageWrapper || this.querySelector('.product-form__error-message-wrapper');
-                      if (!this.errorMessageWrapper) return;
-                      this.errorMessage = this.errorMessage || this.errorMessageWrapper.querySelector('.product-form__error-message');
-
-                      this.errorMessageWrapper.toggleAttribute('hidden', !errorMessage);
-
-                      if (errorMessage) {
-                        this.errorMessage.textContent = errorMessage;
-                      }
-                    }
-                  }
-                  customElements.define('bundle-addtocart',bunmdleAddtoCart);
-                </script>
               {%- else -%}
                 {%-
                   render 'product-buy-buttons',
@@ -528,7 +270,6 @@
                   smart_payment_enabled: block.settings.smart-payment-enabled
                 -%}
               {%- endif -%}
-
 
             {%- when 'unavailable-form' -%}
               {%- render 'product-unavailable-form', product: product, id: product_id -%}
@@ -590,7 +331,6 @@
     </div>
   </div>
 </div>
-
 {% schema %}
 {
   "name": "Product pages",
@@ -706,315 +446,6 @@
       "max": 100,
       "step": 1,
       "default": 40
-    },
-    {
-      "type": "header",
-      "content": "Features"
-    },
-    {
-      "type": "checkbox",
-      "id": "breadcrumbs-enabled",
-      "label": "Enable breadcrumbs",
-      "default": true
-    },
-    {
-      "type": "checkbox",
-      "id": "modal-enabled",
-      "label": "Enable modal popup",
-      "default": true,
-      "info": "Triggers when you click the selected media"
-    },
-    {
-      "type": "checkbox",
-      "id": "variant-scroll-enabled",
-      "label": "Enable scroll to variant media",
-      "default": true
-    },
-    {
-      "type": "checkbox",
-      "id": "image-zoom-enabled",
-      "label": "Enable image zoom",
-      "default": true,
-      "info": "Triggers when you roll your mouse over an image"
-    },
-    {
-      "type": "checkbox",
-      "id": "loop-enabled",
-      "label": "Enable video looping",
-      "default": false
-    },
-    {
-      "type": "paragraph",
-      "content": "Learn more about [media types](https://help.shopify.com/en/manual/products/product-media)."
-    },
-    {
-      "type": "header",
-      "content": "Mobile"
-    },
-    {
-      "type": "radio",
-      "id": "mobile-media-layout",
-      "label": "Media layout",
-      "options": [
-        { "label": "Slideshow", "value": "slideshow" },
-        { "label": "Thumbnails", "value": "thumbnails" }
-      ],
-      "default": "slideshow"
-    }
-  ],
-  "blocks": [
-    {
-      "type": "overline",
-      "name": "Overline text",
-      "limit": 1,
-      "settings": [
-        {
-          "label": "Overline text",
-          "id": "text",
-          "type": "text",
-          "default": "Overline text"
-        }
-      ]
-    },
-    {
-      "type": "heading",
-      "name": "Title",
-      "limit": 1,
-      "settings": []
-    },
-    {
-      "type": "vendor",
-      "name": "Vendor",
-      "limit": 1,
-      "settings": []
-    },
-    {
-      "type": "price",
-      "name": "Price",
-      "limit": 1,
-      "settings": []
-    },
-    {
-      "type": "quantity-selector",
-      "name": "Quantity selector",
-      "limit": 1,
-      "settings": []
-    },
-    {
-      "type": "low-stock",
-      "name": "Low stock notice",
-      "limit": 1,
-      "settings": [
-        {
-          "label": "Show low in stock notice when quantity is",
-          "id": "threshold",
-          "type": "range",
-          "min": 0,
-          "max": 10,
-          "step": 1,
-          "default": 5,
-          "info": "Set to 0 to disable this feature. Updated for each variant."
-        }
-      ]
-    },
-    {
-      "type": "options",
-      "name": "Variant picker",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "select",
-          "id": "variant-style",
-          "label": "Product variant style",
-          "options": [
-            { "label": "Dropdowns", "value": "dropdowns" },
-            { "label": "Buttons", "value": "buttons" }
-          ],
-          "default": "buttons"
-        },
-        {
-          "type": "checkbox",
-          "id": "swatches-enabled",
-          "label": "Enable color swatches",
-          "default": true,
-          "info": "Automatically turn color options into swatches. [Learn more](https://support.troopthemes.com/guide/color-swatch-guide)"
-        },
-        {
-          "type": "header",
-          "content": "Size chart"
-        },
-        {
-          "type": "checkbox",
-          "id": "size-chart-enabled",
-          "label": "Enable",
-          "default": true
-        },
-        {
-          "type": "text",
-          "id": "size-chart-option",
-          "label": "Link from option",
-          "default": "size"
-        },
-        {
-          "type": "page",
-          "id": "size-chart-content",
-          "label": "Page content"
-        }
-      ]
-    },
-    {
-      "type": "buy-buttons",
-      "name": "Buy buttons",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "checkbox",
-          "id": "smart-payment-enabled",
-          "label": "Show dynamic checkout button",
-          "info": "Lets customers check out directly using a familiar payment method. [Learn more](https://help.shopify.com/manual/using-themes/change-the-layout/dynamic-checkout)",
-          "default": true
-        }
-      ]
-    },
-    {
-      "type": "unavailable-form",
-      "name": "Unavailable form",
-      "limit": 1,
-      "settings": []
-    },
-    {
-      "type": "pickup",
-      "name": "Pickup availability",
-      "limit": 1,
-      "settings": []
-    },
-    {
-      "type": "description",
-      "name": "Description",
-      "limit": 1,
-      "settings": []
-    },
-    {
-      "type": "social-sharing",
-      "name": "Social sharing",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "checkbox",
-          "id": "facebook-enabled",
-          "label": "Enable Facebook sharing",
-          "default": true
-        },
-        {
-          "type": "checkbox",
-          "id": "x-enabled",
-          "label": "Enable 𝕏 sharing",
-          "default": true
-        },
-        {
-          "type": "checkbox",
-          "id": "pinterest-enabled",
-          "label": "Enable Pinterest sharing",
-          "default": true
-        },
-        {
-          "type": "checkbox",
-          "id": "email-enabled",
-          "label": "Enable email sharing",
-          "default": true
-        },
-        {
-          "type": "checkbox",
-          "id": "url-enabled",
-          "label": "Enable URL sharing",
-          "default": true
-        }
-      ]
-    },
-    {
-      "type": "sku",
-      "name": "SKU",
-      "limit": 1,
-      "settings": []
-    },
-    {
-      "type": "collapsible-row",
-      "name": "Collapsible row",
-      "settings": [
-        {
-          "id": "heading",
-          "label": "Heading",
-          "type": "text",
-          "default": "Collapsible row"
-        },
-        {
-          "type": "richtext",
-          "id": "description",
-          "label": "Text",
-          "default": "<p>Use rows to highlight unique features, <br/>sizing information, <br/>or other sales information.</p>",
-          "info": "You can use product metafields to assign content to this row that is unique to an individual product. Learn more about [metafields](https://help.shopify.com/en/manual/metafields/displaying-metafields-on-your-online-store)."
-        },
-        {
-          "type": "page",
-          "id": "page-content",
-          "label": "Tab content from page"
-        },
-        {
-          "type": "checkbox",
-          "id": "default-open",
-          "label": "Open by default",
-          "default": false
-        }
-      ]
-    },
-    {
-      "type": "rating",
-      "name": "Product rating",
-      "limit": 1
-    },
-    {
-      "type": "complementary-products",
-      "name": "Complementary products",
-      "limit": 1,
-      "settings": [
-        {
-          "type": "text",
-          "id": "title",
-          "label": "Heading",
-          "default": "Pairs well with"
-        },
-        {
-          "id": "max-products",
-          "label": "Maximum products to show",
-          "type": "range",
-          "min": 1,
-          "max": 4,
-          "step": 1,
-          "default": 2,
-          "info": "To select complementary products, add the Search & Discovery app. [Learn more](https://shopify.dev/themes/product-merchandising/recommendations)"
-        },
-        {
-          "type": "checkbox",
-          "id": "collapsible-row-enabled",
-          "label": "Show as collapsible row",
-          "default": false
-        }
-      ]
-    },
-    {
-      "type": "liquid",
-      "name": "Custom liquid",
-      "settings": [
-        {
-          "type": "liquid",
-          "id": "custom-liquid",
-          "label": "Custom Liquid",
-          "info": "Add app snippets or other Liquid code to create advanced customizations."
-        }
-      ]
-    },
-    {
-      "type": "@app"
     }
   ]
 }
