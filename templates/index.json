@@ -18,13 +18,13 @@
           "settings": {
             "text-position": "bottom-left",
             "text-width": "medium",
-            "image": "shopify://shop_images/Lunes16-Banner_web.png",
+            "image": "shopify://shop_images/Lunes30-Banner_web.jpg",
             "overline": "",
             "title": "",
             "description": "",
-            "link-url": "shopify://collections/comprar-online-weekenders-bolsos-mozzafiato",
+            "link-url": "shopify://collections/bikinis",
             "link-text": "",
-            "mobile-image": "shopify://shop_images/Lunes16-Banner_mobile.png"
+            "mobile-image": "shopify://shop_images/Lunes30-Banner_mobile.jpg"
           }
         },
         "image_ihGBW6": {
@@ -57,7 +57,6 @@
         },
         "4993a4c6-5948-4c34-853f-dc9d8e106671": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "text-position": "bottom-left",
             "text-width": "medium",
