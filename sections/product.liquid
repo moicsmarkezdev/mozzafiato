@@ -100,7 +100,7 @@
           data-id="{{ product_id }}"
           data-mq="small"
         >
-          {%
+          {%-
             render 'carousel',
             view: "product-page",
             section_id: section.id,
@@ -132,52 +132,37 @@
         </div>
       {%- endif -%}
 
-      {%- for block in section.blocks -%}
-        {%- liquid
-          assign fit_together = false
-          if block.type == 'collapsible-row'
-            assign fit_together = true
-          elsif block.type == 'complementary-products' and block.settings.collapsible-row-enabled
-            assign fit_together = true
-          endif
-        -%}
+      {%- if product.metafields.custom.product_bundle -%}
+        <div class="product-bundle-container">
+          <h2>Selecciona los productos del bundle:</h2>
+          {% for child_product in product.metafields.custom.productos_bundles.value %}
+            <div class="bundle-product-item">
+              <img src="{{ child_product.featured_image | image_url: width: 150 }}" alt="{{ child_product.title }}">
+              <p>{{ child_product.title }}</p>
+              {%-
+                render 'product-options',
+                id: product_id,
+                product: child_product,
+                block_settings: section.blocks["options"]
+              -%}
+            </div>
+          {% endfor %}
+        </div>
+      {%- endif -%}
 
+      {%- for block in section.blocks -%}
         <div
           class="product-page--block"
           data-product-block
           data-block-type="{{ block.type }}"
-          data-fit-together="{{ fit_together }}"
           {{ block.shopify_attributes }}
         >
           {%- case block.type -%}
-            {%- when 'overline' -%}
-              <div class="product-page--overline" data-item="overline">
-                {{- block.settings.text -}}
-              </div>
+            {%- when 'price' -%}
+              {%- render 'product-price', product: product, id: product_id -%}
 
-            {%- when 'heading' -%}
-              <div
-                data-transition-cropper
-                data-transition-item="theme"
-                data-transition-type="mask"
-              >
-                {%- if heading_enabled -%}
-                  <h2 class="product-page--heading" data-item="section-heading">
-                    {{- product.title -}}
-                  </h2>
-                {%- else -%}
-                  <h1 class="product-page--heading" data-item="section-heading">
-                    {{- product.title -}}
-                  </h1>
-                {%- endif -%}
-              </div>
-
-            {%- when 'vendor' -%}
-              <div class="product-page--vendor" data-item="light-accent-text">
-                <a href="{{ product.vendor | url_for_vendor }}">
-                  {{- product.vendor -}}
-                </a>
-              </div>
+            {%- when 'buy-buttons' -%}
+              {%- render 'product-buy-buttons', id: product_id, product: product, smart_payment
 
             {%- when 'price' -%}
               {%- if product.metafields.custom.product_bundle == true and product.metafields.custom.productos_bundles.value != blank -%}
