@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -5,13 +14,11 @@
       "blocks": {
         "heading": {
           "type": "heading",
-          "settings": {
-          }
+          "settings": {}
         },
         "vendor": {
           "type": "vendor",
-          "settings": {
-          }
+          "settings": {}
         },
         "43dc298f-a04f-4079-9772-39d2f1aece42": {
           "type": "low-stock",
@@ -21,8 +28,7 @@
         },
         "price": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "options": {
           "type": "options",
@@ -40,15 +46,17 @@
             "smart-payment-enabled": true
           }
         },
+        "unavailable_form_6FzDHR": {
+          "type": "unavailable-form",
+          "settings": {}
+        },
         "pickup": {
           "type": "pickup",
-          "settings": {
-          }
+          "settings": {}
         },
         "description": {
           "type": "description",
-          "settings": {
-          }
+          "settings": {}
         },
         "complementary-products": {
           "type": "complementary-products",
@@ -62,6 +70,7 @@
           "type": "social-sharing",
           "settings": {
             "facebook-enabled": true,
+            "x-enabled": true,
             "pinterest-enabled": true,
             "email-enabled": true,
             "url-enabled": true
@@ -75,6 +84,7 @@
         "price",
         "options",
         "buy-buttons",
+        "unavailable_form_6FzDHR",
         "pickup",
         "description",
         "complementary-products",
