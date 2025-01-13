@@ -12,6 +12,20 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
+        "image_ihGBW6": {
+          "type": "image",
+          "settings": {
+            "text-position": "bottom-left",
+            "text-width": "medium",
+            "image": "shopify://shop_images/Lunes13-Banner_web.png",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "shopify://collections/last-units",
+            "link-text": "",
+            "mobile-image": "shopify://shop_images/Lunes13-Banner_mobile.png"
+          }
+        },
         "image_ADfrQD": {
           "type": "image",
           "settings": {
@@ -38,20 +52,6 @@
             "link-url": "shopify://collections/bikinis",
             "link-text": "",
             "mobile-image": "shopify://shop_images/Lunes30-Banner_mobile.jpg"
-          }
-        },
-        "image_ihGBW6": {
-          "type": "image",
-          "settings": {
-            "text-position": "bottom-left",
-            "text-width": "medium",
-            "image": "shopify://shop_images/Lunes13-Banner_web.png",
-            "overline": "",
-            "title": "",
-            "description": "",
-            "link-url": "shopify://collections/last-units",
-            "link-text": "",
-            "mobile-image": "shopify://shop_images/Lunes13-Banner_mobile.png"
           }
         },
         "4993a4c6-5948-4c34-853f-dc9d8e106671": {
@@ -85,9 +85,9 @@
         }
       },
       "block_order": [
+        "image_ihGBW6",
         "image_ADfrQD",
         "image_Hmdzyy",
-        "image_ihGBW6",
         "4993a4c6-5948-4c34-853f-dc9d8e106671",
         "a5482328-e971-4c6e-b38b-4e3380fe7526"
       ],
