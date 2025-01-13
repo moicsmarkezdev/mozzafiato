@@ -23,7 +23,7 @@
         "43dc298f-a04f-4079-9772-39d2f1aece42": {
           "type": "low-stock",
           "settings": {
-            "threshold": 5
+            "threshold": 10
           }
         },
         "price": {
