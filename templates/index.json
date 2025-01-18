@@ -122,7 +122,7 @@
         "products-per-row--desktop": "3",
         "products-per-row--mobile": "1",
         "collection": "bikinis",
-        "max-products": 4,
+        "max-products": 8,
         "heading": "¡NEW IN! Swimwear"
       }
     },
@@ -146,12 +146,6 @@
     "featured_product_mncDmF": {
       "type": "featured-product",
       "blocks": {
-        "overline_Wmr98V": {
-          "type": "overline",
-          "settings": {
-            "text": "¡last unit!"
-          }
-        },
         "heading_kYQMaR": {
           "type": "heading",
           "settings": {}
@@ -184,7 +178,6 @@
         }
       },
       "block_order": [
-        "overline_Wmr98V",
         "heading_kYQMaR",
         "price_aXxwgU",
         "options_zgNyRK",
@@ -200,7 +193,7 @@
         "text-alignment": "left",
         "thumbnail-width": 80,
         "media-gap": 8,
-        "featured_product": "mozzi-cap-rosada",
+        "featured_product": "visor-cap-good-vibes",
         "loop-enabled": false
       }
     },
