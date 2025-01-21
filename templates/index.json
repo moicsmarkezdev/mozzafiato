@@ -14,7 +14,6 @@
       "blocks": {
         "a5482328-e971-4c6e-b38b-4e3380fe7526": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "text-position": "bottom-left",
             "text-width": "medium",
