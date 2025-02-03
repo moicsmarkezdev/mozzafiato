@@ -12,6 +12,20 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
+        "image_Hmdzyy": {
+          "type": "image",
+          "settings": {
+            "text-position": "bottom-left",
+            "text-width": "medium",
+            "image": "shopify://shop_images/Miercoles5-Banner_web_e052ad7f-0f76-41dc-bd49-a6f9ebd5501d.png",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "shopify://collections",
+            "link-text": "",
+            "mobile-image": "shopify://shop_images/Miercoles5-Banner_mobile_8cb574ab-564f-46ef-bb8c-b729c4940b18.png"
+          }
+        },
         "image_ADfrQD": {
           "type": "image",
           "settings": {
@@ -40,36 +54,9 @@
             "mobile-image": "shopify://shop_images/Martes21-Banner_mobile.png"
           }
         },
-        "image_ihGBW6": {
-          "type": "image",
-          "settings": {
-            "text-position": "bottom-left",
-            "text-width": "medium",
-            "image": "shopify://shop_images/Lunes13-Banner_web.png",
-            "overline": "",
-            "title": "",
-            "description": "",
-            "link-url": "shopify://collections/last-units",
-            "link-text": "",
-            "mobile-image": "shopify://shop_images/Lunes13-Banner_mobile.png"
-          }
-        },
-        "image_Hmdzyy": {
-          "type": "image",
-          "settings": {
-            "text-position": "bottom-left",
-            "text-width": "medium",
-            "image": "shopify://shop_images/Lunes30-Banner_web.jpg",
-            "overline": "",
-            "title": "",
-            "description": "",
-            "link-url": "shopify://collections/bikinis",
-            "link-text": "",
-            "mobile-image": "shopify://shop_images/Lunes30-Banner_mobile.jpg"
-          }
-        },
         "4993a4c6-5948-4c34-853f-dc9d8e106671": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "text-position": "bottom-left",
             "text-width": "medium",
@@ -81,14 +68,29 @@
             "link-text": "",
             "mobile-image": "shopify://shop_images/Sabado2-Banner_Mobile.png"
           }
+        },
+        "image_ihGBW6": {
+          "type": "image",
+          "disabled": true,
+          "settings": {
+            "text-position": "bottom-left",
+            "text-width": "medium",
+            "image": "shopify://shop_images/Lunes13-Banner_web.png",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "shopify://collections/last-units",
+            "link-text": "",
+            "mobile-image": "shopify://shop_images/Lunes13-Banner_mobile.png"
+          }
         }
       },
       "block_order": [
+        "image_Hmdzyy",
         "image_ADfrQD",
         "a5482328-e971-4c6e-b38b-4e3380fe7526",
-        "image_ihGBW6",
-        "image_Hmdzyy",
-        "4993a4c6-5948-4c34-853f-dc9d8e106671"
+        "4993a4c6-5948-4c34-853f-dc9d8e106671",
+        "image_ihGBW6"
       ],
       "settings": {
         "text-color": "auto",
@@ -675,6 +677,7 @@
     "slideshow",
     "featured_collection_xwa693",
     "5ba33054-4d1e-44a1-a62b-81a200f21bc2",
+    "map_UmWXbf",
     "featured_product_mncDmF",
     "featured_product_VBNFCz",
     "53875c54-020d-4d79-8ff9-85371bcd2995",
@@ -683,7 +686,6 @@
     "featured_collection_WXVa4B",
     "9547d1fa-e436-446d-a9b9-77f7a3bd07b9",
     "grid-with-overlay",
-    "map_UmWXbf",
     "0b1cd38c-2dd8-4607-abdb-1424619e78d5",
     "grid_with_overlay_4rPb6r"
   ]
