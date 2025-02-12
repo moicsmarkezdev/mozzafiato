@@ -45,13 +45,13 @@
           "settings": {
             "text-position": "bottom-left",
             "text-width": "medium",
-            "image": "shopify://shop_images/Martes21-Banner_web.png",
+            "image": "shopify://shop_images/Lunes10-Banner_web_1.jpg",
             "overline": "",
             "title": "",
             "description": "",
-            "link-url": "shopify://collections/comprar-online-caps-gorro-mozzafiato",
+            "link-url": "shopify://collections/comprar-online-toallas-de-microfibra-mozzafiato",
             "link-text": "",
-            "mobile-image": "shopify://shop_images/Martes21-Banner_mobile.png"
+            "mobile-image": "shopify://shop_images/Lunes10-Banner_mobile_1.jpg"
           }
         },
         "4993a4c6-5948-4c34-853f-dc9d8e106671": {
@@ -142,6 +142,23 @@
         "collection": "comprar-online-toallas-de-microfibra-mozzafiato",
         "max-products": 12,
         "heading": "TOALLAS DE MICROFIBRA"
+      }
+    },
+    "map_UmWXbf": {
+      "type": "map",
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "container-width": 4,
+        "spacing-above": true,
+        "spacing-below": true,
+        "theme": "grayscale",
+        "heading": "Módulo Mozzafiato",
+        "address": "<p>C.C Jockey Plaza - 1er Nivel Barrio Jockey </p><p>Av. Javier Prado Este 4200 - Santiago de Surco - Lima, Perú</p>",
+        "hours": "<p>Lunes - Domingo <br/>11 am. - 12 m. / 1 pm. - 10 pm.</p>",
+        "image": "shopify://shop_images/Croquis_jockey_c3bc4894-3692-4331-a20e-351ac55b8ff0.png",
+        "api-key": "",
+        "map-address": "Av. Javier Prado Este 4200, Santiago de Surco 15023"
       }
     },
     "featured_product_mncDmF": {
@@ -513,23 +530,6 @@
         "subtitle": "",
         "link-url": "",
         "link-text": ""
-      }
-    },
-    "map_UmWXbf": {
-      "type": "map",
-      "settings": {
-        "background-color": "none",
-        "light-text": false,
-        "container-width": 4,
-        "spacing-above": true,
-        "spacing-below": true,
-        "theme": "grayscale",
-        "heading": "Módulo Mozzafiato",
-        "address": "<p>C.C Jockey Plaza - 1er Nivel Barrio Jockey </p><p>Av. Javier Prado Este 4200 - Santiago de Surco - Lima, Perú</p>",
-        "hours": "<p>Lunes - Domingo <br/>11 am. - 12 m. / 1 pm. - 10 pm.</p>",
-        "image": "shopify://shop_images/Croquis_jockey_c3bc4894-3692-4331-a20e-351ac55b8ff0.png",
-        "api-key": "",
-        "map-address": "Av. Javier Prado Este 4200, Santiago de Surco 15023"
       }
     },
     "0b1cd38c-2dd8-4607-abdb-1424619e78d5": {
