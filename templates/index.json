@@ -172,6 +172,12 @@
           "type": "price",
           "settings": {}
         },
+        "low_stock_M9qyxY": {
+          "type": "low-stock",
+          "settings": {
+            "threshold": 10
+          }
+        },
         "options_zgNyRK": {
           "type": "options",
           "settings": {
@@ -187,20 +193,14 @@
           "settings": {
             "smart-payment-enabled": true
           }
-        },
-        "low_stock_M9qyxY": {
-          "type": "low-stock",
-          "settings": {
-            "threshold": 10
-          }
         }
       },
       "block_order": [
         "heading_kYQMaR",
         "price_aXxwgU",
+        "low_stock_M9qyxY",
         "options_zgNyRK",
-        "buy_buttons_AjjPcY",
-        "low_stock_M9qyxY"
+        "buy_buttons_AjjPcY"
       ],
       "settings": {
         "background-color": "none",
@@ -211,7 +211,7 @@
         "text-alignment": "left",
         "thumbnail-width": 80,
         "media-gap": 8,
-        "featured_product": "visor-cap-good-vibes",
+        "featured_product": "comprar-online-panuelo-postales-celeste-mozzafiato",
         "loop-enabled": false
       }
     },
