@@ -12,6 +12,20 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
+        "image_ADfrQD": {
+          "type": "image",
+          "settings": {
+            "text-position": "bottom-left",
+            "text-width": "medium",
+            "image": "shopify://shop_images/Lunes7-Banner_web_543203d4-130b-4d86-b21f-72dab1b7b047.png",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "https://mozzafiato.pe/collections/comprar-online-descuento-sale-mozzafiato",
+            "link-text": "",
+            "mobile-image": "shopify://shop_images/Lunes7-Banner_mobile_266e5d27-bcee-4926-8fdf-b64355bcf1c9.png"
+          }
+        },
         "image_P4TP7X": {
           "type": "image",
           "settings": {
@@ -24,20 +38,6 @@
             "link-url": "/",
             "link-text": "",
             "mobile-image": "shopify://shop_images/Banner_mobile.png"
-          }
-        },
-        "image_ADfrQD": {
-          "type": "image",
-          "settings": {
-            "text-position": "bottom-left",
-            "text-width": "medium",
-            "image": "shopify://shop_images/Miercoles12-Banner_web.png",
-            "overline": "",
-            "title": "",
-            "description": "",
-            "link-url": "https://mozzafiato.pe/collections/comprar-online-weekenders-bolsos-mozzafiato",
-            "link-text": "",
-            "mobile-image": "shopify://shop_images/Miercoles12-Banner_mobile_copia.png"
           }
         },
         "a5482328-e971-4c6e-b38b-4e3380fe7526": {
@@ -101,8 +101,8 @@
         }
       },
       "block_order": [
-        "image_P4TP7X",
         "image_ADfrQD",
+        "image_P4TP7X",
         "a5482328-e971-4c6e-b38b-4e3380fe7526",
         "4993a4c6-5948-4c34-853f-dc9d8e106671",
         "image_ihGBW6",
