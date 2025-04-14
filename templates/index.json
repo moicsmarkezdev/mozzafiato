@@ -12,18 +12,18 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
-        "image_ADfrQD": {
+        "a5482328-e971-4c6e-b38b-4e3380fe7526": {
           "type": "image",
           "settings": {
             "text-position": "bottom-left",
             "text-width": "medium",
-            "image": "shopify://shop_images/Lunes7-Banner_web_543203d4-130b-4d86-b21f-72dab1b7b047.png",
+            "image": "shopify://shop_images/Lunes14-Banner_web.png",
             "overline": "",
             "title": "",
             "description": "",
-            "link-url": "https://mozzafiato.pe/collections/comprar-online-descuento-sale-mozzafiato",
+            "link-url": "https://mozzafiato.pe/collections/comprar-online-totebags-mozzafiato",
             "link-text": "",
-            "mobile-image": "shopify://shop_images/Lunes7-Banner_mobile_266e5d27-bcee-4926-8fdf-b64355bcf1c9.png"
+            "mobile-image": "shopify://shop_images/Lunes14-Banner_mobile.png"
           }
         },
         "image_P4TP7X": {
@@ -40,18 +40,18 @@
             "mobile-image": "shopify://shop_images/Banner_mobile.png"
           }
         },
-        "a5482328-e971-4c6e-b38b-4e3380fe7526": {
+        "image_ADfrQD": {
           "type": "image",
           "settings": {
             "text-position": "bottom-left",
             "text-width": "medium",
-            "image": "shopify://shop_images/Lunes10-Banner_web_1.jpg",
+            "image": "shopify://shop_images/Lunes7-Banner_web_543203d4-130b-4d86-b21f-72dab1b7b047.png",
             "overline": "",
             "title": "",
             "description": "",
-            "link-url": "shopify://collections/comprar-online-toallas-de-microfibra-mozzafiato",
+            "link-url": "https://mozzafiato.pe/collections/comprar-online-descuento-sale-mozzafiato",
             "link-text": "",
-            "mobile-image": "shopify://shop_images/Lunes10-Banner_mobile_1.jpg"
+            "mobile-image": "shopify://shop_images/Lunes7-Banner_mobile_266e5d27-bcee-4926-8fdf-b64355bcf1c9.png"
           }
         },
         "4993a4c6-5948-4c34-853f-dc9d8e106671": {
@@ -101,9 +101,9 @@
         }
       },
       "block_order": [
-        "image_ADfrQD",
-        "image_P4TP7X",
         "a5482328-e971-4c6e-b38b-4e3380fe7526",
+        "image_P4TP7X",
+        "image_ADfrQD",
         "4993a4c6-5948-4c34-853f-dc9d8e106671",
         "image_ihGBW6",
         "image_Hmdzyy"
