@@ -46,7 +46,7 @@
           "settings": {
             "text-position": "bottom-left",
             "text-width": "medium",
-            "image": "shopify://shop_images/Lunes14-Banner_web.png",
+            "image": "shopify://shop_images/Lunes12-Banner_mobile_opcion1.png",
             "overline": "",
             "title": "",
             "description": "",
@@ -139,9 +139,9 @@
         "display-type": "slideshow",
         "products-per-row--desktop": "3",
         "products-per-row--mobile": "1",
-        "collection": "bikinis",
+        "collection": "el-panuelo-perfecto",
         "max-products": 8,
-        "heading": "¡NEW IN! Swimwear"
+        "heading": "El Pañuelo perfecto"
       }
     },
     "5ba33054-4d1e-44a1-a62b-81a200f21bc2": {
@@ -156,9 +156,9 @@
         "display-type": "slideshow",
         "products-per-row--desktop": "4",
         "products-per-row--mobile": "2",
-        "collection": "comprar-online-toallas-de-microfibra-mozzafiato",
+        "collection": "comprar-online-totebags-mozzafiato",
         "max-products": 12,
-        "heading": "TOALLAS DE MICROFIBRA"
+        "heading": "La totebag ideal!"
       }
     },
     "map_UmWXbf": {
@@ -337,23 +337,6 @@
         "animation-direction": "left",
         "animation-speed": 6,
         "pause-on-hover": false
-      }
-    },
-    "featured_collection_hR7KJK": {
-      "type": "featured-collection",
-      "settings": {
-        "background-color": "none",
-        "light-text": false,
-        "spacing-above": true,
-        "spacing-below": true,
-        "featured-collection--image--show": false,
-        "featured-collection--description--show": false,
-        "display-type": "slideshow",
-        "products-per-row--desktop": "3",
-        "products-per-row--mobile": "2",
-        "collection": "comprar-online-weekenders-bolsos-mozzafiato",
-        "max-products": 6,
-        "heading": "WEEKENDERS"
       }
     },
     "e1bcfcee-d979-4e6c-b6ec-30817d050e0c": {
@@ -698,7 +681,6 @@
     "featured_product_mncDmF",
     "featured_product_VBNFCz",
     "53875c54-020d-4d79-8ff9-85371bcd2995",
-    "featured_collection_hR7KJK",
     "e1bcfcee-d979-4e6c-b6ec-30817d050e0c",
     "featured_collection_WXVa4B",
     "9547d1fa-e436-446d-a9b9-77f7a3bd07b9",
