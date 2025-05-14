@@ -228,7 +228,7 @@
         "text-alignment": "left",
         "thumbnail-width": 80,
         "media-gap": 8,
-        "featured_product": "comprar-online-panuelo-sienna-multicolor",
+        "featured_product": "comprar-online-tote-bag-amanda-flowers-mozzafiato",
         "loop-enabled": false
       }
     },
@@ -395,23 +395,6 @@
         "mobile-width": "1",
         "overline": "",
         "heading": "Lo que dicen nuestras mozzi girls!"
-      }
-    },
-    "featured_collection_WXVa4B": {
-      "type": "featured-collection",
-      "settings": {
-        "background-color": "none",
-        "light-text": false,
-        "spacing-above": true,
-        "spacing-below": true,
-        "featured-collection--image--show": false,
-        "featured-collection--description--show": false,
-        "display-type": "slideshow",
-        "products-per-row--desktop": "3",
-        "products-per-row--mobile": "1",
-        "collection": "comprar-online-descuento-sale-mozzafiato",
-        "max-products": 12,
-        "heading": "Sale"
       }
     },
     "9547d1fa-e436-446d-a9b9-77f7a3bd07b9": {
@@ -682,7 +665,6 @@
     "featured_product_VBNFCz",
     "53875c54-020d-4d79-8ff9-85371bcd2995",
     "e1bcfcee-d979-4e6c-b6ec-30817d050e0c",
-    "featured_collection_WXVa4B",
     "9547d1fa-e436-446d-a9b9-77f7a3bd07b9",
     "grid-with-overlay",
     "0b1cd38c-2dd8-4607-abdb-1424619e78d5",
