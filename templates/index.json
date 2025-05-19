@@ -32,13 +32,13 @@
           "settings": {
             "text-position": "bottom-left",
             "text-width": "medium",
-            "image": "shopify://shop_images/Jueves1-Banner_web_copia_2.png",
+            "image": "shopify://shop_images/Lunes19-Banner_web.png",
             "overline": "",
             "title": "",
             "description": "",
             "link-url": "shopify://collections/el-panuelo-perfecto",
             "link-text": "",
-            "mobile-image": "shopify://shop_images/Jueves1-Banner_mobile_copia_3.png"
+            "mobile-image": "shopify://shop_images/Lunes19-Banner_mobile.png"
           }
         },
         "image_P4TP7X": {
@@ -139,9 +139,9 @@
         "display-type": "slideshow",
         "products-per-row--desktop": "3",
         "products-per-row--mobile": "1",
-        "collection": "el-panuelo-perfecto",
+        "collection": "comprar-online-weekenders-bolsos-mozzafiato",
         "max-products": 8,
-        "heading": "El Pañuelo perfecto"
+        "heading": "Tus ideales para viajar!"
       }
     },
     "5ba33054-4d1e-44a1-a62b-81a200f21bc2": {
@@ -158,7 +158,7 @@
         "products-per-row--mobile": "2",
         "collection": "comprar-online-totebags-mozzafiato",
         "max-products": 12,
-        "heading": "La totebag ideal!"
+        "heading": "La totebag perfecta"
       }
     },
     "map_UmWXbf": {
