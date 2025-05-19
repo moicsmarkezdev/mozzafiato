@@ -136,7 +136,7 @@
         "spacing-below": true,
         "featured-collection--image--show": false,
         "featured-collection--description--show": false,
-        "display-type": "slideshow",
+        "display-type": "grid",
         "products-per-row--desktop": "3",
         "products-per-row--mobile": "1",
         "collection": "comprar-online-weekenders-bolsos-mozzafiato",
