@@ -156,9 +156,9 @@
         "display-type": "slideshow",
         "products-per-row--desktop": "4",
         "products-per-row--mobile": "2",
-        "collection": "comprar-online-totebags-mozzafiato",
+        "collection": "comprar-online-toallas-de-microfibra-mozzafiato",
         "max-products": 12,
-        "heading": "La totebag perfecta"
+        "heading": "La toalla perfecta"
       }
     },
     "map_UmWXbf": {
@@ -658,8 +658,8 @@
   },
   "order": [
     "slideshow",
-    "featured_collection_xwa693",
     "5ba33054-4d1e-44a1-a62b-81a200f21bc2",
+    "featured_collection_xwa693",
     "map_UmWXbf",
     "featured_product_mncDmF",
     "featured_product_VBNFCz",
