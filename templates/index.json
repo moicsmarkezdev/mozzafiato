@@ -18,7 +18,7 @@
           "settings": {
             "text-position": "bottom-left",
             "text-width": "medium",
-            "image": "shopify://shop_images/Lunes7-Banner_web_543203d4-130b-4d86-b21f-72dab1b7b047.png",
+            "image": "shopify://shop_images/Jueves29-Banner_web.png",
             "overline": "",
             "title": "",
             "description": "",
@@ -57,17 +57,16 @@
         },
         "4993a4c6-5948-4c34-853f-dc9d8e106671": {
           "type": "image",
-          "disabled": true,
           "settings": {
             "text-position": "bottom-left",
             "text-width": "medium",
-            "image": "shopify://shop_images/Sabado2-Banner_web.png",
+            "image": "shopify://shop_images/Jueves29-Banner_web_71b09a78-d9bf-4551-9107-5f43004f4f06.png",
             "overline": "",
             "title": "",
             "description": "",
-            "link-url": "",
+            "link-url": "https://mozzafiato.pe/",
             "link-text": "",
-            "mobile-image": "shopify://shop_images/Sabado2-Banner_Mobile.png"
+            "mobile-image": "shopify://shop_images/Jueves29-Banner_mobile.png"
           }
         },
         "image_ihGBW6": {
@@ -127,23 +126,6 @@
         "mobile-overlay": true
       }
     },
-    "featured_collection_xwa693": {
-      "type": "featured-collection",
-      "settings": {
-        "background-color": "none",
-        "light-text": false,
-        "spacing-above": true,
-        "spacing-below": true,
-        "featured-collection--image--show": false,
-        "featured-collection--description--show": false,
-        "display-type": "grid",
-        "products-per-row--desktop": "3",
-        "products-per-row--mobile": "1",
-        "collection": "comprar-online-weekenders-bolsos-mozzafiato",
-        "max-products": 8,
-        "heading": "Tus ideales para viajar!"
-      }
-    },
     "5ba33054-4d1e-44a1-a62b-81a200f21bc2": {
       "type": "featured-collection",
       "settings": {
@@ -159,6 +141,23 @@
         "collection": "comprar-online-toallas-de-microfibra-mozzafiato",
         "max-products": 12,
         "heading": "La toalla perfecta"
+      }
+    },
+    "featured_collection_xwa693": {
+      "type": "featured-collection",
+      "settings": {
+        "background-color": "none",
+        "light-text": false,
+        "spacing-above": true,
+        "spacing-below": true,
+        "featured-collection--image--show": false,
+        "featured-collection--description--show": false,
+        "display-type": "grid",
+        "products-per-row--desktop": "3",
+        "products-per-row--mobile": "1",
+        "collection": "comprar-online-weekenders-bolsos-mozzafiato",
+        "max-products": 8,
+        "heading": "Tus ideales para viajar!"
       }
     },
     "map_UmWXbf": {
