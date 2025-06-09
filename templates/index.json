@@ -12,6 +12,20 @@
     "slideshow": {
       "type": "slideshow",
       "blocks": {
+        "image_9HVrEf": {
+          "type": "image",
+          "settings": {
+            "text-position": "bottom-left",
+            "text-width": "medium",
+            "image": "shopify://shop_images/Lunes9-Banner_web-min.png",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "shopify://collections/all",
+            "link-text": "",
+            "mobile-image": "shopify://shop_images/Lunes9-Banner_mobile_-min_9f4b4f68-eac8-4e29-81a5-6ac309bc859b.png"
+          }
+        },
         "a5482328-e971-4c6e-b38b-4e3380fe7526": {
           "type": "image",
           "settings": {
@@ -72,6 +86,7 @@
         }
       },
       "block_order": [
+        "image_9HVrEf",
         "a5482328-e971-4c6e-b38b-4e3380fe7526",
         "image_P4TP7X",
         "image_ihGBW6",
