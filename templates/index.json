@@ -136,12 +136,12 @@
         "spacing-below": true,
         "featured-collection--image--show": false,
         "featured-collection--description--show": false,
-        "display-type": "grid",
+        "display-type": "slideshow",
         "products-per-row--desktop": "3",
         "products-per-row--mobile": "1",
         "collection": "comprar-online-caps-gorro-mozzafiato",
-        "max-products": 8,
-        "heading": "Tus ideales para viajar!"
+        "max-products": 5,
+        "heading": "TUS CAPS FAVORITOS"
       }
     },
     "map_UmWXbf": {
