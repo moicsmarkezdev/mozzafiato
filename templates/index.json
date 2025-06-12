@@ -17,13 +17,13 @@
           "settings": {
             "text-position": "bottom-left",
             "text-width": "medium",
-            "image": "shopify://shop_images/Lunes9-Banner_web-min.png",
+            "image": "shopify://shop_images/Jueves12-Banner_web.png",
             "overline": "",
             "title": "",
             "description": "",
-            "link-url": "shopify://collections/all",
+            "link-url": "shopify://collections/comprar-online-caps-gorro-mozzafiato",
             "link-text": "",
-            "mobile-image": "shopify://shop_images/Lunes9-Banner_mobile_-min_9f4b4f68-eac8-4e29-81a5-6ac309bc859b.png"
+            "mobile-image": "shopify://shop_images/Jueves12-Banner_mobile.png"
           }
         },
         "a5482328-e971-4c6e-b38b-4e3380fe7526": {
@@ -139,7 +139,7 @@
         "display-type": "grid",
         "products-per-row--desktop": "3",
         "products-per-row--mobile": "1",
-        "collection": "comprar-online-weekenders-bolsos-mozzafiato",
+        "collection": "comprar-online-caps-gorro-mozzafiato",
         "max-products": 8,
         "heading": "Tus ideales para viajar!"
       }
