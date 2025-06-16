@@ -21,7 +21,7 @@
             "overline": "",
             "title": "",
             "description": "",
-            "link-url": "shopify://collections/all",
+            "link-url": "shopify://products/sweatshirt-postales-perla",
             "link-text": "",
             "mobile-image": "shopify://shop_images/Lunes16-Banner_mobile_da13c0f5-4324-45a7-8da5-3c1b4e828b4b.png"
           }
@@ -110,21 +110,55 @@
         "mobile-overlay": true
       }
     },
-    "5ba33054-4d1e-44a1-a62b-81a200f21bc2": {
-      "type": "featured-collection",
+    "shop_the_look_FYEPDx": {
+      "type": "shop-the-look",
+      "blocks": {
+        "hotspot_ypaK6d": {
+          "type": "hotspot",
+          "settings": {
+            "product": "",
+            "horizontal": 35,
+            "vertical": 33,
+            "mobile-horizontal": 35,
+            "mobile-vertical": 35
+          }
+        },
+        "hotspot_BBAPPy": {
+          "type": "hotspot",
+          "settings": {
+            "product": "",
+            "horizontal": 44,
+            "vertical": 62,
+            "mobile-horizontal": 45,
+            "mobile-vertical": 66
+          }
+        },
+        "hotspot_qRY7C9": {
+          "type": "hotspot",
+          "settings": {
+            "product": "sweatshirt-postales-perla",
+            "horizontal": 65,
+            "vertical": 50,
+            "mobile-horizontal": 65,
+            "mobile-vertical": 47
+          }
+        }
+      },
+      "block_order": [
+        "hotspot_ypaK6d",
+        "hotspot_BBAPPy",
+        "hotspot_qRY7C9"
+      ],
+      "name": "Shop the look",
       "settings": {
         "background-color": "none",
         "light-text": false,
+        "container-width": 4,
         "spacing-above": true,
         "spacing-below": true,
-        "featured-collection--image--show": false,
-        "featured-collection--description--show": false,
-        "display-type": "slideshow",
-        "products-per-row--desktop": "4",
-        "products-per-row--mobile": "2",
-        "collection": "comprar-online-toallas-de-microfibra-mozzafiato",
-        "max-products": 12,
-        "heading": "La toalla perfecta"
+        "hotspot-color": "white",
+        "heading": "tu nuevo favorito!",
+        "image": "shopify://shop_images/2_3c3b9627-c397-4e02-a648-1a2729cc1b80.jpg"
       }
     },
     "featured_collection_xwa693": {
@@ -641,7 +675,7 @@
   },
   "order": [
     "slideshow",
-    "5ba33054-4d1e-44a1-a62b-81a200f21bc2",
+    "shop_the_look_FYEPDx",
     "featured_collection_xwa693",
     "map_UmWXbf",
     "featured_product_mncDmF",
