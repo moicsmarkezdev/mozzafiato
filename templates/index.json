@@ -116,44 +116,22 @@
         "hotspot_ypaK6d": {
           "type": "hotspot",
           "settings": {
-            "product": "",
+            "product": "sweatshirt-postales-perla",
             "horizontal": 35,
             "vertical": 33,
             "mobile-horizontal": 35,
             "mobile-vertical": 35
           }
-        },
-        "hotspot_BBAPPy": {
-          "type": "hotspot",
-          "settings": {
-            "product": "",
-            "horizontal": 44,
-            "vertical": 62,
-            "mobile-horizontal": 45,
-            "mobile-vertical": 66
-          }
-        },
-        "hotspot_qRY7C9": {
-          "type": "hotspot",
-          "settings": {
-            "product": "sweatshirt-postales-perla",
-            "horizontal": 65,
-            "vertical": 50,
-            "mobile-horizontal": 65,
-            "mobile-vertical": 47
-          }
         }
       },
       "block_order": [
-        "hotspot_ypaK6d",
-        "hotspot_BBAPPy",
-        "hotspot_qRY7C9"
+        "hotspot_ypaK6d"
       ],
       "name": "Shop the look",
       "settings": {
         "background-color": "none",
         "light-text": false,
-        "container-width": 4,
+        "container-width": 2,
         "spacing-above": true,
         "spacing-below": true,
         "hotspot-color": "white",
