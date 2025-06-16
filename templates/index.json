@@ -136,7 +136,8 @@
         "spacing-below": true,
         "hotspot-color": "white",
         "heading": "tu nuevo favorito!",
-        "image": "shopify://shop_images/2_3c3b9627-c397-4e02-a648-1a2729cc1b80.jpg"
+        "image": "shopify://shop_images/2_3c3b9627-c397-4e02-a648-1a2729cc1b80.jpg",
+        "mobile-image": "shopify://shop_images/2_3c3b9627-c397-4e02-a648-1a2729cc1b80.jpg"
       }
     },
     "featured_collection_xwa693": {
