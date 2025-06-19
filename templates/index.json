@@ -117,10 +117,10 @@
           "type": "hotspot",
           "settings": {
             "product": "sweatshirt-postales-perla",
-            "horizontal": 35,
-            "vertical": 33,
-            "mobile-horizontal": 35,
-            "mobile-vertical": 35
+            "horizontal": 50,
+            "vertical": 55,
+            "mobile-horizontal": 50,
+            "mobile-vertical": 55
           }
         }
       },
@@ -131,13 +131,13 @@
       "settings": {
         "background-color": "none",
         "light-text": false,
-        "container-width": 4,
+        "container-width": 1,
         "spacing-above": true,
         "spacing-below": true,
         "hotspot-color": "white",
         "heading": "tu nuevo favorito!",
-        "image": "shopify://shop_images/2_3c3b9627-c397-4e02-a648-1a2729cc1b80.jpg",
-        "mobile-image": "shopify://shop_images/2_3c3b9627-c397-4e02-a648-1a2729cc1b80.jpg"
+        "image": "shopify://shop_images/IMG_5062.heic",
+        "mobile-image": "shopify://shop_images/IMG_5062.heic"
       }
     },
     "featured_collection_xwa693": {
