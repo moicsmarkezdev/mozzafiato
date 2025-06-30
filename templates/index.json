@@ -21,9 +21,23 @@
             "overline": "",
             "title": "",
             "description": "",
-            "link-url": "shopify://products/sweatshirt-postales-perla",
+            "link-url": "shopify://products/cap-mozzafiato-guinda-copy",
             "link-text": "",
             "mobile-image": "shopify://shop_images/Lunes30-Banner_mobile.png"
+          }
+        },
+        "image_ihGBW6": {
+          "type": "image",
+          "settings": {
+            "text-position": "bottom-left",
+            "text-width": "medium",
+            "image": "shopify://shop_images/Lunes16-Banner_web_be43bfdc-aa28-4832-936e-bc3385845026.png",
+            "overline": "",
+            "title": "",
+            "description": "",
+            "link-url": "shopify://products/sweatshirt-postales-perla",
+            "link-text": "",
+            "mobile-image": "shopify://shop_images/Lunes16-Banner_mobile_da13c0f5-4324-45a7-8da5-3c1b4e828b4b.png"
           }
         },
         "a5482328-e971-4c6e-b38b-4e3380fe7526": {
@@ -54,21 +68,6 @@
             "mobile-image": "shopify://shop_images/Banner_mobile.png"
           }
         },
-        "image_ihGBW6": {
-          "type": "image",
-          "disabled": true,
-          "settings": {
-            "text-position": "bottom-left",
-            "text-width": "medium",
-            "image": "shopify://shop_images/Lunes13-Banner_web.png",
-            "overline": "",
-            "title": "",
-            "description": "",
-            "link-url": "shopify://collections/last-units",
-            "link-text": "",
-            "mobile-image": "shopify://shop_images/Lunes13-Banner_mobile.png"
-          }
-        },
         "image_Hmdzyy": {
           "type": "image",
           "disabled": true,
@@ -87,9 +86,9 @@
       },
       "block_order": [
         "image_9HVrEf",
+        "image_ihGBW6",
         "a5482328-e971-4c6e-b38b-4e3380fe7526",
         "image_P4TP7X",
-        "image_ihGBW6",
         "image_Hmdzyy"
       ],
       "settings": {
