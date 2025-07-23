@@ -56,6 +56,7 @@
         },
         "image_P4TP7X": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "text-position": "bottom-left",
             "text-width": "medium",
@@ -119,7 +120,7 @@
         "featured-collection--image--show": false,
         "featured-collection--description--show": false,
         "display-type": "slideshow",
-        "products-per-row--desktop": "3",
+        "products-per-row--desktop": "4",
         "products-per-row--mobile": "1",
         "collection": "bikinis",
         "max-products": 12,
