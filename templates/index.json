@@ -121,9 +121,9 @@
         "featured-collection--description--show": false,
         "display-type": "slideshow",
         "products-per-row--desktop": "3",
-        "products-per-row--mobile": "1",
+        "products-per-row--mobile": "2",
         "collection": "bikinis",
-        "max-products": 12,
+        "max-products": 8,
         "heading": "Tu swimwear favorito"
       }
     },
