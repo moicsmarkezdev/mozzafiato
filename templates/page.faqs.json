@@ -111,65 +111,65 @@
             "product": "comprar-online-adria-bikini-bottom-celeste-mozzafiato"
           }
         },
-        "slide_4iBMFw": {
+        "slide_f8jpLT": {
           "type": "slide",
           "settings": {
             "video_desktop_slider_custom": "shopify://files/videos/video2.mp4",
-            "product": "adria-bikini-bottom-negro"
+            "product": "comprar-online-adria-bikini-bottom-celeste-mozzafiato"
           }
         },
-        "slide_aM8p7d": {
+        "slide_4JYnCp": {
           "type": "slide",
           "settings": {
             "video_desktop_slider_custom": "shopify://files/videos/video2.mp4",
-            "product": "adria-bikini-bottom-rosado"
+            "product": "comprar-online-adria-bikini-bottom-celeste-mozzafiato"
           }
         },
-        "slide_nathA9": {
+        "slide_kyarJt": {
           "type": "slide",
           "settings": {
             "video_desktop_slider_custom": "shopify://files/videos/video2.mp4",
-            "product": "comprar-online-adria-bikini-celeste-mozzafiato"
+            "product": "comprar-online-adria-bikini-bottom-celeste-mozzafiato"
           }
         },
-        "slide_kBaGck": {
+        "slide_rcXFj6": {
           "type": "slide",
           "settings": {
             "video_desktop_slider_custom": "shopify://files/videos/video2.mp4",
-            "product": "adria-bikini-top-negro"
+            "product": "comprar-online-adria-bikini-bottom-celeste-mozzafiato"
           }
         },
-        "slide_aweqQt": {
+        "slide_DHxCPk": {
           "type": "slide",
           "settings": {
             "video_desktop_slider_custom": "shopify://files/videos/video2.mp4",
-            "product": "comprar-online-cap-flower-beige-mozzafiato"
+            "product": "comprar-online-adria-bikini-bottom-celeste-mozzafiato"
           }
         },
-        "slide_hmNXtc": {
+        "slide_bEtaai": {
           "type": "slide",
           "settings": {
             "video_desktop_slider_custom": "shopify://files/videos/video2.mp4",
-            "product": "comprar-online-adria-bikini-rosado-mozzafiato"
+            "product": "comprar-online-adria-bikini-bottom-celeste-mozzafiato"
           }
         },
-        "slide_KQRaRH": {
+        "slide_aGdErr": {
           "type": "slide",
           "settings": {
             "video_desktop_slider_custom": "shopify://files/videos/video2.mp4",
-            "product": "comprar-online-cap-mozzafiato-guinda-mozzafiato"
+            "product": "comprar-online-adria-bikini-bottom-celeste-mozzafiato"
           }
         }
       },
       "block_order": [
         "slide_FWEqFG",
-        "slide_4iBMFw",
-        "slide_aM8p7d",
-        "slide_nathA9",
-        "slide_kBaGck",
-        "slide_aweqQt",
-        "slide_hmNXtc",
-        "slide_KQRaRH"
+        "slide_f8jpLT",
+        "slide_4JYnCp",
+        "slide_kyarJt",
+        "slide_rcXFj6",
+        "slide_DHxCPk",
+        "slide_bEtaai",
+        "slide_aGdErr"
       ],
       "name": "Slider video + product",
       "settings": {
