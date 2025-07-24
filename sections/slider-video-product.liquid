@@ -9,11 +9,6 @@
 
 <!-- Slider main container -->
 <div class="slider-video-product-container"> 
-  <div class="slider-video-product-top container-fluid">
-    <div class="slider-video-product-title">
-      {% render 'index-section-header', section_settings: section.settings %}
-    </div>
-  </div>
   <div class="swiper slider-video-product-wrapper {{ section.settings.custom_class }}">
     {% if section.settings.show_arrows and section.blocks.size > 1 %}
      <div class="swiper-buttons-controls">
