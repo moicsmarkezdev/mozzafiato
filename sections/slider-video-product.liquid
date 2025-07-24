@@ -38,7 +38,7 @@
           </video>
           {%- assign product = block.settings.product -%}
           {% if product != blank %}
-            {% render 'featured-collection' %}
+            {% render 'product--item', product: product, section_id: section.id %}
           {% endif %}
         </div>
       {% endfor %}
