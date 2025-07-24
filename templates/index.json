@@ -637,70 +637,6 @@
         "link-url": "",
         "link-text": ""
       }
-    },
-    "slider_video_product_eRRFh8": {
-      "type": "slider-video-product",
-      "blocks": {
-        "slide_FV8Y8K": {
-          "type": "slide",
-          "settings": {
-            "video_desktop_slider_custom": "shopify://files/videos/video2.mp4",
-            "product": ""
-          }
-        },
-        "slide_wfiYxF": {
-          "type": "slide",
-          "settings": {
-            "video_desktop_slider_custom": "shopify://files/videos/FinalVideo_1601590048.823454.MOV",
-            "product": ""
-          }
-        },
-        "slide_9FNxFt": {
-          "type": "slide",
-          "settings": {
-            "video_desktop_slider_custom": "shopify://files/videos/FinalVideo_1601589188.827689.MOV",
-            "product": ""
-          }
-        },
-        "slide_Bq88F6": {
-          "type": "slide",
-          "settings": {
-            "video_desktop_slider_custom": "shopify://files/videos/FinalVideo_1601589754.537623.MOV",
-            "product": ""
-          }
-        },
-        "slide_N8WFVC": {
-          "type": "slide",
-          "settings": {
-            "video_desktop_slider_custom": "shopify://files/videos/FinalVideo_1601589803.127952.MOV",
-            "product": ""
-          }
-        },
-        "slide_6CXHif": {
-          "type": "slide",
-          "settings": {
-            "video_desktop_slider_custom": "shopify://files/videos/video2.mp4",
-            "product": ""
-          }
-        }
-      },
-      "block_order": [
-        "slide_FV8Y8K",
-        "slide_wfiYxF",
-        "slide_9FNxFt",
-        "slide_Bq88F6",
-        "slide_N8WFVC",
-        "slide_6CXHif"
-      ],
-      "disabled": true,
-      "name": "Slider video + product",
-      "settings": {
-        "heading": "Heading",
-        "show_arrows": true,
-        "padding_top": 50,
-        "padding_bottom": 50,
-        "custom_class": ""
-      }
     }
   },
   "order": [
@@ -715,7 +651,6 @@
     "9547d1fa-e436-446d-a9b9-77f7a3bd07b9",
     "grid-with-overlay",
     "0b1cd38c-2dd8-4607-abdb-1424619e78d5",
-    "grid_with_overlay_4rPb6r",
-    "slider_video_product_eRRFh8"
+    "grid_with_overlay_4rPb6r"
   ]
 }
