@@ -38,7 +38,7 @@
           </video>
           {%- assign product = block.settings.product -%}
           {% if product != blank %}
-            {% render 'product-card-1', product: product, image_ratio: image_ratio, show_vendor: show_vendor, pcard_alignment: pcard_alignment, index: forloop.index, animated: animated, animation_effect: animation_effect %}
+            {% render 'featured-collection' %}
           {% endif %}
         </div>
       {% endfor %}
