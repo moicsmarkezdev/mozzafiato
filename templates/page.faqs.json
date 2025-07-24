@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "16324399488a55ecb4": {
@@ -9,7 +18,10 @@
         "spacing-above": true,
         "spacing-below": true,
         "overline": "",
-        "heading": "FAQs"
+        "heading": "FAQs",
+        "description": "<p>Introduce your brand, products and vision statement and welcome customers to your store.</p>",
+        "link-url": "/",
+        "link-text": "Link text"
       }
     },
     "main": {
@@ -31,7 +43,8 @@
           "settings": {
             "heading": "Collapsible row",
             "description": "<p>Use rows to highlight unique features, <br/>sizing information, <br/>or other sales information.</p>",
-            "page-content": ""
+            "page-content": "",
+            "default-open": false
           }
         },
         "16324397781a8be68b-1": {
@@ -39,7 +52,8 @@
           "settings": {
             "heading": "Collapsible row",
             "description": "<p>Use rows to highlight unique features, <br/>sizing information, <br/>or other sales information.</p>",
-            "page-content": ""
+            "page-content": "",
+            "default-open": false
           }
         },
         "16324397781a8be68b-2": {
@@ -47,7 +61,8 @@
           "settings": {
             "heading": "Collapsible row",
             "description": "<p>Use rows to highlight unique features, <br/>sizing information, <br/>or other sales information.</p>",
-            "page-content": ""
+            "page-content": "",
+            "default-open": false
           }
         },
         "a6080b6f-76b2-411e-84ba-9bbd1dbedff2": {
@@ -55,7 +70,8 @@
           "settings": {
             "heading": "Collapsible row",
             "description": "<p>Use rows to highlight unique features, <br/>sizing information, <br/>or other sales information.</p>",
-            "page-content": ""
+            "page-content": "",
+            "default-open": false
           }
         },
         "5212a784-4faa-4ff4-b627-6ca5174a15f9": {
@@ -63,7 +79,8 @@
           "settings": {
             "heading": "Collapsible row",
             "description": "<p>Use rows to highlight unique features, <br/>sizing information, <br/>or other sales information.</p>",
-            "page-content": ""
+            "page-content": "",
+            "default-open": false
           }
         }
       },
@@ -83,11 +100,91 @@
         "heading": "",
         "title-alignment": "center"
       }
+    },
+    "slider_video_product_BVTDUd": {
+      "type": "slider-video-product",
+      "blocks": {
+        "slide_FWEqFG": {
+          "type": "slide",
+          "settings": {
+            "video_desktop_slider_custom": "shopify://files/videos/video2.mp4",
+            "product": ""
+          }
+        },
+        "slide_4iBMFw": {
+          "type": "slide",
+          "settings": {
+            "video_desktop_slider_custom": "shopify://files/videos/video2.mp4",
+            "product": ""
+          }
+        },
+        "slide_aM8p7d": {
+          "type": "slide",
+          "settings": {
+            "video_desktop_slider_custom": "shopify://files/videos/video2.mp4",
+            "product": ""
+          }
+        },
+        "slide_nathA9": {
+          "type": "slide",
+          "settings": {
+            "video_desktop_slider_custom": "shopify://files/videos/video2.mp4",
+            "product": ""
+          }
+        },
+        "slide_kBaGck": {
+          "type": "slide",
+          "settings": {
+            "video_desktop_slider_custom": "shopify://files/videos/video2.mp4",
+            "product": ""
+          }
+        },
+        "slide_aweqQt": {
+          "type": "slide",
+          "settings": {
+            "video_desktop_slider_custom": "shopify://files/videos/video2.mp4",
+            "product": ""
+          }
+        },
+        "slide_hmNXtc": {
+          "type": "slide",
+          "settings": {
+            "video_desktop_slider_custom": "shopify://files/videos/video2.mp4",
+            "product": ""
+          }
+        },
+        "slide_KQRaRH": {
+          "type": "slide",
+          "settings": {
+            "video_desktop_slider_custom": "shopify://files/videos/video2.mp4",
+            "product": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_FWEqFG",
+        "slide_4iBMFw",
+        "slide_aM8p7d",
+        "slide_nathA9",
+        "slide_kBaGck",
+        "slide_aweqQt",
+        "slide_hmNXtc",
+        "slide_KQRaRH"
+      ],
+      "name": "Slider video + product",
+      "settings": {
+        "heading": "Heading",
+        "show_arrows": true,
+        "padding_top": 50,
+        "padding_bottom": 50,
+        "custom_class": ""
+      }
     }
   },
   "order": [
     "16324399488a55ecb4",
     "main",
-    "16324397781a8be68b"
+    "16324397781a8be68b",
+    "slider_video_product_BVTDUd"
   ]
 }
