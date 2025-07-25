@@ -37,7 +37,7 @@
             {% endfor %}
           </video>
           
-          {%assign product = block.settings.product %}
+          {% assign product = block.settings.product %}
 
           {% if product %}
             {% render 'product--item', product: product %}
