@@ -37,13 +37,11 @@
             {% endfor %}
           </video>
           
-          {% assign product = block.settings.product %}
+          {% assign product = all_products[block.settings.product] %}
 
-          {% if product %}
+          
             {% render 'product--item', product: product %}
-          {% else %}
-            <p>Producto no encontrado.</p>
-          {% endif %}
+         
          
         </div>
       {% endfor %}
