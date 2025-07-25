@@ -38,12 +38,24 @@
           </video>
           
           {% assign product = all_products[block.settings.product] %}
-{% if product %}
-  <p>Producto encontrado: {{ product.title }}</p>
-  {% render 'product--item', product: product %}
-{% else %}
-  <p>No se ha encontrado el producto.</p>
-{% endif %}
+<div class="product-item">
+  <!-- Título del Producto -->
+  <h3>{{ product.title }}</h3>
+
+  <!-- Imagen destacada del Producto -->
+  <div class="product-image">
+    <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
+  </div>
+
+  <!-- Precio del Producto -->
+  <p class="product-price">{{ product.price | money }}</p>
+
+  <!-- Botón para agregar al carrito -->
+  <form action="/cart/add" method="post" class="product-form">
+    <input type="hidden" name="id" value="{{ product.variants.first.id }}">
+    <button type="submit" class="add-to-cart-button">Agregar al carrito</button>
+  </form>
+</div>
          
         </div>
       {% endfor %}
