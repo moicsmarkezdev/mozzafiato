@@ -36,7 +36,7 @@
               {% endif %}
             {% endfor %}
           </video>
-          {%- assign product = block.settings.product -%}
+          {%- assign product = all_products[section.settings.featured_product] -%}
           
             {% render 'product--item', product: product, section_id: section.id %}
          
