@@ -40,7 +40,7 @@
           {%assign product = all_products[block.settings.featured_product] %}
 
 {% if product %}
-  {% render 'product--product--item', producto: producto %}
+  {% render 'product--item', product: product %}
 {% else %}
   <p>Producto no encontrado.</p>
 {% endif %}
