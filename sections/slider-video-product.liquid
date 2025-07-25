@@ -36,43 +36,10 @@
               {% endif %}
             {% endfor %}
           </video>
-          {%- liquid
-  assign add_to_cart_t = 'products.add_to_cart' | t
-  assign price_t = 'sections.onboarding.price' | t
-
-  assign product = all_products[section.settings.featured_product]
-
-  assign bg_color = section.settings.background-color
-  assign container_width = section.settings.container-width
-  assign current_variant = product.selected_or_first_available_variant
-  assign media_gap = section.settings.media-gap
-  assign product_id = product.id | append: '-' | append: section.id
-  assign spacing_above = section.settings.spacing-above
-  assign spacing_below = section.settings.spacing-below
-  assign text_alignment = section.settings.text-alignment
-  assign text_column_width = section.settings.text-column-width
-  assign thumbnail_width = section.settings.thumbnail-width
-  assign unique_handle = 'featured--' | append: section.id
-  assign video_looping_enabled = section.settings.loop-enabled
-
-  if section.settings.featured_product != blank
-    assign onboarding = false
-  else
-    assign onboarding = true
-    assign currencies_using_comma_decimals = 'ANG,ARS,BRL,BYN,BYR,CLF,CLP,COP,CRC,CZK,DKK,EUR,HRK,HUF,IDR,ISK,MZN,NOK,PLN,RON,RUB,SEK,UYU,VES,VND' | split: ','
-    if currencies_using_comma_decimals contains cart.currency.iso_code
-      assign price_t = price_t | replace: '.', ','
-    endif
-  endif
-
-  capture css_vars
-    echo '--text-column-width:' | append: text_column_width | append: '%;'
-    echo '--media-gap:' | append: media_gap | append: 'px;'
-    echo '--thumbnail-width:' | append: thumbnail_width | append: 'px;'
-  endcapture
-
-  render 'section-assets', name: 'featured-product', type: 'style'
--%}
+          {%- assign product = block.settings.product -%}
+          
+            {% render 'product--item', product: product, section_id: section.id %}
+         
         </div>
       {% endfor %}
     </div>
