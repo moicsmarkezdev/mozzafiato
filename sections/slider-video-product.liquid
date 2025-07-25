@@ -37,15 +37,10 @@
             {% endfor %}
           </video>
           
-          {% assign productos = collections['nombre-de-la-colección'].products %}
-{% assign producto = productos | where: "title", "Nombre del Producto" | first %}
+          {%assign product = all_products[block.settings.featured_product] %}
 
-{% if producto %}
-  <h2>{{ producto.title }}</h2>
-  <p>{{ producto.description }}</p>
-  <img src="{{ producto.featured_image | img_url: 'medium' }}" alt="{{ producto.title }}">
-  <p>Precio: {{ producto.price | money }}</p>
-  <a href="{{ producto.url }}">Ver Producto</a>
+{% if product %}
+  {% render 'product--product--item', producto: producto %}
 {% else %}
   <p>Producto no encontrado.</p>
 {% endif %}
