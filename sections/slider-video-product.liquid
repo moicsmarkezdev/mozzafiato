@@ -38,9 +38,10 @@
           </video>
           
           {% assign producto = all_products['handle-del-producto'] %}
+          {% assign title = product.title %}
 
           {% if producto %}
-            <h2>{{ producto.title }}</h2>
+            <h2>{{ title }}</h2>
            
             <img src="{{ producto.featured_image | img_url: 'medium' }}" alt="{{ producto.title }}">
             <p>Precio: {{ producto.price | money }}</p>
