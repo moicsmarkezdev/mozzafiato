@@ -108,68 +108,68 @@
           "type": "slide",
           "settings": {
             "video_desktop_slider_custom": "shopify://files/videos/video2.mp4",
-            "product": "comprar-online-adria-bikini-bottom-celeste-mozzafiato"
+            "product": "comprar-online-cap-flower-beige-mozzafiato"
           }
         },
-        "slide_f8jpLT": {
+        "slide_CnrXi6": {
           "type": "slide",
           "settings": {
             "video_desktop_slider_custom": "shopify://files/videos/video2.mp4",
-            "product": "comprar-online-adria-bikini-bottom-celeste-mozzafiato"
+            "product": "comprar-online-cap-flower-beige-mozzafiato"
           }
         },
-        "slide_4JYnCp": {
+        "slide_6h3Fjt": {
           "type": "slide",
           "settings": {
             "video_desktop_slider_custom": "shopify://files/videos/video2.mp4",
-            "product": "comprar-online-adria-bikini-bottom-celeste-mozzafiato"
+            "product": "comprar-online-cap-flower-beige-mozzafiato"
           }
         },
-        "slide_kyarJt": {
+        "slide_9zBwBi": {
           "type": "slide",
           "settings": {
             "video_desktop_slider_custom": "shopify://files/videos/video2.mp4",
-            "product": "comprar-online-adria-bikini-bottom-celeste-mozzafiato"
+            "product": "comprar-online-cap-flower-beige-mozzafiato"
           }
         },
-        "slide_rcXFj6": {
+        "slide_MjUWhq": {
           "type": "slide",
           "settings": {
             "video_desktop_slider_custom": "shopify://files/videos/video2.mp4",
-            "product": "comprar-online-adria-bikini-bottom-celeste-mozzafiato"
+            "product": "comprar-online-cap-flower-beige-mozzafiato"
           }
         },
-        "slide_DHxCPk": {
+        "slide_jkRAFp": {
           "type": "slide",
           "settings": {
             "video_desktop_slider_custom": "shopify://files/videos/video2.mp4",
-            "product": "comprar-online-adria-bikini-bottom-celeste-mozzafiato"
+            "product": "comprar-online-cap-flower-beige-mozzafiato"
           }
         },
-        "slide_bEtaai": {
+        "slide_LDDUNe": {
           "type": "slide",
           "settings": {
             "video_desktop_slider_custom": "shopify://files/videos/video2.mp4",
-            "product": "comprar-online-adria-bikini-bottom-celeste-mozzafiato"
+            "product": "comprar-online-cap-flower-beige-mozzafiato"
           }
         },
-        "slide_aGdErr": {
+        "slide_AiDVqf": {
           "type": "slide",
           "settings": {
             "video_desktop_slider_custom": "shopify://files/videos/video2.mp4",
-            "product": "comprar-online-adria-bikini-bottom-celeste-mozzafiato"
+            "product": "comprar-online-cap-flower-beige-mozzafiato"
           }
         }
       },
       "block_order": [
         "slide_FWEqFG",
-        "slide_f8jpLT",
-        "slide_4JYnCp",
-        "slide_kyarJt",
-        "slide_rcXFj6",
-        "slide_DHxCPk",
-        "slide_bEtaai",
-        "slide_aGdErr"
+        "slide_CnrXi6",
+        "slide_6h3Fjt",
+        "slide_9zBwBi",
+        "slide_MjUWhq",
+        "slide_jkRAFp",
+        "slide_LDDUNe",
+        "slide_AiDVqf"
       ],
       "name": "Slider video + product",
       "settings": {
