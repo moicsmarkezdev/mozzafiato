@@ -51,10 +51,7 @@
   <p class="product-price">{{ product.price | money }}</p>
 
   <!-- Botón para agregar al carrito -->
-  <form action="/cart/add" method="post" class="product-form">
-    <input type="hidden" name="id" value="{{ product.variants.first.id }}">
-    <button type="submit" class="add-to-cart-button">Agregar al carrito</button>
-  </form>
+  {% render 'product--quick-add', product: product %}
 </div>
          
         </div>
