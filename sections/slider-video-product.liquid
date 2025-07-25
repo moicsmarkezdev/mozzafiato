@@ -38,7 +38,13 @@
           </video>
           
           {% assign product = all_products[block.settings.product] %}
-{{ product.title }}
+{{ product.title }}<div class="product-item">
+  <h3>{{ product.title }}</h3>
+  <p>{{ product.description | truncatewords: 20 }}</p>
+  <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
+  <p>{{ product.price | money }}</p>
+  <a href="{{ product.url }}">Ver producto</a>
+</div>
          
          
         </div>
