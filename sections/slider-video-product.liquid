@@ -37,18 +37,18 @@
             {% endfor %}
           </video>
           
-          {% assign producto = all_products['handle-del-producto'] %}
-          {% assign title = product.title %}
+          {% assign productos = collections['nombre-de-la-colección'].products %}
+{% assign producto = productos | where: "title", "Nombre del Producto" | first %}
 
-          {% if producto %}
-            <h2>{{ title }}</h2>
-           
-            <img src="{{ producto.featured_image | img_url: 'medium' }}" alt="{{ producto.title }}">
-            <p>Precio: {{ producto.price | money }}</p>
-            
-          {% else %}
-            <p>Producto no encontrado.</p>
-          {% endif %}
+{% if producto %}
+  <h2>{{ producto.title }}</h2>
+  <p>{{ producto.description }}</p>
+  <img src="{{ producto.featured_image | img_url: 'medium' }}" alt="{{ producto.title }}">
+  <p>Precio: {{ producto.price | money }}</p>
+  <a href="{{ producto.url }}">Ver Producto</a>
+{% else %}
+  <p>Producto no encontrado.</p>
+{% endif %}
          
         </div>
       {% endfor %}
