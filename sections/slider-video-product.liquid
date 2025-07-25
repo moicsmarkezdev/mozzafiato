@@ -38,21 +38,19 @@
           </video>
           
           {% assign product = all_products[block.settings.product] %}
-<div class="product-item">
-  <!-- Título del Producto -->
-  <h3>{{ product.title }}</h3>
-
-  <!-- Imagen destacada del Producto -->
-  <div class="product-image">
-    <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
-  </div>
-
-  <!-- Precio del Producto -->
-  <p class="product-price">{{ product.price | money }}</p>
-
-  <!-- Botón para agregar al carrito -->
-  {% render 'product--quick-add', product: product %}
-</div>
+        
+          <div class="product-item-video">
+            <div class="product-item-">
+              <div class="product-image">
+                <img src="{{ product.featured_image | img_url: 'medium' }}" alt="{{ product.title }}">
+              </div>
+            </div>
+            <div>
+               <h3>{{ product.title }}</h3>
+               <p class="product-price">{{ product.price | money }}</p>
+            </div>
+            {% render 'product--quick-add', product: product %}
+          </div>
          
         </div>
       {% endfor %}
